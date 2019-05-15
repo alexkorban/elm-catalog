@@ -175,6 +175,9 @@ humaniseSubcat subcat =
         "game-dev/procedural-generation" ->
             "Procedural generation"
 
+        "game-dev/rendering" ->
+            "Rendering"
+
         "networking/http" ->
             "HTTP"
 
