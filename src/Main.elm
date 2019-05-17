@@ -21,6 +21,7 @@ type Msg
 
 type alias Model =
     { categories : Categories
+    , packageCount : Int
     , packages : Packages
     , selectedSubcat : String
     }
@@ -48,10 +49,6 @@ type alias Flags =
 
 
 
--- type alias Category =
---     { name : String, subcategories : List Subcategory }
--- type alias Subcategory =
---     { name : String, packages : List Package }
 -- Colors
 
 
@@ -105,6 +102,9 @@ humaniseCat cat =
         "art" ->
             "Art"
 
+        "audio" ->
+            "Audio"
+
         "data" ->
             "Data"
 
@@ -135,6 +135,9 @@ humaniseSubcat subcat =
     case subcat of
         "art/interactive-fiction" ->
             "Interactive fiction"
+
+        "audio/integrations" ->
+            "Integrations"
 
         "data/formats" ->
             "Formats"
@@ -224,7 +227,10 @@ humaniseSubcat subcat =
             "Maps"
 
         "ui/patterns" ->
-            "UI aspects & patterns"
+            "UI widgets & patterns"
+
+        "ui/rendering" ->
+            "Rendering"
 
         "ui/svg" ->
             "SVG"
@@ -315,9 +321,14 @@ init flags =
                 |> List.head
                 |> Maybe.andThen (\key -> Dict.get key categories)
                 |> Maybe.andThen List.head
-                |> Maybe.withDefault "Framework"
+                |> Maybe.withDefault "Interactive fiction"
+
+        packageCount =
+            flags
+                |> List.filterMap (.tags >> List.head)
+                |> List.length
     in
-    ( { categories = categories, packages = packages, selectedSubcat = selection }, Cmd.none )
+    ( { categories = categories, packageCount = packageCount, packages = packages, selectedSubcat = selection }, Cmd.none )
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -351,8 +362,8 @@ scrollbarYEl attrs body =
             body
 
 
-navBar : Element msg
-navBar =
+navBar : Int -> Element msg
+navBar packageCount =
     row
         [ width fill
         , padding 10
@@ -360,8 +371,19 @@ navBar =
         , Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }
         , Border.color orange
         ]
-        [ link [ centerY ] { url = "https://korban.net/elm/catalog", label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" } }
-        , el [ padding 10, Font.color darkCharcoal, centerY, Font.size 26, headingTypeface ] <| text "Elm Package Catalog"
+        [ link [ centerY ]
+            { url = "https://korban.net/elm/catalog"
+            , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
+            }
+        , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26, headingTypeface ] <| text "Elm Package Catalog"
+        , el
+            [ paddingEach { left = 20, top = 7, right = 0, bottom = 0 }
+            , centerY
+            , Font.color lightCharcoal
+            , Font.size 16
+            ]
+          <|
+            text (String.fromInt packageCount ++ " packages")
         , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
         ]
 
@@ -577,7 +599,7 @@ view : Model -> Html Msg
 view model =
     layout [ height fill, baseTypeface ] <|
         column [ width fill, height fill, spacingXY 0 20, htmlAttribute <| Attr.style "flex-shrink" "1" ]
-            [ navBar
+            [ navBar model.packageCount
             , content model
             ]
 
