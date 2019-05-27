@@ -123,6 +123,9 @@ humaniseCat cat =
         "security" ->
             "Security"
 
+        "storage" ->
+            "Storage"
+
         "ui" ->
             "UI"
 
@@ -143,7 +146,7 @@ humaniseSubcat subcat =
             "Formats"
 
         "data/random" ->
-            "Random numbers"
+            "Randomness"
 
         "data/text" ->
             "Text processing"
@@ -166,6 +169,9 @@ humaniseSubcat subcat =
         "dev/parsing" ->
             "Parsing"
 
+        "dev/performance" ->
+            "Performance"
+
         "dev/testing" ->
             "Testing"
 
@@ -187,6 +193,9 @@ humaniseSubcat subcat =
         "networking/integrations" ->
             "Integrations"
 
+        "networking/websockets" ->
+            "WebSockets"
+
         "sciences/geography" ->
             "Geography"
 
@@ -198,6 +207,12 @@ humaniseSubcat subcat =
 
         "security/crypto" ->
             "Cryptography"
+
+        "storage/databases" ->
+            "Databases"
+
+        "storage/localstorage" ->
+            "LocalStorage"
 
         "ui/accessibility" ->
             "Accessibility"
@@ -222,6 +237,9 @@ humaniseSubcat subcat =
 
         "ui/input" ->
             "Input"
+
+        "ui/i18n" ->
+            "Internationalisation"
 
         "ui/maps" ->
             "Maps"
