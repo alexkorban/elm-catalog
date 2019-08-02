@@ -412,17 +412,19 @@ packageCard package =
         [ width <| maximum 800 fill
         , padding 10
         , spacingXY 0 10
-        , Border.width 2
-        , Border.rounded 4
+        , Border.width 1
+        , Border.rounded 3
         , Border.color lightBlue
-        , Border.shadow { offset = ( 2, 2 ), blur = 0.1, color = black, size = 2 }
+        , Border.shadow { offset = ( 4, 4 ), blur = 0.1, color = black, size = 2 }
         ]
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
-        , el [ height <| px 1, width fill, Border.width 1, Border.color lightGrey ] none
+        , el [ height <| px 1, width fill, Background.color lightGrey ] none
         , paragraph [ Font.size 18 ] <| [ text package.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
-            [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "GitHub" }
+            [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
+            , text " • "
+            , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
             , text " • "
             , text package.license
             ]
