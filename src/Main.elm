@@ -179,6 +179,9 @@ humaniseSubcat subcat =
         "dev/testing" ->
             "Testing"
 
+        "game-dev/code-organisation" ->
+            "Code organisation"
+
         "game-dev/input" ->
             "Input"
 
@@ -190,6 +193,9 @@ humaniseSubcat subcat =
 
         "game-dev/rendering" ->
             "Rendering"
+
+        "game-dev/tools" ->
+            "Tools"
 
         "networking/http" ->
             "HTTP"
@@ -347,7 +353,18 @@ init flags =
 
         packageCount =
             flags
-                |> List.filterMap (.tags >> List.head)
+                |> List.filterMap
+                    (\pkg ->
+                        case List.head pkg.tags of
+                            Just "exclude" ->
+                                Nothing
+
+                            Just _ ->
+                                Just 1
+
+                            Nothing ->
+                                Nothing
+                    )
                 |> List.length
     in
     ( { categories = categories, packageCount = packageCount, packages = packages, selectedSubcat = selection }, Cmd.none )
@@ -453,6 +470,7 @@ categoryList model =
                 el [ Font.color blue, pointer, onClick (SelectSubcat subcat) ] <| text <| humaniseSubcat subcat
     in
     Dict.toList model.categories
+        |> List.filter (\( cat, _ ) -> cat /= "exclude")
         |> List.map catEls
         |> column [ width fill, height fill, spacingXY 0 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
 
