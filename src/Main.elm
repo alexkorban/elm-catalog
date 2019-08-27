@@ -80,6 +80,10 @@ lightCharcoal =
     rgb255 136 138 133
 
 
+lightGreen =
+    rgb255 189 239 139
+
+
 lightGrey =
     rgb255 238 238 236
 
@@ -384,12 +388,13 @@ navBar : Int -> Element msg
 navBar packageCount =
     row
         [ width fill
+        , height <| px 70
         , padding 10
         , Background.color panelBgColor
         , Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }
         , Border.color orange
         ]
-        [ link [ centerY ]
+        [ link [ centerY, height <| px 50 ]
             { url = "https://korban.net/elm/catalog"
             , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
             }
@@ -412,14 +417,14 @@ packageCard package =
         [ width <| maximum 800 fill
         , padding 10
         , spacingXY 0 10
-        , Border.width 1
-        , Border.rounded 3
-        , Border.color lightBlue
-        , Border.shadow { offset = ( 4, 4 ), blur = 0.1, color = black, size = 2 }
+        , Border.widthEach { bottom = 0, top = 1, right = 0, left = 1 }
+        , Border.rounded 5
+        , Border.color grey
+        , Border.shadow { offset = ( 1, 1 ), blur = 2, color = grey, size = 0.3 }
         ]
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
-        , el [ height <| px 1, width fill, Background.color lightGrey ] none
+        , el [ height <| px 1, width fill, Background.color lightGreen ] none
         , paragraph [ Font.size 18 ] <| [ text package.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
             [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
@@ -461,9 +466,9 @@ content model =
                 |> Maybe.withDefault []
                 |> List.map packageCard
     in
-    row [ width fill, height fill, spacingXY 10 0, paddingXY 10 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+    row [ width fill, height fill, spacingXY 20 0, paddingXY 10 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
         [ el
-            [ width <| fillPortion 2
+            [ width <| fillPortion 1
             , height fill
             , scrollbarY
             , htmlAttribute <| Attr.style "flex-shrink" "1"
@@ -473,7 +478,7 @@ content model =
           <|
             categoryList model
         , column
-            [ width <| fillPortion 8
+            [ width <| fillPortion 3
             , height fill
             , spacingXY 0 10
             , alignTop
@@ -534,28 +539,37 @@ Pop in your email to get a sample chapter.
 
 bookFooter : Element Msg
 bookFooter =
+    let
+        p =
+            paragraph [ Font.size 18 ]
+    in
     row
         [ paddingXY 20 20
         , spacing 30
         , Border.widthEach { top = 2, bottom = 0, left = 0, right = 0 }
-        , Background.color <| panelBgColor
         , Border.color <| orange
         , width <| maximum 800 fill
         ]
-        [ column
-            [ spacing 20, width (fillPortion 6) ]
-            [ el [ htmlAttribute <| Attr.attribute "data-drip-attribute" "headline" ] <|
-                paragraph [ Font.size 24, headingTypeface, spacingXY 10 10 ]
-                    [ text "Looking to build non-trivial apps in Elm?\nThis book will help you." ]
-            , markdown bookFooterContent
+        [ textColumn
+            [ spacing 20, alignTop, width (fillPortion 3) ]
+            [ paragraph [ Font.size 24, headingTypeface, spacingXY 10 10 ]
+                [ text "Are you building non-trivial apps in Elm? This book will help you." ]
+            , p
+                [ text "My book "
+                , link [ Font.color blue ] { url = "https://korban.net/elm/book", label = text "Practical Elm" }
+                , text " skips the basics and gets right into explaining how to do practical stuff."
+                ]
+            , p
+                [ text "Things like building out the UI, communicating with servers, parsing JSON, structuring the application as it grows, testing, and so on. No handholding – the focus is on giving you more substance." ]
+            , p [ text "It's up to date with Elm 0.19." ]
+            , p [ text "Pop in your email to get a sample chapter." ]
+            , paragraph [ Font.size 16 ] [ text "(You will also get notifications of new posts along with other mailing list only freebies.)" ]
             ]
         , column
             [ paddingXY 20 10
             , spacing 5
             , height fill
-            , width (fillPortion 4)
-            , Border.widthEach { left = 2, right = 0, top = 0, bottom = 0 }
-            , Border.color <| lightGrey
+            , width (fillPortion 2)
             ]
             [ image [ width (px 156), height (px 250), centerX ] { src = "https://korban.net/img/elm-cover.jpg", description = "Book cover" }
             , el [ width fill ] <|
@@ -588,7 +602,7 @@ bookFooter =
                                         , div []
                                             []
                                         ]
-                                    , span []
+                                    , span [ Attr.style "font-weight" "bold" ]
                                         [ Html.text "Send me a sample chapter" ]
                                     ]
                                 ]
