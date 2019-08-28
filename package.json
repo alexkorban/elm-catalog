@@ -1,0 +1,16 @@
+{
+  "name": "catalog-update",
+  "version": "0.0.1",
+  "description": "Update packages",
+  "homepage": "https://korban.net/elm/",
+  "repository": "github:alexkorban/catalog",
+  "scripts": {},
+  "author": "Alex Korban (https://korban.net/elm)",
+  "license": "All rights reserved",
+  "dependencies": {
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^7.0.0",
+    "json-stable-stringify": "^1.0.1",
+    "ramda": "^0.26.1"
+  }
+}

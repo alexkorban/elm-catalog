@@ -10,6 +10,7 @@ import Element.Events exposing (..)
 import Element.Font as Font
 import Html exposing (Html, button, div, node, span, ul)
 import Html.Attributes as Attr
+import List.Extra as List
 import Markdown
 import Task
 
@@ -121,6 +122,9 @@ humaniseCat cat =
         "networking" ->
             "Networking"
 
+        "platforms" ->
+            "Platforms"
+
         "sciences" ->
             "Sciences"
 
@@ -133,6 +137,9 @@ humaniseCat cat =
         "ui" ->
             "UI"
 
+        "uncat" ->
+            "Uncategorised"
+
         s ->
             "UNKNOWN CATEGORY " ++ s
 
@@ -140,6 +147,9 @@ humaniseCat cat =
 humaniseSubcat : String -> String
 humaniseSubcat subcat =
     case subcat of
+        "art/generative" ->
+            "Generative"
+
         "art/interactive-fiction" ->
             "Interactive fiction"
 
@@ -171,13 +181,16 @@ humaniseSubcat subcat =
             "Prototyping"
 
         "dev/parsing" ->
-            "Parsing"
+            "Parsing/languages"
 
         "dev/performance" ->
             "Performance"
 
         "dev/testing" ->
             "Testing"
+
+        "dev/tools" ->
+            "Tools"
 
         "game-dev/code-organisation" ->
             "Code organisation"
@@ -205,6 +218,12 @@ humaniseSubcat subcat =
 
         "networking/websockets" ->
             "WebSockets"
+
+        "platforms/desktop" ->
+            "Desktop"
+
+        "platforms/serverless" ->
+            "Serverless"
 
         "sciences/geography" ->
             "Geography"
@@ -236,6 +255,9 @@ humaniseSubcat subcat =
         "ui/css" ->
             "CSS"
 
+        "ui/elm-ui" ->
+            "Elm-ui"
+
         "ui/frameworks" ->
             "Frameworks"
 
@@ -266,6 +288,9 @@ humaniseSubcat subcat =
         "ui/validation" ->
             "Validation"
 
+        "uncat/new" ->
+            "New"
+
         s ->
             "UNKNOWN SUBCATEGORY " ++ s
 
@@ -292,7 +317,7 @@ categorise packages =
             List.foldl (addTag package) categories package.tags
     in
     List.foldl categoriseTags Dict.empty packages
-        |> Dict.map (\_ p -> List.sortBy .name p)
+        |> Dict.map (\_ pkgs -> List.sortBy (.name >> String.toLower) pkgs)
 
 
 tagCategory : String -> String
@@ -349,7 +374,7 @@ init flags =
                 |> List.head
                 |> Maybe.andThen (\key -> Dict.get key categories)
                 |> Maybe.andThen List.head
-                |> Maybe.withDefault "Interactive fiction"
+                |> Maybe.withDefault "Generative"
 
         packageCount =
             flags
@@ -423,7 +448,7 @@ navBar packageCount =
             , Font.size 16
             ]
           <|
-            text (String.fromInt packageCount ++ " packages")
+            text (String.fromInt packageCount ++ " Elm 0.19 packages")
         , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
         ]
 
@@ -442,13 +467,15 @@ packageCard package =
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
         , el [ height <| px 1, width fill, Background.color lightGreen ] none
-        , paragraph [ Font.size 18 ] <| [ text package.summary ]
+        , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text package.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
             [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
             , text " • "
-            , text package.license
+            , text <| "Latest: " ++ (Maybe.withDefault "n/a" <| List.last package.versions)
+            , text " • "
+            , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
             ]
         ]
 
@@ -458,7 +485,7 @@ categoryList model =
     let
         catEls ( cat, subcats ) =
             column [ spacingXY 0 10, Font.size 18 ]
-                ([ el [ Font.size 22, Font.color darkCharcoal, headingTypeface ] <| text <| humaniseCat cat ]
+                ([ el [ paddingEach { top = 10, bottom = 0, left = 0, right = 0 }, Font.size 22, Font.color darkCharcoal, headingTypeface ] <| text <| humaniseCat cat ]
                     ++ List.map subcatEl (subcats |> List.sortBy humaniseSubcat)
                 )
 
@@ -484,7 +511,7 @@ content model =
                 |> Maybe.withDefault []
                 |> List.map packageCard
     in
-    row [ width fill, height fill, spacingXY 20 0, paddingXY 10 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+    row [ width fill, height fill, spacingXY 20 0, paddingXY 10 0, htmlAttribute <| Attr.style "flex-shrink" "1" ]
         [ el
             [ width <| fillPortion 1
             , height fill
@@ -498,6 +525,7 @@ content model =
         , column
             [ width <| fillPortion 3
             , height fill
+            , paddingXY 0 20
             , spacingXY 0 10
             , alignTop
             , scrollbarY
@@ -505,7 +533,7 @@ content model =
             ]
             (packageEls
                 ++ [ el [ height <| px 30 ] none
-                   , paragraph [ Font.size 18 ]
+                   , paragraph [ Font.size 16 ]
                         [ text "Found a mistake or a missing package?"
                         , text " Drop me a line "
                         , link [ Font.color blue ] { url = "https://korban.net/elm/contact", label = text "by email" }
@@ -640,13 +668,13 @@ baseTypeface =
 
 headingTypeface : Element.Attribute msg
 headingTypeface =
-    Font.family [ Font.typeface "Patua One", Font.typeface "Helvetica", Font.sansSerif ]
+    Font.family [ Font.typeface "Helvetica Neue", Font.typeface "Helvetica", Font.sansSerif ]
 
 
 view : Model -> Html Msg
 view model =
     layout [ height fill, baseTypeface ] <|
-        column [ width fill, height fill, spacingXY 0 20, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+        column [ width fill, height fill, htmlAttribute <| Attr.style "flex-shrink" "1" ]
             [ navBar model.packageCount
             , content model
             ]
