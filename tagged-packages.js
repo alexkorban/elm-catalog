@@ -398,7 +398,8 @@ window.packages =
         "name": "mdgriffith/elm-ui",
         "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
         "tags": [
-            "ui/frameworks", "ui/elm-ui"
+            "ui/frameworks",
+            "ui/elm-ui"
         ],
         "versions": [
             "1.1.5"
@@ -1063,7 +1064,8 @@ window.packages =
         "name": "jxxcarlson/math-markdown",
         "summary": "Experimental markdown parser that also handles math!",
         "tags": [
-            "data/formats", "sciences/maths"
+            "data/formats",
+            "sciences/maths"
         ],
         "versions": [
             "1.0.4",
@@ -3123,7 +3125,8 @@ window.packages =
         "name": "allo-media/elm-daterange-picker",
         "summary": "A date range picker.",
         "tags": [
-            "ui/patterns", "data/time"
+            "ui/patterns",
+            "data/time"
         ],
         "versions": [
             "1.0.0",
@@ -6961,7 +6964,8 @@ window.packages =
         "name": "lucamug/style-framework",
         "summary": "A style framework built on top of elm-ui.",
         "tags": [
-            "ui/frameworks", "ui/elm-ui"
+            "ui/frameworks",
+            "ui/elm-ui"
         ],
         "versions": [
             "1.1.0"
@@ -7186,7 +7190,8 @@ window.packages =
         "name": "miniBill/elm-codec",
         "summary": "Build JSON encoders and decoders with minimal boilerplate",
         "tags": [
-            "data/formats", "dev/code-organisation"
+            "data/formats",
+            "dev/code-organisation"
         ],
         "versions": [
             "1.1.0"
@@ -7951,7 +7956,8 @@ window.packages =
         "name": "r-k-b/elm-interval",
         "summary": "Intervals for Elm. Handles ∩, -, ∪ with any combo of open / closed bounds.",
         "tags": [
-            "dev/algorithms", "sciences/maths"
+            "dev/algorithms",
+            "sciences/maths"
         ],
         "versions": [
             "1.2.0",
@@ -9318,7 +9324,8 @@ window.packages =
         "name": "webbhuset/elm-actor-model-elm-ui",
         "summary": "Use Elm UI in webbhuset/elm-actor-model ",
         "tags": [
-            "dev/code-organisation", "ui/elm-ui"
+            "dev/code-organisation",
+            "ui/elm-ui"
         ],
         "versions": [
             "1.0.2"
