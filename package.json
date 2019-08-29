@@ -1,10 +1,9 @@
 {
-  "name": "catalog-update",
+  "name": "elm-package-catalog",
   "version": "0.0.1",
   "description": "Update packages",
   "homepage": "https://korban.net/elm/",
   "repository": "github:alexkorban/catalog",
-  "scripts": {},
   "author": "Alex Korban (https://korban.net/elm)",
   "license": "All rights reserved",
   "dependencies": {
@@ -12,5 +11,8 @@
     "fs-extra": "^7.0.0",
     "json-stable-stringify": "^1.0.1",
     "ramda": "^0.26.1"
+  },
+  "scripts": {
+    "build": "elm make src/Main.elm --output output/elm-catalog.js && cp tagged-packages.js output/"
   }
 }
