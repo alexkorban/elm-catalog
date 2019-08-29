@@ -10,30 +10,48 @@ import Element.Events exposing (..)
 import Element.Font as Font
 import Html exposing (Html, button, div, node, span, ul)
 import Html.Attributes as Attr
+import Http
 import List.Extra as List
 import Markdown
 import Task
 
 
 type Msg
-    = NoOp
-    | SelectSubcat String
+    = RuntimeDidSomethingIrrelevant
+    | RuntimeReceivedReadme PackageName (Result Http.Error Markdown)
+    | UserClickedReadmeButton PackageName
+    | UserSelectedSubcat String
+
+
+type alias Markdown =
+    String
+
+
+type alias PackageName =
+    String
 
 
 type alias Model =
     { categories : Categories
     , packageCount : Int
     , packages : Packages
+    , readmes : Readmes
     , selectedSubcat : String
     }
 
 
 type alias Package =
-    { name : String
+    { name : PackageName
     , summary : String
     , license : String
     , versions : List String
     , tags : List String
+    }
+
+
+type alias Readme =
+    { isOpen : Bool
+    , text : Markdown
     }
 
 
@@ -43,6 +61,10 @@ type alias Categories =
 
 type alias Packages =
     Dict String (List Package)
+
+
+type alias Readmes =
+    Dict PackageName Readme
 
 
 type alias Flags =
@@ -343,7 +365,7 @@ extractCategories categories =
 
         addSubcat tag taxonomy =
             if Dict.member (tagCategory tag) taxonomy then
-                Dict.update (tagCategory tag) (appendSubcat <| tag) taxonomy
+                Dict.update (tagCategory tag) (appendSubcat tag) taxonomy
 
             else
                 Dict.insert (tagCategory tag) [ tag ] taxonomy
@@ -351,9 +373,14 @@ extractCategories categories =
     List.foldl addSubcat Dict.empty <| Dict.keys categories
 
 
+resetPackageListViewPort : Cmd Msg
+resetPackageListViewPort =
+    Task.attempt (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewportOf "packageList" 0 0
+
+
 resetViewport : Cmd Msg
 resetViewport =
-    Task.perform (\_ -> NoOp) (Browser.Dom.setViewport 0 0)
+    Task.perform (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewport 0 0
 
 
 
@@ -392,17 +419,50 @@ init flags =
                     )
                 |> List.length
     in
-    ( { categories = categories, packageCount = packageCount, packages = packages, selectedSubcat = selection }, Cmd.none )
+    ( { categories = categories
+      , packageCount = packageCount
+      , packages = packages
+      , readmes = Dict.empty
+      , selectedSubcat = selection
+      }
+    , Cmd.none
+    )
+
+
+getReadme : PackageName -> Cmd Msg
+getReadme packageName =
+    Http.get
+        { url = "https://raw.githubusercontent.com/" ++ packageName ++ "/master/README.md"
+        , expect = Http.expectString <| RuntimeReceivedReadme packageName
+        }
 
 
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
-        NoOp ->
+        RuntimeDidSomethingIrrelevant ->
             ( model, Cmd.none )
 
-        SelectSubcat subcat ->
-            ( { model | selectedSubcat = subcat }, resetViewport )
+        RuntimeReceivedReadme packageName (Ok readmeText) ->
+            ( { model | readmes = Dict.insert packageName { isOpen = True, text = readmeText } model.readmes }, Cmd.none )
+
+        RuntimeReceivedReadme packageName (Err err) ->
+            let
+                e =
+                    Debug.log "Readme error: " <| Debug.toString err
+            in
+            ( model, Cmd.none )
+
+        UserClickedReadmeButton packageName ->
+            case Dict.get packageName model.readmes of
+                Just readme ->
+                    ( { model | readmes = Dict.update packageName (Maybe.map <| always { readme | isOpen = not readme.isOpen }) model.readmes }, Cmd.none )
+
+                Nothing ->
+                    ( model, getReadme packageName )
+
+        UserSelectedSubcat subcat ->
+            ( { model | selectedSubcat = subcat }, Cmd.batch [ resetViewport, resetPackageListViewPort ] )
 
 
 subscriptions : Model -> Sub msg
@@ -453,8 +513,12 @@ navBar packageCount =
         ]
 
 
-packageCard : Package -> Element Msg
-packageCard package =
+packageCard : Readmes -> Package -> Element Msg
+packageCard readmes package =
+    let
+        readme =
+            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get package.name readmes
+    in
     column
         [ width <| maximum 800 fill
         , padding 10
@@ -476,7 +540,23 @@ packageCard package =
             , text <| "Latest: " ++ (Maybe.withDefault "n/a" <| List.last package.versions)
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
+            , text " • "
+            , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton package.name, pointer ] <|
+                text
+                    ("README "
+                        ++ (if readme.isOpen then
+                                "▲"
+
+                            else
+                                "▽"
+                           )
+                    )
             ]
+        , if readme.isOpen then
+            markdown readme.text
+
+          else
+            none
         ]
 
 
@@ -494,7 +574,7 @@ categoryList model =
                 el [ Font.color green ] <| text <| humaniseSubcat subcat
 
             else
-                el [ Font.color blue, pointer, onClick (SelectSubcat subcat) ] <| text <| humaniseSubcat subcat
+                el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humaniseSubcat subcat
     in
     Dict.toList model.categories
         |> List.filter (\( cat, _ ) -> cat /= "exclude")
@@ -509,7 +589,7 @@ content model =
             model.packages
                 |> Dict.get model.selectedSubcat
                 |> Maybe.withDefault []
-                |> List.map packageCard
+                |> List.map (packageCard model.readmes)
     in
     row [ width fill, height fill, spacingXY 20 0, paddingXY 10 0, htmlAttribute <| Attr.style "flex-shrink" "1" ]
         [ el
@@ -530,6 +610,7 @@ content model =
             , alignTop
             , scrollbarY
             , htmlAttribute <| Attr.style "flex-shrink" "1"
+            , htmlAttribute <| Attr.id "packageList"
             ]
             (packageEls
                 ++ [ el [ height <| px 30 ] none
@@ -559,28 +640,17 @@ markdown s =
             , smartypants = True
             }
     in
-    el [ width (fill |> maximum 600), Font.size 18 ] <|
+    el
+        [ width <| maximum 800 fill
+        , Font.size 16
+        , Border.widthEach { top = 1, bottom = 0, left = 0, right = 0 }
+        , Border.color lightGrey
+        ]
+    <|
         Element.html <|
             Markdown.toHtmlWith mdOptions
-                [ Attr.style "white-space" "normal", Attr.style "line-height" "1.5" ]
+                [ Attr.class "markdown" ]
                 s
-
-
-bookFooterContent =
-    """
-My book, [Practical Elm for a Busy Developer](https://korban.net/elm/book), skips the basics and gets
-right into explaining how to do practical stuff. 
-
-Things like building out the UI, communicating with servers, parsing JSON, structuring 
-the application as it grows, testing, and so on. No handholding &mdash; the focus is on 
-giving you more substance.
-
-It's up to date with Elm 0.19.
-
-Pop in your email to get a sample chapter.
-
-(You will also get notifications of new posts along with other mailing list only freebies.)
-    """
 
 
 bookFooter : Element Msg
@@ -673,7 +743,7 @@ headingTypeface =
 
 view : Model -> Html Msg
 view model =
-    layout [ height fill, baseTypeface ] <|
+    layout [ height fill, baseTypeface, htmlAttribute <| Attr.style "flex-shrink" "1" ] <|
         column [ width fill, height fill, htmlAttribute <| Attr.style "flex-shrink" "1" ]
             [ navBar model.packageCount
             , content model
