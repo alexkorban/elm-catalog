@@ -13,6 +13,6 @@
     "ramda": "^0.26.1"
   },
   "scripts": {
-    "netlify-build": "npm install elm && node_modules/.bin/elm make src/Main.elm --output output/elm-catalog.js && cp tagged-packages.js output/"
+    "netlify-build": "npm install elm && node_modules/.bin/elm make src/Main.elm --output output/elm-catalog.js && node update.js && cp tagged-packages.js output/"
   }
 }
