@@ -231,7 +231,7 @@ window.packages =
             "game-dev/tools"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
@@ -996,6 +996,17 @@ window.packages =
             "1.0.3",
             "2.0.1",
             "3.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jxxcarlson/elm-markdown",
+        "summary": "Experimental markdown parser that also handles math!",
+        "tags": [
+            "data/formats", "dev/parsing"
+        ],
+        "versions": [
+            "1.0.5"
         ]
     },
     {
@@ -2281,9 +2292,9 @@ window.packages =
             "networking/http"
         ],
         "versions": [
-            "3.0.0",
             "4.0.1",
-            "5.0.2"
+            "5.0.2",
+            "6.0.0"
         ]
     },
     {
@@ -2330,7 +2341,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.1.1"
+            "7.1.2"
         ]
     },
     {
@@ -2491,9 +2502,9 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "9.3.0",
             "10.1.0",
-            "11.2.0"
+            "11.2.0",
+            "12.0.0"
         ]
     },
     {
@@ -4612,7 +4623,8 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.1",
+            "2.0.0"
         ]
     },
     {
@@ -6137,12 +6149,45 @@ window.packages =
         "name": "jfmengels/elm-lint",
         "summary": "A linter for Elm. Get your code from correct to better.",
         "tags": [
-            "exclude"
+            "dev/tools"
         ],
         "versions": [
-            "1.0.0",
             "2.0.1",
-            "3.0.0"
+            "3.0.0",
+            "4.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-lint-reporter",
+        "summary": "Formats the result of `elm-lint` in a nice human-readable way",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/lint-debug",
+        "summary": "Lint plugin for `elm-lint` that provides rules to detect debug code.",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/lint-unused",
+        "summary": "Lint plugin for `elm-lint` that detects unused code",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -6549,6 +6594,17 @@ window.packages =
         "versions": [
             "1.0.1",
             "2.1.3"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jweir/charter",
+        "summary": "Generate inline charts and sparklines",
+        "tags": [
+            "data/visualisation"
+        ],
+        "versions": [
+            "1.1.0"
         ]
     },
     {
@@ -7400,9 +7456,9 @@ window.packages =
             "ui/colors"
         ],
         "versions": [
-            "9.0.0",
             "10.1.1",
-            "11.0.2"
+            "11.0.2",
+            "12.1.1"
         ]
     },
     {
