@@ -397,11 +397,9 @@ init flags =
             extractCategories packages
 
         selection =
-            Dict.keys categories
-                |> List.head
-                |> Maybe.andThen (\key -> Dict.get key categories)
+            Dict.get "dev" categories
                 |> Maybe.andThen List.head
-                |> Maybe.withDefault "Generative"
+                |> Maybe.withDefault "Algorithms/data structures"
 
         packageCount =
             flags
