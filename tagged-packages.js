@@ -1003,10 +1003,11 @@ window.packages =
         "name": "jxxcarlson/elm-markdown",
         "summary": "Experimental markdown parser that also handles math!",
         "tags": [
-            "data/formats", "dev/parsing"
+            "data/formats",
+            "dev/parsing"
         ],
         "versions": [
-            "1.0.5"
+            "1.0.8"
         ]
     },
     {
@@ -3605,7 +3606,8 @@ window.packages =
         ],
         "versions": [
             "1.1.0",
-            "2.3.2"
+            "2.3.2",
+            "3.0.0"
         ]
     },
     {
@@ -4624,7 +4626,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.0"
+            "2.0.1"
         ]
     },
     {
@@ -5674,7 +5676,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.0.1"
+            "2.1.1"
         ]
     },
     {
@@ -6604,7 +6606,7 @@ window.packages =
             "data/visualisation"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.2"
         ]
     },
     {
@@ -7456,9 +7458,9 @@ window.packages =
             "ui/colors"
         ],
         "versions": [
-            "10.1.1",
             "11.0.2",
-            "12.1.1"
+            "12.1.2",
+            "13.0.0"
         ]
     },
     {
@@ -8369,6 +8371,17 @@ window.packages =
         "summary": "format time in elm with ease",
         "tags": [
             "data/time"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "savardd/elm-time-travel",
+        "summary": "An experimental debugger for Elm",
+        "tags": [
+            "dev/tools"
         ],
         "versions": [
             "1.0.0"
