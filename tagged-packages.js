@@ -736,7 +736,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.11"
+            "2.0.12"
         ]
     },
     {
@@ -1007,7 +1007,7 @@ window.packages =
             "dev/parsing"
         ],
         "versions": [
-            "1.0.8"
+            "1.0.10"
         ]
     },
     {
@@ -1645,6 +1645,17 @@ window.packages =
         "versions": [
             "1.2.1",
             "2.0.2"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "FabienHenon/remote-resource",
+        "summary": "Handle foreground and background resources",
+        "tags": [
+            "dev/code-organisation", "networking/http"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -2342,7 +2353,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.1.2"
+            "7.1.3"
         ]
     },
     {
@@ -2503,9 +2514,9 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "10.1.0",
-            "11.2.0",
-            "12.0.0"
+            "12.0.0",
+            "13.0.0",
+            "14.0.0"
         ]
     },
     {
@@ -2805,6 +2816,17 @@ window.packages =
         "versions": [
             "1.0.2",
             "2.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "abinayasudhir/elm-select",
+        "summary": "A selection input with auto-completion",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.2.1"
         ]
     },
     {
@@ -3607,7 +3629,7 @@ window.packages =
         "versions": [
             "1.1.0",
             "2.3.2",
-            "3.0.0"
+            "3.1.0"
         ]
     },
     {
@@ -3920,7 +3942,7 @@ window.packages =
             "security/crypto"
         ],
         "versions": [
-            "1.0.8"
+            "1.0.9"
         ]
     },
     {
@@ -4044,6 +4066,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.1.0"
+        ]
+    },
+    {
+        "license": "Apache-2.0",
+        "name": "bowbahdoe/lime-reset",
+        "summary": "Consistent, cross-browser tags, powered by elm-css.",
+        "tags": [
+            "ui/css"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -4173,6 +4206,17 @@ window.packages =
         ],
         "versions": [
             "1.0.1"
+        ]
+    },
+    {
+        "license": "ISC",
+        "name": "carpe/elm-data",
+        "summary": "Data Persistence library for Elm applications",
+        "tags": [
+            "networking/http"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -4308,6 +4352,18 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "chrilves/elm-io",
+        "summary": "Monadic interface for commands and The Elm Architecture",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.2.1",
+            "2.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "clojj/elm-css-grid",
         "summary": "Provides CSS Grid layout",
@@ -4341,6 +4397,17 @@ window.packages =
             "2.0.1",
             "3.0.3",
             "4.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "coinop-logan/elm-format-number",
+        "summary": "Format numbers as pretty strings",
+        "tags": [
+            "data/text"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -4388,7 +4455,7 @@ window.packages =
         "versions": [
             "4.0.2",
             "5.0.5",
-            "6.1.0"
+            "6.2.0"
         ]
     },
     {
@@ -4697,7 +4764,8 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.3",
+            "2.0.0"
         ]
     },
     {
@@ -6376,28 +6444,17 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "2.3.0",
-            "3.1.2",
-            "4.1.0"
+            "4.1.0",
+            "5.0.0",
+            "6.0.1"
         ]
     },
     {
         "license": "BSD-3-Clause",
         "name": "jonathanfishbein1/elm-equal",
-        "summary": "An equal package",
+        "summary": "DEPRECATED An equal package",
         "tags": [
             "dev/algorithms"
-        ],
-        "versions": [
-            "1.0.1"
-        ]
-    },
-    {
-        "license": "BSD-3-Clause",
-        "name": "jonathanfishbein1/elm-monoid",
-        "summary": "A pack of monoids in the category of endofunctors",
-        "tags": [
-            "exclude"
         ],
         "versions": [
             "1.0.2"
@@ -6405,13 +6462,37 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
-        "name": "jonathanfishbein1/elm-semigroup",
-        "summary": "A semigroup package",
+        "name": "jonathanfishbein1/elm-field",
+        "summary": "Mathematical Field ",
         "tags": [
             "sciences/maths"
         ],
         "versions": [
-            "1.0.0"
+            "2.0.0",
+            "3.0.0",
+            "4.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jonathanfishbein1/elm-monoid",
+        "summary": "DEPRECATED A pack of monoids in the category of endofunctors",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.3"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jonathanfishbein1/elm-semigroup",
+        "summary": "DEPRECATED A semigroup package",
+        "tags": [
+            "sciences/maths"
+        ],
+        "versions": [
+            "1.0.2"
         ]
     },
     {
@@ -7252,7 +7333,7 @@ window.packages =
             "dev/code-organisation"
         ],
         "versions": [
-            "1.1.0"
+            "1.2.0"
         ]
     },
     {
@@ -7458,9 +7539,9 @@ window.packages =
             "ui/colors"
         ],
         "versions": [
-            "11.0.2",
-            "12.1.2",
-            "13.0.0"
+            "14.0.0",
+            "15.0.0",
+            "16.0.0"
         ]
     },
     {
@@ -8384,7 +8465,7 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -8776,7 +8857,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.1.3"
+            "2.2.0"
         ]
     },
     {
@@ -9173,9 +9254,9 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "3.0.0",
             "4.0.1",
-            "5.0.0"
+            "5.0.0",
+            "6.0.0"
         ]
     },
     {
