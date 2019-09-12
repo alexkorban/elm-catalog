@@ -1007,7 +1007,8 @@ window.packages =
             "dev/parsing"
         ],
         "versions": [
-            "1.0.10"
+            "1.0.10",
+            "2.0.0"
         ]
     },
     {
@@ -1652,7 +1653,8 @@ window.packages =
         "name": "FabienHenon/remote-resource",
         "summary": "Handle foreground and background resources",
         "tags": [
-            "dev/code-organisation", "networking/http"
+            "dev/code-organisation",
+            "networking/http"
         ],
         "versions": [
             "1.0.0"
@@ -4139,6 +4141,28 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "calions-app/jsonapi-http",
+        "summary": "Make HTTP requests with jsonapi decoding/encoding in Elm",
+        "tags": [
+            "networking/http"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "calions-app/remote-resource",
+        "summary": "Handle foreground and background resources",
+        "tags": [
+            "networking/http"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "camjc/elm-chart",
         "summary": "An SVG chart library",
         "tags": [
@@ -5772,6 +5796,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "glasserc/elm-requested",
+        "summary": "A utility type for tracking requests",
+        "tags": [
+            "networking/http", "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "goilluminate/elm-fancy-daterangepicker",
         "summary": "A fancy daterangepicker in elm.",
         "tags": [
@@ -6446,7 +6481,7 @@ window.packages =
         "versions": [
             "4.1.0",
             "5.0.0",
-            "6.0.1"
+            "6.1.0"
         ]
     },
     {
@@ -6470,7 +6505,7 @@ window.packages =
         "versions": [
             "2.0.0",
             "3.0.0",
-            "4.0.0"
+            "4.0.1"
         ]
     },
     {
@@ -6653,7 +6688,7 @@ window.packages =
         "versions": [
             "1.1.0",
             "2.0.2",
-            "3.1.2"
+            "3.2.0"
         ]
     },
     {
@@ -6676,7 +6711,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.1.3"
+            "2.1.4"
         ]
     },
     {
@@ -7541,7 +7576,7 @@ window.packages =
         "versions": [
             "14.0.0",
             "15.0.0",
-            "16.0.0"
+            "16.0.1"
         ]
     },
     {
@@ -7660,7 +7695,8 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.0.0"
+            "2.0.0",
+            "3.0.0"
         ]
     },
     {
@@ -9267,7 +9303,8 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.0",
+            "2.1.0"
         ]
     },
     {
@@ -9278,7 +9315,7 @@ window.packages =
             "dev/code-organisation"
         ],
         "versions": [
-            "1.1.1"
+            "1.2.0"
         ]
     },
     {
