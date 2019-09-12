@@ -685,7 +685,7 @@ bookFooter =
             , height fill
             , width (fillPortion 2)
             ]
-            [ image [ width (px 156), height (px 250), centerX ] { src = "https://korban.net/img/elm-cover.jpg", description = "Book cover" }
+            [ image [ width (px 200), centerX ] { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Book cover" }
             , el [ width fill ] <|
                 html <|
                     Html.form
