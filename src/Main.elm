@@ -445,10 +445,6 @@ update msg model =
             ( { model | readmes = Dict.insert packageName { isOpen = True, text = readmeText } model.readmes }, Cmd.none )
 
         RuntimeReceivedReadme packageName (Err err) ->
-            let
-                e =
-                    Debug.log "Readme error: " <| Debug.toString err
-            in
             ( model, Cmd.none )
 
         UserClickedReadmeButton packageName ->
