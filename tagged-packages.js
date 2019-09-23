@@ -736,7 +736,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.12"
+            "2.0.13"
         ]
     },
     {
@@ -843,10 +843,11 @@ window.packages =
         "name": "ianmackenzie/elm-3d-camera",
         "summary": "Camera type for 3D rendering and projection",
         "tags": [
-            "exclude"
+            "ui/rendering", "game-dev/rendering"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.0",
+            "2.0.0"
         ]
     },
     {
@@ -868,7 +869,8 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "1.2.1"
+            "1.2.1",
+            "2.0.0"
         ]
     },
     {
@@ -879,7 +881,8 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.2",
+            "2.0.0"
         ]
     },
     {
@@ -901,7 +904,8 @@ window.packages =
             "ui/svg"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.2",
+            "2.0.0"
         ]
     },
     {
@@ -1008,7 +1012,7 @@ window.packages =
         ],
         "versions": [
             "1.0.10",
-            "2.0.0"
+            "2.2.2"
         ]
     },
     {
@@ -1056,8 +1060,9 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0",
-            "2.1.2"
+            "2.1.3",
+            "3.0.0",
+            "4.0.0"
         ]
     },
     {
@@ -1958,7 +1963,7 @@ window.packages =
         "versions": [
             "3.0.1",
             "4.3.0",
-            "5.0.0"
+            "5.0.1"
         ]
     },
     {
@@ -2355,7 +2360,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.1.3"
+            "7.2.1"
         ]
     },
     {
@@ -2544,6 +2549,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.1.1"
+        ]
+    },
+    {
+        "license": "GPL-3.0",
+        "name": "SiriusStarr/elm-password-strength",
+        "summary": "Provides libraries for calculating password security and providing feedback.",
+        "tags": [
+            "security/other"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -2792,7 +2808,7 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -3217,6 +3233,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "andre-dietrich/elm-mapbox",
+        "summary": "Fork form gampleman/elm-mapbox (4.1.0) ... An advanced mapping library",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "andre-dietrich/elm-random-regex",
         "summary": "Generate random strings from regular expressions.",
         "tags": [
@@ -3572,7 +3599,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.1.0"
+            "2.2.0"
         ]
     },
     {
@@ -4141,6 +4168,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "calions-app/app-object",
+        "summary": "Add model and cmd scoped to your entire application",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "calions-app/jsonapi-http",
         "summary": "Make HTTP requests with jsonapi decoding/encoding in Elm",
         "tags": [
@@ -4477,9 +4515,9 @@ window.packages =
             "data/text"
         ],
         "versions": [
-            "4.0.2",
             "5.0.5",
-            "6.2.0"
+            "6.2.0",
+            "7.0.0"
         ]
     },
     {
@@ -4665,6 +4703,28 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "dillonkearns/elm-oembed",
+        "summary": "Embed Tweets, YouTube videos, Ellies, and more with a Custom Element.",
+        "tags": [
+            "ui/html", "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "dillonkearns/elm-pages",
+        "summary": "A statically typed site generator.",
+        "tags": [
+            "platforms/static-sites"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "dmy/elm-imf-date-time",
         "summary": "RFC5322, RFC2822, RFC822 - Internet Message Format date & time strings",
         "tags": [
@@ -4717,7 +4777,8 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.1"
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -4789,7 +4850,7 @@ window.packages =
         ],
         "versions": [
             "1.0.3",
-            "2.0.0"
+            "2.1.0"
         ]
     },
     {
@@ -5390,6 +5451,17 @@ window.packages =
         ]
     },
     {
+        "license": "MPL-2.0",
+        "name": "folkertdev/elm-iris",
+        "summary": "The iris flower data set",
+        "tags": [
+            "sciences/statistics"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "folkertdev/elm-paragraph",
         "summary": "Paragraph formatting in elm",
@@ -5799,7 +5871,8 @@ window.packages =
         "name": "glasserc/elm-requested",
         "summary": "A utility type for tracking requests",
         "tags": [
-            "networking/http", "dev/code-organisation"
+            "networking/http",
+            "dev/code-organisation"
         ],
         "versions": [
             "1.0.0"
@@ -6251,15 +6324,26 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "jaredramirez/elm-s3",
+        "summary": "Upload files to AWS S3 with Elm!",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.3"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "jfmengels/elm-lint",
-        "summary": "A linter for Elm. Get your code from correct to better.",
+        "summary": "An Elm source code linter, to add additional guarantees to your project.",
         "tags": [
             "dev/tools"
         ],
         "versions": [
             "2.0.1",
             "3.0.0",
-            "4.0.0"
+            "4.1.1"
         ]
     },
     {
@@ -6270,7 +6354,7 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -6292,7 +6376,7 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -6538,9 +6622,9 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "4.0.0",
             "5.1.0",
-            "6.0.0"
+            "6.0.0",
+            "7.0.0"
         ]
     },
     {
@@ -6669,6 +6753,28 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "justgook/elm-image",
+        "summary": "A library for building runtime images in elm",
+        "tags": [
+            "game-dev/rendering", "ui/rendering"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "justgook/elm-tiled",
+        "summary": "A library for building decoders for Tiled levels.",
+        "tags": [
+            "data/formats", "game-dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "justgook/elm-webdriver",
         "summary": "Webdriver",
         "tags": [
@@ -6716,6 +6822,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "justinmimbs/tzif",
+        "summary": "Decode TZif files into Time.Zone values",
+        "tags": [
+            "data/time", "data/formats"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "jweir/charter",
         "summary": "Generate inline charts and sparklines",
         "tags": [
@@ -6733,9 +6850,9 @@ window.packages =
             "data/time"
         ],
         "versions": [
-            "4.0.3",
             "5.0.2",
-            "6.0.1"
+            "6.0.1",
+            "7.0.0"
         ]
     },
     {
@@ -7284,6 +7401,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "mercurymedia/elm-datetime-picker",
+        "summary": "a datetime picker component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "mgold/elm-animation",
         "summary": "Easy but powerful animation of values over time",
@@ -7357,6 +7485,17 @@ window.packages =
         "versions": [
             "1.0.1",
             "2.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "miniBill/date-format-languages",
+        "summary": "Companion package for ryannhg/date-format. This package contains the languages.",
+        "tags": [
+            "data/time"
+        ],
+        "versions": [
+            "1.2.1"
         ]
     },
     {
@@ -7851,7 +7990,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.1.0"
+            "2.3.0"
         ]
     },
     {
@@ -7899,7 +8038,7 @@ window.packages =
         "versions": [
             "6.1.0",
             "7.1.0",
-            "8.1.3"
+            "8.2.0"
         ]
     },
     {
@@ -8501,7 +8640,8 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.1",
+            "2.0.0"
         ]
     },
     {
@@ -8538,7 +8678,7 @@ window.packages =
         "versions": [
             "5.3.0",
             "6.0.0",
-            "7.0.0"
+            "7.1.0"
         ]
     },
     {
@@ -8893,7 +9033,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.2.0"
+            "2.2.2"
         ]
     },
     {
@@ -8938,7 +9078,7 @@ window.packages =
             "dev/parsing"
         ],
         "versions": [
-            "1.0.0"
+            "1.2.1"
         ]
     },
     {
@@ -9468,7 +9608,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.1",
-            "3.0.0"
+            "3.0.1"
         ]
     },
     {

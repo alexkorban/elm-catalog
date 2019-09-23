@@ -247,6 +247,9 @@ humaniseSubcat subcat =
         "platforms/serverless" ->
             "Serverless"
 
+        "platforms/static-sites" ->
+            "Static sites"
+
         "sciences/geography" ->
             "Geography"
 
@@ -256,8 +259,14 @@ humaniseSubcat subcat =
         "sciences/physics" ->
             "Physics"
 
+        "sciences/statistics" ->
+            "Statistics"
+
         "security/crypto" ->
             "Cryptography"
+
+        "security/other" ->
+            "Other"
 
         "storage/databases" ->
             "Databases"
