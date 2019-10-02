@@ -466,7 +466,7 @@ window.packages =
             "ui/svg"
         ],
         "versions": [
-            "1.3.0"
+            "1.3.1"
         ]
     },
     {
@@ -477,7 +477,7 @@ window.packages =
             "data/text"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
@@ -489,7 +489,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.1.2"
+            "2.1.3"
         ]
     },
     {
@@ -843,7 +843,8 @@ window.packages =
         "name": "ianmackenzie/elm-3d-camera",
         "summary": "Camera type for 3D rendering and projection",
         "tags": [
-            "ui/rendering", "game-dev/rendering"
+            "ui/rendering",
+            "game-dev/rendering"
         ],
         "versions": [
             "1.1.0",
@@ -1012,7 +1013,7 @@ window.packages =
         ],
         "versions": [
             "1.0.10",
-            "2.2.2"
+            "2.2.4"
         ]
     },
     {
@@ -1234,7 +1235,7 @@ window.packages =
             "data/time"
         ],
         "versions": [
-            "1.2.2"
+            "1.2.3"
         ]
     },
     {
@@ -1487,6 +1488,17 @@ window.packages =
         ]
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "ChristophP/elm-mark",
+        "summary": "Search term highlighting for Elm apps",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.3"
+        ]
+    },
+    {
         "license": "MIT",
         "name": "CoderDennis/elm-time-format",
         "summary": "Formatting and Internationalization of Time.Posix",
@@ -1613,7 +1625,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.0.0"
+            "3.1.0"
         ]
     },
     {
@@ -1813,7 +1825,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.0.0"
+            "3.0.1"
         ]
     },
     {
@@ -2360,7 +2372,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.2.1"
+            "7.3.0"
         ]
     },
     {
@@ -2395,7 +2407,7 @@ window.packages =
             "game-dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.1.0"
         ]
     },
     {
@@ -2439,6 +2451,17 @@ window.packages =
         "summary": "Encode and decode JSON values",
         "tags": [
             "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "PaackEng/elm-ui-dropdown",
+        "summary": "An Elm UI dropdown component",
+        "tags": [
+            "ui/elm-ui"
         ],
         "versions": [
             "1.0.0"
@@ -2521,9 +2544,9 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "12.0.0",
             "13.0.0",
-            "14.0.0"
+            "14.2.0",
+            "15.0.1"
         ]
     },
     {
@@ -2987,6 +3010,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "aforemny/material-components-web-elm",
+        "summary": "Material Components for Elm",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "ahstro/elm-bulma-classes",
         "summary": "Bulma CSS classes",
@@ -3239,7 +3273,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.0.0"
+            "1.1.0"
         ]
     },
     {
@@ -3261,7 +3295,8 @@ window.packages =
             "ui/svg"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3",
+            "2.0.0"
         ]
     },
     {
@@ -3274,7 +3309,7 @@ window.packages =
         "versions": [
             "1.0.1",
             "2.0.0",
-            "3.1.1"
+            "3.2.0"
         ]
     },
     {
@@ -3937,6 +3972,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "billstclair/elm-mastodon-websocket",
+        "summary": "Elm client for the websocket API of the Mastodon social network.",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -4706,7 +4752,8 @@ window.packages =
         "name": "dillonkearns/elm-oembed",
         "summary": "Embed Tweets, YouTube videos, Ellies, and more with a Custom Element.",
         "tags": [
-            "ui/html", "ui/patterns"
+            "ui/html",
+            "ui/patterns"
         ],
         "versions": [
             "1.0.0"
@@ -4928,9 +4975,9 @@ window.packages =
             "ui/frameworks"
         ],
         "versions": [
-            "3.1.0",
             "4.0.0",
-            "5.0.1"
+            "5.0.1",
+            "6.0.0"
         ]
     },
     {
@@ -5032,7 +5079,7 @@ window.packages =
         "versions": [
             "2.7.0",
             "3.0.0",
-            "4.0.0"
+            "4.1.0"
         ]
     },
     {
@@ -5447,7 +5494,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.0"
+            "2.0.1"
         ]
     },
     {
@@ -5456,6 +5503,17 @@ window.packages =
         "summary": "The iris flower data set",
         "tags": [
             "sciences/statistics"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "folkertdev/elm-kmeans",
+        "summary": "K-means clustering in elm",
+        "tags": [
+            "sciences/machine-learning", "sciences/data-mining"
         ],
         "versions": [
             "1.0.0"
@@ -5806,7 +5864,7 @@ window.packages =
         "versions": [
             "3.0.1",
             "4.3.1",
-            "5.1.0"
+            "5.2.0"
         ]
     },
     {
@@ -5828,7 +5886,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.4.0"
+            "1.5.0"
         ]
     },
     {
@@ -6343,7 +6401,7 @@ window.packages =
         "versions": [
             "2.0.1",
             "3.0.0",
-            "4.1.1"
+            "4.1.2"
         ]
     },
     {
@@ -6354,7 +6412,29 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review",
+        "summary": "Analyzes Elm source code to add additional guarantees to your project.",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-reporter",
+        "summary": "Formats the result of `elm-review` in a nice human-readable way",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -6365,7 +6445,7 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -6376,7 +6456,29 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/review-debug",
+        "summary": "Provides elm-review rules to detect debug code",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/review-unused",
+        "summary": "Provides elm-review rules to detect unused functions and types",
+        "tags": [
+            "dev/tools"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -6756,7 +6858,8 @@ window.packages =
         "name": "justgook/elm-image",
         "summary": "A library for building runtime images in elm",
         "tags": [
-            "game-dev/rendering", "ui/rendering"
+            "game-dev/rendering",
+            "ui/rendering"
         ],
         "versions": [
             "1.0.0"
@@ -6767,7 +6870,8 @@ window.packages =
         "name": "justgook/elm-tiled",
         "summary": "A library for building decoders for Tiled levels.",
         "tags": [
-            "data/formats", "game-dev/tools"
+            "data/formats",
+            "game-dev/tools"
         ],
         "versions": [
             "1.0.0"
@@ -6825,7 +6929,8 @@ window.packages =
         "name": "justinmimbs/tzif",
         "summary": "Decode TZif files into Time.Zone values",
         "tags": [
-            "data/time", "data/formats"
+            "data/time",
+            "data/formats"
         ],
         "versions": [
             "1.0.0"
@@ -7166,9 +7271,9 @@ window.packages =
             "ui/icons"
         ],
         "versions": [
-            "1.0.1",
             "2.3.0",
-            "3.1.0"
+            "3.1.0",
+            "4.0.0"
         ]
     },
     {
@@ -7223,6 +7328,29 @@ window.packages =
         "summary": "A simple material design select box",
         "tags": [
             "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ljuglaret/combinatoire",
+        "summary": "combinatoire",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.1.1",
+            "2.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ljuglaret/fraction",
+        "summary": "fractions",
+        "tags": [
+            "exclude"
         ],
         "versions": [
             "1.0.0"
@@ -7408,7 +7536,7 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -7835,7 +7963,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.0.0"
+            "3.1.1"
         ]
     },
     {
@@ -8169,9 +8297,9 @@ window.packages =
             "ui/frameworks"
         ],
         "versions": [
-            "2.0.0",
             "3.3.2",
-            "4.1.0"
+            "4.1.0",
+            "5.0.0"
         ]
     },
     {
@@ -9078,7 +9206,8 @@ window.packages =
             "dev/parsing"
         ],
         "versions": [
-            "1.2.1"
+            "1.2.1",
+            "2.1.3"
         ]
     },
     {
@@ -9106,14 +9235,14 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "the-sett/svg-text-fonts",
-        "summary": "Convert text to SVG paths and bounding boxes.",
+        "summary": "Render strings using OpenType Fonts into SVG paths.",
         "tags": [
             "ui/svg"
         ],
         "versions": [
-            "1.0.0",
             "2.0.0",
-            "3.1.0"
+            "3.1.0",
+            "4.0.0"
         ]
     },
     {
@@ -9334,7 +9463,8 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.1.3"
+            "1.1.3",
+            "2.0.1"
         ]
     },
     {
@@ -9433,6 +9563,17 @@ window.packages =
             "4.0.1",
             "5.0.0",
             "6.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "truqu/line-charts",
+        "summary": "Fork of terezka/line-charts to work around #43",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {

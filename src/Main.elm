@@ -250,11 +250,17 @@ humaniseSubcat subcat =
         "platforms/static-sites" ->
             "Static sites"
 
+        "sciences/data-mining" ->
+            "Data mining"
+
         "sciences/geography" ->
             "Geography"
 
         "sciences/maths" ->
             "Maths"
+
+        "sciences/machine-learning" ->
+            "Machine learning"
 
         "sciences/physics" ->
             "Physics"
