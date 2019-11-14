@@ -8,7 +8,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
@@ -460,6 +460,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "BrianHicks/elm-css-reset",
+        "summary": "CSS Resets for rtfeldman/elm-css",
+        "tags": [
+            "ui/css"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "BrianHicks/elm-particle",
         "summary": "Simulate and render particles to SVG",
         "tags": [
@@ -501,7 +512,7 @@ window.packages =
         ],
         "versions": [
             "1.0.2",
-            "2.0.1"
+            "2.1.0"
         ]
     },
     {
@@ -524,6 +535,30 @@ window.packages =
         ],
         "versions": [
             "1.1.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Janiczek/elm-bidict",
+        "summary": "A bidirectional Dict data structure",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.2",
+            "2.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Janiczek/elm-graph",
+        "summary": "A graph data structure with a nice API",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.1",
+            "2.0.1"
         ]
     },
     {
@@ -736,7 +771,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.13"
+            "2.0.16"
         ]
     },
     {
@@ -985,9 +1020,9 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "5.0.0",
             "6.0.0",
-            "7.0.0"
+            "7.0.0",
+            "8.0.0"
         ]
     },
     {
@@ -1006,14 +1041,15 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "jxxcarlson/elm-markdown",
-        "summary": "Experimental markdown parser that also handles math!",
+        "summary": "Experimental markdown parser, handles math, has hooks for editor sync",
         "tags": [
             "data/formats",
             "dev/parsing"
         ],
         "versions": [
             "1.0.10",
-            "2.2.4"
+            "2.4.0",
+            "3.0.0"
         ]
     },
     {
@@ -1048,9 +1084,9 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0",
             "2.2.2",
-            "3.0.9"
+            "3.0.12",
+            "4.0.0"
         ]
     },
     {
@@ -1495,7 +1531,8 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.3",
+            "2.0.2"
         ]
     },
     {
@@ -1539,9 +1576,9 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.0",
             "2.1.1",
-            "3.1.0"
+            "3.1.0",
+            "4.0.0"
         ]
     },
     {
@@ -1986,9 +2023,9 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "5.0.0",
             "6.1.0",
-            "7.0.0"
+            "7.0.0",
+            "8.0.0"
         ]
     },
     {
@@ -2083,7 +2120,18 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0"
+            "1.1.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "MartinSStewart/elm-nonempty-string",
+        "summary": "Create strings that contain at least a single character.",
+        "tags": [
+            "data/text"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -2129,7 +2177,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
@@ -2372,7 +2420,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.3.0"
+            "7.12.0"
         ]
     },
     {
@@ -2408,6 +2456,17 @@ window.packages =
         ],
         "versions": [
             "1.1.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Orasund/elm-ui-framework",
+        "summary": "A CSS framework to go hand in hand with elm-ui.",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -2476,7 +2535,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.1.0"
+            "2.1.1"
         ]
     },
     {
@@ -2488,7 +2547,7 @@ window.packages =
             "data/time"
         ],
         "versions": [
-            "1.2.0"
+            "1.3.0"
         ]
     },
     {
@@ -2544,9 +2603,9 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "13.0.0",
-            "14.2.0",
-            "15.0.1"
+            "15.0.1",
+            "16.0.0",
+            "17.0.2"
         ]
     },
     {
@@ -2647,6 +2706,17 @@ window.packages =
         ]
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "TSFoster/elm-bytes-extra",
+        "summary": "Helpers for working with elm/bytes",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.1.0"
+        ]
+    },
+    {
         "license": "MIT",
         "name": "TSFoster/elm-compare",
         "summary": "Helpers for comparing non-comparable values",
@@ -2701,7 +2771,8 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.0.4"
+            "1.1.0",
+            "2.1.0"
         ]
     },
     {
@@ -2725,7 +2796,8 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.2.1"
+            "2.2.2",
+            "3.0.1"
         ]
     },
     {
@@ -2836,6 +2908,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "YuyaAizawa/list-wrapper",
+        "summary": "Data structure implemented by simple list",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "Zinggi/elm-2d-game",
         "summary": "A 2D rendering engine based on WebGL",
         "tags": [
@@ -2844,7 +2927,7 @@ window.packages =
         "versions": [
             "2.1.0",
             "3.1.0",
-            "4.0.0"
+            "4.1.0"
         ]
     },
     {
@@ -2860,14 +2943,25 @@ window.packages =
         ]
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "Zinggi/elm-glsl-generator",
+        "summary": "Generate GLSL shader code",
+        "tags": [
+            "ui/rendering"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "MIT",
         "name": "abinayasudhir/elm-select",
         "summary": "A selection input with auto-completion",
         "tags": [
-            "exclude"
+            "ui/patterns"
         ],
         "versions": [
-            "1.2.1"
+            "1.3.0"
         ]
     },
     {
@@ -3017,7 +3111,7 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -3768,6 +3862,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "bburdette/pdf-element",
+        "summary": "PDF custom element for elm",
+        "tags": [
+            "data/formats", "ui/rendering"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "bburdette/schelme",
         "summary": "a Scheme inspired scripting language for Elm.",
         "tags": [
@@ -3786,7 +3891,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -3806,6 +3911,17 @@ window.packages =
         "summary": "typed layers over standard elm collections",
         "tags": [
             "exclude"
+        ],
+        "versions": [
+            "1.0.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "bburdette/websocket",
+        "summary": "open, close websockets, send and receive messages.",
+        "tags": [
+            "networking/websockets"
         ],
         "versions": [
             "1.0.2"
@@ -3890,6 +4006,19 @@ window.packages =
         ],
         "versions": [
             "1.0.10"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "billstclair/elm-crypto-string",
+        "summary": "elm-crypto-string does block chaining for string encryption.",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.3",
+            "2.1.3",
+            "3.0.1"
         ]
     },
     {
@@ -4042,7 +4171,7 @@ window.packages =
         "versions": [
             "1.2.0",
             "2.0.0",
-            "3.0.0"
+            "3.1.0"
         ]
     },
     {
@@ -4085,6 +4214,17 @@ window.packages =
         ]
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "billstclair/elm-xml-eeue56",
+        "summary": "XML parser, encoder/decoder and queries in Elm",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
         "license": "Apache-2.0",
         "name": "bkuhlmann/form-validator",
         "summary": "A customizable form validation component.",
@@ -4117,7 +4257,7 @@ window.packages =
         "versions": [
             "25.1.0",
             "26.1.6",
-            "27.0.6"
+            "27.0.7"
         ]
     },
     {
@@ -4437,6 +4577,19 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "cedricss/elm-css-systems",
+        "summary": "Design systems based on elm-css, inspired by Tailwind.",
+        "tags": [
+            "ui/css"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.2",
+            "3.1.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "chicode/lisa",
         "summary": "A Lisp dialect with a parser and compiler to JS",
         "tags": [
@@ -4610,7 +4763,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -4663,13 +4816,26 @@ window.packages =
     },
     {
         "license": "Apache-2.0",
+        "name": "dasch/crockford",
+        "summary": "Encoding and decoding functions for Crockford's base32 encoding",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.1",
+            "2.0.0",
+            "3.0.0"
+        ]
+    },
+    {
+        "license": "Apache-2.0",
         "name": "dasch/levenshtein",
         "summary": "Computes the Levenshtein distance between strings",
         "tags": [
             "data/text"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -4749,6 +4915,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "dillonkearns/elm-markdown",
+        "summary": "Pure Elm markdown parser with customizable rendering.",
+        "tags": [
+            "data/formats", "ui/rendering"
+        ],
+        "versions": [
+            "1.1.3"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "dillonkearns/elm-oembed",
         "summary": "Embed Tweets, YouTube videos, Ellies, and more with a Custom Element.",
         "tags": [
@@ -4767,7 +4944,30 @@ window.packages =
             "platforms/static-sites"
         ],
         "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "dividat/elm-identicon",
+        "summary": "Generate identicons",
+        "tags": [
+            "ui/icons"
+        ],
+        "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "dividat/elm-semver",
+        "summary": "Semantic versions (Semver 2.0.0) library for Elm",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.0"
         ]
     },
     {
@@ -4897,7 +5097,7 @@ window.packages =
         ],
         "versions": [
             "1.0.3",
-            "2.1.0"
+            "2.3.0"
         ]
     },
     {
@@ -4977,7 +5177,7 @@ window.packages =
         "versions": [
             "4.0.0",
             "5.0.1",
-            "6.0.0"
+            "6.0.1"
         ]
     },
     {
@@ -5079,7 +5279,7 @@ window.packages =
         "versions": [
             "2.7.0",
             "3.0.0",
-            "4.1.0"
+            "4.2.0"
         ]
     },
     {
@@ -5141,7 +5341,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.2.1"
+            "2.3.0"
         ]
     },
     {
@@ -5182,6 +5382,17 @@ window.packages =
             "1.1.0",
             "2.0.0",
             "3.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "elm-in-elm/compiler",
+        "summary": "Elm compiler written in Elm",
+        "tags": [
+            "dev/parsing"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -5302,10 +5513,10 @@ window.packages =
         "name": "erlandsona/assoc-set",
         "summary": "Set implemented using association-list-based Dict",
         "tags": [
-            "exclude"
+            "dev/algorithms"
         ],
         "versions": [
-            "1.0.0"
+            "1.1.0"
         ]
     },
     {
@@ -5494,7 +5705,18 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.1"
+            "2.0.3"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "folkertdev/elm-int64",
+        "summary": "Efficient 64-bit (unsigned) integer",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -5513,7 +5735,8 @@ window.packages =
         "name": "folkertdev/elm-kmeans",
         "summary": "K-means clustering in elm",
         "tags": [
-            "sciences/machine-learning", "sciences/data-mining"
+            "sciences/machine-learning",
+            "sciences/data-mining"
         ],
         "versions": [
             "1.0.0"
@@ -5525,6 +5748,17 @@ window.packages =
         "summary": "Paragraph formatting in elm",
         "tags": [
             "data/text"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "folkertdev/elm-sha2",
+        "summary": "Fast elm/bytes based sha256 and sha512",
+        "tags": [
+            "security/crypto"
         ],
         "versions": [
             "1.0.0"
@@ -5864,7 +6098,7 @@ window.packages =
         "versions": [
             "3.0.1",
             "4.3.1",
-            "5.2.0"
+            "5.3.0"
         ]
     },
     {
@@ -5921,7 +6155,8 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.1.0"
+            "2.1.0",
+            "3.0.0"
         ]
     },
     {
@@ -5947,6 +6182,18 @@ window.packages =
             "4.0.0",
             "5.1.3",
             "6.0.0"
+        ]
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "gribouille/elm-treeview",
+        "summary": "ELM tree view component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.1"
         ]
     },
     {
@@ -6276,6 +6523,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "itravel-de/elm-thumbor",
+        "summary": "Generate Thumbor URLs with Elm.",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "ivadzy/bbase64",
         "summary": "Padding insensitive, elm/bytes based, functional implementation of Base64",
         "tags": [
@@ -6343,6 +6601,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "jamesgary/elm-config-ui",
+        "summary": "Editor and code generator for live-editing config values in the browser",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -6478,7 +6747,7 @@ window.packages =
             "dev/tools"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.4"
         ]
     },
     {
@@ -6726,7 +6995,7 @@ window.packages =
         "versions": [
             "5.1.0",
             "6.0.0",
-            "7.0.0"
+            "7.1.0"
         ]
     },
     {
@@ -6862,7 +7131,9 @@ window.packages =
             "ui/rendering"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.0",
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -6993,9 +7264,9 @@ window.packages =
             "dev/prototyping"
         ],
         "versions": [
-            "1.0.4",
             "2.0.3",
-            "3.0.2"
+            "3.0.2",
+            "4.0.0"
         ]
     },
     {
@@ -7090,7 +7361,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -7261,6 +7532,18 @@ window.packages =
         "versions": [
             "1.0.1",
             "2.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "laserpants/elm-burrito-update",
+        "summary": "Monadic-style interface for state updates in Elm.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.3.2"
         ]
     },
     {
@@ -7536,7 +7819,20 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.1"
+            "1.1.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "mercurymedia/elm-smart-select",
+        "summary": "an advanced select component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.0",
+            "3.0.0"
         ]
     },
     {
@@ -7843,7 +8139,7 @@ window.packages =
         "versions": [
             "14.0.0",
             "15.0.0",
-            "16.0.1"
+            "16.0.3"
         ]
     },
     {
@@ -7928,7 +8224,7 @@ window.packages =
         "versions": [
             "1.1.0",
             "2.0.1",
-            "3.1.3"
+            "3.1.4"
         ]
     },
     {
@@ -8297,9 +8593,9 @@ window.packages =
             "ui/frameworks"
         ],
         "versions": [
-            "3.3.2",
             "4.1.0",
-            "5.0.0"
+            "5.0.0",
+            "6.0.0"
         ]
     },
     {
@@ -8510,6 +8806,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "rl-king/elm-masonry",
+        "summary": "Masonry column grid layout.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "rl-king/elm-modular-scale",
         "summary": "Generate proportionally related values to use as font-sizes, line-height, ect.",
         "tags": [
@@ -8594,6 +8901,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "robotmay/s3-direct-file-upload",
+        "summary": "Abstract module for directly uploading files to S3, compatible with Shrine.rb",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "rogeriochaves/elm-test-bdd-style",
         "summary": "BDD-style matchers for elm-test",
         "tags": [
@@ -8626,6 +8944,17 @@ window.packages =
         ],
         "versions": [
             "1.1.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ronanyeah/calendar-dates",
+        "summary": "generate calendar dates",
+        "tags": [
+            "data/time"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -8718,6 +9047,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "ryannhg/elm-spa",
+        "summary": "a way to create single page apps with Elm",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "ryota0624/date-controll",
         "summary": "date controll",
         "tags": [
@@ -8761,6 +9101,18 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "sashaafm/eetf",
+        "summary": "Parser for encoding and decoding Erlang External Term Format",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.1.0",
+            "2.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "savardd/elm-time-travel",
         "summary": "An experimental debugger for Elm",
@@ -8786,6 +9138,52 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "showell/binary-tree-diagram",
+        "summary": "draws binary trees (with SVG)",
+        "tags": [
+            "ui/svg"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "showell/dict-dot-dot",
+        "summary": "core Dict exposing Dict(..), NColor(..)",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "showell/elm-data-util",
+        "summary": "generate Elm code (by example)",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.1",
+            "2.1.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "showell/meta-elm",
+        "summary": "Elm Runtime in Elm",
+        "tags": [
+            "dev/parsing"
+        ],
+        "versions": [
+            "1.1.0",
+            "2.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "simonh1000/elm-colorpicker",
         "summary": "A simple color-picker widget, using svg",
         "tags": [
@@ -8793,7 +9191,7 @@ window.packages =
         ],
         "versions": [
             "1.1.6",
-            "2.0.0"
+            "2.0.2"
         ]
     },
     {
@@ -8957,7 +9355,7 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.4"
         ]
     },
     {
@@ -8970,7 +9368,7 @@ window.packages =
         "versions": [
             "5.0.1",
             "6.1.1",
-            "7.1.0"
+            "7.1.1"
         ]
     },
     {
@@ -9127,7 +9525,7 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "1.2.0"
+            "1.2.1"
         ]
     },
     {
@@ -9139,6 +9537,17 @@ window.packages =
         ],
         "versions": [
             "1.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "the-sett/elm-enum",
+        "summary": "Support for enums in Elm.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -9161,7 +9570,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.2.2"
+            "2.2.3"
         ]
     },
     {
@@ -9206,8 +9615,9 @@ window.packages =
             "dev/parsing"
         ],
         "versions": [
-            "1.2.1",
-            "2.1.3"
+            "2.2.0",
+            "3.0.0",
+            "4.0.1"
         ]
     },
     {
@@ -9378,6 +9788,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "toastal/select-prism",
+        "summary": "Use a Monocle Prism to handle <select> conflict between ADTs and Strings",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.2"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "tomjkidd/elm-multiway-tree-zipper",
         "summary": "A library for navigating and updating immutable trees.",
@@ -9500,8 +9921,9 @@ window.packages =
             "dev/code-organisation"
         ],
         "versions": [
-            "1.0.4",
-            "2.0.0"
+            "2.0.0",
+            "3.0.0",
+            "4.1.3"
         ]
     },
     {
@@ -9620,7 +10042,7 @@ window.packages =
         "versions": [
             "4.0.1",
             "5.0.0",
-            "6.1.0"
+            "6.2.0"
         ]
     },
     {
@@ -9846,6 +10268,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "wolfadex/elm-text-adventure",
+        "summary": "Simple text adventure builder and viewer",
+        "tags": [
+            "game-dev/tools", "art/interactive-fiction"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "wolfadex/tiler",
         "summary": "Build 2D tiling boards, based off of Wave Function Collapse",
@@ -9879,7 +10312,7 @@ window.packages =
         "versions": [
             "3.1.1",
             "4.0.1",
-            "5.0.0"
+            "5.0.1"
         ]
     },
     {
@@ -10013,6 +10446,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "z5h/jaro-winkler",
+        "summary": "Computes the Jaro–Winkler string similarity.",
+        "tags": [
+            "data/text"
+        ],
+        "versions": [
+            "1.0.2"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "zaboco/elm-draggable",
         "summary": "easy way to make DOM elements draggable",
@@ -10078,7 +10522,7 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.2.0"
+            "1.3.0"
         ]
     },
     {
@@ -10089,7 +10533,7 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.4.0"
+            "1.5.0"
         ]
     },
     {
