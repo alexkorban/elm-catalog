@@ -6565,7 +6565,7 @@ window.packages =
         "name": "isberg/elm-ann",
         "summary": "Artifical Neural Network in Elm",
         "tags": [
-            "sciences/ml"
+            "sciences/machine-learning"
         ],
         "versions": [
             "1.1.1"
