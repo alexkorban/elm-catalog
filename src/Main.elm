@@ -1,4 +1,4 @@
-module Main exposing (Flags, Model, categorise, content, init, main, packageCard, update, view)
+module Main exposing (..)
 
 import Browser
 import Browser.Dom
@@ -21,6 +21,8 @@ type Msg
     | RuntimeReceivedReadme PackageName (Result Http.Error Markdown)
     | UserClickedReadmeButton PackageName
     | UserSelectedSubcat String
+    | UserSelectedToolCat String
+    | UserSelectedTab Tab
 
 
 type alias Markdown =
@@ -31,12 +33,25 @@ type alias PackageName =
     String
 
 
+type alias ToolName =
+    String
+
+
+type Tab
+    = PackagesTab
+    | ToolsTab
+
+
 type alias Model =
-    { categories : Categories
+    { pkgCategories : PkgCategories
     , packageCount : Int
     , packages : Packages
     , readmes : Readmes
-    , selectedSubcat : String
+    , selectedPkgSubcat : String
+    , selectedToolCat : String
+    , selectedTab : Tab
+    , tools : Tools
+    , toolCount : Int
     }
 
 
@@ -49,13 +64,22 @@ type alias Package =
     }
 
 
+type alias Tool =
+    { name : ToolName
+    , url : Maybe String
+    , githubName : String
+    , summary : String
+    , tags : List String
+    }
+
+
 type alias Readme =
     { isOpen : Bool
     , text : Markdown
     }
 
 
-type alias Categories =
+type alias PkgCategories =
     Dict String (List String)
 
 
@@ -63,12 +87,16 @@ type alias Packages =
     Dict String (List Package)
 
 
+type alias Tools =
+    Dict String (List Tool)
+
+
 type alias Readmes =
     Dict PackageName Readme
 
 
 type alias Flags =
-    List Package
+    { packages : List Package, tools : List Tool }
 
 
 
@@ -119,12 +147,20 @@ panelBgColor =
     rgba255 246 174 45 0.04
 
 
+white =
+    rgb255 255 255 255
+
+
 
 -- Helpers
 
 
-humaniseCat : String -> String
-humaniseCat cat =
+sides =
+    { top = 0, bottom = 0, left = 0, right = 0 }
+
+
+humanisePkgCat : String -> String
+humanisePkgCat cat =
     case cat of
         "art" ->
             "Art"
@@ -166,8 +202,8 @@ humaniseCat cat =
             "UNKNOWN CATEGORY " ++ s
 
 
-humaniseSubcat : String -> String
-humaniseSubcat subcat =
+humanisePkgSubcat : String -> String
+humanisePkgSubcat subcat =
     case subcat of
         "art/generative" ->
             "Generative"
@@ -332,16 +368,60 @@ humaniseSubcat subcat =
             "UNKNOWN SUBCATEGORY " ++ s
 
 
-categorise : List Package -> Packages
+humaniseToolCat : String -> String
+humaniseToolCat cat =
+    case cat of
+        "build" ->
+            "Build tools"
+
+        "cli" ->
+            "CLI"
+
+        "code-analysis" ->
+            "Code analysis"
+
+        "code-generation" ->
+            "Code generation"
+
+        "code-transformation" ->
+            "Code transformation"
+
+        "debugging" ->
+            "Debugging"
+
+        "dev-servers" ->
+            "Dev servers"
+
+        "documentation" ->
+            "Documentation"
+
+        "editor" ->
+            "IDE/editor tools"
+
+        "information" ->
+            "Information"
+
+        "other" ->
+            "Other"
+
+        "package-management" ->
+            "Package management"
+
+        "static-sites" ->
+            "Static sites"
+
+        "testing" ->
+            "Testing"
+
+        s ->
+            "UNKNOWN CATEGORY " ++ s
+
+
+categorise : List { a | name : String, tags : List String } -> Dict String (List { a | name : String, tags : List String })
 categorise packages =
     let
         addPackage package maybePackages =
-            case maybePackages of
-                Nothing ->
-                    Nothing
-
-                Just p ->
-                    Just <| List.append p [ package ]
+            Maybe.map (\pkgs -> List.append pkgs [ package ]) maybePackages
 
         addTag package tag categories =
             if Dict.member tag categories then
@@ -372,8 +452,8 @@ tagSubcategory tag =
         |> Maybe.withDefault "UNKNOWN SUBCATEGORY"
 
 
-extractCategories : Packages -> Categories
-extractCategories categories =
+extractPkgCategories : Packages -> PkgCategories
+extractPkgCategories categories =
     let
         appendSubcat subcat =
             Maybe.map (\subcats -> List.append subcats [ subcat ])
@@ -388,9 +468,9 @@ extractCategories categories =
     List.foldl addSubcat Dict.empty <| Dict.keys categories
 
 
-resetPackageListViewPort : Cmd Msg
-resetPackageListViewPort =
-    Task.attempt (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewportOf "packageList" 0 0
+resetEntryListViewPort : Cmd Msg
+resetEntryListViewPort =
+    Task.attempt (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewportOf "entryList" 0 0
 
 
 resetViewport : Cmd Msg
@@ -406,37 +486,50 @@ init : Flags -> ( Model, Cmd msg )
 init flags =
     let
         packages =
-            categorise flags
+            categorise flags.packages
 
-        categories =
-            extractCategories packages
+        pkgCategories =
+            extractPkgCategories packages
 
         selection =
-            Dict.get "dev" categories
+            Dict.get "dev" pkgCategories
                 |> Maybe.andThen List.head
                 |> Maybe.withDefault "Algorithms/data structures"
 
         packageCount =
-            flags
-                |> List.filterMap
+            flags.packages
+                |> List.map
                     (\pkg ->
                         case List.head pkg.tags of
                             Just "exclude" ->
-                                Nothing
+                                0
+
+                            Just "uncat/new" ->
+                                0
 
                             Just _ ->
-                                Just 1
+                                1
 
                             Nothing ->
-                                Nothing
+                                0
                     )
-                |> List.length
+                |> List.sum
+
+        toolCount =
+            List.length flags.tools
+
+        tools =
+            categorise flags.tools
     in
-    ( { categories = categories
+    ( { pkgCategories = pkgCategories
       , packageCount = packageCount
       , packages = packages
       , readmes = Dict.empty
-      , selectedSubcat = selection
+      , selectedPkgSubcat = selection
+      , selectedTab = PackagesTab
+      , selectedToolCat = "build"
+      , toolCount = toolCount
+      , tools = tools
       }
     , Cmd.none
     )
@@ -459,7 +552,7 @@ update msg model =
         RuntimeReceivedReadme packageName (Ok readmeText) ->
             ( { model | readmes = Dict.insert packageName { isOpen = True, text = readmeText } model.readmes }, Cmd.none )
 
-        RuntimeReceivedReadme packageName (Err err) ->
+        RuntimeReceivedReadme _ (Err _) ->
             ( model, Cmd.none )
 
         UserClickedReadmeButton packageName ->
@@ -471,11 +564,17 @@ update msg model =
                     ( model, getReadme packageName )
 
         UserSelectedSubcat subcat ->
-            ( { model | selectedSubcat = subcat }, Cmd.batch [ resetViewport, resetPackageListViewPort ] )
+            ( { model | selectedPkgSubcat = subcat }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
+
+        UserSelectedTab tab ->
+            ( { model | selectedTab = tab }, Cmd.none )
+
+        UserSelectedToolCat cat ->
+            ( { model | selectedToolCat = cat }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
 
 
 subscriptions : Model -> Sub msg
-subscriptions model =
+subscriptions _ =
     Sub.none
 
 
@@ -495,8 +594,8 @@ scrollbarYEl attrs body =
             body
 
 
-navBar : Int -> Element msg
-navBar packageCount =
+navBar : Int -> Int -> Element msg
+navBar packageCount toolCount =
     row
         [ width fill
         , height <| px 70
@@ -509,7 +608,7 @@ navBar packageCount =
             { url = "https://korban.net/elm/catalog"
             , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
             }
-        , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26, headingTypeface ] <| text "Elm Package Catalog"
+        , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26, headingTypeface ] <| text "Elm Catalog"
         , el
             [ paddingEach { left = 20, top = 7, right = 0, bottom = 0 }
             , centerY
@@ -517,7 +616,7 @@ navBar packageCount =
             , Font.size 16
             ]
           <|
-            text (String.fromInt packageCount ++ " Elm 0.19 packages")
+            text (String.fromInt packageCount ++ " Elm 0.19 packages, " ++ String.fromInt toolCount ++ " Elm tools")
         , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
         ]
 
@@ -532,10 +631,9 @@ packageCard readmes package =
         [ width <| maximum 800 fill
         , padding 10
         , spacingXY 0 10
-        , Border.widthEach { bottom = 0, top = 1, right = 0, left = 1 }
+        , Border.width 2
         , Border.rounded 5
-        , Border.color grey
-        , Border.shadow { offset = ( 1, 1 ), blur = 2, color = grey, size = 0.3 }
+        , Border.color lightGrey
         ]
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
@@ -569,26 +667,96 @@ packageCard readmes package =
         ]
 
 
-categoryList : Model -> Element Msg
-categoryList model =
+toolCard : Readmes -> Tool -> Element Msg
+toolCard readmes tool =
+    let
+        readme =
+            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get tool.githubName readmes
+    in
+    column
+        [ width <| maximum 800 fill
+        , padding 10
+        , spacingXY 0 10
+        , Border.width 2
+        , Border.rounded 5
+        , Border.color lightGrey
+        ]
+        [ case tool.url of
+            Just url ->
+                el [ Font.size 20, Font.color blue, headingTypeface ] <|
+                    link [] { url = url, label = text tool.name }
+
+            Nothing ->
+                el [ Font.size 20, headingTypeface ] <|
+                    text tool.name
+        , el [ height <| px 1, width fill, Background.color lightGreen ] none
+        , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text tool.summary ]
+        , row [ Font.size 14, Font.color lightCharcoal ]
+            [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ tool.githubName, label = text "Source" }
+            , text " • "
+            , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton tool.githubName, pointer ] <|
+                text
+                    ("README "
+                        ++ (if readme.isOpen then
+                                "▲"
+
+                            else
+                                "▽"
+                           )
+                    )
+            ]
+        , if readme.isOpen then
+            markdown readme.text
+
+          else
+            none
+        ]
+
+
+pkgCategoryList : Model -> Element Msg
+pkgCategoryList model =
     let
         catEls ( cat, subcats ) =
             column [ spacingXY 0 10, Font.size 18 ]
-                ([ el [ paddingEach { top = 10, bottom = 0, left = 0, right = 0 }, Font.size 22, Font.color darkCharcoal, headingTypeface ] <| text <| humaniseCat cat ]
-                    ++ List.map subcatEl (subcats |> List.sortBy humaniseSubcat)
+                ((el
+                    [ paddingEach { sides | top = 10 }
+                    , Font.size 22
+                    , Font.color darkCharcoal
+                    , headingTypeface
+                    ]
+                  <|
+                    text <|
+                        humanisePkgCat cat
+                 )
+                    :: List.map subcatEl (subcats |> List.sortBy humanisePkgSubcat)
                 )
 
         subcatEl subcat =
-            if subcat == model.selectedSubcat then
-                el [ Font.color green ] <| text <| humaniseSubcat subcat
+            if subcat == model.selectedPkgSubcat then
+                el [ Font.color green ] <| text <| humanisePkgSubcat subcat
 
             else
-                el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humaniseSubcat subcat
+                el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humanisePkgSubcat subcat
     in
-    Dict.toList model.categories
+    Dict.toList model.pkgCategories
         |> List.filter (\( cat, _ ) -> cat /= "exclude")
         |> List.map catEls
         |> column [ width fill, height fill, spacingXY 0 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+
+
+toolCategoryList : Model -> Element Msg
+toolCategoryList model =
+    let
+        catEl cat =
+            if cat == model.selectedToolCat then
+                el [ Font.size 18, Font.color green ] <| text <| humaniseToolCat cat
+
+            else
+                el [ Font.size 18, Font.color blue, pointer, onClick (UserSelectedToolCat cat) ] <| text <| humaniseToolCat cat
+    in
+    Dict.keys model.tools
+        |> List.map catEl
+        |> column [ width fill, height fill, spacingXY 0 10, paddingEach { sides | top = 20 }, htmlAttribute <| Attr.style "flex-shrink" "1" ]
 
 
 content : Model -> Element Msg
@@ -596,21 +764,70 @@ content model =
     let
         packageEls =
             model.packages
-                |> Dict.get model.selectedSubcat
+                |> Dict.get model.selectedPkgSubcat
                 |> Maybe.withDefault []
                 |> List.map (packageCard model.readmes)
+
+        toolEls =
+            model.tools
+                |> Dict.get model.selectedToolCat
+                |> Maybe.withDefault []
+                |> List.map (toolCard model.readmes)
+
+        tabEl label tab =
+            let
+                commonAttrs =
+                    [ centerX, centerY, padding 5 ]
+            in
+            el
+                [ width <| fillPortion 1
+                , Background.color white
+                , Border.widthEach
+                    (if model.selectedTab == tab then
+                        { top = 2, bottom = 0, left = 2, right = 2 }
+
+                     else
+                        { bottom = 2, top = 0, left = 0, right = 0 }
+                    )
+                , Border.color lightGrey
+                ]
+            <|
+                if model.selectedTab == tab then
+                    el (commonAttrs ++ [ Font.color green ]) <|
+                        text label
+
+                else
+                    el (commonAttrs ++ [ Font.color blue, pointer, onClick <| UserSelectedTab tab ]) <|
+                        text label
     in
-    row [ width fill, height fill, spacingXY 20 0, paddingXY 10 0, htmlAttribute <| Attr.style "flex-shrink" "1" ]
-        [ el
-            [ width <| fillPortion 1
+    row [ width fill, height fill, spacingXY 20 0, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+        [ column
+            [ htmlAttribute <| Attr.style "flex-shrink" "1"
+            , width <| fillPortion 1
             , height fill
             , scrollbarY
-            , htmlAttribute <| Attr.style "flex-shrink" "1"
             , Border.widthEach { right = 2, left = 0, bottom = 0, top = 0 }
             , Border.color lightGrey
             ]
-          <|
-            categoryList model
+            [ row
+                [ width fill
+                , height <| px 37
+                , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
+                ]
+                [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+                , tabEl "Packages" PackagesTab
+                , tabEl "Tools" ToolsTab
+                , el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+                ]
+            , el
+                [ paddingXY 10 0 ]
+              <|
+                if model.selectedTab == PackagesTab then
+                    pkgCategoryList model
+
+                else
+                    toolCategoryList model
+            ]
         , column
             [ width <| fillPortion 3
             , height fill
@@ -619,12 +836,17 @@ content model =
             , alignTop
             , scrollbarY
             , htmlAttribute <| Attr.style "flex-shrink" "1"
-            , htmlAttribute <| Attr.id "packageList"
+            , htmlAttribute <| Attr.id "entryList"
             ]
-            (packageEls
+            ((if model.selectedTab == PackagesTab then
+                packageEls
+
+              else
+                toolEls
+             )
                 ++ [ el [ height <| px 30 ] none
                    , paragraph [ Font.size 16 ]
-                        [ text "Found a mistake or a missing package?"
+                        [ text "Found a mistake or a missing entry?"
                         , text " Drop me a line "
                         , link [ Font.color blue ] { url = "https://korban.net/elm/contact", label = text "by email" }
                         , text " or tweet "
@@ -754,7 +976,7 @@ view : Model -> Html Msg
 view model =
     layout [ height fill, baseTypeface, htmlAttribute <| Attr.style "flex-shrink" "1" ] <|
         column [ width fill, height fill, htmlAttribute <| Attr.style "flex-shrink" "1" ]
-            [ navBar model.packageCount
+            [ navBar model.packageCount model.toolCount
             , content model
             ]
 
@@ -764,6 +986,6 @@ main =
     Browser.document
         { init = init
         , update = update
-        , view = \model -> { title = "Elm Package Catalog", body = [ view model ] }
+        , view = \model -> { title = "Elm Catalog", body = [ view model ] }
         , subscriptions = subscriptions
         }
