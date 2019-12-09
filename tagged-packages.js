@@ -30,7 +30,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -440,9 +440,9 @@ window.packages =
             "game-dev/physics"
         ],
         "versions": [
-            "1.0.3",
             "2.0.1",
-            "3.2.2"
+            "3.2.2",
+            "4.0.0"
         ]
     },
     {
@@ -907,7 +907,7 @@ window.packages =
         "versions": [
             "1.2.1",
             "2.0.0",
-            "3.0.0"
+            "3.1.0"
         ]
     },
     {
@@ -988,7 +988,7 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -1664,7 +1664,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.1.0"
+            "3.1.1"
         ]
     },
     {
@@ -2433,7 +2433,18 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.14.0"
+            "7.14.2"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "Orange-OpenSource/elm-advanced-grid",
+        "summary": "A dynamically configurable grid",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -2469,6 +2480,17 @@ window.packages =
         ],
         "versions": [
             "1.1.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Orasund/elm-jsonstore",
+        "summary": "Custom Json and Http functions to work with Jsonstore.io",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -3336,9 +3358,9 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0",
             "2.0.0",
-            "3.0.0"
+            "3.0.0",
+            "4.0.0"
         ]
     },
     {
@@ -3382,7 +3404,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.1"
         ]
     },
     {
@@ -3697,6 +3719,17 @@ window.packages =
             "2.0.0",
             "3.0.2",
             "4.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "austinshenk/elm-w3",
+        "summary": "Type safe HTML/ARIA that follows W3 guidelines",
+        "tags": [
+            "ui/html", "ui/accessibility"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -4273,7 +4306,7 @@ window.packages =
         "versions": [
             "25.1.0",
             "26.1.6",
-            "27.0.7"
+            "27.0.8"
         ]
     },
     {
@@ -4381,6 +4414,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "calions-app/env",
+        "summary": "Parse envs",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "calions-app/jsonapi-http",
         "summary": "Make HTTP requests with jsonapi decoding/encoding in Elm",
         "tags": [
@@ -4396,6 +4440,17 @@ window.packages =
         "summary": "Handle foreground and background resources",
         "tags": [
             "networking/http"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "calions-app/test-attribute",
+        "summary": "Add test attributes to your elements for end-to-end tests",
+        "tags": [
+            "exclude"
         ],
         "versions": [
             "1.0.0"
@@ -4806,6 +4861,18 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "danhandrea/elm-date-format",
+        "summary": "date format",
+        "tags": [
+            "data/time"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "danhandrea/elm-foo",
         "summary": "cool package",
         "tags": [
@@ -4948,7 +5015,7 @@ window.packages =
         "versions": [
             "2.0.0",
             "3.0.0",
-            "4.4.0"
+            "4.5.0"
         ]
     },
     {
@@ -5663,7 +5730,7 @@ window.packages =
             "ui/icons"
         ],
         "versions": [
-            "1.3.0"
+            "1.4.0"
         ]
     },
     {
@@ -6513,6 +6580,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "insurello/elm-swedish-bank-account-number",
+        "summary": "Validate Swedish bank account numbers",
+        "tags": [
+            "data/formats", "ui/validation"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "iodevs/elm-history",
         "summary": "This library helps with keeping history of states of your variables.",
@@ -6568,7 +6646,7 @@ window.packages =
             "sciences/machine-learning"
         ],
         "versions": [
-            "1.1.1"
+            "1.6.2"
         ]
     },
     {
@@ -6986,7 +7064,7 @@ window.packages =
         "versions": [
             "4.1.0",
             "5.0.0",
-            "6.1.0"
+            "6.1.1"
         ]
     },
     {
@@ -7008,9 +7086,9 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "2.0.0",
             "3.0.0",
-            "4.0.1"
+            "4.0.1",
+            "5.0.0"
         ]
     },
     {
@@ -7616,7 +7694,18 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.3.2",
-            "3.0.3"
+            "3.0.4"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "laserpants/elm-update-pipeline",
+        "summary": "Interface for sequential composition of updates in the style of pipelines.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -7930,7 +8019,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.0.0"
+            "3.0.1"
         ]
     },
     {
@@ -8460,12 +8549,12 @@ window.packages =
         "name": "pablohirafuji/elm-qrcode",
         "summary": "QR Code encoder and renderer.",
         "tags": [
-            "exclude"
+            "data/formats"
         ],
         "versions": [
             "1.1.1",
             "2.2.1",
-            "3.1.1"
+            "3.2.0"
         ]
     },
     {
@@ -8478,7 +8567,18 @@ window.packages =
         "versions": [
             "1.1.0",
             "2.1.0",
-            "3.1.0"
+            "3.1.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "pascallemerrer/elm-advanced-grid",
+        "summary": "A dynamically configurable grid",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.2"
         ]
     },
     {
@@ -8625,6 +8725,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "phollyer/elm-ui-colors",
+        "summary": "Colors for https://github.com/mdgriffith/elm-ui",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "versions": [
+            "1.0.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "pilatch/elm-chess",
         "summary": "Elm library for computer chess",
         "tags": [
@@ -8679,7 +8790,7 @@ window.packages =
         "versions": [
             "4.0.0",
             "5.1.0",
-            "6.0.2"
+            "6.1.0"
         ]
     },
     {
@@ -8784,7 +8895,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -9259,6 +9370,28 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "showell/binary-tree-diagram",
+        "summary": "draws binary trees (with SVG)",
+        "tags": [
+            "ui/svg"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "showell/dict-dot-dot",
+        "summary": "core Dict exposing Dict(..), NColor(..)",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "showell/elm-data-util",
         "summary": "generate Elm code (by example)",
         "tags": [
@@ -9267,6 +9400,19 @@ window.packages =
         "versions": [
             "1.0.1",
             "2.1.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "showell/meta-elm",
+        "summary": "Elm Runtime in Elm",
+        "tags": [
+            "dev/parsing"
+        ],
+        "versions": [
+            "3.0.0",
+            "4.0.1",
+            "5.1.0"
         ]
     },
     {
@@ -9350,6 +9496,17 @@ window.packages =
             "2.0.0",
             "3.1.0",
             "4.2.1"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "solcates/elm-openid-connect",
+        "summary": "A OpenID Connect implementation",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -9939,7 +10096,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
@@ -10286,13 +10443,26 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "waratuman/elm-standardapi",
+        "summary": "Elm client for StandardAPI",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.0.0",
+            "3.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "waratuman/json-extra",
         "summary": "Extra JSON Encode / Decode functionality",
         "tags": [
             "data/formats"
         ],
         "versions": [
-            "1.0.1"
+            "1.0.2"
         ]
     },
     {
