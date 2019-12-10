@@ -47,8 +47,8 @@ window.tools =
 },
 {
     "name": "elm-review",
-    "githubName": "jfmengels/elm-review",
-    "url": "https://elm-review.now.sh",
+    "githubName": "jfmengels/node-elm-review",
+    "url": "https://www.npmjs.com/package/elm-review",
     "summary": "A linter for Elm based on user-supplied rules, with an online and CLI versions. Has the ability to apply automatic fixes",
     "tags": [
         "code-analysis", "code-transformation"
@@ -115,6 +115,15 @@ window.tools =
     "summary": "Command line tool to auto-generate custom types for Elm with accompanying JSON encoders/decoders from a file of enum definitions",
     "tags": [
         "code-generation"
+    ]
+},
+{
+    "name": "elm-spa",
+    "githubName": "ryannhg/elm-spa",
+    "url": "https://www.npmjs.com/package/elm-spa",
+    "summary": "A code generator and dev server which simplifies SPA development",
+    "tags": [
+        "code-generation", "dev-servers"
     ]
 },
 {
