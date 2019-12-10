@@ -612,7 +612,7 @@ window.packages =
         "summary": "Interactive storytelling framework",
         "tags": [
             "art/interactive-fiction",
-            "games/tools"
+            "game-dev/tools"
         ],
         "versions": [
             "2.0.0",
