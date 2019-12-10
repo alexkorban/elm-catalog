@@ -69,7 +69,7 @@ window.tools =
     "url": "https://www.npmjs.com/package/create-elm-app",
     "summary": "Zero-configuration Elm app scaffold generator",
     "tags": [
-        "code-generation"
+        "build", "code-generation"
     ]
 },
 {
