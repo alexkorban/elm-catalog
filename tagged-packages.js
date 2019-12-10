@@ -30,7 +30,7 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.4"
         ]
     },
     {
@@ -231,7 +231,7 @@ window.packages =
             "game-dev/tools"
         ],
         "versions": [
-            "1.0.2"
+            "1.0.3"
         ]
     },
     {
@@ -611,7 +611,8 @@ window.packages =
         "name": "jschomay/elm-narrative-engine",
         "summary": "Interactive storytelling framework",
         "tags": [
-            "art/interactive-fiction"
+            "art/interactive-fiction",
+            "games/tools"
         ],
         "versions": [
             "2.0.0",
@@ -988,7 +989,7 @@ window.packages =
             "dev/algorithms"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.4"
         ]
     },
     {
@@ -1133,14 +1134,14 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "jxxcarlson/meenylatex",
-        "summary": "EXPERIMENTAL version of the MiniLatex package.  API can change witout notice.",
+        "summary": "A parser for a subset of LaTeX",
         "tags": [
             "data/formats"
         ],
         "versions": [
-            "5.1.2",
             "6.0.0",
-            "7.0.9"
+            "7.0.9",
+            "8.0.0"
         ]
     },
     {
@@ -2080,7 +2081,8 @@ window.packages =
         "name": "Libbum/elm-partition",
         "summary": "Partition problem (number partitioning) solvers",
         "tags": [
-            "dev/algorithms"
+            "dev/algorithms",
+            "sciences/maths"
         ],
         "versions": [
             "1.0.0",
@@ -3726,7 +3728,8 @@ window.packages =
         "name": "austinshenk/elm-w3",
         "summary": "Type safe HTML/ARIA that follows W3 guidelines",
         "tags": [
-            "ui/html", "ui/accessibility"
+            "ui/html",
+            "ui/accessibility"
         ],
         "versions": [
             "1.0.0"
@@ -6584,7 +6587,8 @@ window.packages =
         "name": "insurello/elm-swedish-bank-account-number",
         "summary": "Validate Swedish bank account numbers",
         "tags": [
-            "data/formats", "ui/validation"
+            "data/formats",
+            "ui/validation"
         ],
         "versions": [
             "1.0.0"
@@ -7184,6 +7188,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "joshforisha/elm-inflect",
+        "summary": "Pluralize/singularize strings",
+        "tags": [
+            "data/text"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "jouderianjr/elm-dialog",
         "summary": "A modal dialog widget for Elm.",
         "tags": [
@@ -7705,7 +7720,7 @@ window.packages =
             "dev/code-organisation"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {

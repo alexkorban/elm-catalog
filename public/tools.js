@@ -127,8 +127,17 @@ window.tools =
     ]
 },
 {
+    "name": "swagger-codegen",
+    "githubName": "swagger-api/swagger-codegen",
+    "url": null,
+    "summary": "A code generator for Elm API clients based on a Swagger definition",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-format",
-    "githubName": "avg4/elm-format",
+    "githubName": "avh4/elm-format",
     "url": "https://www.npmjs.com/package/elm-format",
     "summary": "Formatter for Elm source code which applies a standard set of rules based on the official Elm Style Guide",
     "tags": [
@@ -184,11 +193,22 @@ window.tools =
     "name": "elm-package-info",
     "githubName": "dmy/elm-package-info",
     "url": "https://addons.mozilla.org/en-US/firefox/addon/elm-package-info/",
-    "summary": "A Firefox and Chrome extension to display additional information for a package when browsing package.elm-lang.org",
+    "summary": "An online tool that analyses dependencies and shows possible upgrades",
     "tags": [
         "package-management"
     ]
 },
+{
+    "name": "elm-dependencies-analyzer",
+    "githubName": "malaire/elm-dependencies-analyzer",
+    "url": "https://www.markuslaire.com/github/elm-dependencies-analyzer/",
+    "summary": "    ",
+    "tags": [
+        "package-management"
+    ]
+},
+
+
 {
     "name": "elm-language-server",
     "githubName": "elm-tooling/elm-language-server",
@@ -266,6 +286,15 @@ window.tools =
     "githubName": "mbuscemi/elm-lens",
     "url": "https://atom.io/packages/elm-lens",
     "summary": "Elm code visualizations for maximum productivity in Atom",
+    "tags": [
+        "editor"
+    ]
+},
+{
+    "name": "language-elm-treesitter for Atom",
+    "githubName": "GrayJack/language-elm-treesitter",
+    "url": "https://atom.io/packages/language-elm-treesitter",
+    "summary": "Syntax highlighting for Elm files in Atom",
     "tags": [
         "editor"
     ]
