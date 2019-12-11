@@ -2,6 +2,7 @@ module Main exposing (..)
 
 import Browser
 import Browser.Dom
+import Browser.Events exposing (onResize)
 import Dict exposing (Dict)
 import Element exposing (..)
 import Element.Background as Background
@@ -20,6 +21,9 @@ type Msg
     = RuntimeDidSomethingIrrelevant
     | RuntimeReceivedReadme PackageName (Result Http.Error Markdown)
     | UserClickedReadmeButton PackageName
+    | UserClickedMenuIcon
+    | UserClickedOutsideMenuPanel
+    | UserResizedWindow Int Int
     | UserSelectedSubcat String
     | UserSelectedToolCat String
     | UserSelectedTab Tab
@@ -42,8 +46,13 @@ type Tab
     | ToolsTab
 
 
+type alias Size =
+    { height : Int, width : Int }
+
+
 type alias Model =
-    { pkgCategories : PkgCategories
+    { isMenuPanelOpen : Bool
+    , pkgCategories : PkgCategories
     , packageCount : Int
     , packages : Packages
     , readmes : Readmes
@@ -52,6 +61,7 @@ type alias Model =
     , selectedTab : Tab
     , tools : Tools
     , toolCount : Int
+    , windowSize : Size
     }
 
 
@@ -96,7 +106,7 @@ type alias Readmes =
 
 
 type alias Flags =
-    { packages : List Package, tools : List Tool }
+    { packages : List Package, tools : List Tool, windowHeight : Int, windowWidth : Int }
 
 
 
@@ -153,6 +163,19 @@ white =
 
 
 -- Helpers
+
+
+if_ : Bool -> a -> a -> a
+if_ predicate lhs rhs =
+    if predicate then
+        lhs
+
+    else
+        rhs
+
+
+attrNone =
+    htmlAttribute <| Attr.class " "
 
 
 sides =
@@ -521,7 +544,8 @@ init flags =
         tools =
             categorise flags.tools
     in
-    ( { pkgCategories = pkgCategories
+    ( { isMenuPanelOpen = False
+      , pkgCategories = pkgCategories
       , packageCount = packageCount
       , packages = packages
       , readmes = Dict.empty
@@ -530,6 +554,7 @@ init flags =
       , selectedToolCat = "build"
       , toolCount = toolCount
       , tools = tools
+      , windowSize = { height = flags.windowHeight, width = flags.windowWidth }
       }
     , Cmd.none
     )
@@ -555,6 +580,12 @@ update msg model =
         RuntimeReceivedReadme _ (Err _) ->
             ( model, Cmd.none )
 
+        UserClickedMenuIcon ->
+            ( { model | isMenuPanelOpen = True }, Cmd.none )
+
+        UserClickedOutsideMenuPanel ->
+            ( { model | isMenuPanelOpen = False }, Cmd.none )
+
         UserClickedReadmeButton packageName ->
             case Dict.get packageName model.readmes of
                 Just readme ->
@@ -563,19 +594,22 @@ update msg model =
                 Nothing ->
                     ( model, getReadme packageName )
 
+        UserResizedWindow width height ->
+            ( { model | windowSize = { height = height, width = width } }, Cmd.none )
+
         UserSelectedSubcat subcat ->
-            ( { model | selectedPkgSubcat = subcat }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
+            ( { model | selectedPkgSubcat = subcat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
 
         UserSelectedTab tab ->
             ( { model | selectedTab = tab }, Cmd.none )
 
         UserSelectedToolCat cat ->
-            ( { model | selectedToolCat = cat }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
+            ( { model | selectedToolCat = cat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
 
 
-subscriptions : Model -> Sub msg
+subscriptions : Model -> Sub Msg
 subscriptions _ =
-    Sub.none
+    onResize UserResizedWindow
 
 
 scrollbarYEl : List (Attribute msg) -> Element msg -> Element msg
@@ -594,8 +628,22 @@ scrollbarYEl attrs body =
             body
 
 
-navBar : Int -> Int -> Element msg
-navBar packageCount toolCount =
+isNarrow : Size -> Bool
+isNarrow windowSize =
+    windowSize.width < 700
+
+
+menuIcon : List (Attribute msg) -> Element msg
+menuIcon attrs =
+    textColumn ([ width <| px 30, alignRight, spacing -17, headingTypeface, Font.size 20, Font.color green ] ++ attrs)
+        [ paragraph [] [ text "—" ]
+        , paragraph [] [ text "—" ]
+        , paragraph [] [ text "—" ]
+        ]
+
+
+navBar : Model -> Element Msg
+navBar model =
     row
         [ width fill
         , height <| px 70
@@ -605,20 +653,47 @@ navBar packageCount toolCount =
         , Border.color orange
         , headingTypeface
         ]
-        [ link [ centerY, height <| px 50 ]
-            { url = "https://korban.net/elm/catalog"
-            , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
-            }
-        , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26 ] <| text "Elm Catalog"
-        , el
-            [ paddingEach { left = 20, top = 7, right = 0, bottom = 0 }
-            , centerY
-            , Font.color lightCharcoal
-            , Font.size 16
+    <|
+        List.concat
+            [ [ link [ centerY, height <| px 50 ]
+                    { url = "https://korban.net/elm/catalog"
+                    , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
+                    }
+              , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26 ] <| text "Elm Catalog"
+              ]
+            , if isNarrow model.windowSize then
+                [ menuIcon [ onClick UserClickedMenuIcon ] ]
+
+              else
+                [ el
+                    [ paddingEach { left = 20, top = 7, right = 0, bottom = 0 }
+                    , centerY
+                    , Font.color lightCharcoal
+                    , Font.size 16
+                    ]
+                  <|
+                    text <|
+                        String.fromInt model.packageCount
+                            ++ " Elm 0.19 packages, "
+                            ++ String.fromInt model.toolCount
+                            ++ " Elm tools"
+                , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
+                ]
             ]
-          <|
-            text (String.fromInt packageCount ++ " Elm 0.19 packages, " ++ String.fromInt toolCount ++ " Elm tools")
-        , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
+
+
+navigationMenuPanel : Model -> Element Msg
+navigationMenuPanel model =
+    row [ width fill, height fill ]
+        [ el
+            [ width fill
+            , height fill
+            , onClick UserClickedOutsideMenuPanel
+            , Background.color <| rgba255 11 79 108 0.4
+            ]
+            none
+        , el [ width <| px 2, height fill, Background.color grey ] none
+        , categoryList model
         ]
 
 
@@ -639,8 +714,8 @@ packageCard readmes package =
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
         , el [ height <| px 1, width fill, Background.color lightGreen ] none
-        , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text package.summary ]
-        , row [ Font.size 14, Font.color lightCharcoal ]
+        , paragraph [ paddingXY 0 5, Font.size 16 ] [ text package.summary ]
+        , wrappedRow [ Font.size 14, Font.color lightCharcoal ]
             [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
@@ -742,7 +817,12 @@ pkgCategoryList model =
     Dict.toList model.pkgCategories
         |> List.filter (\( cat, _ ) -> cat /= "exclude")
         |> List.map catEls
-        |> column [ width fill, height fill, spacingXY 0 10, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+        |> column
+            [ width fill
+            , height fill
+            , spacingXY 0 10
+            , htmlAttribute <| Attr.style "flex-shrink" "1"
+            ]
 
 
 toolCategoryList : Model -> Element Msg
@@ -757,24 +837,18 @@ toolCategoryList model =
     in
     Dict.keys model.tools
         |> List.map catEl
-        |> column [ width fill, height fill, spacingXY 0 10, paddingEach { sides | top = 20 }, htmlAttribute <| Attr.style "flex-shrink" "1" ]
+        |> column
+            [ width fill
+            , height fill
+            , spacingXY 0 10
+            , paddingEach { sides | top = 20, bottom = 100 }
+            , htmlAttribute <| Attr.style "flex-shrink" "1"
+            ]
 
 
-content : Model -> Element Msg
-content model =
+categoryList : Model -> Element Msg
+categoryList model =
     let
-        packageEls =
-            model.packages
-                |> Dict.get model.selectedPkgSubcat
-                |> Maybe.withDefault []
-                |> List.map (packageCard model.readmes)
-
-        toolEls =
-            model.tools
-                |> Dict.get model.selectedToolCat
-                |> Maybe.withDefault []
-                |> List.map (toolCard model.readmes)
-
         tabEl label tab =
             let
                 commonAttrs =
@@ -801,41 +875,79 @@ content model =
                     el (commonAttrs ++ [ Font.color blue, pointer, onClick <| UserSelectedTab tab ]) <|
                         text label
     in
-    row [ width fill, height fill, spacingXY 20 0, htmlAttribute <| Attr.style "flex-shrink" "1" ]
-        [ column
-            [ htmlAttribute <| Attr.style "flex-shrink" "1"
-            , width <| fillPortion 1
-            , height fill
-            , scrollbarY
-            , Border.widthEach { right = 2, left = 0, bottom = 0, top = 0 }
-            , Border.color lightGrey
-            ]
-            [ row
-                [ width fill
-                , height <| px 37
-                , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
-                ]
-                [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
-                , tabEl "Packages" PackagesTab
-                , tabEl "Tools" ToolsTab
-                , el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
-                ]
-            , el
-                [ paddingXY 10 0 ]
-              <|
-                if model.selectedTab == PackagesTab then
-                    pkgCategoryList model
+    column
+        [ htmlAttribute <| Attr.style "flex-shrink" "1"
+        , width <| maximum 400 <| minimum 250 <| fillPortion 4
+        , height fill
+        , if isNarrow model.windowSize then
+            Background.color white
 
-                else
-                    toolCategoryList model
+          else
+            scrollbarY
+        , Background.color white
+        , Border.widthEach { right = 2, left = 0, bottom = 0, top = 0 }
+        , Border.color lightGrey
+        ]
+        [ row
+            [ width fill
+            , height <| px 37
+            , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
             ]
+            [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+            , tabEl "Packages" PackagesTab
+            , tabEl "Tools" ToolsTab
+            , el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+            ]
+        , el
+            [ paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
+          <|
+            if model.selectedTab == PackagesTab then
+                pkgCategoryList model
+
+            else
+                toolCategoryList model
+        ]
+
+
+content : Model -> Element Msg
+content model =
+    let
+        packageEls =
+            model.packages
+                |> Dict.get model.selectedPkgSubcat
+                |> Maybe.withDefault []
+                |> List.map (packageCard model.readmes)
+                |> List.take (if_ model.isMenuPanelOpen 3 10000)
+
+        toolEls =
+            model.tools
+                |> Dict.get model.selectedToolCat
+                |> Maybe.withDefault []
+                |> List.map (toolCard model.readmes)
+                |> List.take (if_ model.isMenuPanelOpen 3 10000)
+    in
+    row
+        [ width fill
+        , height fill
+        , spacingXY 20 0
+        , htmlAttribute <| Attr.style "flex-shrink" "1"
+        ]
+        [ if isNarrow model.windowSize then
+            none
+
+          else
+            categoryList model
         , column
-            [ width <| fillPortion 3
+            [ width <| fillPortion 12
             , height fill
-            , paddingXY 0 20
+            , paddingXY (if_ (isNarrow model.windowSize) 5 0) 20
             , spacingXY 0 10
             , alignTop
-            , scrollbarY
+            , if isNarrow model.windowSize then
+                attrNone
+
+              else
+                scrollbarY
             , htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
@@ -855,7 +967,7 @@ content model =
                         , text "."
                         ]
                    , el [ height <| px 30 ] none
-                   , bookFooter
+                   , if_ model.isMenuPanelOpen none bookFooter
                    ]
             )
         ]
@@ -979,9 +1091,30 @@ headingTypeface =
 
 view : Model -> Html Msg
 view model =
-    layout [ height fill, baseTypeface, htmlAttribute <| Attr.style "flex-shrink" "1" ] <|
-        column [ width fill, height fill, htmlAttribute <| Attr.style "flex-shrink" "1" ]
-            [ navBar model.packageCount model.toolCount
+    let
+        attrs =
+            [ width fill
+            , height fill
+            , htmlAttribute <| Attr.style "flex-shrink" "1"
+            ]
+
+        attrsWithMenu =
+            (if model.isMenuPanelOpen then
+                inFront <| navigationMenuPanel model
+
+             else
+                attrNone
+            )
+                :: attrs
+    in
+    layout
+        [ height fill
+        , baseTypeface
+        , htmlAttribute <| Attr.style "flex-shrink" "1"
+        ]
+    <|
+        column attrsWithMenu
+            [ navBar model
             , content model
             ]
 

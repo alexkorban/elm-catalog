@@ -19,7 +19,7 @@ package =
 
 
 initialModel =
-    { categories = App.categorise [ package ]
+    { categories = categorisePackages [ package ]
     }
 
 
