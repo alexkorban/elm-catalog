@@ -228,7 +228,7 @@ window.packages =
         "name": "evancz/elm-playground",
         "summary": "A fun way to create pictures, animations, and games.",
         "tags": [
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.0.3"
@@ -520,7 +520,7 @@ window.packages =
         "name": "Janiczek/browser-extra",
         "summary": "Extra functions for elm/browser",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.1.0"
@@ -612,7 +612,7 @@ window.packages =
         "summary": "Interactive storytelling framework",
         "tags": [
             "art/interactive-fiction",
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "2.0.0",
@@ -1260,7 +1260,7 @@ window.packages =
         "name": "7hoenix/elm-chess",
         "summary": "Basic Chess module in Elm",
         "tags": [
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -1940,7 +1940,7 @@ window.packages =
         "name": "Herteby/url-builder-plus",
         "summary": "Replacement for the standard Url.Builder, with more convenience functions",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.2"
@@ -2466,7 +2466,7 @@ window.packages =
         "name": "Orasund/elm-cellautomata",
         "summary": "A packages that lets you write your own celluar automatas.",
         "tags": [
-            "game-dev/tools",
+            "game-dev/utils",
             "sciences/maths"
         ],
         "versions": [
@@ -2478,7 +2478,7 @@ window.packages =
         "name": "Orasund/elm-game-essentials",
         "summary": "A collection of essential types for creating games.",
         "tags": [
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.1.0"
@@ -2924,7 +2924,7 @@ window.packages =
         "name": "Voronchuk/hexagons",
         "summary": "Hexagonal grids and tools to build hex maps and layouts",
         "tags": [
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.0.3",
@@ -4691,7 +4691,7 @@ window.packages =
         "name": "choonkeat/elm-retry",
         "summary": "Retry a task with list of retry policies",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.1"
@@ -6446,7 +6446,7 @@ window.packages =
         "name": "hercules-ci/elm-hercules-extras",
         "summary": "Convenience functions not found in core elm packages",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -6797,7 +6797,7 @@ window.packages =
         "name": "jfmengels/elm-lint",
         "summary": "An Elm source code linter, to add additional guarantees to your project.",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "2.0.1",
@@ -6810,7 +6810,7 @@ window.packages =
         "name": "jfmengels/elm-lint-reporter",
         "summary": "Formats the result of `elm-lint` in a nice human-readable way",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.2"
@@ -6821,7 +6821,7 @@ window.packages =
         "name": "jfmengels/elm-review",
         "summary": "Analyzes Elm source code to add additional guarantees to your project.",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -6832,7 +6832,7 @@ window.packages =
         "name": "jfmengels/elm-review-reporter",
         "summary": "Formats the result of `elm-review` in a nice human-readable way",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -6843,7 +6843,7 @@ window.packages =
         "name": "jfmengels/lint-debug",
         "summary": "Lint plugin for `elm-lint` that provides rules to detect debug code.",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.1"
@@ -6854,7 +6854,7 @@ window.packages =
         "name": "jfmengels/lint-unused",
         "summary": "Lint plugin for `elm-lint` that detects unused code",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.2"
@@ -6865,7 +6865,7 @@ window.packages =
         "name": "jfmengels/review-debug",
         "summary": "Provides elm-review rules to detect debug code",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -6876,7 +6876,7 @@ window.packages =
         "name": "jfmengels/review-unused",
         "summary": "Provides elm-review rules to detect unused functions and types",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.4"
@@ -7281,7 +7281,7 @@ window.packages =
         "name": "justgook/elm-game-logic",
         "summary": "An ECS library for Elm. Provides an easy way to build a full game",
         "tags": [
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -7307,7 +7307,7 @@ window.packages =
         "summary": "A library for building decoders for Tiled levels.",
         "tags": [
             "data/formats",
-            "game-dev/tools"
+            "game-dev/utils"
         ],
         "versions": [
             "1.0.0"
@@ -8408,7 +8408,7 @@ window.packages =
         "name": "nikita-volkov/typeclasses",
         "summary": "Explicit typeclasses",
         "tags": [
-            "dev/tools"
+            "dev/code-organisation"
         ],
         "versions": [
             "1.7.0"
@@ -8467,7 +8467,7 @@ window.packages =
         "name": "opvasger/amr",
         "summary": "Automatic message-replay for Elm!",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.0",
@@ -9364,7 +9364,7 @@ window.packages =
         "name": "savardd/elm-time-travel",
         "summary": "An experimental debugger for Elm",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.0.1",
@@ -10130,7 +10130,7 @@ window.packages =
         "name": "tricycle/elm-eventstream",
         "summary": "Keeps track and listens to your events of any form",
         "tags": [
-            "dev/tools"
+            "dev/utils"
         ],
         "versions": [
             "1.1.1"
@@ -10578,7 +10578,7 @@ window.packages =
         "name": "wolfadex/elm-text-adventure",
         "summary": "Simple text adventure builder and viewer",
         "tags": [
-            "game-dev/tools",
+            "game-dev/utils",
             "art/interactive-fiction"
         ],
         "versions": [

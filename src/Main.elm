@@ -270,8 +270,8 @@ humanisePkgSubcat subcat =
         "dev/testing" ->
             "Testing"
 
-        "dev/tools" ->
-            "Tools"
+        "dev/utils" ->
+            "Utils"
 
         "game-dev/code-organisation" ->
             "Code organisation"
@@ -288,8 +288,8 @@ humanisePkgSubcat subcat =
         "game-dev/rendering" ->
             "Rendering"
 
-        "game-dev/tools" ->
-            "Tools"
+        "game-dev/utils" ->
+            "Utils"
 
         "networking/http" ->
             "HTTP"
