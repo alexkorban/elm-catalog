@@ -925,6 +925,16 @@ content model =
                 |> Maybe.withDefault []
                 |> List.map (toolCard model.readmes)
                 |> List.take (if_ model.isMenuPanelOpen 3 10000)
+
+        heading =
+            paragraph []
+                [ text <|
+                    if model.selectedTab == PackagesTab then
+                        humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
+
+                    else
+                        humaniseToolCat model.selectedToolCat
+                ]
     in
     row
         [ width fill
@@ -952,10 +962,10 @@ content model =
             , htmlAttribute <| Attr.id "entryList"
             ]
             ((if model.selectedTab == PackagesTab then
-                packageEls
+                heading :: packageEls
 
               else
-                toolEls
+                heading :: toolEls
              )
                 ++ [ el [ height <| px 30 ] none
                    , paragraph [ Font.size 16 ]
