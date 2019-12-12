@@ -404,7 +404,7 @@ humaniseToolCat cat =
             "Code analysis"
 
         "code-generation" ->
-            "Code generation"
+            "Code & site generation"
 
         "code-transformation" ->
             "Code transformation"
@@ -429,9 +429,6 @@ humaniseToolCat cat =
 
         "package-management" ->
             "Package management"
-
-        "static-sites" ->
-            "Static sites"
 
         "testing" ->
             "Testing"

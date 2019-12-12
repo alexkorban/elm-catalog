@@ -136,6 +136,15 @@ window.tools =
     ]
 },
 {
+    "name": "elm-batteries",
+    "githubName": "cedricss/elm-batteries",
+    "url": "https://www.npmjs.com/package/create-elm-batteries",
+    "summary": "Learn how Elm, Parcel, Cypress and Netlify work together. Get started with Elm navigation, routes, remote data and decoder",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-format",
     "githubName": "avh4/elm-format",
     "url": "https://www.npmjs.com/package/elm-format",
@@ -314,7 +323,7 @@ window.tools =
     "url": "https://korban.net/elm/elmstatic/",
     "summary": "Static site generator which allows you to write page layouts and styles in Elm",
     "tags": [
-        "static-sites"
+        "code-generation"
     ]
 },
 {
@@ -323,7 +332,7 @@ window.tools =
     "url": "https://elm-pages.com",
     "summary": "A statically typed site generator, written with pure Elm",
     "tags": [
-        "static-sites"
+        "code-generation"
     ]
 },
 {
