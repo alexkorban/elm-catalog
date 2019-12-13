@@ -336,6 +336,15 @@ window.tools =
     ]
 },
 {
+    "name": "elm-kitchen",
+    "githubName": "allo-media/elm-kitchen",
+    "url": "https://www.npmjs.com/package/elm-kitchen",
+    "summary": "Bootstrap an Elm SPA with routing, live dev server, elm-test support and build minification",
+    "tags": [
+        "code-generation", "build"
+    ]
+},
+{
     "name": "Elm Search",
     "githubName": "klaftertief/elm-search",
     "url": "https://klaftertief.github.io/elm-search/",
