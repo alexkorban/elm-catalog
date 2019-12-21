@@ -421,6 +421,9 @@ humaniseToolCat cat =
         "editor" ->
             "IDE/editor tools"
 
+        "haskell" -> 
+            "Haskell packages"
+
         "information" ->
             "Information"
 

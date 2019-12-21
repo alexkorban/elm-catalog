@@ -19,6 +19,15 @@ window.tools =
     ]
 },
 {
+    "name": "elm2nix",
+    "githubName": "domenkozar/elm2nix",
+    "url": "https://hackage.haskell.org/package/elm2nix",
+    "summary": "Generate Nix expressions from an Elm project",
+    "tags": [
+        "build"
+    ]
+},
+{
     "name": "elm-sh-completion",
     "githubName": "dmy/elm-sh-completion",
     "url": null,
@@ -105,7 +114,7 @@ window.tools =
     "url": null,
     "summary": "Building the bridge from Haskell to Elm and back. Define types once, use on both sides and enjoy easy (de)serialisation",
     "tags": [
-        "code-generation"
+        "code-generation", "haskell"
     ]
 },
 {
@@ -342,6 +351,78 @@ window.tools =
     "summary": "Bootstrap an Elm SPA with routing, live dev server, elm-test support and build minification",
     "tags": [
         "code-generation", "build"
+    ]
+},
+{
+    "name": "elm-coder-generator",
+    "githubName": "FranzSkuffka/elm-coder-generator",
+    "url": "https://www.npmjs.com/package/decgen",
+    "summary": "Builds JSON decoders and encoders for your Elm types",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "servant-elm",
+    "githubName": "mattjbray/servant-elm",
+    "url": "https://hackage.haskell.org/package/servant-elm",
+    "summary": "Generate Elm functions to query your Haskell Servant API",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "haskell-to-elm",
+    "githubName": "folq/haskell-to-elm",
+    "url": "http://hackage.haskell.org/package/haskell-to-elm",
+    "summary": "Generate Elm types and JSON encoders and decoders from Haskell types",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "servant-to-elm",
+    "githubName": "folq/servant-to-elm",
+    "url": "http://hackage.haskell.org/package/servant-to-elm",
+    "summary": "Automatically generate Elm clients for Haskell Servant APIs",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "elm-export",
+    "githubName": "krisajenkins/elm-export",
+    "url": "http://hackage.haskell.org/package/elm-export",
+    "summary": "Generate Elm source code automatically from Haskell types",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "elm-street",
+    "githubName": "Holmusk/elm-street",
+    "url": "https://hackage.haskell.org/package/elm-street",
+    "summary": "Generate definitions of Elm data types, JSON encoders and decoders automatically derived from Haskell types",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "elm-record-helpers",
+    "githubName": "pd-andy/elm-record-helpers",
+    "url": "https://pd-andy.github.io/elm-record-helpers/",
+    "summary": "Automatically generate helper functions for working with records",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "om-elm",
+    "githubName": "owensmurray/om-elm",
+    "url": "https://hackage.haskell.org/package/om-elm",
+    "summary": "Utilities for serving Elm programs directly from your Haskell binary. Uses TemplateHaskell to compile your Elm program at build time, and construct a WAI Middleware which intercepts requests appropriate to the Elm program",
+    "tags": [
+        "haskell"
     ]
 },
 {
