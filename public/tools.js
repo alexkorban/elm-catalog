@@ -431,6 +431,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-vscode-language-client",
+    "githubName": "elm-tooling/elm-vscode-language-client",
+    "url": null,
+    "packageUrl": "https://marketplace.visualstudio.com/items?itemName=Elmtooling.elm-ls-vscode",
+    "summary": "Elm support for VS Code",
+    "tags": [
+        "editor"
+    ]
+},
+{
     "name": "Elmstatic",
     "githubName": "alexkorban/elmstatic",
     "url": "https://korban.net/elm/elmstatic/",
