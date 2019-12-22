@@ -14,6 +14,7 @@ import Html.Attributes as Attr
 import Http
 import List.Extra as List
 import Markdown
+import Maybe.Extra as Maybe
 import Task
 
 
@@ -77,6 +78,7 @@ type alias Package =
 type alias Tool =
     { name : ToolName
     , url : Maybe String
+    , packageUrl : Maybe String
     , githubName : String
     , summary : String
     , tags : List String
@@ -421,7 +423,7 @@ humaniseToolCat cat =
         "editor" ->
             "IDE/editor tools"
 
-        "haskell" -> 
+        "haskell" ->
             "Haskell packages"
 
         "information" ->
@@ -435,6 +437,9 @@ humaniseToolCat cat =
 
         "testing" ->
             "Testing"
+
+        "typescript" ->
+            "TypeScript"
 
         s ->
             "UNKNOWN CATEGORY " ++ s
@@ -748,6 +753,42 @@ toolCard readmes tool =
     let
         readme =
             Maybe.withDefault { isOpen = False, text = "" } <| Dict.get tool.githubName readmes
+
+        packageLabels =
+            [ ( "npmjs.com", "NPM package" )
+            , ( "hackage.haskell.org", "Hackage package" )
+            , ( "atom.io/packages", "Atom package" )
+            , ( "marketplace.visualstudio.com", "VS Code package" )
+            , ( "packagecontrol.io", "Sublime Text package" )
+            , ( "addons.mozilla.org", "Firefox addon" )
+            , ( "plugins.jetbrains.com", "JetBrains plugin" )
+            ]
+
+        packageLabel url =
+            case List.find (\( substr, _ ) -> String.contains substr url) packageLabels of
+                Nothing ->
+                    "UNKOWN PACKAGE"
+
+                Just ( _, label ) ->
+                    label
+
+        packageEl =
+            case tool.packageUrl of
+                Just url ->
+                    row []
+                        [ text " • "
+                        , link [ Font.color lightBlue ] { url = url, label = text <| packageLabel url }
+                        ]
+
+                Nothing ->
+                    none
+
+        githubUrl =
+            "https://github.com/" ++ tool.githubName
+
+        mainUrl =
+            Maybe.or tool.url tool.packageUrl
+                |> Maybe.withDefault githubUrl
     in
     column
         [ width <| maximum 800 fill
@@ -757,18 +798,13 @@ toolCard readmes tool =
         , Border.rounded 5
         , Border.color lightGrey
         ]
-        [ case tool.url of
-            Just url ->
-                el [ Font.size 20, Font.color blue, headingTypeface ] <|
-                    link [] { url = url, label = text tool.name }
-
-            Nothing ->
-                el [ Font.size 20, headingTypeface ] <|
-                    text tool.name
+        [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
+            link [] { url = mainUrl, label = text tool.name }
         , el [ height <| px 1, width fill, Background.color lightGreen ] none
         , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text tool.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
-            [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ tool.githubName, label = text "Source" }
+            [ link [ Font.color lightBlue ] { url = githubUrl, label = text "Source" }
+            , packageEl
             , text " • "
             , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton tool.githubName, pointer ] <|
                 text
