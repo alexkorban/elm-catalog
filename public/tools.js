@@ -261,6 +261,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-impfix",
+    "githubName": "dkodaj/impfix",
+    "url": "https://dkodaj.github.io/impfix",
+    "packageUrl": "https://www.npmjs.com/package/elm-impfix",
+    "summary": "Remove unused imports from Elm modules",
+    "tags": [
+        "code-transformation"
+    ]
+},
+{
     "name": "elm-live",
     "githubName": "wking-io/elm-live",
     "url": "https://www.elm-live.com",
