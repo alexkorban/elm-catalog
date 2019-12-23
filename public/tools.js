@@ -352,7 +352,7 @@ window.tools =
 },
 {
     "name": "elm-vim",
-    "githubName": "ElmCast/elm-vim",
+    "githubName": "Zaptic/elm-vim",
     "url": null,
     "packageUrl": null,
     "summary": "Elm plugin for Vim with syntax highlighting, automatic indentation, code formatting and other features",
