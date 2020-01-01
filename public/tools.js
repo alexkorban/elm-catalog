@@ -201,6 +201,16 @@ window.tools =
     ]
 },
 {
+    "name": "OpenAPI Generator",
+    "githubName": "openapitools/openapi-generator-cli",
+    "url": "https://eriktim.github.io/openapi-elm/",
+    "packageUrl": "https://www.npmjs.com/package/@openapitools/openapi-generator-cli",
+    "summary": "A code generator for Elm API clients based on an OpenAPI definition",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-batteries",
     "githubName": "cedricss/elm-batteries",
     "url": null,
@@ -570,6 +580,17 @@ window.tools =
         "information"
     ]
 },
+{
+    "name": "Elm License Finder",
+    "githubName": "wolfadex/elm-license-finder",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-license-finder",
+    "summary": "Display licence details for direct and indirect dependencies",
+    "tags": [
+        "information"
+    ]
+},
+
 {
     "name": "elm-debug-transformer",
     "githubName": "kraklin/elm-debug-transformer",
