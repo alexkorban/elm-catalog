@@ -686,7 +686,7 @@ window.packages =
             "data/formats"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -1025,7 +1025,7 @@ window.packages =
         "versions": [
             "6.0.0",
             "7.0.0",
-            "8.0.0"
+            "8.0.1"
         ]
     },
     {
@@ -1052,7 +1052,7 @@ window.packages =
         "versions": [
             "1.0.10",
             "2.4.0",
-            "3.0.0"
+            "3.0.1"
         ]
     },
     {
@@ -1090,6 +1090,17 @@ window.packages =
             "2.2.2",
             "3.0.12",
             "4.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "jxxcarlson/elm-typed-time",
+        "summary": "A typed time library for Elm (keep track of units: seconds, minutes, etc.)",
+        "tags": [
+            "data/time"
+        ],
+        "versions": [
+            "1.2.0"
         ]
     },
     {
@@ -1253,6 +1264,28 @@ window.packages =
             "1.1.0",
             "2.0.0",
             "3.0.1"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "2426021684/elm-collage",
+        "summary": "Use timjs/elm-collage instead.",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.2"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "2426021684/elm-text-width",
+        "summary": "Calculates text width.",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -1510,7 +1543,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.1.1"
+            "2.1.2"
         ]
     },
     {
@@ -1966,6 +1999,17 @@ window.packages =
         ],
         "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "IzumiSy/elm-consistent-hashing",
+        "summary": "A module for consistent hashing",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -2435,7 +2479,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.14.2"
+            "7.17.0"
         ]
     },
     {
@@ -2492,7 +2536,8 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.0",
+            "2.0.0"
         ]
     },
     {
@@ -3231,7 +3276,7 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.0.0"
+            "2.1.0"
         ]
     },
     {
@@ -4380,6 +4425,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "brian-watkins/elm-spec",
+        "summary": "Describe the behavior of Elm programs",
+        "tags": [
+            "dev/testing"
+        ],
+        "versions": [
+            "1.1.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "brianvanburken/elm-list-date",
         "summary": "Helpers for working with List's of Int's representing a date",
@@ -5016,9 +5072,9 @@ window.packages =
             "storage/databases"
         ],
         "versions": [
-            "2.0.0",
             "3.0.0",
-            "4.5.0"
+            "4.5.0",
+            "5.0.0"
         ]
     },
     {
@@ -6307,6 +6363,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "groteck/elm-iban",
+        "summary": "Iban validation in elm",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "guid75/ziplist",
         "summary": "A collection data type that exposes a single current item",
         "tags": [
@@ -6789,7 +6856,7 @@ window.packages =
             "networking/integrations"
         ],
         "versions": [
-            "1.0.3"
+            "1.0.4"
         ]
     },
     {
@@ -6986,6 +7053,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jjagielka/select-menu",
+        "summary": "Select/menu using browser focus. Minimal approach: ~200 lines of code.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -8491,6 +8569,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "owanturist/elm-queue",
+        "summary": "Elm Queue",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "owanturist/elm-union-find",
         "summary": "The Union Find data structure",
         "tags": [
@@ -8586,6 +8675,17 @@ window.packages =
         ]
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "panthershark/email-parser",
+        "summary": "Safely parse and validate email addresses",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.1"
+        ]
+    },
+    {
         "license": "MIT",
         "name": "pascallemerrer/elm-advanced-grid",
         "summary": "A dynamically configurable grid",
@@ -8639,6 +8739,17 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.3.0"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "pd-andy/tuple-extra",
+        "summary": "A collection of helpers for the Tuple type.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -8769,6 +8880,17 @@ window.packages =
         ],
         "versions": [
             "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "prikhi/bootstrap-gallery",
+        "summary": "A Modal Gallery for Bootstrap v4",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {
@@ -9178,7 +9300,8 @@ window.packages =
         ],
         "versions": [
             "1.0.2",
-            "2.0.1"
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -9211,7 +9334,8 @@ window.packages =
             "exclude"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.0",
+            "2.0.0"
         ]
     },
     {
@@ -9300,7 +9424,8 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.0.0"
+            "2.0.0",
+            "3.0.0"
         ]
     },
     {
@@ -9545,7 +9670,7 @@ window.packages =
         "versions": [
             "1.2.0",
             "2.17.0",
-            "3.1.2"
+            "3.1.3"
         ]
     },
     {
@@ -10552,6 +10677,17 @@ window.packages =
         ]
     },
     {
+        "license": "MIT",
+        "name": "wingyplus/thai-citizen-id",
+        "summary": "A library for validate thai citizen id",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "wittjosiah/elm-ordered-dict",
         "summary": "A dictionary mapping unique keys to values preserving insert order.",
@@ -10582,7 +10718,8 @@ window.packages =
             "art/interactive-fiction"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.0",
+            "2.0.0"
         ]
     },
     {
