@@ -183,7 +183,7 @@ window.tools =
 {
     "name": "elm-spa",
     "githubName": "ryannhg/elm-spa",
-    "url": null,
+    "url": "https://www.elm-spa.dev",
     "packageUrl": "https://www.npmjs.com/package/elm-spa",
     "summary": "A code generator and dev server which simplifies SPA development",
     "tags": [
