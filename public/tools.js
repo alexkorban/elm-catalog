@@ -131,6 +131,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-boil",
+    "githubName": "GioPat/elm-boil",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-boil",
+    "summary": "A tool for creating an Elm project scaffold",
+    "tags": [
+        "build", "code-generation"
+    ]
+},
+{
     "name": "JSON2Elm",
     "githubName": "eeue56/json-to-elm",
     "url": "http://json2elm.com",
