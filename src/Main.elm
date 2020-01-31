@@ -1,8 +1,9 @@
 module Main exposing (..)
 
-import Browser
+import Browser exposing (UrlRequest(..))
 import Browser.Dom
 import Browser.Events exposing (onResize)
+import Browser.Navigation as Nav
 import Dict exposing (Dict)
 import Element exposing (..)
 import Element.Background as Background
@@ -16,18 +17,26 @@ import List.Extra as List
 import Markdown
 import Maybe.Extra as Maybe
 import Task
+import Url exposing (Url)
+import Url.Parser as UrlParser exposing ((</>))
+
+
+type Route
+    = PackageRoute String
+    | ToolRoute String
 
 
 type Msg
-    = RuntimeDidSomethingIrrelevant
+    = RuntimeChangedUrl Url
+    | RuntimeDidSomethingIrrelevant
     | RuntimeReceivedReadme PackageName (Result Http.Error Markdown)
+    | UserClickedLink UrlRequest
     | UserClickedReadmeButton PackageName
     | UserClickedMenuIcon
     | UserClickedOutsideMenuPanel
     | UserResizedWindow Int Int
     | UserSelectedSubcat String
     | UserSelectedToolCat String
-    | UserSelectedTab Tab
 
 
 type alias Markdown =
@@ -53,15 +62,17 @@ type alias Size =
 
 type alias Model =
     { isMenuPanelOpen : Bool
+    , navKey : Nav.Key
     , pkgCategories : PkgCategories
     , packageCount : Int
     , packages : Packages
     , readmes : Readmes
+    , route : Route
     , selectedPkgSubcat : String
     , selectedToolCat : String
-    , selectedTab : Tab
     , tools : Tools
     , toolCount : Int
+    , urlPrefix : String
     , windowSize : Size
     }
 
@@ -108,7 +119,12 @@ type alias Readmes =
 
 
 type alias Flags =
-    { packages : List Package, tools : List Tool, windowHeight : Int, windowWidth : Int }
+    { packages : List Package
+    , tools : List Tool
+    , urlPrefix : String
+    , windowHeight : Int
+    , windowWidth : Int
+    }
 
 
 
@@ -182,6 +198,37 @@ attrNone =
 
 sides =
     { top = 0, bottom = 0, left = 0, right = 0 }
+
+
+topLevelParser : String -> UrlParser.Parser a a
+topLevelParser urlPrefix =
+    case urlPrefix of
+        "" ->
+            UrlParser.top
+
+        s ->
+            s
+                |> String.split "/"
+                |> List.map UrlParser.s
+                |> List.foldl (</>) UrlParser.top
+
+
+
+-- UrlParser.oneOf [ UrlParser.top, UrlParser.s "elm" </> UrlParser.s "catalog" ]
+
+
+routeParser : String -> UrlParser.Parser (Route -> a) a
+routeParser urlPrefix =
+    let
+        top =
+            topLevelParser urlPrefix
+    in
+    UrlParser.oneOf
+        [ UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
+        , UrlParser.map PackageRoute <| top </> UrlParser.s "packages" </> UrlParser.string
+        , UrlParser.map (ToolRoute "build") <| top </> UrlParser.s "tools"
+        , UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
+        ]
 
 
 humanisePkgCat : String -> String
@@ -506,12 +553,19 @@ resetViewport =
     Task.perform (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewport 0 0
 
 
+resetStateOnPageChange : Model -> Model
+resetStateOnPageChange model =
+    { model | isMenuPanelOpen = False }
+
+
 
 -- UI
+-- TODO: pass in the prefix where app is mounted, then use it to construct the top level
+-- URL parser (which now has to be stored in the model)
 
 
-init : Flags -> ( Model, Cmd msg )
-init flags =
+init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
+init flags url navKey =
     let
         packages =
             categorise flags.packages
@@ -550,15 +604,19 @@ init flags =
             categorise flags.tools
     in
     ( { isMenuPanelOpen = False
+      , navKey = navKey
       , pkgCategories = pkgCategories
       , packageCount = packageCount
       , packages = packages
       , readmes = Dict.empty
+      , route =
+            Maybe.withDefault (PackageRoute "dev/algorithms") <|
+                UrlParser.parse (routeParser flags.urlPrefix) (Debug.log "url" url)
       , selectedPkgSubcat = selection
-      , selectedTab = PackagesTab
       , selectedToolCat = "build"
       , toolCount = toolCount
       , tools = tools
+      , urlPrefix = flags.urlPrefix
       , windowSize = { height = flags.windowHeight, width = flags.windowWidth }
       }
     , Cmd.none
@@ -576,6 +634,15 @@ getReadme packageName =
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
+        RuntimeChangedUrl url ->
+            ( { model
+                | route =
+                    Maybe.withDefault (PackageRoute "dev/algorithms") <|
+                        UrlParser.parse (routeParser model.urlPrefix) (Debug.log "url" url)
+              }
+            , Cmd.none
+            )
+
         RuntimeDidSomethingIrrelevant ->
             ( model, Cmd.none )
 
@@ -584,6 +651,14 @@ update msg model =
 
         RuntimeReceivedReadme _ (Err _) ->
             ( model, Cmd.none )
+
+        UserClickedLink urlRequest ->
+            case urlRequest of
+                Internal url ->
+                    ( resetStateOnPageChange model, Nav.pushUrl model.navKey <| Url.toString url )
+
+                External url ->
+                    ( model, Nav.load url )
 
         UserClickedMenuIcon ->
             ( { model | isMenuPanelOpen = True }, Cmd.none )
@@ -604,9 +679,6 @@ update msg model =
 
         UserSelectedSubcat subcat ->
             ( { model | selectedPkgSubcat = subcat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
-
-        UserSelectedTab tab ->
-            ( { model | selectedTab = tab }, Cmd.none )
 
         UserSelectedToolCat cat ->
             ( { model | selectedToolCat = cat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
@@ -885,7 +957,7 @@ toolCategoryList model =
 categoryList : Model -> Element Msg
 categoryList model =
     let
-        tabEl label tab =
+        tabEl isSelected url label =
             let
                 commonAttrs =
                     [ centerX, centerY, padding 5 ]
@@ -894,7 +966,7 @@ categoryList model =
                 [ width <| fillPortion 1
                 , Background.color white
                 , Border.widthEach
-                    (if model.selectedTab == tab then
+                    (if isSelected then
                         { top = 2, bottom = 0, left = 2, right = 2 }
 
                      else
@@ -903,13 +975,23 @@ categoryList model =
                 , Border.color lightGrey
                 ]
             <|
-                if model.selectedTab == tab then
+                if isSelected then
                     el (commonAttrs ++ [ Font.color green ]) <|
                         text label
 
                 else
-                    el (commonAttrs ++ [ Font.color blue, pointer, onClick <| UserSelectedTab tab ]) <|
-                        text label
+                    link (commonAttrs ++ [ Font.color blue ])
+                        { url = model.urlPrefix ++ url
+                        , label = text label
+                        }
+
+        tabEls =
+            case model.route of
+                PackageRoute _ ->
+                    [ tabEl True "/packages" "Packages", tabEl False "/tools" "Tools" ]
+
+                ToolRoute _ ->
+                    [ tabEl False "/packages" "Packages", tabEl True "/tools" "Tools" ]
     in
     column
         [ htmlAttribute <| Attr.style "flex-shrink" "1"
@@ -929,19 +1011,20 @@ categoryList model =
             , height <| px 37
             , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
             ]
-            [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
-            , tabEl "Packages" PackagesTab
-            , tabEl "Tools" ToolsTab
-            , el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
-            ]
+            ([ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none ]
+                ++ tabEls
+                ++ [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+                   ]
+            )
         , el
             [ paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
           <|
-            if model.selectedTab == PackagesTab then
-                pkgCategoryList model
+            case model.route of
+                PackageRoute _ ->
+                    pkgCategoryList model
 
-            else
-                toolCategoryList model
+                ToolRoute _ ->
+                    toolCategoryList model
         ]
 
 
@@ -965,11 +1048,10 @@ content model =
         heading =
             paragraph []
                 [ text <|
-                    if model.selectedTab == PackagesTab then
-                        humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
-
-                    else
-                        humaniseToolCat model.selectedToolCat
+                    -- if model.selectedTab == PackagesTab then
+                    --     humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
+                    -- else
+                    humaniseToolCat model.selectedToolCat
                 ]
     in
     row
@@ -997,12 +1079,12 @@ content model =
             , htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
-            ((if model.selectedTab == PackagesTab then
-                heading :: packageEls
-
-              else
-                heading :: toolEls
-             )
+            -- ((if model.selectedTab == PackagesTab then
+            --     heading :: packageEls
+            --   else
+            (heading
+                :: toolEls
+                --)
                 ++ [ el [ height <| px 30 ] none
                    , paragraph [ Font.size 16 ]
                         [ text "Found a mistake or a missing entry?"
@@ -1167,9 +1249,11 @@ view model =
 
 main : Program Flags Model Msg
 main =
-    Browser.document
+    Browser.application
         { init = init
         , update = update
         , view = \model -> { title = "Elm Catalog", body = [ view model ] }
         , subscriptions = subscriptions
+        , onUrlRequest = UserClickedLink
+        , onUrlChange = RuntimeChangedUrl
         }
