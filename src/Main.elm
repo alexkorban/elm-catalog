@@ -981,7 +981,7 @@ categoryList model =
 
                 else
                     link (commonAttrs ++ [ Font.color blue ])
-                        { url = model.urlPrefix ++ url
+                        { url = "/" ++ model.urlPrefix ++ url
                         , label = text label
                         }
 
