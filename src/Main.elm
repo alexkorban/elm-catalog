@@ -611,7 +611,7 @@ init flags url navKey =
       , readmes = Dict.empty
       , route =
             Maybe.withDefault (PackageRoute "dev/algorithms") <|
-                UrlParser.parse (routeParser flags.urlPrefix) (Debug.log "url" url)
+                UrlParser.parse (routeParser flags.urlPrefix) url
       , selectedPkgSubcat = selection
       , selectedToolCat = "build"
       , toolCount = toolCount
@@ -638,7 +638,7 @@ update msg model =
             ( { model
                 | route =
                     Maybe.withDefault (PackageRoute "dev/algorithms") <|
-                        UrlParser.parse (routeParser model.urlPrefix) (Debug.log "url" url)
+                        UrlParser.parse (routeParser model.urlPrefix) url
               }
             , Cmd.none
             )
