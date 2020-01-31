@@ -210,7 +210,7 @@ topLevelParser urlPrefix =
             s
                 |> String.split "/"
                 |> List.map UrlParser.s
-                |> List.foldl (</>) UrlParser.top
+                |> List.foldr (</>) UrlParser.top
 
 
 
@@ -225,9 +225,12 @@ routeParser urlPrefix =
     in
     UrlParser.oneOf
         [ UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
-        , UrlParser.map PackageRoute <| top </> UrlParser.s "packages" </> UrlParser.string
+
+        --, UrlParser.map PackageRoute <| top </> UrlParser.s "packages" </> UrlParser.string
         , UrlParser.map (ToolRoute "build") <| top </> UrlParser.s "tools"
-        , UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
+
+        --, UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
+        , UrlParser.map (PackageRoute "dev/utils") <| top
         ]
 
 
@@ -610,7 +613,7 @@ init flags url navKey =
       , packages = packages
       , readmes = Dict.empty
       , route =
-            Maybe.withDefault (PackageRoute "dev/algorithms") <|
+            Maybe.withDefault (PackageRoute "dev/prototyping") <|
                 UrlParser.parse (routeParser flags.urlPrefix) url
       , selectedPkgSubcat = selection
       , selectedToolCat = "build"
@@ -637,8 +640,8 @@ update msg model =
         RuntimeChangedUrl url ->
             ( { model
                 | route =
-                    Maybe.withDefault (PackageRoute "dev/algorithms") <|
-                        UrlParser.parse (routeParser model.urlPrefix) url
+                    Maybe.withDefault (PackageRoute "dev/testing") <|
+                        UrlParser.parse (Debug.log "parser" <| routeParser model.urlPrefix) (Debug.log "url" url)
               }
             , Cmd.none
             )
@@ -981,7 +984,12 @@ categoryList model =
 
                 else
                     link (commonAttrs ++ [ Font.color blue ])
-                        { url = "/" ++ model.urlPrefix ++ url
+                        { url =
+                            if String.isEmpty model.urlPrefix then
+                                url
+
+                            else
+                                "/" ++ model.urlPrefix ++ url
                         , label = text label
                         }
 
