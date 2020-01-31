@@ -641,7 +641,7 @@ update msg model =
             ( { model
                 | route =
                     Maybe.withDefault (PackageRoute "dev/testing") <|
-                        UrlParser.parse (Debug.log "parser" <| routeParser model.urlPrefix) (Debug.log "url" url)
+                        UrlParser.parse (routeParser model.urlPrefix) url
               }
             , Cmd.none
             )
