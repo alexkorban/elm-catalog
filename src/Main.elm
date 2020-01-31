@@ -1056,10 +1056,12 @@ content model =
         heading =
             paragraph []
                 [ text <|
-                    -- if model.selectedTab == PackagesTab then
-                    --     humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
-                    -- else
-                    humaniseToolCat model.selectedToolCat
+                    case model.route of
+                        PackageRoute _ ->
+                            humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
+
+                        ToolRoute _ ->
+                            humaniseToolCat model.selectedToolCat
                 ]
     in
     row
@@ -1087,12 +1089,14 @@ content model =
             , htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
-            -- ((if model.selectedTab == PackagesTab then
-            --     heading :: packageEls
-            --   else
-            (heading
-                :: toolEls
-                --)
+            ([ heading ]
+                ++ (case model.route of
+                        PackageRoute _ ->
+                            packageEls
+
+                        ToolRoute _ ->
+                            toolEls
+                   )
                 ++ [ el [ height <| px 30 ] none
                    , paragraph [ Font.size 16 ]
                         [ text "Found a mistake or a missing entry?"
