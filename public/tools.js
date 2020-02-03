@@ -247,7 +247,37 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/elm-translator",
     "summary": "Generate Elm code for type-safe internationalisation based on a JSON specification",
     "tags": [
-        "code-generation"
+        "code-generation", "i18n"
+    ]
+},
+{
+    "name": "elm-i18next-gen",
+    "githubName": "yonigibbs/elm-i18next-gen",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-i18next-gen",
+    "summary": "Generate code which uses the elm-i18next package to read text values from a source JSON translation object",
+    "tags": [
+        "code-generation", "i18n"
+    ]
+},
+{
+    "name": "elm-i18n-module-generator",
+    "githubName": "ChristophP/elm-i18n-module-generator",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-i18n-gen",
+    "summary": "Generate an Elm translation module from JSON language files",
+    "tags": [
+        "code-generation", "i18n"
+    ]
+},
+{
+    "name": "elm-translations",
+    "githubName": "layflags/elm-translations",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-translations",
+    "summary": "Generate type safe translations for your Elm app",
+    "tags": [
+        "code-generation", "i18n"
     ]
 },
 {

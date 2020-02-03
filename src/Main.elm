@@ -476,6 +476,9 @@ humaniseToolCat cat =
         "haskell" ->
             "Haskell packages"
 
+        "i18n" ->
+            "Internationalisation"
+
         "information" ->
             "Information"
 
