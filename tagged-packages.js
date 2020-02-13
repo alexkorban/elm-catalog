@@ -5,7 +5,7 @@ window.packages =
         "name": "elm/browser",
         "summary": "Run Elm in browsers, with access to browser history for single-page apps (SPAs)",
         "tags": [
-            "exclude"
+            "stl/stl"
         ],
         "versions": [
             "1.0.2"
@@ -16,7 +16,7 @@ window.packages =
         "name": "elm/bytes",
         "summary": "Work with sequences of bytes (a.k.a. ArrayBuffer, typed arrays, DataView)",
         "tags": [
-            "data/formats"
+            "data/formats", "stl/stl"
         ],
         "versions": [
             "1.0.8"
@@ -27,7 +27,7 @@ window.packages =
         "name": "elm/core",
         "summary": "Elm's standard libraries",
         "tags": [
-            "exclude"
+            "stl/stl"
         ],
         "versions": [
             "1.0.4"
@@ -38,7 +38,7 @@ window.packages =
         "name": "elm/file",
         "summary": "Select files. Download files. Work with file content.",
         "tags": [
-            "ui/patterns"
+            "ui/patterns", "stl/stl"
         ],
         "versions": [
             "1.0.5"
@@ -49,7 +49,7 @@ window.packages =
         "name": "elm/html",
         "summary": "Fast HTML, rendered with virtual DOM diffing",
         "tags": [
-            "ui/html"
+            "ui/html", "stl/stl"
         ],
         "versions": [
             "1.0.0"
@@ -60,7 +60,7 @@ window.packages =
         "name": "elm/http",
         "summary": "Make HTTP requests",
         "tags": [
-            "networking/http"
+            "networking/http", "stl/stl"
         ],
         "versions": [
             "1.0.0",
@@ -72,7 +72,7 @@ window.packages =
         "name": "elm/json",
         "summary": "Encode and decode JSON values",
         "tags": [
-            "data/formats"
+            "data/formats", "stl/stl"
         ],
         "versions": [
             "1.1.3"
@@ -83,7 +83,7 @@ window.packages =
         "name": "elm/parser",
         "summary": "a parsing library, focused on simplicity and great error messages",
         "tags": [
-            "dev/parsing"
+            "dev/parsing", "stl/stl"
         ],
         "versions": [
             "1.1.0"
@@ -94,10 +94,10 @@ window.packages =
         "name": "elm/project-metadata-utils",
         "summary": "Work with elm.json and docs.json files in Elm",
         "tags": [
-            "exclude"
+            "data/formats", "stl/stl"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.1"
         ]
     },
     {
@@ -105,7 +105,7 @@ window.packages =
         "name": "elm/random",
         "summary": "Generate random numbers and values (RNG)",
         "tags": [
-            "data/random"
+            "data/random", "stl/stl"
         ],
         "versions": [
             "1.0.0"
@@ -116,7 +116,7 @@ window.packages =
         "name": "elm/regex",
         "summary": "Support for JS-style regular expressions in Elm",
         "tags": [
-            "dev/parsing"
+            "dev/parsing", "stl/stl"
         ],
         "versions": [
             "1.0.0"
@@ -138,7 +138,7 @@ window.packages =
         "name": "elm/time",
         "summary": "Work with POSIX times, time zones, years, months, days, hours, seconds, etc.",
         "tags": [
-            "data/time"
+            "data/time", "stl/stl"
         ],
         "versions": [
             "1.0.0"
@@ -149,8 +149,7 @@ window.packages =
         "name": "elm/url",
         "summary": "Create and parse URLs. Use for HTTP and \\\"routing\\\" in single-page apps (SPAs)",
         "tags": [
-            "ui/patterns",
-            "data/formats"
+            "ui/patterns", "data/formats", "stl/stl"
         ],
         "versions": [
             "1.0.0"
@@ -161,7 +160,7 @@ window.packages =
         "name": "elm/virtual-dom",
         "summary": "Core virtual DOM implementation, basis for HTML and SVG libraries",
         "tags": [
-            "exclude"
+            "stl/stl"
         ],
         "versions": [
             "1.0.2"
@@ -772,7 +771,7 @@ window.packages =
         ],
         "versions": [
             "1.0.1",
-            "2.0.19"
+            "2.0.21"
         ]
     },
     {
@@ -908,7 +907,7 @@ window.packages =
         "versions": [
             "1.2.1",
             "2.0.0",
-            "3.1.0"
+            "3.2.0"
         ]
     },
     {
@@ -920,7 +919,7 @@ window.packages =
         ],
         "versions": [
             "1.0.2",
-            "2.0.1"
+            "2.0.2"
         ]
     },
     {
@@ -945,6 +944,17 @@ window.packages =
             "1.0.2",
             "2.0.0",
             "3.0.0"
+        ]
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "ianmackenzie/elm-geometry-test",
+        "summary": "Helpful utilities for testing code that uses elm-geometry",
+        "tags": [
+            "sciences/maths", "dev/testing"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -1052,7 +1062,7 @@ window.packages =
         "versions": [
             "4.1.0",
             "5.1.1",
-            "6.0.0"
+            "6.0.1"
         ]
     },
     {
@@ -1102,7 +1112,7 @@ window.packages =
         "versions": [
             "5.0.0",
             "6.0.1",
-            "7.0.7"
+            "7.0.8"
         ]
     },
     {
@@ -1165,7 +1175,7 @@ window.packages =
         "versions": [
             "7.0.9",
             "8.0.0",
-            "9.0.2"
+            "9.1.0"
         ]
     },
     {
@@ -2528,7 +2538,7 @@ window.packages =
         "versions": [
             "5.11.0",
             "6.31.0",
-            "7.18.1"
+            "7.19.0"
         ]
     },
     {
@@ -2668,7 +2678,7 @@ window.packages =
             "ui/elm-ui"
         ],
         "versions": [
-            "1.0.0"
+            "1.1.0"
         ]
     },
     {
@@ -2750,7 +2760,7 @@ window.packages =
         "versions": [
             "16.0.0",
             "17.0.2",
-            "18.0.0"
+            "18.0.1"
         ]
     },
     {
@@ -4048,6 +4058,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "bburdette/cellme",
+        "summary": "schelme cells",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "bburdette/pdf-element",
         "summary": "PDF custom element for elm",
         "tags": [
@@ -4063,11 +4084,12 @@ window.packages =
         "name": "bburdette/schelme",
         "summary": "a Scheme inspired scripting language for Elm.",
         "tags": [
-            "exclude"
+            "dev/parsing"
         ],
         "versions": [
             "1.1.0",
-            "2.0.1"
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -4455,7 +4477,7 @@ window.packages =
         "versions": [
             "25.1.0",
             "26.1.6",
-            "27.0.8"
+            "27.0.11"
         ]
     },
     {
@@ -4534,7 +4556,7 @@ window.packages =
         ],
         "versions": [
             "1.1.0",
-            "2.0.0"
+            "2.1.0"
         ]
     },
     {
@@ -4721,7 +4743,7 @@ window.packages =
         "versions": [
             "9.0.0",
             "10.0.0",
-            "11.0.0"
+            "11.1.1"
         ]
     },
     {
@@ -4846,6 +4868,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "cedricss/elm-form-machine",
+        "summary": "A state machine to handle forms in elm.",
+        "tags": [
+            "dev/code-organisation", "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "chain-partners/elm-bignum",
         "summary": "Elm library for arbitrary precision arithmetic",
         "tags": [
@@ -4935,7 +4968,7 @@ window.packages =
         "versions": [
             "2.0.1",
             "3.0.3",
-            "4.0.0"
+            "4.0.1"
         ]
     },
     {
@@ -5225,7 +5258,8 @@ window.packages =
         ],
         "versions": [
             "1.1.3",
-            "2.0.0"
+            "2.0.2",
+            "3.0.0"
         ]
     },
     {
@@ -5250,7 +5284,7 @@ window.packages =
         "versions": [
             "1.1.3",
             "2.0.0",
-            "3.0.1"
+            "3.0.2"
         ]
     },
     {
@@ -6195,7 +6229,8 @@ window.packages =
         "name": "frawa/elm-contour",
         "summary": "Calculate contour level lines for a two-dimensional scalar field",
         "tags": [
-            "dev/algorithms", "game-dev/rendering"
+            "dev/algorithms",
+            "game-dev/rendering"
         ],
         "versions": [
             "1.0.0"
@@ -6693,7 +6728,8 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.0.1"
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -7563,7 +7599,8 @@ window.packages =
             "sciences/maths"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.0",
+            "2.0.0"
         ]
     },
     {
@@ -7574,7 +7611,8 @@ window.packages =
             "game-dev/utils"
         ],
         "versions": [
-            "1.0.0"
+            "1.0.0",
+            "2.0.0"
         ]
     },
     {
@@ -7614,6 +7652,18 @@ window.packages =
         ],
         "versions": [
             "1.0.2"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "justgook/webgl-playground",
+        "summary": "A fun way to create pictures,animations and games in WebGL https://git.io/Jv3wc",
+        "tags": [
+            "game-dev/utils"
+        ],
+        "versions": [
+            "1.0.0",
+            "2.2.0"
         ]
     },
     {
@@ -7672,7 +7722,7 @@ window.packages =
             "data/visualisation"
         ],
         "versions": [
-            "1.1.2"
+            "1.1.4"
         ]
     },
     {
@@ -7706,11 +7756,11 @@ window.packages =
         "name": "jzxhuang/http-extras",
         "summary": "Improved HTTP - detailed responses, convenience functions, and API mocking.",
         "tags": [
-            "exclude"
+            "networking/http"
         ],
         "versions": [
             "1.0.2",
-            "2.0.2"
+            "2.1.0"
         ]
     },
     {
@@ -8012,7 +8062,7 @@ window.packages =
             "dev/code-organisation"
         ],
         "versions": [
-            "1.0.1"
+            "1.1.0"
         ]
     },
     {
@@ -8026,6 +8076,17 @@ window.packages =
             "2.3.0",
             "3.1.0",
             "4.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "lattyware/elm-json-diff",
+        "summary": "Compute JSON patches by comparing two JSON values.",
+        "tags": [
+            "data/formats"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -8314,7 +8375,8 @@ window.packages =
             "ui/patterns"
         ],
         "versions": [
-            "1.1.0"
+            "1.1.0",
+            "2.0.0"
         ]
     },
     {
@@ -8338,7 +8400,7 @@ window.packages =
         "versions": [
             "1.0.0",
             "2.0.0",
-            "3.0.2"
+            "3.0.3"
         ]
     },
     {
@@ -8793,6 +8855,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "owanturist/elm-bulletproof",
+        "summary": "Make your components Bulletproof",
+        "tags": [
+            "dev/prototyping"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "owanturist/elm-graphql",
         "summary": "Build GraphQL schemes and decoder together",
         "tags": [
@@ -8909,7 +8982,7 @@ window.packages =
         "versions": [
             "1.1.0",
             "2.1.0",
-            "3.2.0"
+            "3.3.0"
         ]
     },
     {
@@ -9374,6 +9447,17 @@ window.packages =
             "1.0.2",
             "2.0.0",
             "3.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "rielas/measurement",
+        "summary": "Working with Google Analytics Measurement Protocol",
+        "tags": [
+            "networking/integrations"
+        ],
+        "versions": [
+            "1.0.0"
         ]
     },
     {
@@ -9901,6 +9985,17 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "sli/autotable",
+        "summary": "A simple but extensible datatable.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "MIT",
         "name": "solcates/elm-openid-connect",
         "summary": "A OpenID Connect implementation",
         "tags": [
@@ -10420,6 +10515,17 @@ window.packages =
         ]
     },
     {
+        "license": "Apache-2.0",
+        "name": "timo-weike/generic-collections",
+        "summary": "Dict that works with any key types by converting keys to String",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
         "license": "MIT",
         "name": "tiziano88/elm-protobuf",
         "summary": "Google Protocol Buffers runtime library",
@@ -10534,7 +10640,8 @@ window.packages =
         ],
         "versions": [
             "1.0.0",
-            "2.1.2"
+            "2.1.2",
+            "3.0.0"
         ]
     },
     {
@@ -10590,7 +10697,8 @@ window.packages =
         ],
         "versions": [
             "1.1.3",
-            "2.0.1"
+            "2.0.1",
+            "3.0.0"
         ]
     },
     {
@@ -10628,7 +10736,7 @@ window.packages =
         "versions": [
             "2.0.0",
             "3.0.0",
-            "4.2.3"
+            "4.2.4"
         ]
     },
     {
@@ -10906,12 +11014,12 @@ window.packages =
         "name": "waratuman/elm-standardapi",
         "summary": "Elm client for StandardAPI",
         "tags": [
-            "exclude"
+            "networking/integrations"
         ],
         "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.0"
+            "4.0.0",
+            "5.0.0",
+            "6.0.0"
         ]
     },
     {
@@ -10994,6 +11102,18 @@ window.packages =
             "2.0.0",
             "3.2.0",
             "4.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "whage/elm-validate",
+        "summary": "Validate data",
+        "tags": [
+            "exclude"
+        ],
+        "versions": [
+            "1.1.0",
+            "2.0.0"
         ]
     },
     {
@@ -11189,6 +11309,17 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "yujota/elm-makie",
+        "summary": "A pack of monoids in the category of endofunctors",
+        "tags": [
+            "sciences/machine-learning"
+        ],
+        "versions": [
+            "1.0.0"
+        ]
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "yumlonne/elm-japanese-calendar",
         "summary": "Japanese-Calendar for elm",
         "tags": [
@@ -11218,6 +11349,17 @@ window.packages =
         ],
         "versions": [
             "1.0.2"
+        ]
+    },
+    {
+        "license": "MIT",
+        "name": "z5h/timeline",
+        "summary": "Timeline helps you add smooth transition animations to Elm programs.",
+        "tags": [
+            "ui/animation"
+        ],
+        "versions": [
+            "1.0.1"
         ]
     },
     {

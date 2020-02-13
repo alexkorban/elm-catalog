@@ -264,6 +264,9 @@ humanisePkgCat cat =
         "security" ->
             "Security"
 
+        "stl" ->
+            "Standard library"
+
         "storage" ->
             "Storage"
 
@@ -384,6 +387,9 @@ humanisePkgSubcat subcat =
 
         "security/other" ->
             "Other"
+
+        "stl/stl" ->
+            "Standard library"
 
         "storage/databases" ->
             "Databases"
