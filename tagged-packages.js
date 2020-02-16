@@ -600,7 +600,7 @@ window.packages =
         "name": "Arkham/elm-rttl",
         "summary": "Parse ringtones written using RTTL and Nokia Composer",
         "tags": [
-            "data/formats", 
+            "data/formats"
         ],
         "version": "1.0.0"
     },
