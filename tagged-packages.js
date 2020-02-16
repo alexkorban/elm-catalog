@@ -7,20 +7,17 @@ window.packages =
         "tags": [
             "stl/stl"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/bytes",
         "summary": "Work with sequences of bytes (a.k.a. ArrayBuffer, typed arrays, DataView)",
         "tags": [
-            "data/formats", "stl/stl"
+            "data/formats",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.8"
-        ]
+        "version": "1.0.8"
     },
     {
         "license": "BSD-3-Clause",
@@ -29,98 +26,87 @@ window.packages =
         "tags": [
             "stl/stl"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/file",
         "summary": "Select files. Download files. Work with file content.",
         "tags": [
-            "ui/patterns", "stl/stl"
+            "ui/patterns",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/html",
         "summary": "Fast HTML, rendered with virtual DOM diffing",
         "tags": [
-            "ui/html", "stl/stl"
+            "ui/html",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/http",
         "summary": "Make HTTP requests",
         "tags": [
-            "networking/http", "stl/stl"
+            "networking/http",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/json",
         "summary": "Encode and decode JSON values",
         "tags": [
-            "data/formats", "stl/stl"
+            "data/formats",
+            "stl/stl"
         ],
-        "versions": [
-            "1.1.3"
-        ]
+        "version": "1.1.3"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/parser",
         "summary": "a parsing library, focused on simplicity and great error messages",
         "tags": [
-            "dev/parsing", "stl/stl"
+            "dev/parsing",
+            "stl/stl"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/project-metadata-utils",
         "summary": "Work with elm.json and docs.json files in Elm",
         "tags": [
-            "data/formats", "stl/stl"
+            "data/formats",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/random",
         "summary": "Generate random numbers and values (RNG)",
         "tags": [
-            "data/random", "stl/stl"
+            "data/random",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/regex",
         "summary": "Support for JS-style regular expressions in Elm",
         "tags": [
-            "dev/parsing", "stl/stl"
+            "dev/parsing",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -129,31 +115,28 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/time",
         "summary": "Work with POSIX times, time zones, years, months, days, hours, seconds, etc.",
         "tags": [
-            "data/time", "stl/stl"
+            "data/time",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "elm/url",
-        "summary": "Create and parse URLs. Use for HTTP and \\\"routing\\\" in single-page apps (SPAs)",
+        "summary": "Create and parse URLs. Use for HTTP and \"routing\" in single-page apps (SPAs)",
         "tags": [
-            "ui/patterns", "data/formats", "stl/stl"
+            "ui/patterns",
+            "data/formats",
+            "stl/stl"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -162,9 +145,7 @@ window.packages =
         "tags": [
             "stl/stl"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -173,9 +154,7 @@ window.packages =
         "tags": [
             "dev/performance"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -184,9 +163,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -195,9 +172,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -206,9 +181,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.2.2"
-        ]
+        "version": "1.2.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -218,9 +191,7 @@ window.packages =
             "game-dev/rendering",
             "ui/rendering"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -229,9 +200,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -240,9 +209,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -251,11 +218,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "14.0.0",
-            "15.1.0",
-            "16.0.1"
-        ]
+        "version": "16.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -265,9 +228,7 @@ window.packages =
             "sciences/maths",
             "ui/css"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -277,9 +238,7 @@ window.packages =
             "data/time",
             "data/formats"
         ],
-        "versions": [
-            "1.1.3"
-        ]
+        "version": "1.1.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -288,10 +247,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -300,11 +256,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.0",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -313,9 +265,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -324,11 +274,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "5.2.0",
-            "6.0.0",
-            "7.0.0"
-        ]
+        "version": "7.0.0"
     },
     {
         "license": "MIT",
@@ -337,9 +283,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -348,11 +292,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -361,10 +301,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -373,11 +310,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.6",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -386,11 +319,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "2.0.0",
-            "3.5.5",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -400,9 +329,7 @@ window.packages =
             "ui/frameworks",
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.1.5"
-        ]
+        "version": "1.1.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -411,11 +338,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "3.4.1",
-            "4.3.0",
-            "5.0.1"
-        ]
+        "version": "5.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -424,11 +347,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "6.0.2",
-            "7.0.0",
-            "8.1.0"
-        ]
+        "version": "8.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -438,11 +357,7 @@ window.packages =
             "sciences/physics",
             "game-dev/physics"
         ],
-        "versions": [
-            "2.0.1",
-            "3.2.2",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -451,11 +366,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "3.0.4",
-            "4.1.0",
-            "5.0.2"
-        ]
+        "version": "5.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -464,9 +375,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -475,9 +384,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.3.1"
-        ]
+        "version": "1.3.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -486,9 +393,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -497,10 +402,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.3"
-        ]
+        "version": "2.1.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -509,10 +411,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.0.2",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -521,9 +420,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -532,9 +429,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -543,10 +438,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -555,10 +447,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -567,9 +456,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -578,9 +465,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -589,9 +474,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -600,10 +483,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -613,11 +493,7 @@ window.packages =
             "art/interactive-fiction",
             "game-dev/utils"
         ],
-        "versions": [
-            "3.0.1",
-            "4.0.0",
-            "5.0.1"
-        ]
+        "version": "5.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -626,11 +502,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.1.1"
-        ]
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -639,9 +511,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -650,9 +520,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -661,9 +529,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -673,9 +539,7 @@ window.packages =
             "ui/svg",
             "data/visualisation"
         ],
-        "versions": [
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -684,9 +548,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -695,11 +557,7 @@ window.packages =
         "tags": [
             "ui/accessibility"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -708,10 +566,7 @@ window.packages =
         "tags": [
             "ui/accessibility"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -720,11 +575,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "5.0.1",
-            "6.0.0",
-            "7.0.0"
-        ]
+        "version": "7.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -733,10 +584,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "1.4.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -745,11 +593,16 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Arkham/elm-rttl",
+        "summary": "Parse ringtones written using RTTL and Nokia Composer",
+        "tags": [
+            "data/formats", 
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -758,9 +611,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -769,10 +620,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.21"
-        ]
+        "version": "2.0.21"
     },
     {
         "license": "BSD-3-Clause",
@@ -781,10 +629,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -793,10 +638,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.8"
-        ]
+        "version": "2.0.8"
     },
     {
         "license": "MIT",
@@ -805,11 +647,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "8.0.0",
-            "9.0.1",
-            "10.0.1"
-        ]
+        "version": "10.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -818,11 +656,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "3.2.0",
-            "4.3.0",
-            "5.2.2"
-        ]
+        "version": "5.2.2"
     },
     {
         "license": "Apache-2.0",
@@ -831,10 +665,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -844,11 +675,7 @@ window.packages =
             "ui/maps",
             "sciences/geography"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.1",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -857,10 +684,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.6.1",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "MPL-2.0",
@@ -869,9 +693,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -881,10 +703,7 @@ window.packages =
             "ui/rendering",
             "game-dev/rendering"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MPL-2.0",
@@ -893,9 +712,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MPL-2.0",
@@ -904,11 +721,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.2.1",
-            "2.0.0",
-            "3.2.0"
-        ]
+        "version": "3.2.0"
     },
     {
         "license": "MPL-2.0",
@@ -917,10 +730,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MPL-2.0",
@@ -929,9 +739,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -940,22 +748,17 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MPL-2.0",
         "name": "ianmackenzie/elm-geometry-test",
         "summary": "Helpful utilities for testing code that uses elm-geometry",
         "tags": [
-            "sciences/maths", "dev/testing"
+            "sciences/maths",
+            "dev/testing"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -964,10 +767,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -976,9 +776,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -987,9 +785,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -998,9 +794,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -1009,10 +803,7 @@ window.packages =
         "tags": [
             "sciences/physics"
         ],
-        "versions": [
-            "1.0.0",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "MPL-2.0",
@@ -1021,9 +812,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1032,11 +821,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "6.0.0",
-            "7.0.0",
-            "8.0.1"
-        ]
+        "version": "8.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1045,11 +830,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1059,11 +840,7 @@ window.packages =
             "data/formats",
             "dev/parsing"
         ],
-        "versions": [
-            "4.1.0",
-            "5.1.1",
-            "6.0.1"
-        ]
+        "version": "6.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1072,9 +849,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -1083,11 +858,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "2.0.3",
-            "3.1.0",
-            "4.0.3"
-        ]
+        "version": "4.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -1096,11 +867,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.2.2",
-            "3.0.12",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1109,11 +876,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "5.0.0",
-            "6.0.1",
-            "7.0.8"
-        ]
+        "version": "7.0.8"
     },
     {
         "license": "MIT",
@@ -1122,9 +885,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1133,11 +894,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.1.3",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1146,10 +903,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1159,11 +913,7 @@ window.packages =
             "data/formats",
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.4",
-            "2.0.10",
-            "3.0.6"
-        ]
+        "version": "3.0.6"
     },
     {
         "license": "BSD-3-Clause",
@@ -1172,11 +922,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "7.0.9",
-            "8.0.0",
-            "9.1.0"
-        ]
+        "version": "9.1.0"
     },
     {
         "license": "MIT",
@@ -1185,9 +931,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -1196,11 +940,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.2.1",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1209,11 +949,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.3",
-            "2.1.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1222,10 +958,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1234,9 +967,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1245,11 +976,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1258,10 +985,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.2",
-            "2.3.5"
-        ]
+        "version": "2.3.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -1270,11 +994,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.1.1"
-        ]
+        "version": "4.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1283,11 +1003,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1296,9 +1012,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -1307,9 +1021,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1318,9 +1030,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -1329,9 +1039,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.2.3"
-        ]
+        "version": "1.2.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -1340,9 +1048,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "AGPL-3.0",
@@ -1351,10 +1057,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "MIT",
@@ -1363,9 +1066,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1374,10 +1075,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1386,9 +1084,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1397,9 +1093,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1408,11 +1102,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1421,9 +1111,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1432,10 +1120,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.2.1",
-            "2.4.0"
-        ]
+        "version": "2.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1444,10 +1129,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.4",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -1456,9 +1138,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1468,10 +1148,7 @@ window.packages =
             "dev/code-organisation",
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.4"
-        ]
+        "version": "2.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -1480,10 +1157,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1492,9 +1166,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.2.2"
-        ]
+        "version": "1.2.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1504,10 +1176,7 @@ window.packages =
             "dev/code-organisation",
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1516,11 +1185,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1529,11 +1194,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.0",
-            "3.2.0",
-            "4.2.0"
-        ]
+        "version": "4.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1542,9 +1203,7 @@ window.packages =
         "tags": [
             "data/random"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1553,9 +1212,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -1564,10 +1221,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.4"
-        ]
+        "version": "2.1.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -1576,11 +1230,7 @@ window.packages =
         "tags": [
             "ui/i18n"
         ],
-        "versions": [
-            "2.0.2",
-            "3.0.2",
-            "4.1.2"
-        ]
+        "version": "4.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1589,10 +1239,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -1601,9 +1248,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1612,9 +1257,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1623,9 +1266,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1634,11 +1275,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "2.1.1",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1649,10 +1286,7 @@ window.packages =
             "ui/css",
             "ui/html"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -1661,9 +1295,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1673,9 +1305,7 @@ window.packages =
             "game-dev/rendering",
             "ui/rendering"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "Apache-2.0",
@@ -1684,10 +1314,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -1696,9 +1323,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -1707,9 +1332,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1718,11 +1341,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.1.1"
-        ]
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1731,11 +1350,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.4.1",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1745,9 +1360,7 @@ window.packages =
             "data/formats",
             "data/time"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1756,10 +1369,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.2.1",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -1769,9 +1379,7 @@ window.packages =
             "dev/code-organisation",
             "networking/http"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -1780,9 +1388,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1791,9 +1397,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1802,9 +1406,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1813,11 +1415,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "5.0.0",
-            "6.0.3",
-            "7.1.0"
-        ]
+        "version": "7.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1826,9 +1424,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1837,9 +1433,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -1848,9 +1442,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -1859,9 +1451,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -1871,10 +1461,7 @@ window.packages =
             "dev/algorithms",
             "ui/input"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1883,10 +1470,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -1895,9 +1479,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -1906,9 +1488,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1917,9 +1497,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1929,11 +1507,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1942,9 +1516,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -1953,9 +1525,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -1964,10 +1534,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "MIT",
@@ -1976,9 +1543,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1987,9 +1552,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1998,9 +1561,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2009,9 +1570,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -2020,9 +1579,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -2031,11 +1588,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.1",
-            "3.0.1",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2044,11 +1597,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "7.1.0",
-            "8.0.2",
-            "9.0.1"
-        ]
+        "version": "9.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2057,10 +1606,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2069,10 +1615,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2081,9 +1624,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -2092,10 +1633,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.6",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -2104,11 +1642,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "3.0.1",
-            "4.3.0",
-            "5.0.1"
-        ]
+        "version": "5.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -2117,11 +1651,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "6.1.0",
-            "7.0.0",
-            "8.0.0"
-        ]
+        "version": "8.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2130,10 +1660,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "GPL-3.0",
@@ -2142,9 +1669,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -2153,9 +1678,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2165,10 +1688,7 @@ window.packages =
             "dev/algorithms",
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2177,10 +1697,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.2.0",
-            "2.0.4"
-        ]
+        "version": "2.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -2189,11 +1706,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "5.1.0",
-            "6.1.0",
-            "7.1.0"
-        ]
+        "version": "7.1.0"
     },
     {
         "license": "MIT",
@@ -2202,11 +1715,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "MIT",
@@ -2215,9 +1724,7 @@ window.packages =
         "tags": [
             "ui/rendering"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -2226,9 +1733,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2237,9 +1742,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -2248,9 +1751,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -2259,10 +1760,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -2271,9 +1769,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -2282,10 +1778,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "Apache-2.0",
@@ -2294,9 +1787,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2305,10 +1796,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2317,9 +1805,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2328,9 +1814,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2339,9 +1823,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2350,9 +1832,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2362,9 +1842,7 @@ window.packages =
             "ui/svg",
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2374,9 +1852,7 @@ window.packages =
             "ui/svg",
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2385,11 +1861,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "7.0.0",
-            "8.0.0",
-            "9.0.0"
-        ]
+        "version": "9.0.0"
     },
     {
         "license": "MIT",
@@ -2398,9 +1870,7 @@ window.packages =
         "tags": [
             "data/random"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2409,9 +1879,7 @@ window.packages =
         "tags": [
             "data/random"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2420,10 +1888,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2432,10 +1897,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2444,9 +1906,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2455,9 +1915,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -2466,9 +1924,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2477,9 +1933,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2488,11 +1942,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "4.0.1",
-            "5.0.2",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2501,10 +1951,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2513,9 +1960,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2524,9 +1969,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.3.1"
-        ]
+        "version": "1.3.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2535,11 +1978,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "5.11.0",
-            "6.31.0",
-            "7.19.0"
-        ]
+        "version": "7.20.0"
     },
     {
         "license": "MIT",
@@ -2548,9 +1987,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2559,10 +1996,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2572,11 +2006,7 @@ window.packages =
             "game-dev/utils",
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2585,9 +2015,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2596,10 +2024,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2608,9 +2033,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.5.0"
-        ]
+        "version": "1.5.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2619,11 +2042,7 @@ window.packages =
         "tags": [
             "game-dev/rendering"
         ],
-        "versions": [
-            "4.3.0",
-            "5.0.3",
-            "6.2.0"
-        ]
+        "version": "6.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2632,9 +2051,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2643,10 +2060,7 @@ window.packages =
         "tags": [
             "ui/maps"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2655,9 +2069,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2666,9 +2078,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -2677,9 +2087,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2688,10 +2096,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2701,9 +2106,7 @@ window.packages =
             "data/formats",
             "data/time"
         ],
-        "versions": [
-            "1.3.0"
-        ]
+        "version": "1.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2712,9 +2115,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -2723,10 +2124,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2735,9 +2133,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2746,9 +2142,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -2757,11 +2151,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "16.0.0",
-            "17.0.2",
-            "18.0.1"
-        ]
+        "version": "18.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2770,11 +2160,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -2783,10 +2169,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "GPL-3.0",
@@ -2795,9 +2178,7 @@ window.packages =
         "tags": [
             "security/other"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "GPL-3.0",
@@ -2806,9 +2187,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "GPL-3.0",
@@ -2817,9 +2196,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -2828,11 +2205,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "MIT",
@@ -2841,11 +2214,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "MIT",
@@ -2854,11 +2223,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.1",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2867,9 +2232,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.3.0"
-        ]
+        "version": "1.3.0"
     },
     {
         "license": "MIT",
@@ -2878,9 +2241,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2889,9 +2250,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -2900,10 +2259,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2912,10 +2268,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2925,10 +2278,7 @@ window.packages =
             "data/text",
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2937,10 +2287,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2949,11 +2296,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.2.2",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2962,10 +2305,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2974,11 +2314,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2987,9 +2323,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2998,9 +2332,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3009,10 +2341,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -3021,9 +2350,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3032,10 +2359,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.2.2",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3044,11 +2368,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.2",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -3057,9 +2377,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3068,9 +2386,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3079,10 +2395,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "MIT",
@@ -3091,11 +2404,7 @@ window.packages =
         "tags": [
             "game-dev/rendering"
         ],
-        "versions": [
-            "2.1.0",
-            "3.1.0",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -3104,10 +2413,7 @@ window.packages =
         "tags": [
             "game-dev/code-organisation"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3116,9 +2422,7 @@ window.packages =
         "tags": [
             "ui/rendering"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3127,9 +2431,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.3.0"
-        ]
+        "version": "1.3.0"
     },
     {
         "license": "MIT",
@@ -3138,9 +2440,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3149,9 +2449,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -3160,9 +2458,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3171,11 +2467,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -3184,10 +2476,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -3196,11 +2485,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "2.0.4",
-            "3.0.0",
-            "4.1.2"
-        ]
+        "version": "4.1.2"
     },
     {
         "license": "MIT",
@@ -3209,9 +2494,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3220,9 +2503,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3231,9 +2512,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.1"
-        ]
+        "version": "1.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3242,9 +2521,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3254,9 +2531,7 @@ window.packages =
             "ui/css",
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3266,9 +2541,7 @@ window.packages =
             "ui/css",
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3277,10 +2550,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3289,11 +2559,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -3302,9 +2568,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3313,9 +2577,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -3324,9 +2586,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3335,9 +2595,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3346,11 +2604,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.1.2"
-        ]
+        "version": "3.1.2"
     },
     {
         "license": "MIT",
@@ -3359,10 +2613,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -3371,11 +2622,7 @@ window.packages =
         "tags": [
             "storage/databases"
         ],
-        "versions": [
-            "5.0.0",
-            "6.0.0",
-            "7.2.0"
-        ]
+        "version": "7.2.0"
     },
     {
         "license": "MIT",
@@ -3384,9 +2631,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3395,9 +2640,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3406,9 +2649,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3417,9 +2658,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3428,10 +2667,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -3440,9 +2676,7 @@ window.packages =
         "tags": [
             "dev/prototyping"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -3451,11 +2685,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.2.2",
-            "2.0.1",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "MIT",
@@ -3464,9 +2694,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3476,11 +2704,7 @@ window.packages =
             "ui/patterns",
             "data/time"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.0",
-            "4.0.2"
-        ]
+        "version": "4.0.2"
     },
     {
         "license": "MIT",
@@ -3489,11 +2713,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "MIT",
@@ -3502,9 +2722,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -3513,9 +2731,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3524,9 +2740,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3535,10 +2749,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3547,10 +2758,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3559,9 +2767,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.8"
-        ]
+        "version": "1.0.8"
     },
     {
         "license": "Apache-2.0",
@@ -3570,10 +2776,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3582,11 +2785,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.2.0"
-        ]
+        "version": "3.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3595,11 +2794,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -3608,9 +2803,7 @@ window.packages =
         "tags": [
             "sciences/geography"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -3619,10 +2812,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3631,11 +2821,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.2",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3644,10 +2830,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.2.0",
-            "2.2.1"
-        ]
+        "version": "2.2.1"
     },
     {
         "license": "MIT",
@@ -3656,9 +2839,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3667,9 +2848,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3678,9 +2857,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -3689,9 +2866,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "MIT",
@@ -3700,10 +2875,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.4.0",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "MIT",
@@ -3712,9 +2884,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -3723,9 +2893,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3734,9 +2902,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3745,11 +2911,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.0",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "MIT",
@@ -3758,9 +2920,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -3769,9 +2929,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -3780,9 +2938,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.7"
-        ]
+        "version": "1.0.7"
     },
     {
         "license": "MIT",
@@ -3791,9 +2947,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -3802,9 +2956,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3813,9 +2965,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3824,10 +2974,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3836,22 +2983,16 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.7.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
         "name": "astynax/tea-combine",
-        "summary": "Combinator library for \\\\\\\\\\\\\\\"The Elm Arcitecture\\\\\\\\\\\\\\\"-powered applications",
+        "summary": "Combinator library for \\\\\\\"The Elm Arcitecture\\\\\\\"-powered applications",
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3860,11 +3001,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.2",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3874,11 +3011,7 @@ window.packages =
             "ui/html",
             "ui/accessibility"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -3887,9 +3020,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3898,10 +3029,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3910,9 +3038,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3922,10 +3048,7 @@ window.packages =
             "ui/patterns",
             "dev/prototyping"
         ],
-        "versions": [
-            "1.0.1",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "MIT",
@@ -3934,9 +3057,7 @@ window.packages =
         "tags": [
             "platforms/desktop"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3945,11 +3066,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.2.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -3958,9 +3075,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -3969,9 +3084,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -3980,11 +3093,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.1.0",
-            "2.3.2",
-            "3.2.0"
-        ]
+        "version": "3.2.0"
     },
     {
         "license": "MIT",
@@ -3993,9 +3102,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4004,10 +3111,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -4016,9 +3120,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4027,10 +3129,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.4.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4040,9 +3139,7 @@ window.packages =
             "data/text",
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4051,10 +3148,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.4.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4063,9 +3157,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4075,9 +3167,7 @@ window.packages =
             "data/formats",
             "ui/rendering"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4086,11 +3176,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4099,9 +3185,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -4110,9 +3194,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4121,9 +3203,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4132,9 +3212,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4143,9 +3221,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4154,11 +3230,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4167,9 +3239,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -4178,9 +3248,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4189,9 +3257,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -4200,9 +3266,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -4211,11 +3275,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.2.1",
-            "2.1.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "MIT",
@@ -4224,9 +3284,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.10"
-        ]
+        "version": "1.0.10"
     },
     {
         "license": "MIT",
@@ -4235,11 +3293,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.3",
-            "2.1.3",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "MIT",
@@ -4248,9 +3302,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "MIT",
@@ -4259,11 +3311,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.6",
-            "2.0.1",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4272,9 +3320,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4283,9 +3329,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -4294,9 +3338,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4305,11 +3347,7 @@ window.packages =
         "tags": [
             "storage/localstorage"
         ],
-        "versions": [
-            "5.1.0",
-            "6.0.3",
-            "7.2.0"
-        ]
+        "version": "7.2.0"
     },
     {
         "license": "MIT",
@@ -4318,10 +3356,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -4330,9 +3365,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4341,11 +3374,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -4354,9 +3383,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "MIT",
@@ -4365,9 +3392,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.0.9"
-        ]
+        "version": "1.0.9"
     },
     {
         "license": "BSD-3-Clause",
@@ -4376,9 +3401,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "MIT",
@@ -4388,11 +3411,7 @@ window.packages =
             "ui/svg",
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.0",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -4401,11 +3420,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "versions": [
-            "2.0.2",
-            "3.0.2",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -4414,11 +3429,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "versions": [
-            "11.0.2",
-            "12.0.0",
-            "13.0.2"
-        ]
+        "version": "13.0.2"
     },
     {
         "license": "MIT",
@@ -4427,11 +3438,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "versions": [
-            "12.0.0",
-            "13.0.0",
-            "14.1.3"
-        ]
+        "version": "14.1.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -4440,9 +3447,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "Apache-2.0",
@@ -4451,9 +3456,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.2.1"
-        ]
+        "version": "1.2.1"
     },
     {
         "license": "MIT",
@@ -4462,10 +3465,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4474,11 +3474,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "25.1.0",
-            "26.1.6",
-            "27.0.11"
-        ]
+        "version": "27.0.13"
     },
     {
         "license": "BSD-3-Clause",
@@ -4487,9 +3483,7 @@ window.packages =
         "tags": [
             "ui/i18n"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -4498,10 +3492,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "Apache-2.0",
@@ -4510,9 +3501,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4521,9 +3510,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.3"
-        ]
+        "version": "1.1.3"
     },
     {
         "license": "MIT",
@@ -4532,9 +3519,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4543,9 +3528,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4554,10 +3537,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4566,11 +3546,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4579,10 +3555,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -4591,9 +3564,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4602,9 +3573,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4613,9 +3582,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4624,9 +3591,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -4635,9 +3600,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4646,9 +3609,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4658,10 +3619,7 @@ window.packages =
             "ui/svg",
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -4670,10 +3628,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4682,10 +3637,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4694,9 +3646,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -4705,10 +3655,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4717,9 +3664,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "ISC",
@@ -4728,10 +3673,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4740,11 +3682,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "9.0.0",
-            "10.0.0",
-            "11.1.1"
-        ]
+        "version": "11.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4753,10 +3691,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -4765,9 +3700,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4776,9 +3709,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4788,11 +3719,7 @@ window.packages =
             "dev/algorithms",
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.0.2",
-            "3.0.1",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4801,10 +3728,7 @@ window.packages =
         "tags": [
             "ui/i18n"
         ],
-        "versions": [
-            "1.2.0",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4813,9 +3737,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4824,11 +3746,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.3.1",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4837,10 +3755,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -4849,9 +3764,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4860,22 +3773,17 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.2",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
         "name": "cedricss/elm-form-machine",
         "summary": "A state machine to handle forms in elm.",
         "tags": [
-            "dev/code-organisation", "ui/patterns"
+            "dev/code-organisation",
+            "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -4884,9 +3792,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4895,11 +3801,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "3.1.0",
-            "4.0.0",
-            "5.1.5"
-        ]
+        "version": "5.1.5"
     },
     {
         "license": "MIT",
@@ -4908,9 +3810,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4919,10 +3819,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.2.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4931,9 +3828,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4942,9 +3837,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4953,10 +3846,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -4965,11 +3855,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "2.0.1",
-            "3.0.3",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4978,9 +3864,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "AGPL-3.0",
@@ -4989,9 +3873,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "AGPL-3.0",
@@ -5000,9 +3882,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -5011,11 +3891,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.1",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5024,11 +3900,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "5.0.5",
-            "6.2.0",
-            "7.0.0"
-        ]
+        "version": "7.0.0"
     },
     {
         "license": "MIT",
@@ -5037,9 +3909,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5048,10 +3918,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.1.2",
-            "2.0.10"
-        ]
+        "version": "2.0.10"
     },
     {
         "license": "MIT",
@@ -5060,11 +3927,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.2",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5073,9 +3936,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -5084,10 +3945,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5096,9 +3954,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5107,9 +3963,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5118,11 +3972,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.0.1",
-            "3.0.2",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5132,10 +3982,7 @@ window.packages =
             "data/formats",
             "data/random"
         ],
-        "versions": [
-            "1.0.2",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "Apache-2.0",
@@ -5144,11 +3991,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -5157,9 +4000,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -5168,11 +4009,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -5181,10 +4018,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5193,11 +4027,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.1",
-            "4.1.1"
-        ]
+        "version": "4.1.1"
     },
     {
         "license": "Apache-2.0",
@@ -5206,9 +4036,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.3.0"
-        ]
+        "version": "1.3.0"
     },
     {
         "license": "MIT",
@@ -5217,9 +4045,7 @@ window.packages =
         "tags": [
             "game-dev/rendering"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5228,11 +4054,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5242,11 +4064,7 @@ window.packages =
             "networking/integrations",
             "storage/databases"
         ],
-        "versions": [
-            "3.0.0",
-            "4.5.0",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5256,11 +4074,7 @@ window.packages =
             "data/formats",
             "ui/rendering"
         ],
-        "versions": [
-            "1.1.3",
-            "2.0.2",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5270,9 +4084,7 @@ window.packages =
             "ui/html",
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5281,11 +4093,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "versions": [
-            "1.1.3",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5294,9 +4102,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5305,9 +4111,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5316,9 +4120,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5327,10 +4129,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5339,9 +4138,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5350,10 +4147,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -5362,9 +4156,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5373,9 +4165,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -5384,11 +4174,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -5397,9 +4183,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5408,11 +4192,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "2.0.1",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5421,10 +4201,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5433,11 +4210,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5446,9 +4219,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5457,11 +4228,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.3",
-            "2.3.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -5470,9 +4237,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5481,10 +4246,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.2.1"
-        ]
+        "version": "2.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5493,9 +4255,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -5504,9 +4264,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5515,9 +4273,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -5526,9 +4282,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5537,11 +4291,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.1",
-            "6.0.2"
-        ]
+        "version": "6.0.2"
     },
     {
         "license": "MIT",
@@ -5550,10 +4300,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.2",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -5562,11 +4309,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.3.0",
-            "3.0.1",
-            "4.0.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -5575,10 +4318,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.5.0",
-            "2.4.0"
-        ]
+        "version": "2.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5587,10 +4327,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5599,11 +4336,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "4.1.0",
-            "5.0.1",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "MIT",
@@ -5612,11 +4345,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.1.0",
-            "2.2.0",
-            "3.3.0"
-        ]
+        "version": "3.3.0"
     },
     {
         "license": "MIT",
@@ -5625,11 +4354,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -5639,11 +4364,7 @@ window.packages =
             "dev/algorithms",
             "data/formats"
         ],
-        "versions": [
-            "2.7.0",
-            "3.0.0",
-            "4.2.0"
-        ]
+        "version": "4.2.0"
     },
     {
         "license": "MIT",
@@ -5652,11 +4373,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "6.1.0",
-            "7.1.0",
-            "8.2.3"
-        ]
+        "version": "8.2.3"
     },
     {
         "license": "MIT",
@@ -5665,9 +4382,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -5676,11 +4391,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "3.1.0",
-            "4.0.0",
-            "5.1.0"
-        ]
+        "version": "5.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5689,11 +4400,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -5702,10 +4409,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5714,11 +4418,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5727,11 +4427,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "4.0.0",
-            "5.2.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5741,11 +4437,7 @@ window.packages =
             "dev/code-organisation",
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5754,9 +4446,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5765,9 +4455,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5776,9 +4464,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5787,20 +4473,16 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
         "name": "emilianobovetti/edit-distance",
         "summary": "Algorithms for edit distance calculation",
         "tags": [
-            "exclude"
+            "dev/algorithms"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -5809,10 +4491,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5821,9 +4500,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -5832,9 +4509,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -5843,10 +4518,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -5855,9 +4527,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5866,10 +4536,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5878,9 +4545,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5889,9 +4554,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -5900,9 +4563,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5911,11 +4572,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5924,11 +4581,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5937,11 +4590,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "5.0.0",
-            "6.0.0",
-            "7.0.5"
-        ]
+        "version": "7.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -5950,11 +4599,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5963,9 +4608,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5974,9 +4617,7 @@ window.packages =
         "tags": [
             "ui/accessibility"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5985,10 +4626,7 @@ window.packages =
         "tags": [
             "sciences/geography"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5997,9 +4635,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6008,10 +4644,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -6020,9 +4653,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6031,9 +4662,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6042,9 +4671,7 @@ window.packages =
         "tags": [
             "audio/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6053,9 +4680,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -6064,11 +4689,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -6077,10 +4698,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -6089,9 +4707,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -6100,9 +4716,7 @@ window.packages =
         "tags": [
             "sciences/statistics"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -6112,9 +4726,7 @@ window.packages =
             "sciences/machine-learning",
             "sciences/data-mining"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6123,9 +4735,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6134,9 +4744,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6145,11 +4753,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -6158,9 +4762,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6169,11 +4771,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.2",
-            "4.0.3"
-        ]
+        "version": "4.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -6182,11 +4780,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6195,9 +4789,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6208,10 +4800,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6220,9 +4809,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6232,9 +4819,7 @@ window.packages =
             "dev/algorithms",
             "game-dev/rendering"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6243,10 +4828,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.3.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -6255,9 +4837,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6266,9 +4846,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6277,9 +4855,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6288,10 +4864,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -6300,10 +4873,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -6312,9 +4882,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6323,10 +4891,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -6335,9 +4900,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6346,9 +4909,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6357,9 +4918,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6368,9 +4927,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6379,9 +4936,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6390,9 +4945,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6401,9 +4954,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -6412,9 +4963,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -6423,9 +4972,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -6434,9 +4981,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -6445,9 +4990,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.4.3"
-        ]
+        "version": "1.4.3"
     },
     {
         "license": "MIT",
@@ -6456,9 +4999,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -6468,11 +5009,7 @@ window.packages =
             "networking/integrations",
             "storage/databases"
         ],
-        "versions": [
-            "2.0.1",
-            "3.5.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6481,11 +5018,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "3.0.1",
-            "4.3.1",
-            "5.4.0"
-        ]
+        "version": "5.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6494,10 +5027,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.12.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6506,9 +5036,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.5.0"
-        ]
+        "version": "1.5.0"
     },
     {
         "license": "MIT",
@@ -6517,10 +5045,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "MIT",
@@ -6529,9 +5054,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6540,11 +5063,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6554,9 +5073,7 @@ window.packages =
             "networking/http",
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6565,11 +5082,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "4.0.0",
-            "5.1.3",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -6578,10 +5091,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6590,9 +5100,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6601,9 +5109,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -6612,9 +5118,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.3"
-        ]
+        "version": "1.1.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -6623,9 +5127,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6634,10 +5136,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6646,9 +5145,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6657,9 +5154,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "MIT",
@@ -6668,9 +5163,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6679,9 +5172,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6690,22 +5181,16 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "versions": [
-            "6.0.1",
-            "7.1.0",
-            "8.0.1"
-        ]
+        "version": "8.0.1"
     },
     {
         "license": "MIT",
         "name": "hecrj/elm-slug",
         "summary": "Type-safe slugs for Elm",
         "tags": [
-            "exclude"
+            "data/text"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6714,10 +5199,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.1.0",
-            "2.3.4"
-        ]
+        "version": "2.3.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -6726,11 +5208,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6739,9 +5217,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "Apache-2.0",
@@ -6750,9 +5226,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6761,9 +5235,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6772,10 +5244,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6784,11 +5253,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "Apache-2.0",
@@ -6797,11 +5262,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.1",
-            "6.0.1"
-        ]
+        "version": "6.0.1"
     },
     {
         "license": "MIT",
@@ -6810,10 +5271,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.3.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6822,11 +5280,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -6835,10 +5289,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -6847,9 +5298,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6858,9 +5307,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6869,9 +5316,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6880,11 +5325,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.3",
-            "2.0.3",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6893,9 +5334,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6905,9 +5344,7 @@ window.packages =
             "data/formats",
             "ui/validation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6916,9 +5353,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6927,11 +5362,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1",
-            "3.0.3"
-        ]
+        "version": "3.0.3"
     },
     {
         "license": "MIT",
@@ -6940,11 +5371,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6953,9 +5380,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6964,9 +5389,7 @@ window.packages =
         "tags": [
             "sciences/machine-learning"
         ],
-        "versions": [
-            "1.6.2"
-        ]
+        "version": "1.6.2"
     },
     {
         "license": "MIT",
@@ -6975,9 +5398,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -6986,9 +5407,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "MIT",
@@ -6997,10 +5416,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7009,9 +5425,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7020,10 +5434,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7033,10 +5444,7 @@ window.packages =
             "ui/maps",
             "sciences/geography"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7045,10 +5453,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -7057,9 +5462,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7069,10 +5472,7 @@ window.packages =
             "networking/integrations",
             "storage/databases"
         ],
-        "versions": [
-            "1.8.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -7081,9 +5481,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7092,9 +5490,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7103,9 +5499,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7114,11 +5508,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "2.0.1",
-            "3.0.0",
-            "4.1.2"
-        ]
+        "version": "4.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7127,9 +5517,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7138,9 +5526,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7149,9 +5535,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7160,9 +5544,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7171,9 +5553,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7182,9 +5562,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7193,9 +5571,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -7204,9 +5580,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -7215,9 +5589,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7226,10 +5598,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7238,11 +5607,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.2",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7252,9 +5617,7 @@ window.packages =
             "dev/algorithms",
             "data/text"
         ],
-        "versions": [
-            "1.0.6"
-        ]
+        "version": "1.0.6"
     },
     {
         "license": "BSD-3-Clause",
@@ -7263,9 +5626,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7274,9 +5635,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7285,11 +5644,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.2.0",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7298,10 +5653,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7310,9 +5662,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7321,9 +5671,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7332,10 +5680,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7344,9 +5689,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7355,9 +5698,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7367,11 +5708,7 @@ window.packages =
             "ui/patterns",
             "game-dev/rendering"
         ],
-        "versions": [
-            "2.1.1",
-            "3.0.5",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7380,9 +5717,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7391,11 +5726,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "5.0.0",
-            "6.1.1",
-            "7.0.1"
-        ]
+        "version": "7.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7404,9 +5735,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7415,11 +5744,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.1",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7428,9 +5753,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -7439,9 +5762,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7450,11 +5771,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "7.1.0",
-            "8.0.0",
-            "9.0.0"
-        ]
+        "version": "9.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7463,10 +5780,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.1.1",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "MIT",
@@ -7475,9 +5789,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7486,9 +5798,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7497,9 +5807,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7508,9 +5816,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7519,9 +5825,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7530,9 +5834,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7541,9 +5843,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7552,9 +5852,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7563,9 +5861,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7574,9 +5870,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -7585,11 +5879,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "versions": [
-            "2.1.1",
-            "3.1.1",
-            "4.1.3"
-        ]
+        "version": "4.1.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -7598,10 +5888,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7610,10 +5897,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7623,11 +5907,7 @@ window.packages =
             "game-dev/rendering",
             "ui/rendering"
         ],
-        "versions": [
-            "2.0.1",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7637,11 +5917,7 @@ window.packages =
             "data/formats",
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7650,9 +5926,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7661,10 +5935,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "versions": [
-            "1.0.0",
-            "2.2.0"
-        ]
+        "version": "2.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7673,11 +5944,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.2",
-            "3.2.0"
-        ]
+        "version": "3.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7686,9 +5953,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7697,10 +5962,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.4"
-        ]
+        "version": "2.1.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -7710,9 +5972,7 @@ window.packages =
             "data/time",
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7721,9 +5981,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.1.4"
-        ]
+        "version": "1.1.4"
     },
     {
         "license": "MIT",
@@ -7732,11 +5990,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "5.0.2",
-            "6.0.1",
-            "7.0.0"
-        ]
+        "version": "7.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7745,11 +5999,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "2.0.2",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7758,10 +6008,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.2",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7770,11 +6017,7 @@ window.packages =
         "tags": [
             "dev/prototyping"
         ],
-        "versions": [
-            "3.0.2",
-            "4.0.0",
-            "5.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -7783,10 +6026,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.7"
-        ]
+        "version": "2.0.7"
     },
     {
         "license": "Apache-2.0",
@@ -7795,9 +6035,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7806,11 +6044,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7819,10 +6053,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7831,11 +6062,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "8.0.0",
-            "9.0.1",
-            "10.0.1"
-        ]
+        "version": "10.0.1"
     },
     {
         "license": "MIT",
@@ -7844,10 +6071,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -7856,9 +6080,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7867,9 +6089,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -7878,10 +6098,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.3"
-        ]
+        "version": "2.1.3"
     },
     {
         "license": "MIT",
@@ -7890,11 +6107,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "26.5.0",
-            "27.4.0",
-            "28.0.0"
-        ]
+        "version": "28.0.0"
     },
     {
         "license": "MIT",
@@ -7903,11 +6116,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "4.5.0",
-            "5.0.0",
-            "6.0.1"
-        ]
+        "version": "6.0.1"
     },
     {
         "license": "MIT",
@@ -7916,9 +6125,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "MIT",
@@ -7927,9 +6134,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -7938,10 +6143,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "1.6.2",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -7950,10 +6152,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.2"
-        ]
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7962,11 +6161,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "1.0.1",
-            "2.2.0",
-            "3.0.2"
-        ]
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7975,9 +6170,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -7986,10 +6179,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.4",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -7999,10 +6189,7 @@ window.packages =
             "ui/patterns",
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -8011,9 +6198,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8023,11 +6208,7 @@ window.packages =
             "sciences/geography",
             "networking/integrations"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.1",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8036,10 +6217,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8048,11 +6226,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.2",
-            "3.0.4"
-        ]
+        "version": "3.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8061,9 +6235,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -8072,11 +6244,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "2.3.0",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8085,9 +6253,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8096,9 +6262,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -8107,10 +6271,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -8119,10 +6280,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8131,9 +6289,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8142,9 +6298,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8153,10 +6307,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8165,10 +6316,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "MIT",
@@ -8177,9 +6325,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.6"
-        ]
+        "version": "1.1.6"
     },
     {
         "license": "BSD-3-Clause",
@@ -8188,9 +6334,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.4"
-        ]
+        "version": "1.1.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8200,9 +6344,7 @@ window.packages =
             "ui/frameworks",
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8211,11 +6353,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.3",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8224,9 +6362,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8235,9 +6371,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8246,10 +6380,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.3",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8258,9 +6389,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8269,11 +6398,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.2.0",
-            "3.0.2",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "MIT",
@@ -8282,9 +6407,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "AGPL-3.0",
@@ -8293,10 +6416,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -8305,9 +6425,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -8316,9 +6434,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8327,9 +6443,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -8338,21 +6452,16 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "mcordova47/elm-natural-ordering",
-        "summary": "Sort strings with numbers and diacritics \\\\\\\\\\\\\\\"naturally\\\\\\\\\\\\\\\"",
+        "summary": "Sort strings with numbers and diacritics \\\\\\\"naturally\\\\\\\"",
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "MIT",
@@ -8361,11 +6470,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "9.0.0",
-            "10.0.0",
-            "11.0.0"
-        ]
+        "version": "11.0.0"
     },
     {
         "license": "MIT",
@@ -8374,10 +6479,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -8386,9 +6488,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -8397,11 +6497,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.3"
-        ]
+        "version": "3.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -8410,10 +6506,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "1.0.5",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8424,10 +6517,7 @@ window.packages =
             "sciences/geography",
             "ui/maps"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8436,11 +6526,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.1",
-            "3.1.0",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8449,11 +6535,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.0",
-            "3.1.2"
-        ]
+        "version": "3.1.2"
     },
     {
         "license": "MIT",
@@ -8462,10 +6544,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8474,10 +6553,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8486,9 +6562,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.2.1"
-        ]
+        "version": "1.2.1"
     },
     {
         "license": "MIT",
@@ -8498,9 +6572,7 @@ window.packages =
             "data/formats",
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8509,10 +6581,7 @@ window.packages =
         "tags": [
             "dev/prototyping"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8521,9 +6590,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8532,11 +6599,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8545,9 +6608,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8556,10 +6617,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -8568,11 +6626,7 @@ window.packages =
         "tags": [
             "ui/input"
         ],
-        "versions": [
-            "2.0.1",
-            "3.1.0",
-            "4.0.1"
-        ]
+        "version": "4.0.1"
     },
     {
         "license": "MIT",
@@ -8581,9 +6635,7 @@ window.packages =
         "tags": [
             "art/generative"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8592,9 +6644,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8603,9 +6653,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8614,9 +6662,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8625,9 +6671,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8636,9 +6680,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8647,9 +6689,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -8658,10 +6698,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -8670,10 +6707,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "versions": [
-            "1.0.2",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8682,9 +6716,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -8693,9 +6725,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "Apache-2.0",
@@ -8704,11 +6734,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "versions": [
-            "14.0.0",
-            "15.0.0",
-            "16.0.3"
-        ]
+        "version": "16.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -8717,9 +6743,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -8729,11 +6753,7 @@ window.packages =
             "ui/patterns",
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -8742,9 +6762,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8753,9 +6771,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8764,10 +6780,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -8776,9 +6789,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.8.0"
-        ]
+        "version": "1.8.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8787,11 +6798,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.2.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8800,11 +6807,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1",
-            "3.1.4"
-        ]
+        "version": "3.1.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8813,9 +6816,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8824,9 +6825,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8835,11 +6834,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.1.1"
-        ]
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8848,10 +6843,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -8860,9 +6852,7 @@ window.packages =
         "tags": [
             "dev/prototyping"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8872,11 +6862,7 @@ window.packages =
             "data/formats",
             "storage/databases"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.0",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8885,9 +6871,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8896,9 +6880,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8908,10 +6890,7 @@ window.packages =
             "ui/validation",
             "ui/frameworks"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8920,10 +6899,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "1.1.0",
-            "2.2.1"
-        ]
+        "version": "2.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8932,9 +6908,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8943,9 +6917,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8954,10 +6926,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.5"
-        ]
+        "version": "2.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -8966,11 +6935,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.1",
-            "2.2.1",
-            "3.3.0"
-        ]
+        "version": "3.3.1"
     },
     {
         "license": "Apache-2.0",
@@ -8979,11 +6944,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.0",
-            "3.3.0"
-        ]
+        "version": "3.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8992,9 +6953,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -9003,9 +6962,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9014,9 +6971,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -9025,9 +6980,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9036,9 +6989,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9047,9 +6998,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9058,10 +7007,7 @@ window.packages =
         "tags": [
             "audio/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "MIT",
@@ -9070,9 +7016,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9081,9 +7025,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -9092,10 +7034,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -9104,10 +7043,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.4"
-        ]
+        "version": "2.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -9116,11 +7052,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "6.1.0",
-            "7.1.0",
-            "8.4.0"
-        ]
+        "version": "8.4.0"
     },
     {
         "license": "MIT",
@@ -9129,9 +7061,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9140,11 +7070,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "versions": [
-            "14.0.0",
-            "15.2.2",
-            "16.0.0"
-        ]
+        "version": "16.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9153,11 +7079,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.2",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9167,9 +7089,7 @@ window.packages =
             "data/visualisation",
             "ui/svg"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9178,9 +7098,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9189,9 +7107,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "ISC",
@@ -9200,9 +7116,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9211,9 +7125,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9222,10 +7134,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -9234,9 +7143,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9246,11 +7153,7 @@ window.packages =
             "ui/patterns",
             "networking/http"
         ],
-        "versions": [
-            "4.0.0",
-            "5.1.0",
-            "6.1.0"
-        ]
+        "version": "6.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9259,10 +7162,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9271,11 +7171,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "versions": [
-            "4.1.0",
-            "5.0.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9284,9 +7180,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9295,9 +7189,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -9306,9 +7198,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9317,9 +7207,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9328,11 +7216,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1",
-            "3.3.1"
-        ]
+        "version": "3.3.1"
     },
     {
         "license": "MIT",
@@ -9341,10 +7225,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -9353,9 +7234,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -9364,9 +7243,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9375,9 +7252,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9387,21 +7262,16 @@ window.packages =
             "dev/algorithms",
             "sciences/maths"
         ],
-        "versions": [
-            "1.2.0",
-            "2.1.1"
-        ]
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
         "name": "r-k-b/map-accumulate",
-        "summary": "\\\\\\\"map accumulate\\\\\\\" helpers for Elm.",
+        "summary": "\\\"map accumulate\\\" helpers for Elm.",
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9410,9 +7280,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -9421,9 +7289,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9432,9 +7298,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9443,11 +7307,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9456,9 +7316,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9467,9 +7325,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9478,9 +7334,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9489,9 +7343,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9500,10 +7352,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9512,9 +7361,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9523,9 +7370,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9535,10 +7380,7 @@ window.packages =
             "sciences/maths",
             "ui/css"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9547,11 +7389,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "3.1.1",
-            "4.0.0",
-            "5.0.1"
-        ]
+        "version": "5.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9560,11 +7398,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "3.0.2",
-            "4.1.4",
-            "5.0.2"
-        ]
+        "version": "5.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9573,9 +7407,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -9584,9 +7416,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -9595,9 +7425,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -9606,10 +7434,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "MIT",
@@ -9618,9 +7443,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9629,11 +7452,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.0",
-            "6.1.2"
-        ]
+        "version": "6.1.2"
     },
     {
         "license": "MIT",
@@ -9642,11 +7461,7 @@ window.packages =
         "tags": [
             "security/crypto"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9655,9 +7470,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9666,9 +7479,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9677,11 +7488,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0",
-            "2.2.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -9690,9 +7497,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -9702,11 +7507,7 @@ window.packages =
             "sciences/geography",
             "ui/maps"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.1",
-            "4.1.0"
-        ]
+        "version": "4.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9717,11 +7518,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "versions": [
-            "3.0.0",
-            "4.1.0",
-            "5.2.0"
-        ]
+        "version": "5.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9730,11 +7527,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "4.0.0",
-            "5.1.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9743,10 +7536,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9755,10 +7545,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0",
-            "2.3.0"
-        ]
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9767,11 +7554,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9780,9 +7563,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "Apache-2.0",
@@ -9791,9 +7572,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9802,9 +7581,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9813,9 +7590,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9824,10 +7599,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9836,10 +7608,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "GPL-3.0",
@@ -9848,10 +7617,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3"
-        ]
+        "version": "2.0.3"
     },
     {
         "license": "MIT",
@@ -9860,9 +7626,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9871,9 +7635,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -9882,10 +7644,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -9894,11 +7653,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.1",
-            "5.1.0"
-        ]
+        "version": "5.1.0"
     },
     {
         "license": "MIT",
@@ -9907,10 +7662,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.6",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -9919,11 +7671,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "5.3.0",
-            "6.0.0",
-            "7.1.0"
-        ]
+        "version": "7.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9932,9 +7680,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9943,9 +7689,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9954,10 +7698,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -9966,9 +7707,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -9977,11 +7716,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.0",
-            "4.2.1"
-        ]
+        "version": "4.2.1"
     },
     {
         "license": "MIT",
@@ -9990,9 +7725,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -10001,9 +7734,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10012,9 +7743,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -10023,11 +7752,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.2.0",
-            "2.17.0",
-            "3.1.3"
-        ]
+        "version": "3.1.3"
     },
     {
         "license": "MIT",
@@ -10036,9 +7761,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -10047,9 +7770,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -10058,9 +7779,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10069,9 +7788,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10080,11 +7797,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.2",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10094,9 +7807,7 @@ window.packages =
             "data/time",
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.4"
-        ]
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -10105,11 +7816,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "5.0.1",
-            "6.1.1",
-            "7.1.1"
-        ]
+        "version": "7.1.1"
     },
     {
         "license": "MIT",
@@ -10118,9 +7825,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10129,10 +7834,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.2.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10141,11 +7843,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.0",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10154,9 +7852,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.3"
-        ]
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -10165,9 +7861,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.2.3"
-        ]
+        "version": "1.2.3"
     },
     {
         "license": "MIT",
@@ -10177,11 +7871,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "versions": [
-            "4.1.5",
-            "5.0.0",
-            "6.1.6"
-        ]
+        "version": "6.1.6"
     },
     {
         "license": "ISC",
@@ -10190,11 +7880,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "GPL-3.0",
@@ -10204,9 +7890,7 @@ window.packages =
             "game-dev/physics",
             "ui/animation"
         ],
-        "versions": [
-            "1.0.5"
-        ]
+        "version": "1.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -10215,10 +7899,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.4",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10227,11 +7908,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "3.1.2",
-            "4.1.1",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10240,11 +7917,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.3",
-            "3.0.5"
-        ]
+        "version": "3.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -10253,9 +7926,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10264,11 +7935,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.1",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10277,10 +7944,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10289,9 +7953,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "Apache-2.0",
@@ -10300,11 +7962,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.2.1",
-            "2.0.1",
-            "3.1.1"
-        ]
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10313,9 +7971,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10324,9 +7980,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10335,9 +7989,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10346,10 +7998,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1",
-            "2.2.3"
-        ]
+        "version": "2.2.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -10358,9 +8007,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.3.1"
-        ]
+        "version": "1.3.1"
     },
     {
         "license": "MIT",
@@ -10369,10 +8016,7 @@ window.packages =
         "tags": [
             "platforms/serverless"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10381,9 +8025,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10392,9 +8034,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10403,11 +8043,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.1",
-            "5.0.0"
-        ]
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10416,9 +8052,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.4.1"
-        ]
+        "version": "1.4.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10427,9 +8061,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10438,11 +8070,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "2.0.0",
-            "3.1.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10451,9 +8079,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10462,11 +8088,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.0",
-            "6.1.0"
-        ]
+        "version": "6.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10475,9 +8097,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10486,9 +8106,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -10497,10 +8115,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10509,10 +8124,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.6.0",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "Apache-2.0",
@@ -10521,9 +8133,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -10532,11 +8142,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -10545,9 +8151,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10556,11 +8160,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.5.1"
-        ]
+        "version": "3.5.1"
     },
     {
         "license": "MIT",
@@ -10569,9 +8169,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -10581,11 +8179,7 @@ window.packages =
             "ui/html",
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -10594,9 +8188,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10605,9 +8197,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.10.3"
-        ]
+        "version": "1.10.3"
     },
     {
         "license": "MIT",
@@ -10616,9 +8206,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -10627,9 +8215,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10638,11 +8224,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.2",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10651,9 +8233,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10662,9 +8242,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.2"
-        ]
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10673,9 +8251,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10684,9 +8260,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.4.0"
-        ]
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10695,11 +8269,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.3",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10708,10 +8278,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10720,11 +8287,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.1",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10733,11 +8296,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.0.0",
-            "3.0.0",
-            "4.2.4"
-        ]
+        "version": "4.2.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -10746,11 +8305,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "3.0.0",
-            "4.0.1",
-            "5.2.1"
-        ]
+        "version": "5.2.1"
     },
     {
         "license": "MIT",
@@ -10759,10 +8314,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.6",
-            "2.0.4"
-        ]
+        "version": "2.0.4"
     },
     {
         "license": "MIT",
@@ -10771,10 +8323,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.5",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10783,9 +8332,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -10794,11 +8341,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "4.0.1",
-            "5.0.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10807,9 +8350,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10818,10 +8359,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.1.0"
-        ]
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10830,9 +8368,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10841,9 +8377,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -10852,11 +8386,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "4.0.1",
-            "5.0.0",
-            "6.2.0"
-        ]
+        "version": "6.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10865,11 +8395,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0",
-            "3.1.1"
-        ]
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -10878,9 +8404,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -10889,9 +8413,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -10900,9 +8422,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "1.2.0"
-        ]
+        "version": "1.2.0"
     },
     {
         "license": "0BSD",
@@ -10911,9 +8431,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -10922,11 +8440,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "versions": [
-            "1.0.0",
-            "2.1.0",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -10935,9 +8449,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-2-Clause",
@@ -10946,9 +8458,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.1.3"
-        ]
+        "version": "1.1.3"
     },
     {
         "license": "BSD-2-Clause",
@@ -10957,9 +8467,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -10968,11 +8476,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "7.0.1",
-            "8.1.0",
-            "9.0.1"
-        ]
+        "version": "9.0.1"
     },
     {
         "license": "Apache-2.0",
@@ -10981,9 +8485,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10992,11 +8494,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1",
-            "3.0.1"
-        ]
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11005,9 +8503,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11016,11 +8512,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "versions": [
-            "4.0.0",
-            "5.0.0",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11029,9 +8521,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -11040,9 +8530,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11051,9 +8539,7 @@ window.packages =
         "tags": [
             "art/generative"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -11062,11 +8548,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.0.2",
-            "3.0.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "MIT",
@@ -11076,9 +8558,7 @@ window.packages =
             "dev/code-organisation",
             "ui/elm-ui"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -11087,9 +8567,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -11098,11 +8576,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "2.0.0",
-            "3.2.0",
-            "4.0.0"
-        ]
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11111,10 +8585,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.1.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -11123,9 +8594,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11134,9 +8603,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11145,9 +8612,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -11157,10 +8622,7 @@ window.packages =
             "game-dev/utils",
             "art/interactive-fiction"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11169,9 +8631,7 @@ window.packages =
         "tags": [
             "game-dev/procedural-generation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11180,11 +8640,7 @@ window.packages =
         "tags": [
             "game-dev/input"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.1",
-            "3.0.0"
-        ]
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11193,11 +8649,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "3.1.1",
-            "4.0.1",
-            "5.0.1"
-        ]
+        "version": "5.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11206,9 +8658,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11217,9 +8667,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -11228,11 +8676,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "2.1.0",
-            "3.0.1",
-            "4.1.4"
-        ]
+        "version": "4.1.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -11241,9 +8685,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11252,9 +8694,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11263,10 +8703,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "versions": [
-            "1.0.3",
-            "2.0.0"
-        ]
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11275,11 +8712,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11289,10 +8722,7 @@ window.packages =
             "ui/patterns",
             "data/formats"
         ],
-        "versions": [
-            "1.0.0",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11301,11 +8731,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1",
-            "2.0.0",
-            "3.1.0"
-        ]
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11314,9 +8740,7 @@ window.packages =
         "tags": [
             "sciences/machine-learning"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11325,9 +8749,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -11336,9 +8758,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.1.0"
-        ]
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -11347,9 +8767,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.2"
-        ]
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -11358,9 +8776,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -11369,9 +8785,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11380,11 +8794,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "versions": [
-            "2.1.1",
-            "3.1.0",
-            "4.0.5"
-        ]
+        "version": "4.0.5"
     },
     {
         "license": "MIT",
@@ -11393,9 +8803,7 @@ window.packages =
         "tags": [
             "exclude"
         ],
-        "versions": [
-            "1.0.1"
-        ]
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11404,9 +8812,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "versions": [
-            "1.0.0"
-        ]
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11415,9 +8821,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.1.1"
-        ]
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11426,10 +8830,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "versions": [
-            "1.0.2",
-            "2.0.2"
-        ]
+        "version": "2.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -11438,9 +8839,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.3.0"
-        ]
+        "version": "1.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11449,9 +8848,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "versions": [
-            "1.5.0"
-        ]
+        "version": "1.5.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -11460,10 +8857,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "versions": [
-            "1.0.1",
-            "2.0.1"
-        ]
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11472,10 +8866,6 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "versions": [
-            "4.3.0",
-            "5.0.1",
-            "6.0.0"
-        ]
+        "version": "6.0.0"
     }
 ]

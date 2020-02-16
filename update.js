@@ -6,7 +6,7 @@ const stringify = require("json-stable-stringify")
 
 console.log("Getting search.json...")
 
-const res = spawn.sync("curl", ["https://package.elm-lang.org/search.json"], { stdio: "pipe" })
+const res = spawn.sync("curl", ["--compressed", "https://package.elm-lang.org/search.json"], { stdio: "pipe" })
 
 if (res.status != 0)
     throw new Error("Couldn't get search.json")
@@ -24,7 +24,7 @@ const merge = (package) => {
     taggedPkg = R.find(R.propEq("name", package.name), taggedPackages)
     if (!R.isNil(taggedPkg)) {
         let newPkg = R.mergeDeepRight(taggedPkg, package)
-        if (taggedPkg.tags[0] == "exclude" && R.last(package.versions) != R.last(taggedPkg.versions)) {
+        if (taggedPkg.tags[0] == "exclude" && package.version != taggedPkg.version) {
             console.log("Re-evaluate: " + newPkg.name)
             // Updated excluded packages should come up as new – for re-evaluation
             return R.mergeLeft({tags: ["uncat/new"]}, newPkg) 

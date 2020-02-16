@@ -81,7 +81,7 @@ type alias Package =
     { name : PackageName
     , summary : String
     , license : String
-    , versions : List String
+    , version : String
     , tags : List String
     }
 
@@ -809,7 +809,7 @@ packageCard readmes package =
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
             , text " • "
-            , text <| "Latest: " ++ (Maybe.withDefault "n/a" <| List.last package.versions)
+            , text <| "Latest: " ++ package.version 
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
             , text " • "
