@@ -692,6 +692,17 @@ window.tools =
     ]
 },
 {
+    "name": "elm.dmy.fr",
+    "githubName": "dmy/elm.dmy.fr",
+    "url": "https://elm.dmy.fr",
+    "packageUrl": null,
+    "summary": "Mobile-optimised version of package.elm-lang.org, with a dark theme at dark.elm.dmy.fr",
+    "tags": [
+        "documentation"
+    ]
+},
+
+{
     "name": "Unofficial Elm ARM 32 bits binaries for Raspberry Pi",
     "githubName": "dmy/elm-raspberry-pi",
     "url": null,
