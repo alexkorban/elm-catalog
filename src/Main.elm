@@ -442,6 +442,9 @@ humanisePkgSubcat subcat =
         "ui/validation" ->
             "Validation"
 
+        "uncat/excluded" ->
+            "Excluded"
+
         "uncat/new" ->
             "New"
 
@@ -595,7 +598,7 @@ init flags url navKey =
                 |> List.map
                     (\pkg ->
                         case List.head pkg.tags of
-                            Just "exclude" ->
+                            Just "uncat/excluded" ->
                                 0
 
                             Just "uncat/new" ->
@@ -809,7 +812,7 @@ packageCard readmes package =
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
             , text " • "
-            , text <| "Latest: " ++ package.version 
+            , text <| "Latest: " ++ package.version
             , text " • "
             , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
             , text " • "
@@ -924,18 +927,25 @@ pkgCategoryList model =
                     text <|
                         humanisePkgCat cat
                  )
-                    :: List.map subcatEl (subcats |> List.sortBy humanisePkgSubcat)
+                    :: List.map subcatEl (List.sortBy humanisePkgSubcat subcats)
                 )
 
-        subcatEl subcat =
-            if subcat == model.selectedPkgSubcat then
-                el [ Font.color green ] <| text <| humanisePkgSubcat subcat
+        packageCount subcat =
+            Dict.get subcat model.packages
+                |> Maybe.map List.length
+                |> Maybe.withDefault 0
 
-            else
-                el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humanisePkgSubcat subcat
+        subcatEl subcat =
+            row []
+                [ if subcat == model.selectedPkgSubcat then
+                    el [ Font.color green ] <| text <| humanisePkgSubcat subcat
+
+                  else
+                    el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humanisePkgSubcat subcat
+                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| packageCount subcat) ++ "]"
+                ]
     in
     Dict.toList model.pkgCategories
-        |> List.filter (\( cat, _ ) -> cat /= "exclude")
         |> List.map catEls
         |> column
             [ width fill
@@ -948,12 +958,20 @@ pkgCategoryList model =
 toolCategoryList : Model -> Element Msg
 toolCategoryList model =
     let
-        catEl cat =
-            if cat == model.selectedToolCat then
-                el [ Font.size 18, Font.color green ] <| text <| humaniseToolCat cat
+        toolCount cat =
+            Dict.get cat model.tools
+                |> Maybe.map List.length
+                |> Maybe.withDefault 0
 
-            else
-                el [ Font.size 18, Font.color blue, pointer, onClick (UserSelectedToolCat cat) ] <| text <| humaniseToolCat cat
+        catEl cat =
+            row [ Font.size 18 ]
+                [ if cat == model.selectedToolCat then
+                    el [ Font.color green ] <| text <| humaniseToolCat cat
+
+                  else
+                    el [ Font.color blue, pointer, onClick (UserSelectedToolCat cat) ] <| text <| humaniseToolCat cat
+                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| toolCount cat) ++ "]"
+                ]
     in
     Dict.keys model.tools
         |> List.map catEl
