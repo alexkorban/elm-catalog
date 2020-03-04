@@ -245,7 +245,7 @@ window.packages =
         "name": "rtfeldman/elm-sorter-experiment",
         "summary": "Experimental Sorter package",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.1.1"
     },
@@ -263,7 +263,7 @@ window.packages =
         "name": "lukewestby/accessible-html-with-css-temp-19",
         "summary": "Drop-in replacement for tesk9/accessible-html using Html.Styled",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -299,7 +299,7 @@ window.packages =
         "name": "lukewestby/http-extra",
         "summary": "Inject values from a list into a template. Useful for i18n and templated copy.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -336,7 +336,7 @@ window.packages =
         "name": "mdgriffith/style-elements",
         "summary": "This project had a major rewrite and continues as mdgriffith/elm-ui",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "5.0.1"
     },
@@ -345,19 +345,19 @@ window.packages =
         "name": "mdgriffith/stylish-elephants",
         "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "8.1.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "w0rm/elm-physics",
-        "summary": "Highly experimental toy physics engine",
+        "summary": "Experimental toy physics engine",
         "tags": [
             "sciences/physics",
             "game-dev/physics"
         ],
-        "version": "4.0.0"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -454,7 +454,7 @@ window.packages =
         "name": "Janiczek/elm-runescape",
         "summary": "Functions related to the game RuneScape by Jagex Ltd.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -527,7 +527,7 @@ window.packages =
         "name": "terezka/elm-charts",
         "summary": "DEPRECATED. Create SVG charts.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -656,7 +656,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "5.2.2"
+        "version": "5.2.3"
     },
     {
         "license": "Apache-2.0",
@@ -721,7 +721,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "3.2.0"
+        "version": "3.3.0"
     },
     {
         "license": "MPL-2.0",
@@ -737,7 +737,7 @@ window.packages =
         "name": "ianmackenzie/elm-geometry-prerelease",
         "summary": "PRERELEASE version of elm-geometry",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -803,7 +803,7 @@ window.packages =
         "tags": [
             "sciences/physics"
         ],
-        "version": "2.2.0"
+        "version": "2.3.0"
     },
     {
         "license": "MPL-2.0",
@@ -812,7 +812,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -822,6 +822,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "8.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "jxxcarlson/elm-editor",
+        "summary": "A pure Elm text editor",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -840,14 +849,14 @@ window.packages =
             "data/formats",
             "dev/parsing"
         ],
-        "version": "6.0.1"
+        "version": "9.1.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "jxxcarlson/elm-pseudorandom",
         "summary": "Pseudorandom number generators",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.3"
     },
@@ -856,7 +865,7 @@ window.packages =
         "name": "jxxcarlson/elm-stat",
         "summary": "Elm stat utility",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "4.0.3"
     },
@@ -922,7 +931,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "9.1.0"
+        "version": "10.0.7"
     },
     {
         "license": "MIT",
@@ -980,6 +989,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "0ui/elm-task-parallel",
+        "summary": "Run tasks in parallel and handle all the results in one message.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "1.0.2"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "1602/elm-feather",
         "summary": "Feather icons for elm",
         "tags": [
@@ -1010,7 +1028,7 @@ window.packages =
         "name": "2426021684/elm-collage",
         "summary": "Use timjs/elm-collage instead.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -1019,7 +1037,7 @@ window.packages =
         "name": "2426021684/elm-text-width",
         "summary": "Calculates text width.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -1091,7 +1109,7 @@ window.packages =
         "name": "Cendrb/elm-css",
         "summary": "Typed CSS in Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -1100,7 +1118,7 @@ window.packages =
         "name": "Chadtech/ct-colors",
         "summary": "Chadtech standard colors",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.2"
     },
@@ -1109,7 +1127,7 @@ window.packages =
         "name": "Chadtech/dependent-text",
         "summary": "Dependent Text type (sorta)",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -1155,7 +1173,7 @@ window.packages =
         "name": "Chadtech/elm-provider",
         "summary": "An exploration into the container / component pattern in Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -1312,7 +1330,7 @@ window.packages =
         "name": "EngageSoftware/elm-dnn-http",
         "summary": "Helpers for working with DNN Web API",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -1321,7 +1339,7 @@ window.packages =
         "name": "EngageSoftware/elm-dnn-localization",
         "summary": "Helpers for working with DNN Localization",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -1449,7 +1467,7 @@ window.packages =
         "name": "Gizra/elm-compat-019",
         "summary": "Compatibility layer for use with Elm 0.19",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -1468,7 +1486,7 @@ window.packages =
         "name": "Gizra/elm-editable-webdata",
         "summary": "An EditableWebData represents an Editable value, along with WebData.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -1553,6 +1571,15 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "Herteby/simplex-noise",
+        "summary": "Generate simplex noise (an improvement of Perlin noise)",
+        "tags": [
+            "sciences/maths"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1785,9 +1812,9 @@ window.packages =
         "name": "NoRedInk/datetimepicker-legacy",
         "summary": "Reusable date and time picker view",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
-        "version": "1.0.2"
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -1803,7 +1830,7 @@ window.packages =
         "name": "NoRedInk/elm-debug-controls-without-datepicker",
         "summary": "(you probably want avh4/elm-debug-controls instead)",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -1978,7 +2005,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "7.20.0"
+        "version": "7.22.0"
     },
     {
         "license": "MIT",
@@ -2033,7 +2060,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "1.5.0"
+        "version": "1.6.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2049,7 +2076,7 @@ window.packages =
         "name": "PaackEng/elm-alert-beta",
         "summary": "Bootstrap alert",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -2096,7 +2123,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.2.0"
+        "version": "2.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2149,9 +2176,9 @@ window.packages =
         "name": "QiTASC/hatchinq",
         "summary": "An experimental library for UI elements. Not for production use.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
-        "version": "18.0.1"
+        "version": "20.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2372,6 +2399,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "WhileTruu/elm-blurhash",
+        "summary": "Blurhash decoder and encoder (https://github.com/woltapp/blurhash).",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "WhileTruu/elm-smooth-scroll",
         "summary": "Scrolling to position that always takes the same amount of time.",
         "tags": [
@@ -2395,7 +2431,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "2.0.3"
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -2550,7 +2586,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.1.0"
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -2638,7 +2674,7 @@ window.packages =
         "name": "alexanderkiel/elm-mdc-alpha",
         "summary": "Material Components for the Web for Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.4.0"
     },
@@ -2738,7 +2774,7 @@ window.packages =
         "name": "altjsus/elmtable",
         "summary": "Airtable API for Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -2756,7 +2792,7 @@ window.packages =
         "name": "andre-dietrich/elm-mapbox",
         "summary": "Fork form gampleman/elm-mapbox (4.1.0) ... An advanced mapping library",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -2846,7 +2882,7 @@ window.packages =
         "name": "arowM/elm-css-modules-helper",
         "summary": "Provide helper functions to handle CSS modules in Elm without hacks",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -2882,7 +2918,7 @@ window.packages =
         "name": "arowM/elm-html-extra-internal",
         "summary": "This is a dummy package only for `arowM/html-extra`",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -2891,7 +2927,7 @@ window.packages =
         "name": "arowM/elm-html-internal",
         "summary": "This is a dummy packageonly for `arowM/html`",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -2900,7 +2936,7 @@ window.packages =
         "name": "arowM/elm-html-with-context",
         "summary": "Cleaner, hack-free way to pass contexts to Elm view functions",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -2936,7 +2972,7 @@ window.packages =
         "name": "arowM/elm-reference",
         "summary": "An immutable approach imitating references of mutable languages.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.7"
     },
@@ -2945,7 +2981,7 @@ window.packages =
         "name": "arowM/html",
         "summary": "An elm/html alternative which enables you to batch attributes.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -2954,7 +2990,7 @@ window.packages =
         "name": "arowM/html-extra",
         "summary": "An elm-community/html-extra alternative which can be used with arowM/html",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -2963,7 +2999,7 @@ window.packages =
         "name": "arsduo/elm-dom-drag-drop",
         "summary": "Easy HTML5 drag-and-drop for Elm and @danielnary's visotype/elm-dom framework",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3027,7 +3063,7 @@ window.packages =
         "name": "avh4/elm-beautiful-example",
         "summary": "Create beautiful examples to show off your Elm packages and projects",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -3082,7 +3118,7 @@ window.packages =
         "name": "avh4/elm-github-v3",
         "summary": "Unofficial GitHub v3 API for Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3100,7 +3136,7 @@ window.packages =
         "name": "avh4-experimental/elm-transducers",
         "summary": "Composable transformation of sequences using clojure-inspired transducers",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3118,7 +3154,7 @@ window.packages =
         "name": "babsballetschool/image-directory",
         "summary": "Elm project showing an image directory structure",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3127,7 +3163,7 @@ window.packages =
         "name": "bartavelle/json-helpers",
         "summary": "Helpers for Json encoding and decoding of sum types",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.2"
     },
@@ -3201,7 +3237,7 @@ window.packages =
         "name": "bburdette/typed-collections",
         "summary": "typed layers over standard elm collections",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -3255,7 +3291,7 @@ window.packages =
         "name": "bigbinary/elm-form-field",
         "summary": "Capture form data better",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -3264,7 +3300,7 @@ window.packages =
         "name": "bigbinary/elm-reader",
         "summary": "Reader type in Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -3273,7 +3309,7 @@ window.packages =
         "name": "billstclair/elm-chat",
         "summary": "A simple chat component, easy to add to your user interface.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.2"
     },
@@ -3282,7 +3318,7 @@ window.packages =
         "name": "billstclair/elm-crypto-aes",
         "summary": "elm-crypto-aes is a pure Elm implementation of the Advanced Encryption Standard",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.10"
     },
@@ -3291,7 +3327,7 @@ window.packages =
         "name": "billstclair/elm-crypto-string",
         "summary": "elm-crypto-string does block chaining for string encryption.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.1"
     },
@@ -3300,7 +3336,7 @@ window.packages =
         "name": "billstclair/elm-custom-element",
         "summary": "A custom element library",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.4.0"
     },
@@ -3309,7 +3345,7 @@ window.packages =
         "name": "billstclair/elm-dev-random",
         "summary": "Cryptographically secure random-number generator.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.1.0"
     },
@@ -3327,7 +3363,7 @@ window.packages =
         "name": "billstclair/elm-geolocation",
         "summary": "Geolocation, find your latitude and longitude.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -3336,7 +3372,7 @@ window.packages =
         "name": "billstclair/elm-id-search",
         "summary": "Search for substrings in user records",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -3472,7 +3508,7 @@ window.packages =
         "name": "bluedogtraining/bdt-elm",
         "summary": "Elm modules commonly used at BDT",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "27.0.13"
     },
@@ -3537,7 +3573,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3553,7 +3589,7 @@ window.packages =
         "name": "bundsol/boxed",
         "summary": "An Elm library to encapsulate any primitive in a single type",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -3564,7 +3600,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -3580,7 +3616,7 @@ window.packages =
         "name": "calions-app/env",
         "summary": "Parse envs",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3607,7 +3643,7 @@ window.packages =
         "name": "calions-app/test-attribute",
         "summary": "Add test attributes to your elements for end-to-end tests",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3667,13 +3703,22 @@ window.packages =
         "version": "1.0.1"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "carmonw/elm-number-to-words",
+        "summary": "Convert numbers into words",
+        "tags": [
+            "data/text"
+        ],
+        "version": "1.0.2"
+    },
+    {
         "license": "ISC",
         "name": "carpe/elm-data",
         "summary": "Data Persistence library for Elm applications",
         "tags": [
             "networking/http"
         ],
-        "version": "2.0.0"
+        "version": "4.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -3689,7 +3734,7 @@ window.packages =
         "name": "carwow/elm-slider-old",
         "summary": "Elm slider implementation - old version",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -3698,7 +3743,7 @@ window.packages =
         "name": "ccapndave/elm-eexl",
         "summary": "Elm Expression Language: Simple context-based expression parser and evaluator",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -3753,7 +3798,7 @@ window.packages =
         "name": "ccapndave/focus",
         "summary": "an experimental library for working with records",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.0"
     },
@@ -3765,6 +3810,15 @@ window.packages =
             "ui/html"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "cedric-h/elm-google-sign-in",
+        "summary": "Elm bindings to the \"Sign in With Google\" widget",
+        "tags": [
+            "ui/html"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3952,7 +4006,7 @@ window.packages =
         "name": "danhandrea/elm-foo",
         "summary": "cool package",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4154,7 +4208,7 @@ window.packages =
         "name": "doanythingfordethklok/snackbar",
         "summary": "Snackbar lib",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4228,7 +4282,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.0.0"
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -4471,7 +4525,7 @@ window.packages =
         "name": "elm-toulouse/float16",
         "summary": "Provide extra binary Encoder and Decoder to and from float16",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -4489,7 +4543,7 @@ window.packages =
         "name": "emilianobovetti/elm-yajson",
         "summary": "Yet another JSON library inspired by Yojson",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -4534,7 +4588,7 @@ window.packages =
         "name": "ericgj/elm-validation",
         "summary": "Tools for validation, e.g. for form input",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -4543,7 +4597,7 @@ window.packages =
         "name": "eriktim/elm-protocol-buffers",
         "summary": "An Elm implementation of the Protocol Buffers specification",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -4603,10 +4657,19 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "fabhof/elm-ui-datepicker",
+        "summary": "A reasonable date picker for the awesome elm-ui.",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "fabiommendes/elm-iter",
         "summary": "Lazy iterators for Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4769,7 +4832,7 @@ window.packages =
         "name": "folkertdev/one-true-path-experiment",
         "summary": "An experimental package for building paths and curves in elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "4.0.3"
     },
@@ -4784,10 +4847,19 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "folq/review-rgb-ranges",
+        "summary": "Provides elm-review rules to detect rgb values out of range",
+        "tags": [
+            "dev/utils"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "francescortiz/elm-queue",
         "summary": "Process .",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4800,7 +4872,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "version": "2.0.0"
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4853,7 +4925,7 @@ window.packages =
         "name": "genthaler/elm-enum",
         "summary": "A library to facilitate using Elm union types as `Enum`s",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -4871,7 +4943,7 @@ window.packages =
         "name": "getto-systems/elm-apply",
         "summary": "apply utilities for html table",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -4880,7 +4952,7 @@ window.packages =
         "name": "getto-systems/elm-command",
         "summary": "utilities for Cmd",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4889,7 +4961,7 @@ window.packages =
         "name": "getto-systems/elm-field",
         "summary": "form field utilities",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -4898,7 +4970,7 @@ window.packages =
         "name": "getto-systems/elm-html-table",
         "summary": "construct table structure for html",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4907,7 +4979,7 @@ window.packages =
         "name": "getto-systems/elm-http-header",
         "summary": "http header utilities",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4916,7 +4988,7 @@ window.packages =
         "name": "getto-systems/elm-http-part",
         "summary": "http part utilities",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4925,7 +4997,7 @@ window.packages =
         "name": "getto-systems/elm-json",
         "summary": "json utilities",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4934,7 +5006,7 @@ window.packages =
         "name": "getto-systems/elm-sort",
         "summary": "sort utilities for html table",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4943,7 +5015,7 @@ window.packages =
         "name": "getto-systems/elm-url",
         "summary": "url utilities",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -4952,7 +5024,7 @@ window.packages =
         "name": "getto-systems/getto-elm-command",
         "summary": "utilities for Cmd",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -5027,7 +5099,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5052,7 +5124,7 @@ window.packages =
         "name": "glasserc/elm-debouncer",
         "summary": "A forked debouncer",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5107,7 +5179,7 @@ window.packages =
         "name": "guid75/ziplist",
         "summary": "A collection data type that exposes a single current item",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -5116,7 +5188,7 @@ window.packages =
         "name": "hakonrossebo/elmdocs",
         "summary": "A meta package to be used to look up package docs from REPL",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.3"
     },
@@ -5140,19 +5212,28 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "harmboschloo/graphql-to-elm",
+        "summary": "Generate Elm types/encoders/decoders from GraphQL queries",
+        "tags": [
+            "storage/databases"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "harmboschloo/graphql-to-elm-package",
         "summary": "Generate Elm types/encoders/decoders from GraphQL queries. Support package.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
         "name": "harrysarson/elm-complex",
         "summary": "Use complex numbers in elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.5"
     },
@@ -5170,7 +5251,7 @@ window.packages =
         "name": "harrysarson/elm-hacky-unique",
         "summary": "Trick elm into thinking otherwise identical objects are different.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5200,6 +5281,15 @@ window.packages =
             "dev/parsing"
         ],
         "version": "2.3.4"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "hendore/elm-port-message",
+        "summary": "A clean convention for sending messages via ports.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5280,7 +5370,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "version": "3.0.0"
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -5296,7 +5386,7 @@ window.packages =
         "name": "imjoehaines/afinn-165-elm",
         "summary": "The AFINN-165 dataset as an Elm dict",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5305,7 +5395,7 @@ window.packages =
         "name": "indicatrix/elm-chartjs-webcomponent",
         "summary": "Elm types and pipeline functions to easily work with Chartjs",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5378,7 +5468,7 @@ window.packages =
         "name": "isaacseymour/deprecated-time",
         "summary": "elm-community/elm-time updated to 0.19",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5396,7 +5486,7 @@ window.packages =
         "name": "itravel-de/elm-thumbor",
         "summary": "Generate Thumbor URLs with Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5423,7 +5513,7 @@ window.packages =
         "name": "jabaraster/elm-views",
         "summary": "elm view library.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -5578,7 +5668,7 @@ window.packages =
         "name": "jgrenat/elm-html-test-runner",
         "summary": "Run and display Elm tests as HTML",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.3"
     },
@@ -5587,7 +5677,7 @@ window.packages =
         "name": "jigargosar/elm-material-color",
         "summary": "Material Colors",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5633,7 +5723,7 @@ window.packages =
         "name": "jinjor/elm-map-debug",
         "summary": "Trying to reproduce Map.! problem",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -5669,7 +5759,7 @@ window.packages =
         "name": "jjant/elm-comonad-zipper",
         "summary": "Provides an implementation of the List Zipper and its comonadic interface.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -5678,7 +5768,7 @@ window.packages =
         "name": "jjant/elm-dict",
         "summary": "Dictionary that can store any type, without configuration.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -5687,7 +5777,7 @@ window.packages =
         "name": "jjant/elm-printf",
         "summary": "Provides an implementation of printf",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5708,7 +5798,7 @@ window.packages =
             "ui/patterns",
             "game-dev/rendering"
         ],
-        "version": "4.0.1"
+        "version": "4.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5718,6 +5808,15 @@ window.packages =
             "sciences/maths"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "johnathanbostrom/elm-dice",
+        "summary": "Dice Rolling",
+        "tags": [
+            "game-dev/utils"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5751,7 +5850,7 @@ window.packages =
         "name": "jonathanfishbein1/elm-monoid",
         "summary": "DEPRECATED A pack of monoids in the category of endofunctors",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.3"
     },
@@ -5796,7 +5895,7 @@ window.packages =
         "name": "jordymoos/pilf",
         "summary": "Elm flip but then reversed to hide its existence ",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5868,7 +5967,7 @@ window.packages =
         "name": "json-tools/json-value",
         "summary": "Reading and manipulation with json values",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -5935,7 +6034,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "version": "2.2.0"
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6105,7 +6204,7 @@ window.packages =
         "name": "krisajenkins/elm-exts",
         "summary": "A collection of functions missing from the core.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "28.0.0"
     },
@@ -6177,7 +6276,7 @@ window.packages =
         "name": "kuzminadya/mogeefont",
         "summary": "A bitmap font for the Mogee game",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -6235,7 +6334,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.1.0"
+        "version": "1.2.0"
     },
     {
         "license": "MIT",
@@ -6305,7 +6404,7 @@ window.packages =
         "name": "ljuglaret/combinatoire",
         "summary": "combinatoire",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -6369,7 +6468,7 @@ window.packages =
         "name": "m-mullins/elm-console",
         "summary": "Wrap JS console object",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -6479,7 +6578,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -6488,7 +6587,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.4"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -6588,7 +6687,7 @@ window.packages =
         "name": "miyamoen/elm-command-pallet",
         "summary": "A command pallet UI. Register messages, then execute with it.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -6597,7 +6696,7 @@ window.packages =
         "name": "miyamoen/select-list",
         "summary": "A non-empty list and one of zipper.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "4.1.0"
     },
@@ -6606,7 +6705,7 @@ window.packages =
         "name": "miyamoen/tree-with-zipper",
         "summary": "Rose tree (multiway tree) with zipper.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -6743,7 +6842,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -6769,7 +6868,7 @@ window.packages =
         "name": "nik-garmash/elm-test",
         "summary": "Just testing",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -6843,7 +6942,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.0.0"
+        "version": "2.1.0"
     },
     {
         "license": "MIT",
@@ -6871,7 +6970,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6906,7 +7005,7 @@ window.packages =
         "name": "ozyinc/elm-sortable-table-with-row-id",
         "summary": "Sortable tables for whatever data you want to display.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -6978,7 +7077,7 @@ window.packages =
         "name": "pastelInc/elm-validator",
         "summary": "Provide a validator for elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -7105,7 +7204,7 @@ window.packages =
         "name": "pilatch/elm-chess",
         "summary": "Elm library for computer chess",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -7114,7 +7213,7 @@ window.packages =
         "name": "pilatch/flip",
         "summary": "Just the old flip function",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -7160,7 +7259,7 @@ window.packages =
         "name": "primait/forms",
         "summary": "Form library in Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -7187,7 +7286,7 @@ window.packages =
         "name": "proda-ai/elm-logger",
         "summary": "A logger that can be used in optimized mode",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.5"
     },
@@ -7269,7 +7368,7 @@ window.packages =
         "name": "r-k-b/map-accumulate",
         "summary": "\\\"map accumulate\\\" helpers for Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -7278,7 +7377,7 @@ window.packages =
         "name": "renanpvaz/elm-bem",
         "summary": "BEM utilities for classes",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -7287,7 +7386,7 @@ window.packages =
         "name": "reserve-protocol/elm-i3166-data",
         "summary": "ISO 3166 data including country names, flags sprite sheet, dial codes, and more",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -7296,7 +7395,7 @@ window.packages =
         "name": "reserve-protocol/elm-iso3166-data",
         "summary": "ISO 3166 data including country names, flags sprite sheet, dial codes, and more",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -7468,7 +7567,7 @@ window.packages =
         "name": "romstad/elm-chess",
         "summary": "Elm library for computer chess",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.2"
     },
@@ -7486,7 +7585,7 @@ window.packages =
         "name": "ronanyeah/helpers",
         "summary": "Convenience functions.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.0"
     },
@@ -7525,7 +7624,7 @@ window.packages =
         "name": "ryan-senn/elm-compiler-error-sscce",
         "summary": "Exploring compiler error",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "6.0.0"
     },
@@ -7561,7 +7660,7 @@ window.packages =
         "name": "ryota0624/date-controll",
         "summary": "date controll",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -7633,7 +7732,7 @@ window.packages =
         "name": "showell/dict-dot-dot",
         "summary": "core Dict exposing Dict(..), NColor(..)",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -7642,7 +7741,7 @@ window.packages =
         "name": "showell/elm-data-util",
         "summary": "generate Elm code (by example)",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.1.0"
     },
@@ -7823,7 +7922,7 @@ window.packages =
         "name": "stil4m/structured-writer",
         "summary": "Helpful writer for structured data: indent, seperators ect",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -7832,7 +7931,7 @@ window.packages =
         "name": "stoeffel/editable",
         "summary": "Editable represents a value that can be read-only or editable.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -7878,7 +7977,7 @@ window.packages =
         "name": "swiftengineer/elm-data",
         "summary": "Data Persistence library for Elm applications",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "6.0.0"
     },
@@ -7915,7 +8014,7 @@ window.packages =
         "name": "the-sett/auth-elm",
         "summary": "Elm auth module for interacting with the-sett/auth-service.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "3.0.5"
     },
@@ -7969,7 +8068,7 @@ window.packages =
         "name": "the-sett/elm-color",
         "summary": "A simple color module for Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -7981,6 +8080,15 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "the-sett/elm-error-handling",
+        "summary": "Tools for more elaborate error handling than Result.",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8043,14 +8151,14 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "5.0.0"
+        "version": "5.1.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "the-sett/elm-update-helper",
         "summary": "Helper functions for nesting updates in Elm.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.4.1"
     },
@@ -8062,6 +8170,15 @@ window.packages =
             "dev/algorithms"
         ],
         "version": "1.1.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "the-sett/salix",
+        "summary": "A language for code generation.",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8077,7 +8194,7 @@ window.packages =
         "name": "the-sett/tea-tree",
         "summary": "Tea Trees are Rose Trees that work better with The Elm Architecture.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8086,7 +8203,7 @@ window.packages =
         "name": "the-sett/the-sett-laf",
         "summary": "Look and Feel for The Sett.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "6.1.0"
     },
@@ -8095,7 +8212,7 @@ window.packages =
         "name": "thought2/elm-interactive",
         "summary": "Provides time, mouse, window resize and keyboard events.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8113,7 +8230,7 @@ window.packages =
         "name": "thoughtbot/expirable",
         "summary": "Manage values that expire after a period of time",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -8167,7 +8284,7 @@ window.packages =
         "name": "toastal/endo",
         "summary": "Endo for Elm: a simple endomorphism to simplify code",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.1.0"
     },
@@ -8276,7 +8393,7 @@ window.packages =
         "name": "tricycle/elm-infnite-gallery",
         "summary": "A simple gallery that supports infinite scrolling",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -8296,7 +8413,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "4.2.4"
+        "version": "5.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8341,14 +8458,14 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "6.0.0"
+        "version": "7.0.0"
     },
     {
         "license": "BSD-3-Clause",
         "name": "truqu/line-charts",
         "summary": "Fork of terezka/line-charts to work around #43",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8359,7 +8476,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.1.0"
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8368,7 +8485,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.2.0"
+        "version": "1.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8395,7 +8512,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "3.1.1"
+        "version": "3.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -8405,6 +8522,15 @@ window.packages =
             "dev/algorithms"
         ],
         "version": "1.0.2"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ursi/elm-css-colors",
+        "summary": "Use the CSS named colors in elm-css",
+        "tags": [
+            "ui/css"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -8429,7 +8555,7 @@ window.packages =
         "name": "valentinomicko/test-forms",
         "summary": "Lala",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8447,7 +8573,7 @@ window.packages =
         "name": "viir/simplegamedev",
         "summary": "Making it simple to develop a video game",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8465,7 +8591,7 @@ window.packages =
         "name": "visotype/elm-eval",
         "summary": "Pass function calls as data from JavaScript to Elm",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -8501,7 +8627,7 @@ window.packages =
         "name": "waratuman/elm-json-extra",
         "summary": "Extra JSON Encode / Decode functionality",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -8567,7 +8693,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.2"
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -8583,7 +8709,7 @@ window.packages =
         "name": "whage/elm-validate",
         "summary": "Validate data",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -8677,6 +8803,24 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "4.1.4"
+    },
+    {
+        "license": "MIT",
+        "name": "y047aka/elm-hsl-color",
+        "summary": "The HSL version of elm-color",
+        "tags": [
+            "ui/colors"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "y047aka/elm-reset-css",
+        "summary": "The Collection of Reset CSS",
+        "tags": [
+            "ui/css"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8801,7 +8945,7 @@ window.packages =
         "name": "zgohr/elm-csv",
         "summary": "A CSV parser.",
         "tags": [
-            "exclude"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
