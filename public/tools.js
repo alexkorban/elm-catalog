@@ -701,7 +701,6 @@ window.tools =
         "documentation"
     ]
 },
-
 {
     "name": "Unofficial Elm ARM 32 bits binaries for Raspberry Pi",
     "githubName": "dmy/elm-raspberry-pi",
@@ -710,6 +709,26 @@ window.tools =
     "summary": "Includes elm, elm-format, elm-json and elmi-to-json (needed by elm-test)",
     "tags": [
         "other"
+    ]
+},
+{
+    "name": "@elm-react/component",
+    "githubName": "Parasrah/elm-react-component",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/@elm-react/component",
+    "summary": "Make it easier to incrementally adopt Elm in an existing React code base",
+    "tags": [
+        "react"
+    ]
+},
+{
+    "name": "react-elm-components",
+    "githubName": "cultureamp/react-elm-components",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/react-elm-components",
+    "summary": "Make it easy to turn Elm programs into React components",
+    "tags": [
+        "react"
     ]
 }
 

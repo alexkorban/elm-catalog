@@ -213,10 +213,6 @@ topLevelParser urlPrefix =
                 |> List.foldr (</>) UrlParser.top
 
 
-
--- UrlParser.oneOf [ UrlParser.top, UrlParser.s "elm" </> UrlParser.s "catalog" ]
-
-
 routeParser : String -> UrlParser.Parser (Route -> a) a
 routeParser urlPrefix =
     let
@@ -225,12 +221,8 @@ routeParser urlPrefix =
     in
     UrlParser.oneOf
         [ UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
-
-        --, UrlParser.map PackageRoute <| top </> UrlParser.s "packages" </> UrlParser.string
         , UrlParser.map (ToolRoute "build") <| top </> UrlParser.s "tools"
-
-        --, UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
-        , UrlParser.map (PackageRoute "dev/utils") <| top
+        , UrlParser.map (PackageRoute "dev/algorithms") <| top
         ]
 
 
@@ -291,6 +283,9 @@ humanisePkgSubcat subcat =
 
         "audio/integrations" ->
             "Integrations"
+
+        "audio/playback" ->
+            "Playback"
 
         "data/formats" ->
             "Formats"
@@ -497,6 +492,9 @@ humaniseToolCat cat =
         "package-management" ->
             "Package management"
 
+        "react" ->
+            "React"
+
         "testing" ->
             "Testing"
 
@@ -571,12 +569,6 @@ resetViewport =
 resetStateOnPageChange : Model -> Model
 resetStateOnPageChange model =
     { model | isMenuPanelOpen = False }
-
-
-
--- UI
--- TODO: pass in the prefix where app is mounted, then use it to construct the top level
--- URL parser (which now has to be stored in the model)
 
 
 init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )

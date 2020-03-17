@@ -620,7 +620,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "version": "2.0.21"
+        "version": "2.0.22"
     },
     {
         "license": "BSD-3-Clause",
@@ -830,7 +830,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.2"
+        "version": "3.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -849,7 +849,7 @@ window.packages =
             "data/formats",
             "dev/parsing"
         ],
-        "version": "9.1.0"
+        "version": "9.2.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -931,7 +931,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "10.0.7"
+        "version": "11.0.0"
     },
     {
         "license": "MIT",
@@ -1579,7 +1579,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "1.0.0"
+        "version": "1.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1743,6 +1743,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "6.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "MartinSStewart/elm-audio",
+        "summary": "Play sound effects and music in a declarative way",
+        "tags": [
+            "audio/playback"
+        ],
+        "version": "2.2.2"
     },
     {
         "license": "MIT",
@@ -2005,7 +2014,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "7.22.0"
+        "version": "7.24.0"
     },
     {
         "license": "MIT",
@@ -2431,7 +2440,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "license": "MIT",
@@ -2803,7 +2812,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "1.0.8"
+        "version": "1.0.9"
     },
     {
         "license": "Apache-2.0",
@@ -2821,7 +2830,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "3.2.0"
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2857,7 +2866,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "5.0.0"
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3141,6 +3150,15 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "license": "ISC",
+        "name": "b0oh/elm-do",
+        "summary": "Inspired by do-notation from Haskell.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "bChiquet/elm-accessors",
         "summary": "Accessors, a library implementing lenses for Elm.",
@@ -3248,7 +3266,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -4108,7 +4126,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "3.0.0"
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4147,7 +4165,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "version": "3.0.2"
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4445,7 +4463,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "5.1.0"
+        "version": "5.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4834,7 +4852,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "4.0.3"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4852,7 +4870,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "version": "1.0.0"
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5081,7 +5099,7 @@ window.packages =
             "networking/integrations",
             "storage/databases"
         ],
-        "version": "4.0.0"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5415,7 +5433,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.0.2"
+        "version": "3.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -5590,6 +5608,15 @@ window.packages =
             "networking/integrations"
         ],
         "version": "1.1.0"
+    },
+    {
+        "license": "MIT",
+        "name": "jasonliang512/elm-heroicons",
+        "summary": "Heroicons for elm",
+        "tags": [
+            "ui/icons"
+        ],
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5778,6 +5805,15 @@ window.packages =
         "summary": "Provides an implementation of printf",
         "tags": [
             "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jluckyiv/elm-utc-date-strings",
+        "summary": "Convert UTC date strings to and from Posix times",
+        "tags": [
+            "data/time"
         ],
         "version": "1.0.0"
     },
@@ -6034,7 +6070,16 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "version": "3.0.1"
+        "version": "4.0.2"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "justgook/webgl-shape",
+        "summary": "2D wrapper for WebGL entities",
+        "tags": [
+            "ui/rendering", "game-dev/rendering"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6334,7 +6379,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.2.0"
+        "version": "1.3.1"
     },
     {
         "license": "MIT",
@@ -6578,7 +6623,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -6716,7 +6761,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "license": "MPL-2.0",
@@ -6753,6 +6798,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "mtonnberg/refinement-proofs",
+        "summary": "Refinement types in elm",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "5.0.1"
     },
     {
         "license": "MIT",
@@ -6889,6 +6943,15 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "1.8.0"
+    },
+    {
+        "license": "MIT",
+        "name": "nishiurahiroki/elm-simple-pagenate",
+        "summary": "A elm simple pagenater.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -7104,7 +7167,7 @@ window.packages =
         "name": "pd-andy/elm-web-audio",
         "summary": "An elm/html-like library for the Web Audio API.",
         "tags": [
-            "audio/integrations"
+            "audio/playback"
         ],
         "version": "2.3.0"
     },
@@ -7374,6 +7437,24 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "r-k-b/no-float-ids",
+        "summary": "A rule for elm-review that discourages Float types for \"Id\"s.",
+        "tags": [
+            "dev/utils"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "r-k-b/no-long-import-lines",
+        "summary": "A rule for elm-review that discourages long one-line Imports.",
+        "tags": [
+            "dev/utils"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "renanpvaz/elm-bem",
         "summary": "BEM utilities for classes",
         "tags": [
@@ -7480,6 +7561,15 @@ window.packages =
             "ui/css"
         ],
         "version": "2.0.2"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "rl-king/elm-scroll-to",
+        "summary": "Smoothly scroll to DOM elements with a spring animation",
+        "tags": [
+            "ui/animation"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7690,6 +7780,15 @@ window.packages =
             "data/time"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "samueldple/material-color",
+        "summary": "Material colours to work with rtfeldman/elm-css",
+        "tags": [
+            "ui/colors"
+        ],
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8052,7 +8151,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.1.2"
+        "version": "2.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -8061,7 +8160,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.1.1"
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8533,6 +8632,24 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "ursi/elm-scroll",
+        "summary": "Easily scroll an element to the desired position",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ursi/elm-throttle",
+        "summary": "Easily throttle the execution of commands",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "MIT",
         "name": "vViktorPL/elm-incremental-list",
         "summary": "Generate list range based on increment and decrease functions",
@@ -8811,7 +8928,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
