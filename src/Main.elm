@@ -642,13 +642,17 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         RuntimeChangedUrl url ->
-            ( { model
-                | route =
-                    Maybe.withDefault (PackageRoute "dev/testing") <|
-                        UrlParser.parse (routeParser model.urlPrefix) url
-              }
-            , Cmd.none
-            )
+            if String.endsWith "/book" <| Url.toString url then
+                ( model, Nav.load <| Url.toString url )
+
+            else
+                ( { model
+                    | route =
+                        Maybe.withDefault (PackageRoute "dev/testing") <|
+                            UrlParser.parse (routeParser model.urlPrefix) url
+                  }
+                , Cmd.none
+                )
 
         RuntimeDidSomethingIrrelevant ->
             ( model, Cmd.none )
