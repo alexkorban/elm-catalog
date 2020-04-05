@@ -305,6 +305,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "mdgriffith/elm-animator",
+        "summary": "A timeline-based animation engine",
+        "tags": [
+            "ui/animation"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "mdgriffith/elm-markup",
         "summary": "An Elm-friendly markup language for typed data and content.",
         "tags": [
@@ -620,7 +629,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "version": "2.0.22"
+        "version": "2.0.24"
     },
     {
         "license": "BSD-3-Clause",
@@ -703,7 +712,7 @@ window.packages =
             "ui/rendering",
             "game-dev/rendering"
         ],
-        "version": "2.0.2"
+        "version": "3.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -803,7 +812,7 @@ window.packages =
         "tags": [
             "sciences/physics"
         ],
-        "version": "2.3.0"
+        "version": "2.4.0"
     },
     {
         "license": "MPL-2.0",
@@ -935,6 +944,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "jxxcarlson/tree-extra",
+        "summary": "Operations on rose trees to go with zwilias/elm-rosetree",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "noahzgordon/elm-color-extra",
         "summary": "Additional color handling for Elm",
         "tags": [
@@ -994,7 +1012,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.2"
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1406,7 +1424,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2014,7 +2032,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "7.24.0"
+        "version": "8.0.0"
     },
     {
         "license": "MIT",
@@ -2070,6 +2088,15 @@ window.packages =
             "ui/elm-ui"
         ],
         "version": "1.6.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Orasund/elm-ui-widgets",
+        "summary": "Collection of reusable views for elm-ui.",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2187,7 +2214,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "20.0.0"
+        "version": "22.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2599,12 +2626,30 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "agustinrhcp/elm-datepicker",
+        "summary": "A reusable date picker component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "ahstro/elm-bulma-classes",
         "summary": "Bulma CSS classes",
         "tags": [
             "ui/css"
         ],
         "version": "3.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ahstro/elm-luhn",
+        "summary": "Luhn Algorithm validator",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -2956,7 +3001,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "version": "4.0.1"
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -3736,7 +3781,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "version": "4.0.3"
+        "version": "4.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -3927,7 +3972,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "4.0.1"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3937,6 +3982,15 @@ window.packages =
             "data/text"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "coinop-logan/phace",
+        "summary": "Generate phaces: face-like identicons based on crypto addresses.",
+        "tags": [
+            "data/visualisation"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "AGPL-3.0",
@@ -3972,7 +4026,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "7.0.0"
+        "version": "8.0.0"
     },
     {
         "license": "MIT",
@@ -4146,7 +4200,7 @@ window.packages =
             "data/formats",
             "ui/rendering"
         ],
-        "version": "3.0.0"
+        "version": "4.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4165,7 +4219,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "version": "4.0.0"
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4481,7 +4535,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.3.0"
+        "version": "2.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4672,6 +4726,15 @@ window.packages =
             "ui/animation"
         ],
         "version": "4.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "f0i/iso8601",
+        "summary": "Format elm/time posix time as an ISO8601 strings",
+        "tags": [
+            "data/time"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4921,6 +4984,15 @@ window.packages =
         "version": "2.0.1"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "friedbrice/elm-teaching-tools",
+        "summary": "Tools for using Elm in the classroom.",
+        "tags": [
+            "uncat/misc"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "MIT",
         "name": "fustkilas/elm-airtable",
         "summary": "Elm wrapper for the Airtable API",
@@ -5117,7 +5189,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.2.0"
+        "version": "2.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5129,13 +5201,22 @@ window.packages =
         "version": "1.5.0"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "gigobyte/iso8601-duration",
+        "summary": "Convert between ISO-8601 durations strings and Duration values",
+        "tags": [
+            "data/time"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "MIT",
         "name": "gingko/time-distance",
         "summary": "Get approximate relative time in words",
         "tags": [
             "data/time"
         ],
-        "version": "2.2.0"
+        "version": "2.2.1"
     },
     {
         "license": "MIT",
@@ -5455,6 +5536,15 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "license": "MIT",
+        "name": "insurello/elm-ui-explorer",
+        "summary": "Explore and interact with UI components and pages you've created",
+        "tags": [
+            "dev/prototyping"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "iodevs/elm-history",
         "summary": "This library helps with keeping history of states of your variables.",
@@ -5616,7 +5706,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -6032,7 +6122,7 @@ window.packages =
         "tags": [
             "game-dev/utils"
         ],
-        "version": "2.0.0"
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6077,7 +6167,8 @@ window.packages =
         "name": "justgook/webgl-shape",
         "summary": "2D wrapper for WebGL entities",
         "tags": [
-            "ui/rendering", "game-dev/rendering"
+            "ui/rendering",
+            "game-dev/rendering"
         ],
         "version": "1.0.0"
     },
@@ -6379,7 +6470,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.3.1"
+        "version": "1.3.2"
     },
     {
         "license": "MIT",
@@ -6469,7 +6560,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.1.6"
+        "version": "1.1.7"
     },
     {
         "license": "BSD-3-Clause",
@@ -6588,6 +6679,15 @@ window.packages =
             "ui/input"
         ],
         "version": "1.0.2"
+    },
+    {
+        "license": "MIT",
+        "name": "matheus23/elm-figma-api",
+        "summary": "Figma web API endpoints, data structures and helper functions.",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7191,6 +7291,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "pehota/elm-zondicons",
+        "summary": "Zondicons SVG Icons Library",
+        "tags": [
+            "ui/icons"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "periodic/elm-csv",
         "summary": "Parse CSV strings",
         "tags": [
@@ -7454,6 +7563,15 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "license": "MIT",
+        "name": "rametta/elm-datetime-picker",
+        "summary": "a datetime picker component",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "2.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "renanpvaz/elm-bem",
         "summary": "BEM utilities for classes",
@@ -7541,7 +7659,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "version": "1.0.2"
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7569,7 +7687,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7743,7 +7861,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "3.0.1"
+        "version": "4.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8277,7 +8395,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8497,6 +8615,15 @@ window.packages =
         "version": "2.0.1"
     },
     {
+        "license": "MIT",
+        "name": "tricycle/elm-parse-dont-validate",
+        "summary": "Parsing (Validation) done right",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "tricycle/morty-api",
         "summary": "Morty API",
@@ -8512,7 +8639,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "5.1.0"
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8973,7 +9100,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "3.1.0"
+        "version": "3.2.1"
     },
     {
         "license": "BSD-3-Clause",

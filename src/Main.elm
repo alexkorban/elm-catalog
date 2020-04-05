@@ -440,6 +440,9 @@ humanisePkgSubcat subcat =
         "uncat/excluded" ->
             "Excluded"
 
+        "uncat/misc" ->
+            "Miscellaneous"
+
         "uncat/new" ->
             "New"
 
