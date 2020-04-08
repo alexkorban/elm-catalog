@@ -310,7 +310,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -1552,7 +1552,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.1.2"
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3990,7 +3990,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "AGPL-3.0",
@@ -4471,7 +4471,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "version": "3.3.0"
+        "version": "3.4.0"
     },
     {
         "license": "MIT",
@@ -5540,7 +5540,8 @@ window.packages =
         "name": "insurello/elm-ui-explorer",
         "summary": "Explore and interact with UI components and pages you've created",
         "tags": [
-            "dev/prototyping"
+            "dev/prototyping",
+            "ui/elm-ui"
         ],
         "version": "1.0.0"
     },
@@ -5729,11 +5730,11 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/elm-review",
-        "summary": "Analyzes Elm source code to add additional guarantees to your project.",
+        "summary": "Analyzes Elm projects, to help find mistakes before your users find them.",
         "tags": [
             "dev/utils"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5764,8 +5765,8 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
-        "name": "jfmengels/review-debug",
-        "summary": "Provides elm-review rules to detect debug code",
+        "name": "jfmengels/review-common",
+        "summary": "Provides common linting rules for elm-review",
         "tags": [
             "dev/utils"
         ],
@@ -5773,12 +5774,21 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
-        "name": "jfmengels/review-unused",
-        "summary": "Provides elm-review rules to detect unused functions and types",
+        "name": "jfmengels/review-debug",
+        "summary": "Provides elm-review rules to detect debug code",
         "tags": [
             "dev/utils"
         ],
-        "version": "1.0.4"
+        "version": "2.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/review-unused",
+        "summary": "Provides elm-review rules to detect unused elements in your Elm project",
+        "tags": [
+            "dev/utils"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6943,6 +6953,15 @@ window.packages =
             "data/formats"
         ],
         "version": "1.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "mweiss/elm-rte-toolkit",
+        "summary": "Build rich text editors in Elm",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
