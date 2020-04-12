@@ -730,7 +730,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "3.3.0"
+        "version": "3.4.0"
     },
     {
         "license": "MPL-2.0",
@@ -1760,7 +1760,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "6.0.0"
+        "version": "6.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3010,7 +3010,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "version": "1.0.2"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3078,11 +3078,11 @@ window.packages =
     {
         "license": "MIT",
         "name": "astynax/tea-combine",
-        "summary": "Combinator library for \\\\\\\"The Elm Arcitecture\\\\\\\"-powered applications",
+        "summary": "Combinator library for TEA-powered applications",
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "2.0.1"
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3119,7 +3119,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3138,7 +3138,7 @@ window.packages =
             "ui/patterns",
             "dev/prototyping"
         ],
-        "version": "2.2.0"
+        "version": "2.2.1"
     },
     {
         "license": "MIT",
@@ -4363,7 +4363,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "1.1.0"
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -4842,7 +4842,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.3"
+        "version": "2.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -5714,7 +5714,7 @@ window.packages =
         "name": "jfmengels/elm-lint",
         "summary": "An Elm source code linter, to add additional guarantees to your project.",
         "tags": [
-            "dev/utils"
+            "uncat/excluded"
         ],
         "version": "4.1.2"
     },
@@ -5723,7 +5723,7 @@ window.packages =
         "name": "jfmengels/elm-lint-reporter",
         "summary": "Formats the result of `elm-lint` in a nice human-readable way",
         "tags": [
-            "dev/utils"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -5750,7 +5750,7 @@ window.packages =
         "name": "jfmengels/lint-debug",
         "summary": "Lint plugin for `elm-lint` that provides rules to detect debug code.",
         "tags": [
-            "dev/utils"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -5759,7 +5759,7 @@ window.packages =
         "name": "jfmengels/lint-unused",
         "summary": "Lint plugin for `elm-lint` that detects unused code",
         "tags": [
-            "dev/utils"
+            "uncat/excluded"
         ],
         "version": "1.0.2"
     },
@@ -6961,7 +6961,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -7006,7 +7006,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "version": "16.0.3"
+        "version": "16.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8400,6 +8400,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "the-sett/json-optional",
+        "summary": "Helpers for working with optional fields in JSON.",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "the-sett/lazy-list",
         "summary": "Lazy lists for Elm.",
         "tags": [
@@ -8658,7 +8667,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "6.0.0"
+        "version": "8.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9146,6 +9155,15 @@ window.packages =
         "summary": "A pack of monoids in the category of endofunctors",
         "tags": [
             "sciences/machine-learning"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "yujota/elm-pascal-voc",
+        "summary": "Encoder and decoder for PASCAL Visual Object Class XML format",
+        "tags": [
+            "data/formats"
         ],
         "version": "1.0.0"
     },
