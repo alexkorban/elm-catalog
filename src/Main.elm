@@ -480,6 +480,9 @@ humaniseToolCat cat =
         "editor" ->
             "IDE/editor tools"
 
+        "electron" ->
+            "Electron"
+
         "haskell" ->
             "Haskell packages"
 

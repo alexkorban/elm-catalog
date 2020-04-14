@@ -291,6 +291,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-desktop-app",
+    "githubName": "avh4/",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-desktop-app",
+    "summary": "Create a scaffold for an Electron app",
+    "tags": [
+        "code-generation", "electron"
+    ]
+},
+{
     "name": "elm-format",
     "githubName": "avh4/elm-format",
     "url": null,
