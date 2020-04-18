@@ -953,7 +953,6 @@ pkgCategoryList model =
             [ width fill
             , height fill
             , spacingXY 0 10
-            , htmlAttribute <| Attr.style "flex-shrink" "1"
             ]
 
 
@@ -982,7 +981,6 @@ toolCategoryList model =
             , height fill
             , spacingXY 0 10
             , paddingEach { sides | top = 20, bottom = 100 }
-            , htmlAttribute <| Attr.style "flex-shrink" "1"
             ]
 
 
@@ -1031,8 +1029,7 @@ categoryList model =
                     [ tabEl False "/packages" "Packages", tabEl True "/tools" "Tools" ]
     in
     column
-        [ htmlAttribute <| Attr.style "flex-shrink" "1"
-        , width <| maximum 400 <| minimum 250 <| fillPortion 4
+        [ width <| maximum 400 <| minimum 250 <| fillPortion 4
         , height fill
         , if isNarrow model.windowSize then
             Background.color white
@@ -1097,7 +1094,7 @@ content model =
         [ width fill
         , height fill
         , spacingXY 20 0
-        , htmlAttribute <| Attr.style "flex-shrink" "1"
+        , scrollbarY -- workaround for a layout bug: this is to enable scrolling on *children* in Firefox & Chrome
         ]
         [ if isNarrow model.windowSize then
             none
@@ -1115,7 +1112,8 @@ content model =
 
               else
                 scrollbarY
-            , htmlAttribute <| Attr.style "flex-shrink" "1"
+
+            --, htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
             ([ heading ]
@@ -1264,7 +1262,6 @@ view model =
         attrs =
             [ width fill
             , height fill
-            , htmlAttribute <| Attr.style "flex-shrink" "1"
             ]
 
         attrsWithMenu =
@@ -1279,7 +1276,6 @@ view model =
     layout
         [ height fill
         , baseTypeface
-        , htmlAttribute <| Attr.style "flex-shrink" "1"
         ]
     <|
         column attrsWithMenu
