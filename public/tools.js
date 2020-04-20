@@ -662,6 +662,16 @@ window.tools =
     ]
 },
 {
+    "name": "@jgrenat/elm-regression-testing",
+    "githubName": "jgrenat/regression-testing",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/@jgrenat/elm-regression-testing",
+    "summary": "Generate a regression test harness to assist with refactoring",
+    "tags": [
+        "testing"
+    ]
+},
+{
     "name": "elm-coverage",
     "githubName": "zwilias/elm-coverage",
     "url": null,
