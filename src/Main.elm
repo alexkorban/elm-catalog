@@ -317,6 +317,9 @@ humanisePkgSubcat subcat =
         "dev/performance" ->
             "Performance"
 
+        "dev/static-analysis" ->
+            "Static analysis"
+
         "dev/testing" ->
             "Testing"
 
@@ -358,6 +361,12 @@ humanisePkgSubcat subcat =
 
         "platforms/static-sites" ->
             "Static sites"
+
+        "sciences/bioscience" ->
+            "Bioscience"
+
+        "sciences/biochemistry" ->
+            "Biochemistry"
 
         "sciences/data-mining" ->
             "Data mining"
@@ -415,6 +424,9 @@ humanisePkgSubcat subcat =
 
         "ui/icons" ->
             "Icons"
+
+        "ui/images" ->
+            "Images"
 
         "ui/input" ->
             "Input"
