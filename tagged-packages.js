@@ -1577,7 +1577,8 @@ window.packages =
         "name": "GlobalWebIndex/elm-plural-rules",
         "summary": "An abstraction for working with plural rules",
         "tags": [
-            "data/text", "ui/i18n"
+            "data/text",
+            "ui/i18n"
         ],
         "version": "1.1.0"
     },
@@ -1796,7 +1797,7 @@ window.packages =
         "tags": [
             "audio/playback"
         ],
-        "version": "3.0.1"
+        "version": "3.0.2"
     },
     {
         "license": "MIT",
@@ -1812,7 +1813,8 @@ window.packages =
         "name": "MartinSStewart/elm-box-packing",
         "summary": "Pack rectangles closely together. Useful for texture atlases and sprite sheets.",
         "tags": [
-            "dev/algorithms", "ui/images"
+            "dev/algorithms",
+            "ui/images"
         ],
         "version": "1.0.0"
     },
@@ -1877,7 +1879,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "license": "Apache-2.0",
@@ -2077,7 +2079,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "8.3.1"
+        "version": "9.0.0"
     },
     {
         "license": "MIT",
@@ -2259,7 +2261,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "22.0.1"
+        "version": "24.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -3408,7 +3410,8 @@ window.packages =
         "name": "bigardone/elm-css-placeholders",
         "summary": "A package to generate HTML placeholders using elm-css.",
         "tags": [
-            "ui/css", "ui/patterns"
+            "ui/css",
+            "ui/patterns"
         ],
         "version": "2.0.1"
     },
@@ -3762,7 +3765,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -5633,7 +5636,7 @@ window.packages =
             "dev/prototyping",
             "ui/elm-ui"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6177,7 +6180,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6441,6 +6444,15 @@ window.packages =
         "summary": "A component for handling the Chilean Unique Roll Tributary",
         "tags": [
             "data/formats"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "koskoci/elm-sortable-table",
+        "summary": "Tiny fork.",
+        "tags": [
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -7132,7 +7144,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "version": "16.0.4"
+        "version": "18.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7997,7 +8009,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8085,7 +8097,7 @@ window.packages =
         "name": "savardd/elm-time-travel",
         "summary": "An experimental debugger for Elm",
         "tags": [
-            "dev/utils"
+            "dev/debugging"
         ],
         "version": "2.0.0"
     },
@@ -8208,10 +8220,28 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "smucode/elm-flat-colors",
+        "summary": "🎨 280 handpicked colors in 14 palettes for Elm UI, elm/html and others",
+        "tags": [
+            "ui/colors"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "solcates/elm-openid-connect",
         "summary": "A OpenID Connect implementation",
         "tags": [
             "networking/integrations"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "sparksp/elm-review-camelcase",
+        "summary": "elm-review rule to ensure your code uses camelCase.",
+        "tags": [
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -8222,7 +8252,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8450,7 +8480,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "4.1.0"
+        "version": "5.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8504,7 +8534,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.3.1"
+        "version": "1.4.0"
     },
     {
         "license": "MIT",
@@ -8933,11 +8963,11 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "turboMaCk/non-empty-list-alias",
-        "summary": "Functions for working (a, List a) and NonEpty List Zipper",
+        "summary": "Functions for working (a, List a) and NonEmpty List Zipper",
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9426,7 +9456,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "4.0.5"
+        "version": "4.0.6"
     },
     {
         "license": "MIT",

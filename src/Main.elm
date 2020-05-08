@@ -308,6 +308,9 @@ humanisePkgSubcat subcat =
         "dev/code-organisation" ->
             "Code organisation"
 
+        "dev/debugging" ->
+            "Debugging"
+
         "dev/prototyping" ->
             "Prototyping"
 
