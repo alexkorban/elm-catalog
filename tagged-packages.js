@@ -8223,7 +8223,7 @@ window.packages =
         "name": "smucode/elm-flat-colors",
         "summary": "🎨 280 handpicked colors in 14 palettes for Elm UI, elm/html and others",
         "tags": [
-            "ui/colors"
+            "ui/colors", "ui/elm-ui"
         ],
         "version": "1.0.0"
     },
