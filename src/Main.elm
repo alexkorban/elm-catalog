@@ -287,6 +287,9 @@ humanisePkgSubcat subcat =
         "audio/playback" ->
             "Playback"
 
+        "data/datasets" ->
+            "Datasets"
+
         "data/formats" ->
             "Formats"
 
