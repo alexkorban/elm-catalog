@@ -35,8 +35,6 @@ type Msg
     | UserClickedMenuIcon
     | UserClickedOutsideMenuPanel
     | UserResizedWindow Int Int
-    | UserSelectedSubcat String
-    | UserSelectedToolCat String
 
 
 type alias Markdown =
@@ -68,8 +66,6 @@ type alias Model =
     , packages : Packages
     , readmes : Readmes
     , route : Route
-    , selectedPkgSubcat : String
-    , selectedToolCat : String
     , tools : Tools
     , toolCount : Int
     , urlPrefix : String
@@ -220,7 +216,9 @@ routeParser urlPrefix =
             topLevelParser urlPrefix
     in
     UrlParser.oneOf
-        [ UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
+        [ UrlParser.map (\cat subcat -> PackageRoute <| cat ++ "/" ++ subcat) <| top </> UrlParser.s "packages" </> UrlParser.string </> UrlParser.string
+        , UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
+        , UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
         , UrlParser.map (ToolRoute "build") <| top </> UrlParser.s "tools"
         , UrlParser.map (PackageRoute "dev/algorithms") <| top
         ]
@@ -643,8 +641,6 @@ init flags url navKey =
       , route =
             Maybe.withDefault (PackageRoute "dev/prototyping") <|
                 UrlParser.parse (routeParser flags.urlPrefix) url
-      , selectedPkgSubcat = selection
-      , selectedToolCat = "build"
       , toolCount = toolCount
       , tools = tools
       , urlPrefix = flags.urlPrefix
@@ -690,7 +686,7 @@ update msg model =
         UserClickedLink urlRequest ->
             case urlRequest of
                 Internal url ->
-                    ( resetStateOnPageChange model, Nav.pushUrl model.navKey <| Url.toString url )
+                    ( resetStateOnPageChange model, Cmd.batch [ resetViewport, resetEntryListViewPort, Nav.pushUrl model.navKey <| Url.toString url ] )
 
                 External url ->
                     ( model, Nav.load url )
@@ -711,12 +707,6 @@ update msg model =
 
         UserResizedWindow width height ->
             ( { model | windowSize = { height = height, width = width } }, Cmd.none )
-
-        UserSelectedSubcat subcat ->
-            ( { model | selectedPkgSubcat = subcat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
-
-        UserSelectedToolCat cat ->
-            ( { model | selectedToolCat = cat, isMenuPanelOpen = False }, Cmd.batch [ resetViewport, resetEntryListViewPort ] )
 
 
 subscriptions : Model -> Sub Msg
@@ -932,8 +922,8 @@ toolCard readmes tool =
         ]
 
 
-pkgCategoryList : Model -> Element Msg
-pkgCategoryList model =
+pkgCategoryList : String -> Model -> Element Msg
+pkgCategoryList subcat model =
     let
         catEls ( cat, subcats ) =
             column [ spacingXY 0 10, Font.size 18 ]
@@ -950,19 +940,26 @@ pkgCategoryList model =
                     :: List.map subcatEl (List.sortBy humanisePkgSubcat subcats)
                 )
 
-        packageCount subcat =
-            Dict.get subcat model.packages
+        packageCount givenSubcat =
+            Dict.get givenSubcat model.packages
                 |> Maybe.map List.length
                 |> Maybe.withDefault 0
 
-        subcatEl subcat =
+        urlPrefix =
+            if String.isEmpty model.urlPrefix then
+                ""
+
+            else
+                "/" ++ model.urlPrefix
+
+        subcatEl givenSubcat =
             row []
-                [ if subcat == model.selectedPkgSubcat then
+                [ if givenSubcat == subcat then
                     el [ Font.color green ] <| text <| humanisePkgSubcat subcat
 
                   else
-                    el [ Font.color blue, pointer, onClick (UserSelectedSubcat subcat) ] <| text <| humanisePkgSubcat subcat
-                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| packageCount subcat) ++ "]"
+                    link [ Font.color blue ] { url = urlPrefix ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
+                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| packageCount givenSubcat) ++ "]"
                 ]
     in
     Dict.toList model.pkgCategories
@@ -974,21 +971,28 @@ pkgCategoryList model =
             ]
 
 
-toolCategoryList : Model -> Element Msg
-toolCategoryList model =
+toolCategoryList : String -> Model -> Element Msg
+toolCategoryList toolCat model =
     let
         toolCount cat =
             Dict.get cat model.tools
                 |> Maybe.map List.length
                 |> Maybe.withDefault 0
 
+        urlPrefix =
+            if String.isEmpty model.urlPrefix then
+                ""
+
+            else
+                "/" ++ model.urlPrefix
+
         catEl cat =
             row [ Font.size 18 ]
-                [ if cat == model.selectedToolCat then
+                [ if cat == toolCat then
                     el [ Font.color green ] <| text <| humaniseToolCat cat
 
                   else
-                    el [ Font.color blue, pointer, onClick (UserSelectedToolCat cat) ] <| text <| humaniseToolCat cat
+                    link [ Font.color blue ] { url = urlPrefix ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
                 , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| toolCount cat) ++ "]"
                 ]
     in
@@ -1072,41 +1076,36 @@ categoryList model =
             [ paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
           <|
             case model.route of
-                PackageRoute _ ->
-                    pkgCategoryList model
+                PackageRoute subcat ->
+                    pkgCategoryList subcat model
 
-                ToolRoute _ ->
-                    toolCategoryList model
+                ToolRoute toolCat ->
+                    toolCategoryList toolCat model
         ]
 
 
 content : Model -> Element Msg
 content model =
     let
-        packageEls =
-            model.packages
-                |> Dict.get model.selectedPkgSubcat
-                |> Maybe.withDefault []
-                |> List.map (packageCard model.readmes)
-                |> List.take (if_ model.isMenuPanelOpen 3 10000)
+        els =
+            case model.route of
+                PackageRoute subcat ->
+                    paragraph [] [ text <| humanisePkgCat (tagCategory subcat) ++ ": " ++ humanisePkgSubcat subcat ]
+                        :: (model.packages
+                                |> Dict.get subcat
+                                |> Maybe.withDefault []
+                                |> List.map (packageCard model.readmes)
+                                |> List.take (if_ model.isMenuPanelOpen 3 10000)
+                           )
 
-        toolEls =
-            model.tools
-                |> Dict.get model.selectedToolCat
-                |> Maybe.withDefault []
-                |> List.map (toolCard model.readmes)
-                |> List.take (if_ model.isMenuPanelOpen 3 10000)
-
-        heading =
-            paragraph []
-                [ text <|
-                    case model.route of
-                        PackageRoute _ ->
-                            humanisePkgCat (tagCategory model.selectedPkgSubcat) ++ ": " ++ humanisePkgSubcat model.selectedPkgSubcat
-
-                        ToolRoute _ ->
-                            humaniseToolCat model.selectedToolCat
-                ]
+                ToolRoute toolCat ->
+                    paragraph [] [ text <| humaniseToolCat toolCat ]
+                        :: (model.tools
+                                |> Dict.get toolCat
+                                |> Maybe.withDefault []
+                                |> List.map (toolCard model.readmes)
+                                |> List.take (if_ model.isMenuPanelOpen 3 10000)
+                           )
     in
     row
         [ width fill
@@ -1134,14 +1133,7 @@ content model =
             --, htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
-            ([ heading ]
-                ++ (case model.route of
-                        PackageRoute _ ->
-                            packageEls
-
-                        ToolRoute _ ->
-                            toolEls
-                   )
+            (els
                 ++ [ el [ height <| px 30 ] none
                    , paragraph [ Font.size 16 ]
                         [ text "Found a mistake or a missing entry?"
