@@ -274,7 +274,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "version": "7.0.0"
+        "version": "7.0.1"
     },
     {
         "license": "MIT",
@@ -310,7 +310,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -338,7 +338,7 @@ window.packages =
             "ui/frameworks",
             "ui/elm-ui"
         ],
-        "version": "1.1.6"
+        "version": "1.1.7"
     },
     {
         "license": "BSD-3-Clause",
@@ -527,7 +527,8 @@ window.packages =
         "name": "supermario/elm-countries",
         "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
         "tags": [
-            "ui/patterns", "data/datasets"
+            "ui/patterns",
+            "data/datasets"
         ],
         "version": "1.0.4"
     },
@@ -634,11 +635,11 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "Skinney/elm-warrior",
-        "summary": "A framework for learning Elm by programming the intelligence of an Elm Warrior",
+        "summary": "Hone your Elm skills by programming the intelligence of a brave warrior.",
         "tags": [
             "uncat/misc"
         ],
-        "version": "2.0.0"
+        "version": "4.0.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -821,7 +822,7 @@ window.packages =
         "tags": [
             "sciences/physics"
         ],
-        "version": "2.5.0"
+        "version": "2.5.1"
     },
     {
         "license": "MPL-2.0",
@@ -867,7 +868,7 @@ window.packages =
             "data/formats",
             "dev/parsing"
         ],
-        "version": "9.2.9"
+        "version": "9.2.10"
     },
     {
         "license": "BSD-3-Clause",
@@ -921,7 +922,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "3.0.1"
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1468,7 +1469,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.2"
+        "version": "2.2.0"
     },
     {
         "license": "MIT",
@@ -1606,7 +1607,7 @@ window.packages =
             "ui/html",
             "ui/css"
         ],
-        "version": "3.0.1"
+        "version": "3.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1615,7 +1616,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.2.0"
+        "version": "1.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2133,7 +2134,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "9.4.0"
+        "version": "9.8.1"
     },
     {
         "license": "MIT",
@@ -2315,7 +2316,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "25.0.0"
+        "version": "25.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2732,7 +2733,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.0.0"
+        "version": "3.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4060,6 +4061,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "chazsconi/elm-phoenix-ports",
+        "summary": "Elm Phoenix with ports",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.1.1"
+    },
+    {
+        "license": "MIT",
         "name": "chicode/lisa",
         "summary": "A Lisp dialect with a parser and compiler to JS",
         "tags": [
@@ -4298,7 +4308,8 @@ window.packages =
         "name": "dawehner/elm-colorbrewer",
         "summary": "Provides all colorbrewer colors in elm",
         "tags": [
-            "ui/colors", "data/datasets"
+            "ui/colors",
+            "data/datasets"
         ],
         "version": "4.1.1"
     },
@@ -4318,7 +4329,7 @@ window.packages =
         "tags": [
             "game-dev/rendering"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4366,7 +4377,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "version": "5.0.1"
+        "version": "5.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4375,7 +4386,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -4384,7 +4395,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4501,7 +4512,16 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.1.0"
+        "version": "4.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "dullbananas/elm-touch",
+        "summary": "Handle touch movement and gestures",
+        "tags": [
+            "ui/input"
+        ],
+        "version": "1.2.0"
     },
     {
         "license": "MIT",
@@ -4637,7 +4657,7 @@ window.packages =
             "dev/algorithms",
             "data/formats"
         ],
-        "version": "4.2.0"
+        "version": "4.3.0"
     },
     {
         "license": "MIT",
@@ -4728,7 +4748,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -4990,6 +5010,15 @@ window.packages =
             "data/formats"
         ],
         "version": "1.0.4"
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "folkertdev/elm-cff",
+        "summary": "Decode compact font format font data into glyphs",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5382,6 +5411,15 @@ window.packages =
             "data/time"
         ],
         "version": "2.3.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "gipsy-king/radar-chart",
+        "summary": "An SVG radar chart",
+        "tags": [
+            "ui/svg", "data/visualisation"
+        ],
+        "version": "3.0.1"
     },
     {
         "license": "MIT",
@@ -5899,7 +5937,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.1.0"
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5948,12 +5986,21 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "jfmengels/review-documentation",
+        "summary": "Provides elm-review rules to help with the quality of the documentation",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "jfmengels/review-tea",
         "summary": "Provides elm-review rules to improve your use of The Elm Architecture",
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5962,7 +6009,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.1.1"
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -6390,7 +6437,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "version": "3.2.0"
+        "version": "3.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6756,6 +6803,15 @@ window.packages =
         "version": "2.0.1"
     },
     {
+        "license": "MIT",
+        "name": "leojpod/review-no-empty-html-text",
+        "summary": "elm-review rule to forbid the use of `Html.text \"\"`",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "leonardanyer/elm-combox",
         "summary": "Custom dropdown based on elm-selectize",
@@ -6893,6 +6949,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "malaire/elm-safe-int",
+        "summary": "A safe 54-bit signed integer",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "malinoff/elm-jwt",
         "summary": "Decode, encode, verify JSON web tokens",
         "tags": [
@@ -6952,7 +7017,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.2"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -7081,6 +7146,15 @@ window.packages =
             "data/time"
         ],
         "version": "1.2.1"
+    },
+    {
+        "license": "MIT",
+        "name": "miniBill/elm-avataaars",
+        "summary": "A library for rendering cute SVG avatars, art by Pablo Stanley",
+        "tags": [
+            "ui/svg"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7949,7 +8023,8 @@ window.packages =
         "name": "rl-king/elm-iso3166-country-codes",
         "summary": "Convert to and from alpha2, alpha3, id and country names in 23 languages",
         "tags": [
-            "data/formats", "data/datasets"
+            "data/formats",
+            "data/datasets"
         ],
         "version": "2.0.0"
     },
@@ -8225,7 +8300,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -8407,7 +8482,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.3"
+        "version": "1.0.4"
     },
     {
         "license": "MIT",
@@ -8416,7 +8491,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -8441,7 +8516,8 @@ window.packages =
         "name": "sporto/elm-countries",
         "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
         "tags": [
-            "ui/patterns", "data/datasets"
+            "ui/patterns",
+            "data/datasets"
         ],
         "version": "1.0.0"
     },
@@ -8516,7 +8592,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "7.1.1"
+        "version": "7.1.3"
     },
     {
         "license": "MIT",
@@ -8525,7 +8601,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -8699,6 +8775,15 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "2.2.0"
+    },
+    {
+        "license": "MIT",
+        "name": "the-sett/elm-localstorage",
+        "summary": "elm-localstorage provides persistence via JavaScript's localStorage.",
+        "tags": [
+            "storage/localstorage"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9059,7 +9144,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "8.0.1"
+        "version": "9.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9105,6 +9190,42 @@ window.packages =
             "networking/integrations"
         ],
         "version": "7.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "truqu/elm-review-nobooleancase",
+        "summary": "Provides an elm-review rule to prohibit case..of on boolean expressions",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "truqu/elm-review-noleftpizza",
+        "summary": "Provides an elm-review rule to prevent the use of the left pizza operator",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "truqu/elm-review-noredundantconcat",
+        "summary": "Provides an elm-review rule to prohibit redundant usage of `++`",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "truqu/elm-review-noredundantcons",
+        "summary": "Provides an elm-review rule to prohibit redundant usage of `::`",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9167,7 +9288,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.1"
+        "version": "1.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9183,7 +9304,9 @@ window.packages =
         "name": "ursi/elm-css-colors",
         "summary": "Use the CSS named colors in elm-css",
         "tags": [
-            "ui/css", "data/datasets", "ui/colors"
+            "ui/css",
+            "data/datasets",
+            "ui/colors"
         ],
         "version": "1.0.0"
     },
@@ -9203,7 +9326,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9212,7 +9335,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.0"
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -9591,7 +9714,8 @@ window.packages =
         "name": "yujota/elm-collision-detection",
         "summary": "Quadtree space partitioning for collision detection.",
         "tags": [
-            "dev/algorithms", "game-dev/utils"
+            "dev/algorithms",
+            "game-dev/utils"
         ],
         "version": "1.0.1"
     },
