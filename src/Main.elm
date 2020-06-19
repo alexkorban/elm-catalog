@@ -135,6 +135,10 @@ blue =
     rgb255 52 101 164
 
 
+burntOrange =
+    rgb255 0xE4 0x8B 0x48
+
+
 darkCharcoal =
     rgb255 46 52 54
 
@@ -167,8 +171,28 @@ orange =
     rgb255 242 100 25
 
 
+paleBlue =
+    rgb255 162 229 249
+
+
+palerBlue =
+    rgb255 197 232 247
+
+
+paleGreen =
+    rgb255 167 193 176
+
+
 panelBgColor =
-    rgba255 246 174 45 0.04
+    rgb255 0xFF 0xFC 0xF6
+
+
+veryPaleBlue =
+    rgb255 242 252 255
+
+
+veryPaleGreen =
+    rgb255 194 237 208
 
 
 white =
@@ -588,9 +612,13 @@ resetViewport =
     Task.perform (\_ -> RuntimeDidSomethingIrrelevant) <| Browser.Dom.setViewport 0 0
 
 
-resetStateOnPageChange : Model -> Model
-resetStateOnPageChange model =
-    { model | isMenuPanelOpen = False }
+resetStateOnPageChange : Url -> Model -> Model
+resetStateOnPageChange url model =
+    let
+        shouldCloseMenuPanel =
+            not <| (String.endsWith "/packages" <| Url.toString url) || (String.endsWith "/tools" <| Url.toString url)
+    in
+    { model | isMenuPanelOpen = if_ shouldCloseMenuPanel False model.isMenuPanelOpen }
 
 
 init : Flags -> Url -> Nav.Key -> ( Model, Cmd Msg )
@@ -686,7 +714,7 @@ update msg model =
         UserClickedLink urlRequest ->
             case urlRequest of
                 Internal url ->
-                    ( resetStateOnPageChange model, Cmd.batch [ resetViewport, resetEntryListViewPort, Nav.pushUrl model.navKey <| Url.toString url ] )
+                    ( resetStateOnPageChange url model, Cmd.batch [ resetViewport, resetEntryListViewPort, Nav.pushUrl model.navKey <| Url.toString url ] )
 
                 External url ->
                     ( model, Nav.load url )
@@ -714,22 +742,6 @@ subscriptions _ =
     onResize UserResizedWindow
 
 
-scrollbarYEl : List (Attribute msg) -> Element msg -> Element msg
-scrollbarYEl attrs body =
-    el [ height fill, width fill ] <|
-        el
-            ([ htmlAttribute <| Attr.style "position" "absolute"
-             , htmlAttribute <| Attr.style "top" "0"
-             , htmlAttribute <| Attr.style "right" "0"
-             , htmlAttribute <| Attr.style "bottom" "0"
-             , htmlAttribute <| Attr.style "left" "0"
-             , Element.scrollbarY
-             ]
-                ++ attrs
-            )
-            body
-
-
 isNarrow : Size -> Bool
 isNarrow windowSize =
     windowSize.width < 700
@@ -737,7 +749,7 @@ isNarrow windowSize =
 
 menuIcon : List (Attribute msg) -> Element msg
 menuIcon attrs =
-    textColumn ([ width <| px 30, alignRight, spacing -17, headingTypeface, Font.size 20, Font.color green ] ++ attrs)
+    textColumn ([ width <| px 30, alignRight, spacing -17, headingTypeface, Font.size 20, Font.color burntOrange ] ++ attrs)
         [ paragraph [] [ text "—" ]
         , paragraph [] [ text "—" ]
         , paragraph [] [ text "—" ]
@@ -751,8 +763,8 @@ navBar model =
         , height <| px 70
         , padding 10
         , Background.color panelBgColor
-        , Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }
-        , Border.color orange
+        , Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
+        , Border.color burntOrange
         , headingTypeface
         ]
     <|
@@ -761,7 +773,7 @@ navBar model =
                     { url = "https://korban.net/elm/catalog"
                     , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
                     }
-              , el [ padding 10, centerY, Font.color darkCharcoal, Font.size 26 ] <| text "Elm Catalog"
+              , el [ padding 10, centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
               ]
             , if isNarrow model.windowSize then
                 [ menuIcon [ onClick UserClickedMenuIcon ] ]
@@ -809,13 +821,16 @@ packageCard readmes package =
         [ width <| maximum 800 fill
         , padding 10
         , spacingXY 0 10
-        , Border.width 2
-        , Border.rounded 5
-        , Border.color lightGrey
+        , Border.width 1
+        , Border.color grey
+        , Border.shadow { offset = ( 0, 1 ), blur = 4, color = lightGrey, size = 0.3 }
+        , Border.rounded 4
+        , Background.color white
+        , moveRight 1
         ]
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
-        , el [ height <| px 1, width fill, Background.color lightGreen ] none
+        , el [ height <| px 1, width fill, Background.color burntOrange ] none
         , paragraph [ paddingXY 0 5, Font.size 16 ] [ text package.summary ]
         , wrappedRow [ Font.size 14, Font.color lightCharcoal ]
             [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
@@ -891,13 +906,16 @@ toolCard readmes tool =
         [ width <| maximum 800 fill
         , padding 10
         , spacingXY 0 10
-        , Border.width 2
-        , Border.rounded 5
-        , Border.color lightGrey
+        , Border.width 1
+        , Border.color grey
+        , Border.shadow { offset = ( 0, 1 ), blur = 4, color = lightGrey, size = 0.3 }
+        , Border.rounded 4
+        , Background.color white
+        , moveRight 1
         ]
         [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
             link [] { url = mainUrl, label = text tool.name }
-        , el [ height <| px 1, width fill, Background.color lightGreen ] none
+        , el [ height <| px 1, width fill, Background.color burntOrange ] none
         , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text tool.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
             [ link [ Font.color lightBlue ] { url = githubUrl, label = text "Source" }
@@ -929,8 +947,8 @@ pkgCategoryList subcat model =
             column [ spacingXY 0 10, Font.size 18 ]
                 ((el
                     [ paddingEach { sides | top = 10 }
-                    , Font.size 22
-                    , Font.color darkCharcoal
+                    , Font.size 26
+                    , Font.color white
                     , headingTypeface
                     ]
                   <|
@@ -958,8 +976,8 @@ pkgCategoryList subcat model =
                     el [ Font.color green ] <| text <| humanisePkgSubcat subcat
 
                   else
-                    link [ Font.color blue ] { url = urlPrefix ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
-                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| packageCount givenSubcat) ++ "]"
+                    link [ Font.color white ] { url = urlPrefix ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
+                , el [ Font.color grey, Font.size 14 ] <| text <| "  (" ++ (String.fromInt <| packageCount givenSubcat) ++ ")"
                 ]
     in
     Dict.toList model.pkgCategories
@@ -992,7 +1010,7 @@ toolCategoryList toolCat model =
                     el [ Font.color green ] <| text <| humaniseToolCat cat
 
                   else
-                    link [ Font.color blue ] { url = urlPrefix ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
+                    link [ Font.color white ] { url = urlPrefix ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
                 , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| toolCount cat) ++ "]"
                 ]
     in
@@ -1003,6 +1021,7 @@ toolCategoryList toolCat model =
             , height fill
             , spacingXY 0 10
             , paddingEach { sides | top = 20, bottom = 100 }
+            , Background.color blue
             ]
 
 
@@ -1016,19 +1035,12 @@ categoryList model =
             in
             el
                 [ width <| fillPortion 1
-                , Background.color white
-                , Border.widthEach
-                    (if isSelected then
-                        { top = 2, bottom = 0, left = 2, right = 2 }
-
-                     else
-                        { bottom = 2, top = 0, left = 0, right = 0 }
-                    )
-                , Border.color lightGrey
+                , Background.color <| if_ isSelected blue lightGrey
+                , Border.roundEach { topLeft = 4, topRight = 4, bottomLeft = 0, bottomRight = 0 }
                 ]
             <|
                 if isSelected then
-                    el (commonAttrs ++ [ Font.color green ]) <|
+                    el (commonAttrs ++ [ Font.color white ]) <|
                         text label
 
                 else
@@ -1053,27 +1065,21 @@ categoryList model =
     column
         [ width <| maximum 400 <| minimum 250 <| fillPortion 4
         , height fill
-        , if isNarrow model.windowSize then
-            Background.color white
-
-          else
-            scrollbarY
-        , Background.color white
-        , Border.widthEach { right = 2, left = 0, bottom = 0, top = 0 }
-        , Border.color lightGrey
+        , Background.color blue
         ]
         [ row
             [ width fill
-            , height <| px 37
-            , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
+            , height <| px 46
+            , paddingEach { top = 15, bottom = 0, left = 0, right = 0 }
+            , Background.color <| rgb255 0xFF 0xFE 0xFB
             ]
-            ([ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none ]
+            ([ el [ width <| px 5, alignBottom ] none ]
                 ++ tabEls
-                ++ [ el [ width <| px 5, alignBottom, Border.widthEach { bottom = 2, top = 0, left = 0, right = 0 }, Border.color lightGrey ] none
+                ++ [ el [ width <| px 5, alignBottom ] none
                    ]
             )
         , el
-            [ paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
+            [ width fill, paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
           <|
             case model.route of
                 PackageRoute subcat ->
@@ -1090,7 +1096,8 @@ content model =
         els =
             case model.route of
                 PackageRoute subcat ->
-                    paragraph [] [ text <| humanisePkgCat (tagCategory subcat) ++ ": " ++ humanisePkgSubcat subcat ]
+                    paragraph [ paddingEach { sides | bottom = 10 } ]
+                        [ text <| humanisePkgCat (tagCategory subcat) ++ ": " ++ humanisePkgSubcat subcat ]
                         :: (model.packages
                                 |> Dict.get subcat
                                 |> Maybe.withDefault []
@@ -1099,7 +1106,7 @@ content model =
                            )
 
                 ToolRoute toolCat ->
-                    paragraph [] [ text <| humaniseToolCat toolCat ]
+                    paragraph [ paddingEach { sides | bottom = 10 } ] [ text <| humaniseToolCat toolCat ]
                         :: (model.tools
                                 |> Dict.get toolCat
                                 |> Maybe.withDefault []
@@ -1111,7 +1118,7 @@ content model =
         [ width fill
         , height fill
         , spacingXY 20 0
-        , scrollbarY -- workaround for a layout bug: this is to enable scrolling on *children* in Firefox & Chrome
+        , Background.color <| rgb255 0xFF 0xFE 0xFB
         ]
         [ if isNarrow model.windowSize then
             none
@@ -1122,15 +1129,8 @@ content model =
             [ width <| fillPortion 12
             , height fill
             , paddingXY (if_ (isNarrow model.windowSize) 5 0) 20
-            , spacingXY 0 10
+            , spacingXY 0 20
             , alignTop
-            , if isNarrow model.windowSize then
-                attrNone
-
-              else
-                scrollbarY
-
-            --, htmlAttribute <| Attr.style "flex-shrink" "1"
             , htmlAttribute <| Attr.id "entryList"
             ]
             (els
