@@ -292,12 +292,22 @@ window.tools =
 },
 {
     "name": "elm-desktop-app",
-    "githubName": "avh4/",
+    "githubName": "avh4/elm-desktop-app",
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/elm-desktop-app",
     "summary": "Create a scaffold for an Electron app",
     "tags": [
         "code-generation", "electron"
+    ]
+},
+{
+    "name": "elm-example-publisher",
+    "githubName": "gampleman/elm-example-publisher",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-example-publisher",
+    "summary": "Generate a static site from a directory of Elm files to showcase code examples",
+    "tags": [
+        "code-generation"
     ]
 },
 {
