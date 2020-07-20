@@ -336,6 +336,9 @@ humanisePkgSubcat subcat =
         "dev/debugging" ->
             "Debugging"
 
+        "dev/docs" ->
+            "Documentation"
+
         "dev/prototyping" ->
             "Prototyping"
 
@@ -476,6 +479,9 @@ humanisePkgSubcat subcat =
 
         "ui/validation" ->
             "Validation"
+
+        "ui/webgl" ->
+            "WebGL"
 
         "uncat/excluded" ->
             "Excluded"
@@ -1082,7 +1088,7 @@ categoryList model =
             , scrollbarY
             , paddingEach { sides | left = 10, right = 10, bottom = 20 }
             , htmlAttribute <| Attr.style "flex-shrink" "1"
-            , htmlAttribute <| Attr.style "max-height" "calc(100vh - 116px)"
+            , htmlAttribute <| Attr.style "max-height" <| if_ model.isMenuPanelOpen "calc(100vh - 46px)" "calc(100vh - 116px)"
             ]
           <|
             case model.route of
