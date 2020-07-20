@@ -984,7 +984,6 @@ pkgCategoryList subcat model =
         |> List.map catEls
         |> column
             [ width fill
-            , height fill
             , spacingXY 0 10
             ]
 
@@ -1018,7 +1017,6 @@ toolCategoryList toolCat model =
         |> List.map catEl
         |> column
             [ width fill
-            , height fill
             , spacingXY 0 10
             , paddingEach { sides | top = 20, bottom = 100 }
             , Background.color blue
@@ -1066,6 +1064,7 @@ categoryList model =
         [ width <| maximum 400 <| minimum 250 <| fillPortion 4
         , height fill
         , Background.color blue
+        , htmlAttribute <| Attr.style "flex-shrink" "1"
         ]
         [ row
             [ width fill
@@ -1075,11 +1074,16 @@ categoryList model =
             ]
             ([ el [ width <| px 5, alignBottom ] none ]
                 ++ tabEls
-                ++ [ el [ width <| px 5, alignBottom ] none
-                   ]
+                ++ [ el [ width <| px 5, alignBottom ] none ]
             )
         , el
-            [ width fill, paddingEach { sides | left = 10, right = 10, bottom = 20 } ]
+            [ width fill
+            , height fill
+            , scrollbarY
+            , paddingEach { sides | left = 10, right = 10, bottom = 20 }
+            , htmlAttribute <| Attr.style "flex-shrink" "1"
+            , htmlAttribute <| Attr.style "max-height" "calc(100vh - 116px)"
+            ]
           <|
             case model.route of
                 PackageRoute subcat ->
@@ -1119,6 +1123,8 @@ content model =
         , height fill
         , spacingXY 20 0
         , Background.color <| rgb255 0xFF 0xFE 0xFB
+        , htmlAttribute <| Attr.style "flex-shrink" "1"
+        , htmlAttribute <| Attr.style "max-height" "calc(100vh - 70px)"
         ]
         [ if isNarrow model.windowSize then
             none
@@ -1131,7 +1137,10 @@ content model =
             , paddingXY (if_ (isNarrow model.windowSize) 5 0) 20
             , spacingXY 0 20
             , alignTop
+            , scrollbarY
             , htmlAttribute <| Attr.id "entryList"
+            , htmlAttribute <| Attr.style "max-height" "calc(100vh - 70px)"
+            , htmlAttribute <| Attr.style "flex-shrink" "1"
             ]
             (els
                 ++ [ el [ height <| px 30 ] none
@@ -1270,9 +1279,7 @@ view : Model -> Html Msg
 view model =
     let
         attrs =
-            [ width fill
-            , height fill
-            ]
+            [ width fill, height fill ]
 
         attrsWithMenu =
             (if model.isMenuPanelOpen then
@@ -1283,11 +1290,7 @@ view model =
             )
                 :: attrs
     in
-    layout
-        [ height fill
-        , baseTypeface
-        ]
-    <|
+    layout [ width fill, height fill, baseTypeface ] <|
         column attrsWithMenu
             [ navBar model
             , content model
