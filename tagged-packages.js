@@ -192,7 +192,7 @@ window.packages =
             "ui/rendering",
             "ui/webgl"
         ],
-        "version": "1.1.1"
+        "version": "1.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -219,7 +219,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "16.0.1"
+        "version": "16.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -339,7 +339,7 @@ window.packages =
             "ui/frameworks",
             "ui/elm-ui"
         ],
-        "version": "1.1.7"
+        "version": "1.1.8"
     },
     {
         "license": "BSD-3-Clause",
@@ -358,6 +358,15 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "8.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "w0rm/elm-obj-file",
+        "summary": "Decode 3D models from the OBJ file format",
+        "tags": [
+            "data/formats", "ui/webgl"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -535,12 +544,30 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "terezka/charts",
+        "summary": "SVG charts components in Elm.",
+        "tags": [
+            "data/visualisation"
+        ],
+        "version": "4.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "terezka/elm-charts",
         "summary": "DEPRECATED. Create SVG charts.",
         "tags": [
             "uncat/excluded"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "terezka/elm-charts-alpha",
+        "summary": "A library for plotting charts in SVG.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -622,7 +649,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.1.0"
+        "version": "1.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -631,7 +658,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "version": "2.0.28"
+        "version": "2.0.29"
     },
     {
         "license": "BSD-3-Clause",
@@ -739,7 +766,9 @@ window.packages =
         "name": "ianmackenzie/elm-3d-scene",
         "summary": "3D rendering engine for Elm",
         "tags": [
-            "game-dev/rendering", "ui/rendering", "ui/webgl"
+            "game-dev/rendering",
+            "ui/rendering",
+            "ui/webgl"
         ],
         "version": "1.0.1"
     },
@@ -805,7 +834,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "3.0.0"
+        "version": "3.0.1"
     },
     {
         "license": "MPL-2.0",
@@ -850,7 +879,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "1.1.0"
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -887,7 +916,7 @@ window.packages =
             "data/formats",
             "dev/parsing"
         ],
-        "version": "9.2.16"
+        "version": "9.3.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -905,7 +934,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "4.0.3"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -941,7 +970,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "3.1.0"
+        "version": "3.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -987,7 +1016,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "MIT",
@@ -1362,6 +1391,33 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "ContaSystemer/elm-review-no-missing-documentation",
+        "summary": "elm-review rule to enforce documentation for every top level declaration\n\n",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ContaSystemer/review-no-missing-documentation",
+        "summary": "elm-review rule to enforce documentation for every top level declaration\n\n",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "ContaSystemer/review-noregex",
+        "summary": "elm-review rule to forbid regex usage",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "CurrySoftware/elm-datepicker",
         "summary": "A reusable date picker component",
         "tags": [
@@ -1422,7 +1478,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "5.0.1"
+        "version": "6.0.0"
     },
     {
         "license": "MIT",
@@ -1430,6 +1486,15 @@ window.packages =
         "summary": "Evaluating mustache templates",
         "tags": [
             "data/formats"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Evelios/elm-markov",
+        "summary": "A markov model library for arbitrary data types",
+        "tags": [
+            "sciences/statistics"
         ],
         "version": "1.0.0"
     },
@@ -1728,6 +1793,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "IzumiSy/elm-firestore",
+        "summary": "A library for integrating your app with Firestore in Elm",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "7.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "IzumiSy/elm-multi-waitable",
         "summary": "A small package like a traffic light",
         "tags": [
@@ -1887,7 +1961,7 @@ window.packages =
         "tags": [
             "audio/playback"
         ],
-        "version": "3.0.2"
+        "version": "3.0.3"
     },
     {
         "license": "MIT",
@@ -1906,7 +1980,7 @@ window.packages =
             "dev/algorithms",
             "ui/images"
         ],
-        "version": "1.0.1"
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -1915,7 +1989,16 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.1.1"
+        "version": "1.1.2"
+    },
+    {
+        "license": "MIT",
+        "name": "MartinSStewart/elm-geometry-serialize",
+        "summary": "elm-serialize codecs for ianmackenzie/elm-geometry",
+        "tags": [
+            "data/formats", "sciences/maths"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -1925,6 +2008,15 @@ window.packages =
             "data/text"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "MartinSStewart/elm-serialize",
+        "summary": "Write codecs for encoding and decoding Elm data.",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.2.1"
     },
     {
         "license": "MIT",
@@ -1951,7 +2043,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -1987,7 +2079,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "2.1.0"
+        "version": "3.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -2187,7 +2279,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "10.3.0"
+        "version": "12.0.0"
     },
     {
         "license": "MIT",
@@ -2251,7 +2343,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "2.0.4"
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2306,6 +2398,15 @@ window.packages =
             "ui/elm-ui"
         ],
         "version": "1.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "PaackEng/paack-ui",
+        "summary": "Paack's Design System applied over Elm UI",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2396,7 +2497,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "1.2.0"
     },
     {
         "license": "GPL-3.0",
@@ -2638,7 +2739,8 @@ window.packages =
         "name": "Zinggi/elm-2d-game",
         "summary": "A 2D rendering engine based on WebGL",
         "tags": [
-            "game-dev/rendering", "ui/webgl"
+            "game-dev/rendering",
+            "ui/webgl"
         ],
         "version": "4.1.0"
     },
@@ -2995,6 +3097,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "1.0.3"
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "alma/elm-sms-length",
+        "summary": "A lib that from a string tells you how many SMS would be needed.",
+        "tags": [
+            "data/text"
+        ],
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -3647,7 +3758,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "9.0.0"
+        "version": "9.0.2"
     },
     {
         "license": "MIT",
@@ -3656,7 +3767,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -3666,6 +3777,15 @@ window.packages =
             "networking/integrations"
         ],
         "version": "3.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "billstclair/elm-popup-picker",
+        "summary": "A popup <div> to pick from a list of choices.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.1.0"
     },
     {
         "license": "MIT",
@@ -4407,7 +4527,8 @@ window.packages =
         "name": "declension/elm-obj-loader",
         "summary": "Load Wavefront .obj files in your WebGL scene.",
         "tags": [
-            "game-dev/rendering", "ui/webgl"
+            "game-dev/rendering",
+            "ui/webgl"
         ],
         "version": "1.0.1"
     },
@@ -4592,7 +4713,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "4.0.0"
+        "version": "4.1.1"
     },
     {
         "license": "MIT",
@@ -4620,6 +4741,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "2.2.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "dzuk-mutant/elm-html-styled-aria",
+        "summary": "Aria attributes that are easily compatible with elm-css",
+        "tags": [
+            "ui/html"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5074,6 +5204,15 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "license": "Apache-2.0",
+        "name": "finos/morphir-elm",
+        "summary": "Morphir Elm bindings",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "MIT",
         "name": "flowlang-cc/elm-audio-graph",
         "summary": "Construct type safe JSON audio graphs with Elm.",
@@ -5463,7 +5602,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "5.5.0"
+        "version": "5.5.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5472,7 +5611,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.3.0"
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5558,6 +5697,15 @@ window.packages =
         "version": "2.0.1"
     },
     {
+        "license": "MIT",
+        "name": "groma84/elm-tachyons",
+        "summary": "Tachyons CSS classnames for Elm - updated fork",
+        "tags": [
+            "ui/css"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "groteck/elm-iban",
         "summary": "Iban validation in elm",
@@ -5592,6 +5740,15 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "1.1.3"
+    },
+    {
+        "license": "MIT",
+        "name": "hallelujahdrive/elm-croppie",
+        "summary": "Croppie for Elm",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5681,7 +5838,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "2.3.4"
+        "version": "2.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5699,7 +5856,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "3.0.0"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5735,7 +5892,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "1.0.0"
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -5780,7 +5937,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "version": "3.1.0"
+        "version": "4.0.0"
     },
     {
         "license": "MIT",
@@ -6018,7 +6175,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "version": "2.1.0"
+        "version": "2.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6049,12 +6206,57 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-common",
+        "summary": "Provides common linting rules for elm-review",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-debug",
+        "summary": "Provides elm-review rules to detect debug code",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-documentation",
+        "summary": "Provides elm-review rules to help with the quality of the documentation",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "jfmengels/elm-review-reporter",
         "summary": "Formats the result of `elm-review` in a nice human-readable way",
         "tags": [
             "dev/static-analysis"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-the-elm-architecture",
+        "summary": "Provides elm-review rules to improve your use of The Elm Architecture",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-unused",
+        "summary": "Provides elm-review rules to detect unused elements in your Elm project",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6077,47 +6279,47 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/review-common",
-        "summary": "Provides common linting rules for elm-review",
+        "summary": "DEPRECATED: Use jfmengels/elm-review-common instead.",
         "tags": [
-            "dev/static-analysis"
+            "uncat/excluded"
         ],
-        "version": "1.2.1"
+        "version": "1.2.3"
     },
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/review-debug",
-        "summary": "Provides elm-review rules to detect debug code",
+        "summary": "DEPRECATED: Use jfmengels/elm-review-debug instead.",
         "tags": [
-            "dev/static-analysis"
+            "uncat/excluded"
         ],
-        "version": "2.0.1"
+        "version": "2.0.3"
     },
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/review-documentation",
-        "summary": "Provides elm-review rules to help with the quality of the documentation",
+        "summary": "DEPRECATED: Use jfmengels/elm-review-documentation instead.",
         "tags": [
-            "dev/static-analysis", "dev/docs"
+            "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/review-tea",
-        "summary": "Provides elm-review rules to improve your use of The Elm Architecture",
+        "summary": "DEPRECATED: Use jfmengels/elm-review-the-elm-architecture instead.",
         "tags": [
-            "dev/static-analysis"
+            "uncat/excluded"
         ],
-        "version": "1.1.1"
+        "version": "1.1.3"
     },
     {
         "license": "BSD-3-Clause",
         "name": "jfmengels/review-unused",
-        "summary": "Provides elm-review rules to detect unused elements in your Elm project",
+        "summary": "DEPRECATED: Use jfmengels/elm-review-unused instead.",
         "tags": [
-            "dev/static-analysis"
+            "uncat/excluded"
         ],
-        "version": "2.1.3"
+        "version": "2.1.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -6169,7 +6371,8 @@ window.packages =
         "name": "jinjor/elm-debounce",
         "summary": "Yet another debouncer for Elm.",
         "tags": [
-            "ui/patterns", "dev/algorithms"
+            "ui/patterns",
+            "dev/algorithms"
         ],
         "version": "3.0.0"
     },
@@ -6524,7 +6727,8 @@ window.packages =
         "name": "justgook/webgl-playground",
         "summary": "A fun way to create pictures,animations and games in WebGL https://git.io/Jv3wc",
         "tags": [
-            "game-dev/utils", "ui/webgl"
+            "game-dev/utils",
+            "ui/webgl"
         ],
         "version": "4.1.3"
     },
@@ -6573,6 +6777,15 @@ window.packages =
         "tags": [
             "data/time",
             "data/formats"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "justinrassier/elm-contribution-graph",
+        "summary": "A GitHub-style SVG contribution graph written in pure Elm",
+        "tags": [
+            "ui/patterns", "ui/svg"
         ],
         "version": "1.0.0"
     },
@@ -6913,12 +7126,30 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "lemol/ant-design-icons-elm",
+        "summary": "Ant Design Icons for Elm",
+        "tags": [
+            "ui/icons"
+        ],
+        "version": "2.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "lemol/ant-design-icons-elm-ui",
+        "summary": "Ant Design Icons for Elm UI",
+        "tags": [
+            "ui/icons", "ui/elm-ui"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "leojpod/review-no-empty-html-text",
         "summary": "elm-review rule to forbid the use of `Html.text \"\"`",
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7162,7 +7393,16 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "mc706/toasty-bootstrap",
+        "summary": "A configurable toast notification package for Elm, using elm-bootstrap alerts.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7189,7 +7429,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.0.3"
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -7315,6 +7555,15 @@ window.packages =
         "license": "BSD-3-Clause",
         "name": "miyamoen/elm-command-pallet",
         "summary": "A command pallet UI. Register messages, then execute with it.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "miyamoen/elm-origami",
+        "summary": "CSS in Elm package forked from rtfeldman/elm-css",
         "tags": [
             "uncat/excluded"
         ],
@@ -7480,7 +7729,7 @@ window.packages =
         "tags": [
             "ui/colors"
         ],
-        "version": "18.0.0"
+        "version": "18.0.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -7699,7 +7948,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "3.3.1"
+        "version": "4.0.1"
     },
     {
         "license": "Apache-2.0",
@@ -7708,7 +7957,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.3.0"
+        "version": "3.4.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8080,7 +8329,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8089,7 +8338,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "license": "MIT",
@@ -8180,6 +8429,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "2.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "rl-king/elm-index",
+        "summary": "A taggable wrapper around Int",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8386,6 +8644,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "russelldavies/elm-ui-searchbox",
+        "summary": "An Elm UI searchbox (searchable autocomplete dropdown)",
+        "tags": [
+            "ui/patterns", "ui/elm-ui"
+        ],
+        "version": "1.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "ryan-senn/elm-compiler-error-sscce",
         "summary": "Exploring compiler error",
         "tags": [
@@ -8527,6 +8794,15 @@ window.packages =
             "ui/patterns"
         ],
         "version": "2.0.3"
+    },
+    {
+        "license": "MIT",
+        "name": "shnewto/pgn",
+        "summary": "A library for parsing \"Portable Game Notation\" (PGN) for standard chess.",
+        "tags": [
+            "game-dev/utils", "data/formats"
+        ],
+        "version": "1.0.3"
     },
     {
         "license": "MIT",
@@ -8693,6 +8969,24 @@ window.packages =
         "version": "1.2.0"
     },
     {
+        "license": "MIT",
+        "name": "special-elektronik/elm-autocomplete",
+        "summary": "Autcomplete search input in elm",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "specialelektronik/elm-autocomplete",
+        "summary": "Autcomplete search input in elm",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "sporto/elm-countries",
         "summary": "A searchable ISO 3166-1 based list of country names, codes and emoji flags",
@@ -8754,7 +9048,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.0.0"
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -8836,7 +9130,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "version": "3.0.1"
+        "version": "3.1.0"
     },
     {
         "license": "MIT",
@@ -8919,7 +9213,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "4.0.0"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -8928,7 +9222,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "2.0.0"
+        "version": "4.0.0"
     },
     {
         "license": "Apache-2.0",
@@ -8937,7 +9231,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "7.1.0"
+        "version": "8.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9036,7 +9330,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "5.1.0"
+        "version": "5.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9072,7 +9366,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "2.0.0"
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -9108,7 +9402,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "version": "2.1.0"
+        "version": "3.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9180,7 +9474,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "3.5.1"
+        "version": "3.5.2"
     },
     {
         "license": "MIT",
@@ -9253,7 +9547,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9523,7 +9817,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "3.1.2"
+        "version": "3.2.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9579,7 +9873,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.2"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",

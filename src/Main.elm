@@ -538,6 +538,9 @@ humaniseToolCat cat =
         "information" ->
             "Information"
 
+        "optimisation" ->
+            "Optimisation"
+
         "other" ->
             "Other"
 

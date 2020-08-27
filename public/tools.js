@@ -311,6 +311,36 @@ window.tools =
     ]
 },
 {
+    "name": "elm-starter",
+    "githubName": "lucamug/elm-starter",
+    "url": null,
+    "packageUrl": null,
+    "summary": "An experimental Elm-based Elm bootstrapper that can also be plugged into already existing Elm applications",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "postcss-elm-css-tailwind",
+    "githubName": "justinrassier/postcss-elm-css-tailwind",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/postcss-elm-css-tailwind",
+    "summary": "Generate elm-css versions of your Tailwind utilities",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "morphir-elm",
+    "githubName": "Morgan-Stanley/morphir-elm",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/morphir-elm",
+    "summary": "A set of tools to work with Morphir in Elm",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-format",
     "githubName": "avh4/elm-format",
     "url": null,
@@ -739,6 +769,16 @@ window.tools =
     "summary": "Includes elm, elm-format, elm-json and elmi-to-json (needed by elm-test)",
     "tags": [
         "other"
+    ]
+},
+{
+    "name": "elm-optimize-level-2",
+    "githubName": "mdgriffith/elm-optimize-level-2",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-optimize-level-2",
+    "summary": "An experimental replacement for `elm make --optimize` with extra optimisations",
+    "tags": [
+        "optimisation"
     ]
 },
 {
