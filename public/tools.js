@@ -61,6 +61,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-fullstack",
+    "githubName": "choonkeat/elm-fullstack",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-fullstack",
+    "summary": "A setup for writing HTTP-based, client-server apps in Elm, inspired by Lamdera",
+    "tags": [
+        "build"
+    ]
+},
+{
     "name": "node-elm-compiler",
     "githubName": "rtfeldman/node-elm-compiler",
     "url": null,
@@ -186,6 +196,26 @@ window.tools =
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/elm-enums",
     "summary": "Command line tool to auto-generate custom types for Elm with accompanying JSON encoders/decoders from a file of enum definitions",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "elm-esm",
+    "githubName": "Christophp/elm-esm",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-esm",
+    "summary": "Turn Elm compiler output into modern ES Modules",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "stencil-elm-output-target",
+    "githubName": "cultureamp/stencil-elm-output-target",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/stencil-elm-output-target",
+    "summary": "Generate Elm modules for Stencil components",
     "tags": [
         "code-generation"
     ]
@@ -326,6 +356,16 @@ window.tools =
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/postcss-elm-css-tailwind",
     "summary": "Generate elm-css versions of your Tailwind utilities",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "postcss-elm-tailwind",
+    "githubName": "monty5811/postcss-elm-tailwind",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/postcss-elm-tailwind",
+    "summary": "PostCSS plugin to generate Html.Attributes for using Tailwing in Elm",
     "tags": [
         "code-generation"
     ]
