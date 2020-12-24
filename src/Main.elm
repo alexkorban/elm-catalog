@@ -252,7 +252,7 @@ humanisePkgCat : String -> String
 humanisePkgCat cat =
     case cat of
         "art" ->
-            "Art"
+            "Arts"
 
         "audio" ->
             "Audio"
@@ -297,11 +297,17 @@ humanisePkgCat cat =
 humanisePkgSubcat : String -> String
 humanisePkgSubcat subcat =
     case subcat of
+        "art/ascii" ->
+            "ASCII"
+
         "art/generative" ->
             "Generative"
 
         "art/interactive-fiction" ->
             "Interactive fiction"
+
+        "art/music" ->
+            "Music"
 
         "audio/integrations" ->
             "Integrations"
@@ -328,7 +334,7 @@ humanisePkgSubcat subcat =
             "Visualisation"
 
         "dev/algorithms" ->
-            "Algorithms/data structures"
+            "Algorithms & data structures"
 
         "dev/code-organisation" ->
             "Code organisation"
@@ -387,6 +393,9 @@ humanisePkgSubcat subcat =
         "platforms/desktop" ->
             "Desktop"
 
+        "platforms/server" ->
+            "Server"
+
         "platforms/serverless" ->
             "Serverless"
 
@@ -417,6 +426,9 @@ humanisePkgSubcat subcat =
         "sciences/statistics" ->
             "Statistics"
 
+        "security/auth" ->
+            "Authentication & authorisation"
+
         "security/crypto" ->
             "Cryptography"
 
@@ -444,6 +456,12 @@ humanisePkgSubcat subcat =
         "ui/css" ->
             "CSS"
 
+        "ui/dimensions" ->
+            "Dimensions"
+
+        "ui/dragdrop" ->
+            "Drag and drop"
+
         "ui/elm-ui" ->
             "Elm-ui"
 
@@ -461,6 +479,9 @@ humanisePkgSubcat subcat =
 
         "ui/input" ->
             "Input"
+
+        "ui/integrations" ->
+            "Integrations"
 
         "ui/i18n" ->
             "Internationalisation"
@@ -482,6 +503,9 @@ humanisePkgSubcat subcat =
 
         "ui/webgl" ->
             "WebGL"
+
+        "ui/webvr" ->
+            "WebVR"
 
         "uncat/excluded" ->
             "Excluded"
@@ -837,8 +861,11 @@ packageCard readmes package =
         , Background.color white
         , moveRight 1
         ]
-        [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
-            link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
+        [ row [ width fill ]
+            [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
+                link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
+            , image [ alignRight, width <| px 30, alpha 0.1 ] { src = "https://korban.net/img/package.svg", description = "Package" }
+            ]
         , el [ height <| px 1, width fill, Background.color burntOrange ] none
         , paragraph [ paddingXY 0 5, Font.size 16 ] [ text package.summary ]
         , wrappedRow [ Font.size 14, Font.color lightCharcoal ]
@@ -922,8 +949,11 @@ toolCard readmes tool =
         , Background.color white
         , moveRight 1
         ]
-        [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
-            link [] { url = mainUrl, label = text tool.name }
+        [ row [ width fill ]
+            [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
+                link [] { url = mainUrl, label = text tool.name }
+            , image [ alignRight, width <| px 25, alpha 0.1 ] { src = "https://korban.net/img/tool.svg", description = "Tool" }
+            ]
         , el [ height <| px 1, width fill, Background.color burntOrange ] none
         , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text tool.summary ]
         , row [ Font.size 14, Font.color lightCharcoal ]
@@ -1303,6 +1333,8 @@ view model =
         column attrsWithMenu
             [ navBar model
             , content model
+
+            --, html <| Html.node "style" [] [ Html.text ".icon img { -webkit-filter: opacity(0.1); filter: opacity(0.1) }" ]
             ]
 
 
