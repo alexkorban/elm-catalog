@@ -186,11 +186,11 @@ orange =
 
 
 paleBlue =
-    rgb255 162 229 249
+    rgb255 0x88 0xBB 0xD7
 
 
 palerBlue =
-    rgb255 197 232 247
+    rgb255 0xC3 0xE5 0xF7
 
 
 paleGreen =
@@ -199,6 +199,10 @@ paleGreen =
 
 paleOrange =
     rgb255 0xEA 0xC0 0xA4
+
+
+palerOrange =
+    rgb255 0xEF 0xE4 0xDC
 
 
 panelBgColor =
@@ -674,7 +678,7 @@ resetStateOnPageChange : Url -> Model -> Model
 resetStateOnPageChange url model =
     let
         shouldCloseMenuPanel =
-            not <| (String.endsWith "/packages" <| Url.toString url) || (String.endsWith "/tools" <| Url.toString url)
+            not <| List.any (\s -> String.endsWith ("/" ++ s) <| Url.toString url) [ "packages", "tools", "search" ]
     in
     { model | isMenuPanelOpen = if_ shouldCloseMenuPanel False model.isMenuPanelOpen }
 
@@ -888,7 +892,7 @@ navigationMenuPanel model =
             , Background.color <| rgba255 11 79 108 0.4
             ]
             none
-        , el [ width <| px 2, height fill, Background.color grey ] none
+        , el [ width <| px 2, height fill, Background.color palerBlue ] none
         , categoryList model
         ]
 
@@ -1070,9 +1074,9 @@ pkgCategoryList : String -> Model -> Element Msg
 pkgCategoryList subcat model =
     let
         catEls ( cat, subcats ) =
-            column [ spacingXY 0 10, Font.size 18 ]
+            column [ width fill, spacingXY 0 10, Font.size 18 ]
                 ((el
-                    [ paddingEach { sides | top = 10 }
+                    [ paddingEach { sides | top = 20 }
                     , Font.size 26
                     , Font.color white
                     , headingTypeface
@@ -1097,13 +1101,27 @@ pkgCategoryList subcat model =
                 "/" ++ model.urlPrefix
 
         subcatEl givenSubcat =
-            row []
+            row [ width fill, spacing 10 ]
                 [ if givenSubcat == subcat then
-                    el [ Font.color green ] <| text <| humanisePkgSubcat subcat
+                    el [ Font.color (rgb255 0x9B 0xE6 0xFF), Font.bold, Font.underline, Font.letterSpacing -1 ] <| text <| humanisePkgSubcat subcat
 
                   else
                     link [ Font.color white ] { url = urlPrefix ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
-                , el [ Font.color grey, Font.size 14 ] <| text <| "  (" ++ (String.fromInt <| packageCount givenSubcat) ++ ")"
+                , el
+                    [ alignRight
+                    , width <| minimum 30 <| px 30
+                    , Font.color blue
+                    , Font.size 12
+                    , Font.bold
+                    , Font.center
+                    , padding 3
+                    , Background.color palerBlue
+                    , Border.rounded 6
+                    ]
+                  <|
+                    text <|
+                        String.fromInt <|
+                            packageCount givenSubcat
                 ]
     in
     Dict.toList model.pkgCategories
@@ -1111,6 +1129,7 @@ pkgCategoryList subcat model =
         |> column
             [ width fill
             , spacingXY 0 10
+            , paddingEach { sides | bottom = 60 }
             ]
 
 
@@ -1130,13 +1149,27 @@ toolCategoryList toolCat model =
                 "/" ++ model.urlPrefix
 
         catEl cat =
-            row [ Font.size 18 ]
+            row [ width fill, Font.size 18 ]
                 [ if cat == toolCat then
-                    el [ Font.color green ] <| text <| humaniseToolCat cat
+                    el [ Font.color (rgb255 0x9B 0xE6 0xFF), Font.bold, Font.underline, Font.letterSpacing -1 ] <| text <| humaniseToolCat cat
 
                   else
                     link [ Font.color white ] { url = urlPrefix ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
-                , el [ Font.color grey, Font.size 14 ] <| text <| "  [" ++ (String.fromInt <| toolCount cat) ++ "]"
+                , el
+                    [ alignRight
+                    , width <| minimum 30 <| px 30
+                    , Font.color blue
+                    , Font.size 12
+                    , Font.bold
+                    , Font.center
+                    , padding 3
+                    , Background.color palerBlue
+                    , Border.rounded 6
+                    ]
+                  <|
+                    text <|
+                        String.fromInt <|
+                            toolCount cat
                 ]
     in
     Dict.keys model.tools
@@ -1153,37 +1186,31 @@ categoryList : Model -> Element Msg
 categoryList model =
     let
         tabEl isSelected portion url label =
-            let
-                commonAttrs =
-                    [ centerX, centerY, padding 5 ]
-            in
-            el
+            link
                 [ width <| fillPortion portion
-                , Background.color <| if_ isSelected blue lightGrey
+                , height <| px 30
+                , Background.color <| if_ isSelected blue paleBlue
                 , Border.roundEach { topLeft = 4, topRight = 4, bottomLeft = 0, bottomRight = 0 }
-                , Border.widthEach { left = 1, right = 1, top = 0, bottom = 0 }
-                , Border.color white
+                , Font.center
+                , centerY
+                , padding 5
+                , Font.bold
+                , Font.color white
                 ]
-            <|
-                if isSelected then
-                    el (commonAttrs ++ [ Font.color white ]) <|
-                        text label
+                { url =
+                    if String.isEmpty model.urlPrefix then
+                        url
 
-                else
-                    link (commonAttrs ++ [ Font.color blue ])
-                        { url =
-                            if String.isEmpty model.urlPrefix then
-                                url
-
-                            else
-                                "/" ++ model.urlPrefix ++ url
-                        , label = text label
-                        }
+                    else
+                        "/" ++ model.urlPrefix ++ url
+                , label =
+                    label
+                }
 
         tabElsWith b1 b2 b3 =
-            [ tabEl b1 3 "/packages" "Packages"
-            , tabEl b2 3 "/tools" "Tools"
-            , tabEl b3 1 "/search" "🔍"
+            [ tabEl b1 3 "/packages" <| text "Packages"
+            , tabEl b2 3 "/tools" <| text "Tools"
+            , tabEl b3 1 "/search" <| image [ width <| px 20, htmlAttribute <| Attr.class "search-image" ] { src = "https://korban.net/img/search.svg", description = "🔍" }
             ]
 
         tabEls =
@@ -1205,13 +1232,15 @@ categoryList model =
         ]
         [ row
             [ width fill
-            , height <| px 46
-            , paddingEach { top = 15, bottom = 0, left = 0, right = 0 }
+            , height <| px 36
+            , paddingEach { top = 5, bottom = 0, left = 0, right = 0 }
+            , spacing 3
+            , Font.letterSpacing -1
             , Background.color <| rgb255 0xFF 0xFE 0xFB
             ]
-            ([ el [ width <| px 2, alignBottom ] none ]
-                ++ tabEls
-                ++ [ el [ width <| px 2, alignBottom ] none ]
+            (el [ width <| px 0 ] none
+                :: tabEls
+                ++ if_ model.isMenuPanelOpen [ el [ width <| px 0 ] none ] []
             )
         , el
             [ width fill
@@ -1219,7 +1248,7 @@ categoryList model =
             , scrollbarY
             , paddingEach { sides | left = 10, right = 10, bottom = 20 }
             , htmlAttribute <| Attr.style "flex-shrink" "1"
-            , htmlAttribute <| Attr.style "max-height" <| if_ model.isMenuPanelOpen "calc(100vh - 46px)" "calc(100vh - 116px)"
+            , htmlAttribute <| Attr.style "max-height" <| if_ model.isMenuPanelOpen "calc(100vh - 36px)" "calc(100vh - 106px)"
             ]
           <|
             case model.route of
