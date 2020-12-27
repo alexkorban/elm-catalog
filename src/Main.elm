@@ -10,9 +10,11 @@ import Element.Background as Background
 import Element.Border as Border
 import Element.Events exposing (..)
 import Element.Font as Font
-import Html exposing (Html, button, div, node, span, ul)
+import Element.Input as Input
+import Html exposing (Html, button, div, node, p, span, ul)
 import Html.Attributes as Attr
 import Http
+import List
 import List.Extra as List
 import Markdown
 import Maybe.Extra as Maybe
@@ -23,6 +25,7 @@ import Url.Parser as UrlParser exposing ((</>))
 
 type Route
     = PackageRoute String
+    | SearchRoute
     | ToolRoute String
 
 
@@ -35,6 +38,13 @@ type Msg
     | UserClickedMenuIcon
     | UserClickedOutsideMenuPanel
     | UserResizedWindow Int Int
+    | UserTypedSearchString String
+
+
+type SearchResults
+    = SearchVagueString String
+    | SearchNoResults String
+    | SearchResults String (List Package) (List Tool)
 
 
 type alias Markdown =
@@ -51,6 +61,7 @@ type alias ToolName =
 
 type Tab
     = PackagesTab
+    | SearchTab
     | ToolsTab
 
 
@@ -63,9 +74,12 @@ type alias Model =
     , navKey : Nav.Key
     , pkgCategories : PkgCategories
     , packageCount : Int
+    , packageList : List Package
     , packages : Packages
     , readmes : Readmes
     , route : Route
+    , searchResults : SearchResults
+    , toolList : List Tool
     , tools : Tools
     , toolCount : Int
     , urlPrefix : String
@@ -183,6 +197,10 @@ paleGreen =
     rgb255 167 193 176
 
 
+paleOrange =
+    rgb255 0xEA 0xC0 0xA4
+
+
 panelBgColor =
     rgb255 0xFF 0xFC 0xF6
 
@@ -240,10 +258,17 @@ routeParser urlPrefix =
             topLevelParser urlPrefix
     in
     UrlParser.oneOf
-        [ UrlParser.map (\cat subcat -> PackageRoute <| cat ++ "/" ++ subcat) <| top </> UrlParser.s "packages" </> UrlParser.string </> UrlParser.string
+        [ -- modes
+          UrlParser.map (\cat subcat -> PackageRoute <| cat ++ "/" ++ subcat) <| top </> UrlParser.s "packages" </> UrlParser.string </> UrlParser.string
         , UrlParser.map ToolRoute <| top </> UrlParser.s "tools" </> UrlParser.string
+        , UrlParser.map SearchRoute <| top </> UrlParser.s "search"
+
+        -- default routes for each mode
         , UrlParser.map (PackageRoute "dev/algorithms") <| top </> UrlParser.s "packages"
         , UrlParser.map (ToolRoute "build") <| top </> UrlParser.s "tools"
+        , UrlParser.map SearchRoute <| top </> UrlParser.s "search"
+
+        -- default route for top level
         , UrlParser.map (PackageRoute "dev/algorithms") <| top
         ]
 
@@ -663,11 +688,6 @@ init flags url navKey =
         pkgCategories =
             extractPkgCategories packages
 
-        selection =
-            Dict.get "dev" pkgCategories
-                |> Maybe.andThen List.head
-                |> Maybe.withDefault "Algorithms/data structures"
-
         packageCount =
             flags.packages
                 |> List.map
@@ -697,12 +717,15 @@ init flags url navKey =
       , navKey = navKey
       , pkgCategories = pkgCategories
       , packageCount = packageCount
+      , packageList = flags.packages
       , packages = packages
       , readmes = Dict.empty
       , route =
             Maybe.withDefault (PackageRoute "dev/prototyping") <|
                 UrlParser.parse (routeParser flags.urlPrefix) url
+      , searchResults = SearchVagueString ""
       , toolCount = toolCount
+      , toolList = flags.tools
       , tools = tools
       , urlPrefix = flags.urlPrefix
       , windowSize = { height = flags.windowHeight, width = flags.windowWidth }
@@ -768,6 +791,32 @@ update msg model =
 
         UserResizedWindow width height ->
             ( { model | windowSize = { height = height, width = width } }, Cmd.none )
+
+        UserTypedSearchString s ->
+            let
+                searchResults =
+                    if String.contains (String.toLower s) "elm-" || String.length s < 2 then
+                        SearchVagueString s
+
+                    else
+                        let
+                            pred item =
+                                String.contains (String.toLower s) (String.toLower item.name)
+                                    || String.contains (String.toLower s) (String.toLower item.summary)
+
+                            packages =
+                                List.filter pred model.packageList
+
+                            tools =
+                                List.filter pred model.toolList
+                        in
+                        if List.isEmpty packages && List.isEmpty tools then
+                            SearchNoResults s
+
+                        else
+                            SearchResults s packages tools
+            in
+            ( { model | searchResults = searchResults }, Cmd.none )
 
 
 subscriptions : Model -> Sub Msg
@@ -862,21 +911,40 @@ packageCard readmes package =
         , moveRight 1
         ]
         [ row [ width fill ]
-            [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
-                link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = text package.name }
+            [ el [ width fill, Font.size 20, Font.color blue, headingTypeface ] <|
+                link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = paragraph [] [ text package.name ] }
             , image [ alignRight, width <| px 30, alpha 0.1 ] { src = "https://korban.net/img/package.svg", description = "Package" }
             ]
-        , el [ height <| px 1, width fill, Background.color burntOrange ] none
-        , paragraph [ paddingXY 0 5, Font.size 16 ] [ text package.summary ]
-        , wrappedRow [ Font.size 14, Font.color lightCharcoal ]
-            [ link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
-            , text " • "
+        , el
+            [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
+            , Border.color burntOrange
+            , height <| px 1
+            , width fill
+            ]
+            none
+        , paragraph [ paddingEach { left = 0, right = 0, top = 5, bottom = 15 }, Font.size 16 ] [ text package.summary ]
+        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
+            List.intersperse (text "•") <|
+                List.map (\t -> link [ Font.color lightBlue ] { url = "/packages/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
+                    List.sortBy Tuple.second <|
+                        List.map (\t -> ( t, humanisePkgSubcat t )) package.tags
+        , el
+            [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
+            , Border.color paleOrange
+            , Border.dotted
+            , height <| px 1
+            , width fill
+            ]
+            none
+        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ]
+            [ text <| "v" ++ package.version
+            , text "•"
+            , link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
+            , text "•"
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
-            , text " • "
-            , text <| "Latest: " ++ package.version
-            , text " • "
+            , text "•"
             , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
-            , text " • "
+            , text "•"
             , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton package.name, pointer ] <|
                 text
                     ("README "
@@ -920,16 +988,15 @@ toolCard readmes tool =
                 Just ( _, label ) ->
                     label
 
-        packageEl =
+        toolPackageEls =
             case tool.packageUrl of
                 Just url ->
-                    row []
-                        [ text " • "
-                        , link [ Font.color lightBlue ] { url = url, label = text <| packageLabel url }
-                        ]
+                    [ text "•"
+                    , link [ Font.color lightBlue ] { url = url, label = text <| packageLabel url }
+                    ]
 
                 Nothing ->
-                    none
+                    []
 
         githubUrl =
             "https://github.com/" ++ tool.githubName
@@ -954,23 +1021,43 @@ toolCard readmes tool =
                 link [] { url = mainUrl, label = text tool.name }
             , image [ alignRight, width <| px 25, alpha 0.1 ] { src = "https://korban.net/img/tool.svg", description = "Tool" }
             ]
-        , el [ height <| px 1, width fill, Background.color burntOrange ] none
-        , paragraph [ paddingXY 0 5, Font.size 16 ] <| [ text tool.summary ]
-        , row [ Font.size 14, Font.color lightCharcoal ]
-            [ link [ Font.color lightBlue ] { url = githubUrl, label = text "Source" }
-            , packageEl
-            , text " • "
-            , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton tool.githubName, pointer ] <|
-                text
-                    ("README "
-                        ++ (if readme.isOpen then
-                                "▲"
-
-                            else
-                                "▽"
-                           )
-                    )
+        , el
+            [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
+            , Border.color burntOrange
+            , height <| px 1
+            , width fill
             ]
+            none
+        , paragraph [ paddingEach { top = 5, bottom = 15, left = 0, right = 0 }, Font.size 16 ] <| [ text tool.summary ]
+        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
+            List.intersperse (text "•") <|
+                List.map (\t -> link [ Font.color lightBlue ] { url = "/tools/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
+                    List.sortBy Tuple.second <|
+                        List.map (\t -> ( t, humaniseToolCat t )) tool.tags
+        , el
+            [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
+            , Border.color paleOrange
+            , Border.dotted
+            , height <| px 1
+            , width fill
+            ]
+            none
+        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
+            (link [ Font.color lightBlue ] { url = githubUrl, label = text "Source" }
+                :: toolPackageEls
+            )
+                ++ [ text "•"
+                   , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton tool.githubName, pointer ] <|
+                        text
+                            ("README "
+                                ++ (if readme.isOpen then
+                                        "▲"
+
+                                    else
+                                        "▽"
+                                   )
+                            )
+                   ]
         , if readme.isOpen then
             markdown readme.text
 
@@ -1065,15 +1152,17 @@ toolCategoryList toolCat model =
 categoryList : Model -> Element Msg
 categoryList model =
     let
-        tabEl isSelected url label =
+        tabEl isSelected portion url label =
             let
                 commonAttrs =
                     [ centerX, centerY, padding 5 ]
             in
             el
-                [ width <| fillPortion 1
+                [ width <| fillPortion portion
                 , Background.color <| if_ isSelected blue lightGrey
                 , Border.roundEach { topLeft = 4, topRight = 4, bottomLeft = 0, bottomRight = 0 }
+                , Border.widthEach { left = 1, right = 1, top = 0, bottom = 0 }
+                , Border.color white
                 ]
             <|
                 if isSelected then
@@ -1091,13 +1180,22 @@ categoryList model =
                         , label = text label
                         }
 
+        tabElsWith b1 b2 b3 =
+            [ tabEl b1 3 "/packages" "Packages"
+            , tabEl b2 3 "/tools" "Tools"
+            , tabEl b3 1 "/search" "🔍"
+            ]
+
         tabEls =
             case model.route of
                 PackageRoute _ ->
-                    [ tabEl True "/packages" "Packages", tabEl False "/tools" "Tools" ]
+                    tabElsWith True False False
 
                 ToolRoute _ ->
-                    [ tabEl False "/packages" "Packages", tabEl True "/tools" "Tools" ]
+                    tabElsWith False True False
+
+                SearchRoute ->
+                    tabElsWith False False True
     in
     column
         [ width <| maximum 400 <| minimum 250 <| fillPortion 4
@@ -1111,9 +1209,9 @@ categoryList model =
             , paddingEach { top = 15, bottom = 0, left = 0, right = 0 }
             , Background.color <| rgb255 0xFF 0xFE 0xFB
             ]
-            ([ el [ width <| px 5, alignBottom ] none ]
+            ([ el [ width <| px 2, alignBottom ] none ]
                 ++ tabEls
-                ++ [ el [ width <| px 5, alignBottom ] none ]
+                ++ [ el [ width <| px 2, alignBottom ] none ]
             )
         , el
             [ width fill
@@ -1130,17 +1228,50 @@ categoryList model =
 
                 ToolRoute toolCat ->
                     toolCategoryList toolCat model
+
+                SearchRoute ->
+                    column [ width fill, paddingXY 10 20, spacing 10 ] <|
+                        Input.text [ width fill ]
+                            { onChange = UserTypedSearchString
+                            , text =
+                                case model.searchResults of
+                                    SearchVagueString s ->
+                                        s
+
+                                    SearchNoResults s ->
+                                        s
+
+                                    SearchResults s _ _ ->
+                                        s
+                            , placeholder = Just <| Input.placeholder [] <| text "Enter a search string"
+                            , label = Input.labelHidden "Search"
+                            }
+                            :: (case model.searchResults of
+                                    SearchResults _ packages tools ->
+                                        [ el [ height <| px 10 ] none
+                                        , row [ Font.color white, Font.size 14 ]
+                                            [ text <| String.fromInt <| List.length packages, text " packages" ]
+                                        , row [ Font.color white, Font.size 14 ]
+                                            [ text <| String.fromInt <| List.length tools, text " tools" ]
+                                        ]
+
+                                    _ ->
+                                        []
+                               )
         ]
 
 
 content : Model -> Element Msg
 content model =
     let
+        titleEl title =
+            el [ Font.size 24, Font.color darkCharcoal ] <| text title
+
         els =
             case model.route of
                 PackageRoute subcat ->
                     paragraph [ paddingEach { sides | bottom = 10 } ]
-                        [ text <| humanisePkgCat (tagCategory subcat) ++ ": " ++ humanisePkgSubcat subcat ]
+                        [ titleEl <| humanisePkgCat (tagCategory subcat) ++ ": " ++ humanisePkgSubcat subcat ]
                         :: (model.packages
                                 |> Dict.get subcat
                                 |> Maybe.withDefault []
@@ -1149,13 +1280,51 @@ content model =
                            )
 
                 ToolRoute toolCat ->
-                    paragraph [ paddingEach { sides | bottom = 10 } ] [ text <| humaniseToolCat toolCat ]
+                    paragraph [ paddingEach { sides | bottom = 10 } ]
+                        [ titleEl <| humaniseToolCat toolCat ]
                         :: (model.tools
                                 |> Dict.get toolCat
                                 |> Maybe.withDefault []
                                 |> List.map (toolCard model.readmes)
                                 |> List.take (if_ model.isMenuPanelOpen 3 10000)
                            )
+
+                SearchRoute ->
+                    case model.searchResults of
+                        SearchVagueString _ ->
+                            [ column [ paddingEach { sides | bottom = 10 }, spacing 20 ]
+                                [ titleEl "Search results"
+                                , paragraph [ Font.color lightCharcoal ]
+                                    [ text "Please enter a (longer) search string." ]
+                                , el [ height <| px 200 ] none
+                                ]
+                            ]
+
+                        SearchNoResults _ ->
+                            [ column [ paddingEach { sides | bottom = 10 }, spacing 20 ]
+                                [ titleEl "Search results"
+                                , paragraph [ Font.color lightCharcoal ]
+                                    [ text "No matching packages or tools." ]
+                                , el [ height <| px 200 ] none
+                                ]
+                            ]
+
+                        SearchResults _ packages tools ->
+                            let
+                                combinedList =
+                                    (packages
+                                        |> List.map (\p -> ( String.toLower p.name, packageCard model.readmes p ))
+                                    )
+                                        ++ (tools
+                                                |> List.map (\t -> ( String.toLower t.name, toolCard model.readmes t ))
+                                           )
+                            in
+                            titleEl "Search results"
+                                :: (combinedList
+                                        |> List.sortBy Tuple.first
+                                        |> List.map Tuple.second
+                                        |> List.take (if_ model.isMenuPanelOpen 3 10000)
+                                   )
     in
     row
         [ width fill
