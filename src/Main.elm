@@ -848,6 +848,7 @@ navBar model =
         [ width fill
         , height <| px 70
         , padding 10
+        , spacing 10
         , Background.color panelBgColor
         , Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
         , Border.color burntOrange
@@ -878,6 +879,11 @@ navBar model =
                             ++ String.fromInt model.toolCount
                             ++ " Elm tools"
                 , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
+                , if model.windowSize.width > 920 then
+                    link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
+
+                  else
+                    none
                 ]
             ]
 
@@ -1390,7 +1396,7 @@ content model =
                         , text "."
                         ]
                    , el [ height <| px 30 ] none
-                   , if_ model.isMenuPanelOpen none bookFooter
+                   , if_ model.isMenuPanelOpen none (productFooter model)
                    ]
             )
         ]
@@ -1420,86 +1426,168 @@ markdown s =
                 s
 
 
-bookFooter : Element Msg
-bookFooter =
+productFooter : Model -> Element Msg
+productFooter model =
     let
-        p =
-            paragraph [ Font.size 16, spacing 10 ]
+        isBookFooter =
+            case model.route of
+                PackageRoute cat ->
+                    not <| String.startsWith "ui/" cat
+
+                ToolRoute _ ->
+                    True
+
+                SearchRoute ->
+                    True
     in
-    row
-        [ paddingXY 20 20
-        , spacing 30
-        , Border.widthEach { top = 2, bottom = 0, left = 0, right = 0 }
-        , Border.color <| orange
-        , width <| maximum 800 fill
-        , baseTypeface
+    column
+        [ width <| maximum 800 fill
+        , spacing 20
+        , paddingEach { sides | top = 50, left = 5, right = 5 }
         ]
-        [ textColumn
-            [ spacing 30, alignTop, width (fillPortion 3) ]
-            [ paragraph [ Font.size 24, headingTypeface, spacingXY 10 10 ]
-                [ text "Are you building non-trivial apps in Elm? This book will help you." ]
-            , p
-                [ text "My book "
-                , link [ Font.color blue ] { url = "https://korban.net/elm/book", label = text "Practical Elm" }
-                , text " skips the basics and gets right into explaining how to do practical stuff."
-                ]
-            , p
-                [ text "Things like building out the UI, communicating with servers, parsing JSON, structuring the application as it grows, testing, and so on. No handholding – the focus is on giving you more substance." ]
-            , p [ text "It's up to date with Elm 0.19." ]
-            , p [ text "Pop in your email to get a sample chapter." ]
-            , paragraph [ Font.size 14 ] [ text "(You will also get notifications of new posts along with other mailing list only freebies.)" ]
-            , el [ height <| px 30 ] none
+    <|
+        [ paragraph
+            [ paddingEach { sides | top = 20, bottom = 20 }
+            , spacing 12
+            , Border.widthEach { sides | top = 1 }
+            , Border.color orange
+            , Border.dotted
+            , headingTypeface
+            , Font.size 30
+            , Font.bold
+            , Font.letterSpacing 1
             ]
-        , column
-            [ paddingXY 20 10
-            , spacing 5
-            , height fill
-            , width (fillPortion 2)
-            ]
-            [ el [ width (px 208), height <| px 267, centerX, Border.width 2, Border.color grey ] <|
-                el [ width (px 204), height <| px 263, Border.width 2, Border.color darkCharcoal ] <|
-                    image [ width (px 200) ] { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Book cover" }
-            , el [ width fill ] <|
-                html <|
-                    Html.form
-                        [ Attr.action "https://app.convertkit.com/forms/998712/subscriptions"
-                        , Attr.class "seva-form formkit-form"
-                        , Attr.attribute "data-format" "inline"
-                        , Attr.attribute "data-options" "{\"settings\":{\"after_subscribe\":{\"action\":\"message\",\"success_message\":\"Check your email\\nfor the download link.\",\"redirect_url\":\"https://korban.net\"},\"modal\":{\"trigger\":null,\"scroll_percentage\":null,\"timer\":null,\"devices\":null,\"show_once_every\":null},\"recaptcha\":{\"enabled\":false},\"return_visitor\":{\"action\":\"show\",\"custom_content\":\"\"},\"slide_in\":{\"display_in\":null,\"trigger\":null,\"scroll_percentage\":null,\"timer\":null,\"devices\":null,\"show_once_every\":null}}}"
-                        , Attr.attribute "data-sv-form" "998712"
-                        , Attr.attribute "data-uid" "8b09e227e0"
-                        , Attr.attribute "data-version" "5"
-                        , Attr.method "post"
-                        , Attr.attribute "min-width" "400 500 600 700 800"
-                        ]
-                        [ div [ Attr.attribute "data-style" "clean" ]
-                            [ ul [ Attr.class "formkit-alert formkit-alert-error", Attr.attribute "data-element" "errors", Attr.attribute "data-group" "alert" ]
-                                []
-                            , div [ Attr.class "seva-fields formkit-fields", Attr.attribute "data-element" "fields", Attr.attribute "data-stacked" "false" ]
-                                [ div [ Attr.class "formkit-field" ]
-                                    [ Html.input [ Attr.class "formkit-input", Attr.name "email_address", Attr.placeholder "Your email address", Attr.attribute "required" "", Attr.attribute "style" "border-color: rgb(227, 227, 227); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: rgb(54, 54, 54); font-weight: 700;", Attr.type_ "email" ]
-                                        []
-                                    ]
-                                , button [ Attr.class "formkit-submit formkit-submit", Attr.attribute "data-element" "submit", Attr.attribute "style" "background-color: rgb(96, 200, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: rgb(255, 255, 255); font-weight: 700;" ]
-                                    [ div [ Attr.class "formkit-spinner" ]
-                                        [ div []
-                                            []
-                                        , div []
-                                            []
-                                        , div []
-                                            []
-                                        ]
-                                    , span [ Attr.style "font-weight" "bold" ]
-                                        [ Html.text "Send me a sample chapter" ]
-                                    ]
-                                ]
-                            ]
-                        , node "style"
-                            []
-                            [ Html.text ".formkit-form[data-uid=\"8b09e227e0\"] *{font-family:\"Helvetica Neue\",Helvetica,Arial,Verdana,sans-serif;box-sizing:border-box;}.formkit-form[data-uid=\"8b09e227e0\"]{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.formkit-form[data-uid=\"8b09e227e0\"] legend{border:none;font-size:inherit;margin-bottom:10px;padding:0;position:relative;display:table;}.formkit-form[data-uid=\"8b09e227e0\"] fieldset{border:0;padding:0.01em 0 0 0;margin:0;min-width:0;}.formkit-form[data-uid=\"8b09e227e0\"] body:not(:-moz-handler-blocked) fieldset{display:table-cell;}.formkit-form[data-uid=\"8b09e227e0\"] h1,.formkit-form[data-uid=\"8b09e227e0\"] h2,.formkit-form[data-uid=\"8b09e227e0\"] h3,.formkit-form[data-uid=\"8b09e227e0\"] h4,.formkit-form[data-uid=\"8b09e227e0\"] h5,.formkit-form[data-uid=\"8b09e227e0\"] h6{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid=\"8b09e227e0\"] p{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid=\"8b09e227e0\"][data-format=\"modal\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"][data-format=\"slide in\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-select,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-checkboxes{width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit{border:0;border-radius:5px;color:#ffffff;cursor:pointer;display:inline-block;text-align:center;font-size:15px;font-weight:500;cursor:pointer;margin-bottom:15px;overflow:hidden;padding:0;position:relative;vertical-align:middle;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:hover,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:hover,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:focus,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:focus{outline:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:hover > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:hover > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:focus > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:focus > span{background-color:rgba(0,0,0,0.1);}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit > span{display:block;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;padding:12px 24px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input{background:#ffffff;font-size:15px;padding:12px;border:1px solid #e3e3e3;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;line-height:1.4;margin:0;-webkit-transition:border-color ease-out 300ms;transition:border-color ease-out 300ms;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input:focus{outline:none;border-color:#1677be;-webkit-transition:border-color ease 300ms;transition:border-color ease 300ms;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::-webkit-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::-moz-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input:-ms-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"]{position:relative;display:inline-block;width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"]::before{content:\"\";top:calc(50% - 2.5px);right:10px;position:absolute;pointer-events:none;border-color:#4f4f4f transparent transparent transparent;border-style:solid;border-width:6px 6px 0 6px;height:0;width:0;z-index:999;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"] select{height:auto;width:100%;cursor:pointer;color:#333333;line-height:1.4;margin-bottom:0;padding:0 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:15px;padding:12px;padding-right:25px;border:1px solid #e3e3e3;background:#ffffff;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"] select:focus{outline:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"]{text-align:left;margin:0;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"]{margin-bottom:10px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] *{cursor:pointer;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"]:last-of-type{margin-bottom:0;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"] + label::after{content:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]:checked + label::after{border-color:#ffffff;content:\"\";}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]:checked + label::before{background:#10bf7a;border-color:#10bf7a;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label{position:relative;display:inline-block;padding-left:28px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::before,.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::after{position:absolute;content:\"\";display:inline-block;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::before{height:16px;width:16px;border:1px solid #e3e3e3;background:#ffffff;left:0px;top:3px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::after{height:4px;width:8px;border-left:2px solid #4d4d4d;border-bottom:2px solid #4d4d4d;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);left:4px;top:8px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert{background:#f9fafb;border:1px solid #e3e3e3;border-radius:5px;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;list-style:none;margin:25px auto;padding:12px;text-align:center;width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert:empty{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert-success{background:#d3fbeb;border-color:#10bf7a;color:#0c905c;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert-error{background:#fde8e2;border-color:#f2643b;color:#ea4110;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:0px;width:0px;margin:0 auto;position:absolute;top:0;left:0;right:0;width:0px;overflow:hidden;text-align:center;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div{margin:auto;width:12px;height:12px;background-color:#fff;opacity:0.3;border-radius:100%;display:inline-block;-webkit-animation:formkit-bouncedelay-formkit-form-data-uid-8b09e227e0- 1.4s infinite ease-in-out both;animation:formkit-bouncedelay-formkit-form-data-uid-8b09e227e0- 1.4s infinite ease-in-out both;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div:nth-child(1){-webkit-animation-delay:-0.32s;animation-delay:-0.32s;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div:nth-child(2){-webkit-animation-delay:-0.16s;animation-delay:-0.16s;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit[data-active] .formkit-spinner{opacity:1;height:100%;width:50px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit[data-active] .formkit-spinner ~ span{opacity:0;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-powered-by[data-active=\"false\"]{opacity:0.35;}@-webkit-keyframes formkit-bouncedelay-formkit-form-data-uid-8b09e227e0-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}@keyframes formkit-bouncedelay-formkit-form-data-uid-8b09e227e0-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}} .formkit-form[data-uid=\"8b09e227e0\"]{max-width:700px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-style=\"clean\"]{width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-fields{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 auto;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit{margin:0 0 15px 0;-webkit-flex:1 0 100%;-ms-flex:1 0 100%;flex:1 0 100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-powered-by{color:#7d7d7d;display:block;font-size:12px;margin:0;text-align:center;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] [data-style=\"clean\"],.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] [data-style=\"clean\"]{padding:10px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"],.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"]{margin-left:-5px;margin-right:-5px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit{margin:0 5px 15px 5px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-field{-webkit-flex:100 1 auto;-ms-flex:100 1 auto;flex:100 1 auto;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;} .formkit-form[data-uid=\"8b09e227e0\"] input{border:2px solid #e0e0e0;font-family:\"Open Sans\",Helvetica,\"Arial\",sans-serif;font-size:18px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit span{box-sizing:border-box;font-weight:bold;font-family:\"Cairo\",sans-serif;border:2px solid #3f8438;}" ]
-                        ]
+            [ text <|
+                if isBookFooter then
+                    "Would you like to use Elm for real-world projects?"
+
+                else
+                    "Would you like to forget CSS and have fun building UIs with elm-ui instead?"
             ]
         ]
+            ++ (if isBookFooter then
+                    [ paragraph [ spacing 12 ]
+                        [ text "📢  My book "
+                        , link [ Font.bold, Font.underline, Font.color blue ]
+                            { url = "https://korban.net/elm/book", label = text "Practical Elm" }
+                        , text " skips the basics and gets straight into the nuts-and-bolts of building non-trivial apps."
+                        ]
+                    , paragraph [ spacing 12 ]
+                        [ text "🛠  Things like building out the UI, communicating with servers, parsing JSON, structuring the application as it grows, testing, and so on." ]
+                    , paragraph [ spacing 12, Font.bold ]
+                        [ link []
+                            { url = "https://korban.net/elm/book"
+                            , label = text "🎁 Gain the confidence to use Elm for all your projects! 👇"
+                            }
+                        ]
+                    , link [ padding 50 ]
+                        { url = "https://korban.net/elm/book"
+                        , label =
+                            image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
+                                { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Practical Elm" }
+                        }
+                    ]
+
+                else
+                    [ paragraph [ spacing 12 ]
+                        [ text "📢 My in-depth guide "
+                        , link [ Font.bold, Font.underline, Font.color blue ]
+                            { url = "https://korban.net/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
+                        , text " is now available in early access."
+                        ]
+                    , paragraph [ spacing 12 ]
+                        [ text "🎁 Get a walkthrough of all elm-ui features and a showcase of elm-ui examples." ]
+                    , paragraph [ spacing 12 ]
+                        [ text "🛠 I'm still adding content but you can start learning right now 👇" ]
+                    , link [ padding 50 ]
+                        { url = "https://korban.net/elm/elm-ui-guide"
+                        , label =
+                            image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
+                                { src = "https://korban.net/img/elm-ui-cover.jpg", description = "elm-ui: The CSS Escape Plan" }
+                        }
+                    ]
+               )
+
+
+
+-- let
+--     p =
+--         paragraph [ Font.size 16, spacing 10 ]
+-- in
+-- row
+--     [ paddingXY 20 20
+--     , spacing 30
+--     , Border.widthEach { top = 2, bottom = 0, left = 0, right = 0 }
+--     , Border.color <| orange
+--     , width <| maximum 800 fill
+--     , baseTypeface
+--     ]
+--     [ textColumn
+--         [ spacing 30, alignTop, width (fillPortion 3) ]
+--         [ paragraph [ Font.size 24, headingTypeface, spacingXY 10 10 ]
+--             [ text "Are you building non-trivial apps in Elm? This book will help you." ]
+--         , p
+--             [ text "My book "
+--             , link [ Font.color blue ] { url = "https://korban.net/elm/book", label = text "Practical Elm" }
+--             , text " skips the basics and gets right into explaining how to do practical stuff."
+--             ]
+--         , p
+--             [ text "Things like building out the UI, communicating with servers, parsing JSON, structuring the application as it grows, testing, and so on. No handholding – the focus is on giving you more substance." ]
+--         , p [ text "It's up to date with Elm 0.19." ]
+--         , p [ text "Pop in your email to get a sample chapter." ]
+--         , paragraph [ Font.size 14 ] [ text "(You will also get notifications of new posts along with other mailing list only freebies.)" ]
+--         , el [ height <| px 30 ] none
+--         ]
+--     , column
+--         [ paddingXY 20 10
+--         , spacing 5
+--         , height fill
+--         , width (fillPortion 2)
+--         ]
+--         [ el [ width (px 208), height <| px 267, centerX, Border.width 2, Border.color grey ] <|
+--             el [ width (px 204), height <| px 263, Border.width 2, Border.color darkCharcoal ] <|
+--                 image [ width (px 200) ] { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Book cover" }
+--         , el [ width fill ] <|
+--             html <|
+--                 Html.form
+--                     [ Attr.action "https://app.convertkit.com/forms/998712/subscriptions"
+--                     , Attr.class "seva-form formkit-form"
+--                     , Attr.attribute "data-format" "inline"
+--                     , Attr.attribute "data-options" "{\"settings\":{\"after_subscribe\":{\"action\":\"message\",\"success_message\":\"Check your email\\nfor the download link.\",\"redirect_url\":\"https://korban.net\"},\"modal\":{\"trigger\":null,\"scroll_percentage\":null,\"timer\":null,\"devices\":null,\"show_once_every\":null},\"recaptcha\":{\"enabled\":false},\"return_visitor\":{\"action\":\"show\",\"custom_content\":\"\"},\"slide_in\":{\"display_in\":null,\"trigger\":null,\"scroll_percentage\":null,\"timer\":null,\"devices\":null,\"show_once_every\":null}}}"
+--                     , Attr.attribute "data-sv-form" "998712"
+--                     , Attr.attribute "data-uid" "8b09e227e0"
+--                     , Attr.attribute "data-version" "5"
+--                     , Attr.method "post"
+--                     , Attr.attribute "min-width" "400 500 600 700 800"
+--                     ]
+--                     [ div [ Attr.attribute "data-style" "clean" ]
+--                         [ ul [ Attr.class "formkit-alert formkit-alert-error", Attr.attribute "data-element" "errors", Attr.attribute "data-group" "alert" ]
+--                             []
+--                         , div [ Attr.class "seva-fields formkit-fields", Attr.attribute "data-element" "fields", Attr.attribute "data-stacked" "false" ]
+--                             [ div [ Attr.class "formkit-field" ]
+--                                 [ Html.input [ Attr.class "formkit-input", Attr.name "email_address", Attr.placeholder "Your email address", Attr.attribute "required" "", Attr.attribute "style" "border-color: rgb(227, 227, 227); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: rgb(54, 54, 54); font-weight: 700;", Attr.type_ "email" ]
+--                                     []
+--                                 ]
+--                             , button [ Attr.class "formkit-submit formkit-submit", Attr.attribute "data-element" "submit", Attr.attribute "style" "background-color: rgb(96, 200, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; color: rgb(255, 255, 255); font-weight: 700;" ]
+--                                 [ div [ Attr.class "formkit-spinner" ]
+--                                     [ div []
+--                                         []
+--                                     , div []
+--                                         []
+--                                     , div []
+--                                         []
+--                                     ]
+--                                 , span [ Attr.style "font-weight" "bold" ]
+--                                     [ Html.text "Send me a sample chapter" ]
+--                                 ]
+--                             ]
+--                         ]
+--                     , node "style"
+--                         []
+--                         [ Html.text ".formkit-form[data-uid=\"8b09e227e0\"] *{font-family:\"Helvetica Neue\",Helvetica,Arial,Verdana,sans-serif;box-sizing:border-box;}.formkit-form[data-uid=\"8b09e227e0\"]{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.formkit-form[data-uid=\"8b09e227e0\"] legend{border:none;font-size:inherit;margin-bottom:10px;padding:0;position:relative;display:table;}.formkit-form[data-uid=\"8b09e227e0\"] fieldset{border:0;padding:0.01em 0 0 0;margin:0;min-width:0;}.formkit-form[data-uid=\"8b09e227e0\"] body:not(:-moz-handler-blocked) fieldset{display:table-cell;}.formkit-form[data-uid=\"8b09e227e0\"] h1,.formkit-form[data-uid=\"8b09e227e0\"] h2,.formkit-form[data-uid=\"8b09e227e0\"] h3,.formkit-form[data-uid=\"8b09e227e0\"] h4,.formkit-form[data-uid=\"8b09e227e0\"] h5,.formkit-form[data-uid=\"8b09e227e0\"] h6{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid=\"8b09e227e0\"] p{color:inherit;font-size:inherit;font-weight:inherit;}.formkit-form[data-uid=\"8b09e227e0\"][data-format=\"modal\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"][data-format=\"slide in\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-select,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-checkboxes{width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit{border:0;border-radius:5px;color:#ffffff;cursor:pointer;display:inline-block;text-align:center;font-size:15px;font-weight:500;cursor:pointer;margin-bottom:15px;overflow:hidden;padding:0;position:relative;vertical-align:middle;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:hover,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:hover,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:focus,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:focus{outline:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:hover > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:hover > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button:focus > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit:focus > span{background-color:rgba(0,0,0,0.1);}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-button > span,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit > span{display:block;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;padding:12px 24px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input{background:#ffffff;font-size:15px;padding:12px;border:1px solid #e3e3e3;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;line-height:1.4;margin:0;-webkit-transition:border-color ease-out 300ms;transition:border-color ease-out 300ms;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input:focus{outline:none;border-color:#1677be;-webkit-transition:border-color ease 300ms;transition:border-color ease 300ms;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::-webkit-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::-moz-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input:-ms-input-placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-input::placeholder{color:inherit;opacity:0.8;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"]{position:relative;display:inline-block;width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"]::before{content:\"\";top:calc(50% - 2.5px);right:10px;position:absolute;pointer-events:none;border-color:#4f4f4f transparent transparent transparent;border-style:solid;border-width:6px 6px 0 6px;height:0;width:0;z-index:999;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"] select{height:auto;width:100%;cursor:pointer;color:#333333;line-height:1.4;margin-bottom:0;padding:0 6px;-webkit-appearance:none;-moz-appearance:none;appearance:none;font-size:15px;padding:12px;padding-right:25px;border:1px solid #e3e3e3;background:#ffffff;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"dropdown\"] select:focus{outline:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"]{text-align:left;margin:0;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"]{margin-bottom:10px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] *{cursor:pointer;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"]:last-of-type{margin-bottom:0;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"] + label::after{content:none;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]:checked + label::after{border-color:#ffffff;content:\"\";}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] input[type=\"checkbox\"]:checked + label::before{background:#10bf7a;border-color:#10bf7a;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label{position:relative;display:inline-block;padding-left:28px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::before,.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::after{position:absolute;content:\"\";display:inline-block;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::before{height:16px;width:16px;border:1px solid #e3e3e3;background:#ffffff;left:0px;top:3px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-group=\"checkboxes\"] [data-group=\"checkbox\"] label::after{height:4px;width:8px;border-left:2px solid #4d4d4d;border-bottom:2px solid #4d4d4d;-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);transform:rotate(-45deg);left:4px;top:8px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert{background:#f9fafb;border:1px solid #e3e3e3;border-radius:5px;-webkit-flex:1 0 auto;-ms-flex:1 0 auto;flex:1 0 auto;list-style:none;margin:25px auto;padding:12px;text-align:center;width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert:empty{display:none;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert-success{background:#d3fbeb;border-color:#10bf7a;color:#0c905c;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-alert-error{background:#fde8e2;border-color:#f2643b;color:#ea4110;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:0px;width:0px;margin:0 auto;position:absolute;top:0;left:0;right:0;width:0px;overflow:hidden;text-align:center;-webkit-transition:all 300ms ease-in-out;transition:all 300ms ease-in-out;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div{margin:auto;width:12px;height:12px;background-color:#fff;opacity:0.3;border-radius:100%;display:inline-block;-webkit-animation:formkit-bouncedelay-formkit-form-data-uid-8b09e227e0- 1.4s infinite ease-in-out both;animation:formkit-bouncedelay-formkit-form-data-uid-8b09e227e0- 1.4s infinite ease-in-out both;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div:nth-child(1){-webkit-animation-delay:-0.32s;animation-delay:-0.32s;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-spinner > div:nth-child(2){-webkit-animation-delay:-0.16s;animation-delay:-0.16s;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit[data-active] .formkit-spinner{opacity:1;height:100%;width:50px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit[data-active] .formkit-spinner ~ span{opacity:0;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-powered-by[data-active=\"false\"]{opacity:0.35;}@-webkit-keyframes formkit-bouncedelay-formkit-form-data-uid-8b09e227e0-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}@keyframes formkit-bouncedelay-formkit-form-data-uid-8b09e227e0-{0%,80%,100%{-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}40%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}} .formkit-form[data-uid=\"8b09e227e0\"]{max-width:700px;}.formkit-form[data-uid=\"8b09e227e0\"] [data-style=\"clean\"]{width:100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-fields{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:0 auto;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit{margin:0 0 15px 0;-webkit-flex:1 0 100%;-ms-flex:1 0 100%;flex:1 0 100%;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-powered-by{color:#7d7d7d;display:block;font-size:12px;margin:0;text-align:center;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] [data-style=\"clean\"],.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] [data-style=\"clean\"]{padding:10px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"],.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"]{margin-left:-5px;margin-right:-5px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit{margin:0 5px 15px 5px;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-field,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-field{-webkit-flex:100 1 auto;-ms-flex:100 1 auto;flex:100 1 auto;}.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"700\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit,.formkit-form[data-uid=\"8b09e227e0\"][min-width~=\"800\"] .formkit-fields[data-stacked=\"false\"] .formkit-submit{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;} .formkit-form[data-uid=\"8b09e227e0\"] input{border:2px solid #e0e0e0;font-family:\"Open Sans\",Helvetica,\"Arial\",sans-serif;font-size:18px;}.formkit-form[data-uid=\"8b09e227e0\"] .formkit-submit span{box-sizing:border-box;font-weight:bold;font-family:\"Cairo\",sans-serif;border:2px solid #3f8438;}" ]
+--                     ]
+--         ]
+--     ]
 
 
 baseTypeface : Element.Attribute msg
