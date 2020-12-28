@@ -381,6 +381,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-designer",
+    "githubName": "passiomatic/elm-designer",
+    "url": null,
+    "packageUrl": null,
+    "summary": "A visual layout designer that generates elm-ui code",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-format",
     "githubName": "avh4/elm-format",
     "url": null,
