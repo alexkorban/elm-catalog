@@ -1033,7 +1033,8 @@ window.packages =
         "name": "jxxcarlson/toc-editor",
         "summary": "Drag and drop editor for table of contents",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "1.0.1"
     },
@@ -1159,7 +1160,8 @@ window.packages =
         "name": "3kyro/xsrf-protection",
         "summary": "Provides XSRF protection and authentication options",
         "tags": [
-            "networking/http", "security/other"
+            "networking/http",
+            "security/other"
         ],
         "version": "2.0.0"
     },
@@ -1594,7 +1596,9 @@ window.packages =
         "name": "Evelios/elm-dat-gui",
         "summary": "Parameter tweaking library using elm-ui",
         "tags": [
-            "ui/patterns", "data/visualisation", "dev/prototyping"
+            "ui/patterns",
+            "data/visualisation",
+            "dev/prototyping"
         ],
         "version": "1.0.0"
     },
@@ -2813,7 +2817,8 @@ window.packages =
         "name": "ThinkAlexandria/elm-drag-locations",
         "summary": "Drag library designed for many different interaction locations",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "3.0.2"
     },
@@ -3420,7 +3425,8 @@ window.packages =
         "name": "annaghi/dnd-list",
         "summary": "Drag and Drop for sortable lists in Elm web apps with mouse support",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "6.0.1"
     },
@@ -3573,7 +3579,8 @@ window.packages =
         "name": "arsduo/elm-ui-drag-drop",
         "summary": "Drag and Drop utilities for the elm-dom framework.",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "2.0.0"
     },
@@ -3609,7 +3616,8 @@ window.packages =
         "name": "atzzCokeK/elm-inputtext-with-count",
         "summary": "Make inputText with count and set the maximum characters(not words).",
         "tags": [
-            "ui/patterns", "ui/input"
+            "ui/patterns",
+            "ui/input"
         ],
         "version": "1.0.1"
     },
@@ -4164,7 +4172,8 @@ window.packages =
         "name": "brainrape/elm-mathml",
         "summary": "MathML for Elm",
         "tags": [
-            "ui/html", "sciences/maths"
+            "ui/html",
+            "sciences/maths"
         ],
         "version": "1.0.1"
     },
@@ -4809,7 +4818,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "4.0.1"
+        "version": "4.0.3"
     },
     {
         "license": "MIT",
@@ -5102,7 +5111,7 @@ window.packages =
         "tags": [
             "ui/dimensions"
         ],
-        "version": "2.0.0"
+        "version": "2.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5462,7 +5471,9 @@ window.packages =
         "name": "evelios/elm-geometry-quadtree",
         "summary": "QuadTree implementation in Elm",
         "tags": [
-            "dev/algorithms", "sciences/maths", "game-dev/utils"
+            "dev/algorithms",
+            "sciences/maths",
+            "game-dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -5572,7 +5583,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "7.0.0"
+        "version": "7.1.0"
     },
     {
         "license": "MIT",
@@ -6173,7 +6184,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "3.0.2"
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6479,7 +6490,8 @@ window.packages =
         "name": "ir4y/elm-dnd",
         "summary": "Reusable high level drag-and-drop library for elm",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "3.0.2"
     },
@@ -6981,7 +6993,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "10.1.0"
+        "version": "10.3.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -7026,7 +7038,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "10.0.0"
+        "version": "10.2.0"
     },
     {
         "license": "MIT",
@@ -7754,7 +7766,8 @@ window.packages =
         "name": "lucamug/elm-box-drawing",
         "summary": "A semiserious library to create drawing using Box Drwaing Characters",
         "tags": [
-            "art/ascii", "data/visualisation"
+            "art/ascii",
+            "data/visualisation"
         ],
         "version": "1.0.1"
     },
@@ -8172,7 +8185,8 @@ window.packages =
         "name": "mpizenberg/elm-pointer-events",
         "summary": "Mouse, Touch, Pointer, Wheel and Drag events",
         "tags": [
-            "ui/input", "ui/dragdrop"
+            "ui/input",
+            "ui/dragdrop"
         ],
         "version": "4.0.2"
     },
@@ -8398,7 +8412,8 @@ window.packages =
         "name": "norpan/elm-html5-drag-drop",
         "summary": "This library handles dragging and dropping using the HTML5 API",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "3.1.4"
     },
@@ -9498,7 +9513,8 @@ window.packages =
         "name": "shamansir/tron-gui",
         "summary": "Tron: Minimal Universal GUI",
         "tags": [
-            "ui/frameworks", "ui/patterns"
+            "ui/frameworks",
+            "ui/patterns"
         ],
         "version": "3.0.0"
     },
@@ -9955,7 +9971,8 @@ window.packages =
         "name": "the-sett/elm-auth",
         "summary": "Elm authentication API pattern with multiple implementations.",
         "tags": [
-            "networking/http", "security/auth"
+            "networking/http",
+            "security/auth"
         ],
         "version": "5.0.0"
     },
@@ -10914,7 +10931,8 @@ window.packages =
         "name": "wsowens/term",
         "summary": "A terminal emulator with ANSI escape code parsing",
         "tags": [
-            "data/formats", "uncat/misc"
+            "data/formats",
+            "uncat/misc"
         ],
         "version": "2.0.6"
     },
@@ -11123,7 +11141,8 @@ window.packages =
         "name": "zaboco/elm-draggable",
         "summary": "easy way to make DOM elements draggable",
         "tags": [
-            "ui/patterns", "ui/dragdrop"
+            "ui/patterns",
+            "ui/dragdrop"
         ],
         "version": "4.0.6"
     },

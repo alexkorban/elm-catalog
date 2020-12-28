@@ -15,7 +15,7 @@ const newPackages = JSON.parse(res.stdout.toString())
 
 console.log("New packages: " + R.length(newPackages))
 
-const taggedPackagesStr = Fs.readFileSync("tagged-packages.js").toString()
+const taggedPackagesStr = Fs.readFileSync("public/tagged-packages.js").toString()
 const taggedPackages = JSON.parse(taggedPackagesStr.slice(taggedPackagesStr.indexOf("[")))
 
 console.log("Tagged packages: " + R.length(taggedPackages))
@@ -37,6 +37,6 @@ const merge = (package) => {
 }
 
 // Overwrites the existing file!
-Fs.writeFileSync("tagged-packages.js", "window.packages = \n" + stringify(R.map(merge, newPackages), {space: 4}))
+Fs.writeFileSync("public/tagged-packages.js", "window.packages = \n" + stringify(R.map(merge, newPackages), {space: 4}))
 
 console.log("Done!")
