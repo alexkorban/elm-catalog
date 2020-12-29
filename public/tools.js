@@ -81,6 +81,16 @@ window.tools =
     ]
 },
 {
+    "name": "snowpack-plugin-elm",
+    "githubName": "marc136/snowpack-plugin-elm",
+    "url": null,
+    "packageUrl": null,
+    "summary": "Elm plugin for Snowpack: import .elm files and have the compile to JavaScript modules",
+    "tags": [
+        "build"
+    ]
+},
+{
     "name": "elm-sh-completion",
     "githubName": "dmy/elm-sh-completion",
     "url": null,
@@ -88,6 +98,16 @@ window.tools =
     "summary": "Bash/Zsh completion script for Elm binary, elm-test and elm-json",
     "tags": [
         "cli"
+    ]
+},
+{
+    "name": "elm-tooling",
+    "githubName": "lydell/elm-tooling.json",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-tooling",
+    "summary": "Install Elm tools based on a spec in elm-tooling.json",
+    "tags": [
+        "cli", "other"
     ]
 },
 {
@@ -767,6 +787,16 @@ window.tools =
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/elm-coverage",
     "summary": "A tool for calculating code coverage for Elm code tested with elm-test",
+    "tags": [
+        "testing"
+    ]
+},
+{
+    "name": "elm-test-rs",
+    "githubName": "mpizenberg/elm-test-rs",
+    "url": null,
+    "packageUrl": null,
+    "summary": "An alternative test runner to elm-test that can capture Debug.log calls and lets you filter tests",
     "tags": [
         "testing"
     ]
