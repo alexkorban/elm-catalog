@@ -11,7 +11,7 @@ import Element.Border as Border
 import Element.Events exposing (..)
 import Element.Font as Font
 import Element.Input as Input
-import Html exposing (Html, button, div, node, p, span, ul)
+import Html exposing (Html)
 import Html.Attributes as Attr
 import Http
 import List
@@ -243,8 +243,8 @@ sides =
 
 
 topLevelParser : String -> UrlParser.Parser a a
-topLevelParser urlPrefix =
-    case urlPrefix of
+topLevelParser givenUrlPrefix =
+    case givenUrlPrefix of
         "" ->
             UrlParser.top
 
@@ -256,10 +256,10 @@ topLevelParser urlPrefix =
 
 
 routeParser : String -> UrlParser.Parser (Route -> a) a
-routeParser urlPrefix =
+routeParser givenUrlPrefix =
     let
         top =
-            topLevelParser urlPrefix
+            topLevelParser givenUrlPrefix
     in
     UrlParser.oneOf
         [ -- modes
@@ -275,6 +275,15 @@ routeParser urlPrefix =
         -- default route for top level
         , UrlParser.map (PackageRoute "dev/algorithms") <| top
         ]
+
+
+urlPrefix : Model -> String
+urlPrefix model =
+    if String.isEmpty model.urlPrefix then
+        ""
+
+    else
+        "/" ++ model.urlPrefix
 
 
 humanisePkgCat : String -> String
@@ -903,11 +912,11 @@ navigationMenuPanel model =
         ]
 
 
-packageCard : Readmes -> Package -> Element Msg
-packageCard readmes package =
+packageCard : Model -> Package -> Element Msg
+packageCard model package =
     let
         readme =
-            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get package.name readmes
+            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get package.name model.readmes
     in
     column
         [ width <| maximum 800 fill
@@ -935,7 +944,7 @@ packageCard readmes package =
         , paragraph [ paddingEach { left = 0, right = 0, top = 5, bottom = 15 }, Font.size 16 ] [ text package.summary ]
         , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
             List.intersperse (text "•") <|
-                List.map (\t -> link [ Font.color lightBlue ] { url = "/packages/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
+                List.map (\t -> link [ Font.color lightBlue ] { url = urlPrefix model ++ "/packages/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
                     List.sortBy Tuple.second <|
                         List.map (\t -> ( t, humanisePkgSubcat t )) package.tags
         , el
@@ -974,11 +983,11 @@ packageCard readmes package =
         ]
 
 
-toolCard : Readmes -> Tool -> Element Msg
-toolCard readmes tool =
+toolCard : Model -> Tool -> Element Msg
+toolCard model tool =
     let
         readme =
-            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get tool.githubName readmes
+            Maybe.withDefault { isOpen = False, text = "" } <| Dict.get tool.githubName model.readmes
 
         packageLabels =
             [ ( "npmjs.com", "NPM package" )
@@ -1041,7 +1050,7 @@ toolCard readmes tool =
         , paragraph [ paddingEach { top = 5, bottom = 15, left = 0, right = 0 }, Font.size 16 ] <| [ text tool.summary ]
         , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
             List.intersperse (text "•") <|
-                List.map (\t -> link [ Font.color lightBlue ] { url = "/tools/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
+                List.map (\t -> link [ Font.color lightBlue ] { url = urlPrefix model ++ "/tools/" ++ Tuple.first t, label = text <| Tuple.second t }) <|
                     List.sortBy Tuple.second <|
                         List.map (\t -> ( t, humaniseToolCat t )) tool.tags
         , el
@@ -1099,20 +1108,13 @@ pkgCategoryList subcat model =
                 |> Maybe.map List.length
                 |> Maybe.withDefault 0
 
-        urlPrefix =
-            if String.isEmpty model.urlPrefix then
-                ""
-
-            else
-                "/" ++ model.urlPrefix
-
         subcatEl givenSubcat =
             row [ width fill, spacing 10 ]
                 [ if givenSubcat == subcat then
                     el [ Font.color (rgb255 0x9B 0xE6 0xFF), Font.bold, Font.underline, Font.letterSpacing -1 ] <| text <| humanisePkgSubcat subcat
 
                   else
-                    link [ Font.color white ] { url = urlPrefix ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
+                    link [ Font.color white ] { url = urlPrefix model ++ "/packages/" ++ givenSubcat, label = text <| humanisePkgSubcat givenSubcat }
                 , el
                     [ alignRight
                     , width <| minimum 30 <| px 30
@@ -1147,20 +1149,13 @@ toolCategoryList toolCat model =
                 |> Maybe.map List.length
                 |> Maybe.withDefault 0
 
-        urlPrefix =
-            if String.isEmpty model.urlPrefix then
-                ""
-
-            else
-                "/" ++ model.urlPrefix
-
         catEl cat =
             row [ width fill, Font.size 18 ]
                 [ if cat == toolCat then
                     el [ Font.color (rgb255 0x9B 0xE6 0xFF), Font.bold, Font.underline, Font.letterSpacing -1 ] <| text <| humaniseToolCat cat
 
                   else
-                    link [ Font.color white ] { url = urlPrefix ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
+                    link [ Font.color white ] { url = urlPrefix model ++ "/tools/" ++ cat, label = text <| humaniseToolCat cat }
                 , el
                     [ alignRight
                     , width <| minimum 30 <| px 30
@@ -1203,12 +1198,7 @@ categoryList model =
                 , Font.bold
                 , Font.color white
                 ]
-                { url =
-                    if String.isEmpty model.urlPrefix then
-                        url
-
-                    else
-                        "/" ++ model.urlPrefix ++ url
+                { url = urlPrefix model ++ url
                 , label =
                     label
                 }
@@ -1310,7 +1300,7 @@ content model =
                         :: (model.packages
                                 |> Dict.get subcat
                                 |> Maybe.withDefault []
-                                |> List.map (packageCard model.readmes)
+                                |> List.map (packageCard model)
                                 |> List.take (if_ model.isMenuPanelOpen 3 10000)
                            )
 
@@ -1320,7 +1310,7 @@ content model =
                         :: (model.tools
                                 |> Dict.get toolCat
                                 |> Maybe.withDefault []
-                                |> List.map (toolCard model.readmes)
+                                |> List.map (toolCard model)
                                 |> List.take (if_ model.isMenuPanelOpen 3 10000)
                            )
 
@@ -1348,10 +1338,10 @@ content model =
                             let
                                 combinedList =
                                     (packages
-                                        |> List.map (\p -> ( String.toLower p.name, packageCard model.readmes p ))
+                                        |> List.map (\p -> ( String.toLower p.name, packageCard model p ))
                                     )
                                         ++ (tools
-                                                |> List.map (\t -> ( String.toLower t.name, toolCard model.readmes t ))
+                                                |> List.map (\t -> ( String.toLower t.name, toolCard model t ))
                                            )
                             in
                             titleEl "Search results"
