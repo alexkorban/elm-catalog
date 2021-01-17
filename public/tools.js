@@ -750,13 +750,22 @@ window.tools =
         "information"
     ]
 },
-
 {
     "name": "elm-debug-transformer",
     "githubName": "kraklin/elm-debug-transformer",
     "url": null,
     "packageUrl": null,
-    "summary": "Transform Elm Debug.log output into nice log objects with a custom formatter",
+    "summary": "Transform Elm Debug.log output into collapsible objects with a custom formatter",
+    "tags": [
+        "debugging"
+    ]
+},
+{
+    "name": "elm-debug-extension",
+    "githubName": "kraklin/elm-debug-extension",
+    "url": null,
+    "packageUrl": null,
+    "summary": "Transform Elm Debug.log output into collapsible objects with a browser extension in Chrome, Firefox & other browsers",
     "tags": [
         "debugging"
     ]
