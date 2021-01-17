@@ -449,8 +449,8 @@ humanisePkgSubcat subcat =
         "sciences/data-mining" ->
             "Data mining"
 
-        "sciences/geography" ->
-            "Geography"
+        "sciences/geodesy" ->
+            "Geodesy & cartography"
 
         "sciences/maths" ->
             "Maths"

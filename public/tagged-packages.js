@@ -704,7 +704,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "5.2.5"
+        "version": "5.2.6"
     },
     {
         "license": "Apache-2.0",
@@ -739,7 +739,7 @@ window.packages =
         "summary": "An advanced mapping library",
         "tags": [
             "ui/maps",
-            "sciences/geography"
+            "sciences/geodesy"
         ],
         "version": "4.1.0"
     },
@@ -1580,7 +1580,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "8.2.4"
+        "version": "8.2.6"
     },
     {
         "license": "MIT",
@@ -1599,6 +1599,15 @@ window.packages =
             "ui/patterns",
             "data/visualisation",
             "dev/prototyping"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "Evelios/elm-hash",
+        "summary": "Turn elm objects into comparable hash values",
+        "tags": [
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -2078,6 +2087,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "MackeyRMS/json-decode-attempt",
+        "summary": "Decode JSON in a way that can both fallback and report errors",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "MadonnaMat/elm-select-two",
         "summary": "A mimic of Select2 in Elm",
         "tags": [
@@ -2148,7 +2166,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.2.1"
+        "version": "1.2.2"
     },
     {
         "license": "MIT",
@@ -2420,7 +2438,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "12.15.0"
+        "version": "12.15.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2493,7 +2511,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "2.2.0"
+        "version": "2.2.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2565,7 +2583,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "2.1.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -2674,7 +2692,7 @@ window.packages =
         "tags": [
             "security/other"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "license": "GPL-3.0",
@@ -3097,6 +3115,15 @@ window.packages =
     },
     {
         "license": "BSD-3-Clause",
+        "name": "agu-z/elm-zip",
+        "summary": "Work with ZIP archives without leaving Elm.",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "BSD-3-Clause",
         "name": "agustinrhcp/elm-datepicker",
         "summary": "A reusable date picker component",
         "tags": [
@@ -3111,7 +3138,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -3382,7 +3409,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "2.1.3"
+        "version": "4.0.3"
     },
     {
         "license": "BSD-3-Clause",
@@ -3404,10 +3431,19 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "andrewMacmurray/elm-simple-animation",
+        "summary": "stateless animation utils",
+        "tags": [
+            "ui/animation"
+        ],
+        "version": "1.1.0"
+    },
+    {
+        "license": "MIT",
         "name": "andys8/elm-geohash",
         "summary": "Geohash for Elm",
         "tags": [
-            "sciences/geography"
+            "sciences/geodesy"
         ],
         "version": "1.1.2"
     },
@@ -3993,7 +4029,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "10.1.0"
+        "version": "11.0.0"
     },
     {
         "license": "MIT",
@@ -4002,7 +4038,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "license": "MIT",
@@ -4093,7 +4129,16 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
+    },
+    {
+        "license": "MIT",
+        "name": "billstclair/elm-xml-extra",
+        "summary": "Extend billstclair/elm-xml-eeue56 to simplify building Decoders for XML input.",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "2.1.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -4274,7 +4319,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "version": "1.3.1"
+        "version": "1.4.0"
     },
     {
         "license": "MIT",
@@ -4818,7 +4863,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "4.0.3"
+        "version": "4.1.0"
     },
     {
         "license": "MIT",
@@ -4827,7 +4872,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "6.1.0"
+        "version": "6.1.1"
     },
     {
         "license": "MIT",
@@ -5111,7 +5156,7 @@ window.packages =
         "tags": [
             "ui/dimensions"
         ],
-        "version": "2.1.1"
+        "version": "3.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5341,6 +5386,24 @@ window.packages =
         "version": "1.0.1"
     },
     {
+        "license": "MIT",
+        "name": "elmw/extra-bit",
+        "summary": "The bit is a basic unit of information in information theory, computing.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.6"
+    },
+    {
+        "license": "MIT",
+        "name": "elmw/hello-world",
+        "summary": "A \"Hello, World!\" is an introductory computer program.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.4"
+    },
+    {
         "license": "BSD-3-Clause",
         "name": "emilianobovetti/edit-distance",
         "summary": "Algorithms for edit distance calculation",
@@ -5366,6 +5429,15 @@ window.packages =
             "ui/svg"
         ],
         "version": "1.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "eniac314/french-stemmer",
+        "summary": "An Elm language implementation of the french Porter Stemmer algorithm",
+        "tags": [
+            "data/text"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5527,7 +5599,7 @@ window.packages =
         "name": "fbonetti/elm-geodesy",
         "summary": "Calculate distance and bearing",
         "tags": [
-            "sciences/geography"
+            "sciences/geodesy"
         ],
         "version": "2.0.0"
     },
@@ -5584,6 +5656,15 @@ window.packages =
             "dev/parsing"
         ],
         "version": "7.1.0"
+    },
+    {
+        "license": "Apache-2.0",
+        "name": "fission-suite/webnative-elm",
+        "summary": "Thin wrapper around webnative for Elm",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -5701,7 +5782,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "5.0.2"
+        "version": "6.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -5710,7 +5791,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "4.0.0"
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -5767,7 +5848,7 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -6076,6 +6157,24 @@ window.packages =
         "tags": [
             "ui/css"
         ],
+        "version": "1.0.1"
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "gribouille/elm-combo",
+        "summary": "Combobox component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "gribouille/elm-datetime",
+        "summary": "Datetime component",
+        "tags": [
+            "ui/patterns"
+        ],
         "version": "1.0.0"
     },
     {
@@ -6089,6 +6188,15 @@ window.packages =
     },
     {
         "license": "MPL-2.0",
+        "name": "gribouille/elm-multiselect",
+        "summary": "Multiselect component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MPL-2.0",
         "name": "gribouille/elm-prelude",
         "summary": "Extra standard functions",
         "tags": [
@@ -6098,12 +6206,30 @@ window.packages =
     },
     {
         "license": "MPL-2.0",
+        "name": "gribouille/elm-select",
+        "summary": "Select component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MPL-2.0",
         "name": "gribouille/elm-spinner",
         "summary": "Spinner component",
         "tags": [
             "ui/patterns"
         ],
         "version": "1.0.0"
+    },
+    {
+        "license": "MPL-2.0",
+        "name": "gribouille/elm-table",
+        "summary": "Table component",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "3.0.0"
     },
     {
         "license": "MPL-2.0",
@@ -6414,11 +6540,11 @@ window.packages =
     {
         "license": "MIT",
         "name": "indique/elm-keysdict",
-        "summary": "lookup values from many directions",
+        "summary": "lookup values by many keys",
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.1"
+        "version": "2.0.0"
     },
     {
         "license": "MIT",
@@ -6466,6 +6592,15 @@ window.packages =
             "ui/elm-ui"
         ],
         "version": "1.1.1"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "integral424/elm-pivot-table",
+        "summary": "Analyze and visualize table data by grouping by various fields",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -6564,7 +6699,7 @@ window.packages =
         "summary": "An Elm library for interactive maps",
         "tags": [
             "ui/maps",
-            "sciences/geography"
+            "sciences/geodesy"
         ],
         "version": "2.0.0"
     },
@@ -6993,7 +7128,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "10.3.3"
+        "version": "10.3.5"
     },
     {
         "license": "BSD-3-Clause",
@@ -7038,7 +7173,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "10.2.0"
+        "version": "12.0.0"
     },
     {
         "license": "MIT",
@@ -7047,7 +7182,7 @@ window.packages =
         "tags": [
             "dev/utils"
         ],
-        "version": "3.0.2"
+        "version": "4.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -7259,7 +7394,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "version": "4.0.0"
+        "version": "4.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -7530,7 +7665,7 @@ window.packages =
         "name": "labzero/elm-google-geocoding",
         "summary": "Elm interface to the Google Geocoding API",
         "tags": [
-            "sciences/geography",
+            "sciences/geodesy",
             "networking/integrations"
         ],
         "version": "5.0.0"
@@ -7652,6 +7787,15 @@ window.packages =
             "data/visualisation"
         ],
         "version": "1.0.1"
+    },
+    {
+        "license": "MIT",
+        "name": "leojpod/elm-jwt",
+        "summary": "Decode, encode, verify JSON web tokens",
+        "tags": [
+            "security/auth"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "MIT",
@@ -7881,6 +8025,15 @@ window.packages =
         "version": "2.0.0"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "marcelmorgan/domino-ui",
+        "summary": "Domino Game",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "license": "MIT",
         "name": "marcosh/elm-html-to-unicode",
         "summary": "elm library to escape and unescape html",
@@ -7923,7 +8076,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.1"
+        "version": "3.0.0"
     },
     {
         "license": "MIT",
@@ -8021,7 +8174,7 @@ window.packages =
         "summary": "Decode GeoJSON (RFC 7946) into an Elm data structure",
         "tags": [
             "data/formats",
-            "sciences/geography",
+            "sciences/geodesy",
             "ui/maps"
         ],
         "version": "2.0.1"
@@ -8197,7 +8350,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "3.0.0"
+        "version": "3.1.1"
     },
     {
         "license": "MIT",
@@ -8760,7 +8913,7 @@ window.packages =
         "tags": [
             "networking/websockets"
         ],
-        "version": "3.3.0"
+        "version": "3.4.2"
     },
     {
         "license": "BSD-3-Clause",
@@ -8978,7 +9131,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.2"
+        "version": "1.0.4"
     },
     {
         "license": "BSD-3-Clause",
@@ -8987,7 +9140,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.1.1"
+        "version": "2.0.1"
     },
     {
         "license": "MIT",
@@ -9311,7 +9464,7 @@ window.packages =
         "name": "rsignavong/elm-leaflet-map",
         "summary": "An Elm wrapper for the Leaflet map",
         "tags": [
-            "sciences/geography",
+            "sciences/geodesy",
             "ui/maps"
         ],
         "version": "4.1.0"
@@ -9403,11 +9556,11 @@ window.packages =
     {
         "license": "BSD-3-Clause",
         "name": "ryannhg/elm-spa",
-        "summary": "a way to build single page apps with Elm",
+        "summary": "Single page apps made easy.",
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "4.1.1"
+        "version": "5.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -9516,7 +9669,7 @@ window.packages =
             "ui/frameworks",
             "ui/patterns"
         ],
-        "version": "3.0.0"
+        "version": "4.0.0"
     },
     {
         "license": "MIT",
@@ -9647,6 +9800,15 @@ window.packages =
     },
     {
         "license": "MIT",
+        "name": "sli/loadingstate",
+        "summary": "A type for tracking the state of a loading resource.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
         "name": "smucode/elm-flat-colors",
         "summary": "🎨 280 handpicked colors in 14 palettes for Elm UI, elm/html and others",
         "tags": [
@@ -9681,7 +9843,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.4"
+        "version": "1.0.5"
     },
     {
         "license": "MIT",
@@ -9881,7 +10043,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "version": "7.0.1"
+        "version": "7.1.1"
     },
     {
         "license": "MIT",
@@ -10742,7 +10904,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "9.0.1"
+        "version": "9.0.2"
     },
     {
         "license": "Apache-2.0",
@@ -10797,6 +10959,15 @@ window.packages =
             "data/time"
         ],
         "version": "1.1.0"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "wasdacraic/elm-tree-layout",
+        "summary": "Implements Buchheim, Junger and Leipert's tree layout algorithm",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
     },
     {
         "license": "BSD-3-Clause",
@@ -10927,6 +11098,15 @@ window.packages =
         "version": "1.0.1"
     },
     {
+        "license": "MIT",
+        "name": "wroge/elm-geodesy",
+        "summary": "Coordinate conversions and transformations",
+        "tags": [
+            "sciences/geodesy"
+        ],
+        "version": "1.0.1"
+    },
+    {
         "license": "Apache-2.0",
         "name": "wsowens/term",
         "summary": "A terminal emulator with ANSI escape code parsing",
@@ -10997,7 +11177,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
