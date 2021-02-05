@@ -3516,7 +3516,7 @@ window.packages =
         "name": "arowM/elm-form-validator",
         "summary": "This module provides a scalable way to validate a form.",
         "tags": [
-            "ui/validation"
+            "uncat/excluded"
         ],
         "version": "2.1.2"
     },
