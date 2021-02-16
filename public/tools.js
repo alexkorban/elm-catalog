@@ -411,6 +411,16 @@ window.tools =
     ]
 },
 {
+    "name": "elm-tailwind-modules",
+    "githubName": "matheus23/elm-tailwind-modules",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-tailwind-modules",
+    "summary": "Generate Elm code for Tailwind Utilities and Components, with unused code removed by Elm's --optimize",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "elm-format",
     "githubName": "avh4/elm-format",
     "url": null,
