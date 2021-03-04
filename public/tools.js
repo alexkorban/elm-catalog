@@ -754,8 +754,18 @@ window.tools =
     "name": "Elm License Finder",
     "githubName": "wolfadex/elm-license-finder",
     "url": null,
-    "packageUrl": "https://www.npmjs.com/package/elm-license-finder",
+    "packageUrl": "https://www.npmjs.com/package/elm-license-checker",
     "summary": "Display licence details for direct and indirect dependencies",
+    "tags": [
+        "information"
+    ]
+},
+{
+    "name": "Elm License Checker",
+    "githubName": "kakkun61/elm-license-checker",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-license-finder",
+    "summary": "Display licence details for dependencies similarly to NPM License Checker",
     "tags": [
         "information"
     ]
