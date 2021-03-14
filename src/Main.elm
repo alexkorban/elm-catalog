@@ -398,6 +398,9 @@ humanisePkgSubcat subcat =
         "dev/testing" ->
             "Testing"
 
+        "dev/type-level" ->
+            "Type-level metaprogramming"
+
         "dev/utils" ->
             "Utils"
 
@@ -460,6 +463,9 @@ humanisePkgSubcat subcat =
 
         "sciences/physics" ->
             "Physics"
+
+        "sciences/quantum-computing" ->
+            "Quantum computing"
 
         "sciences/statistics" ->
             "Statistics"
