@@ -64,6 +64,7 @@ window.packages =
         "summary": "Encode and decode JSON values",
         "tags": [
             "data/formats",
+            "data/formats:json",
             "stl/stl"
         ],
         "version": "1.1.3"
@@ -402,7 +403,7 @@ window.packages =
         "name": "BrianHicks/elm-csv",
         "summary": "Decode CSV in the most boring way possible.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "3.0.2"
     },
@@ -1097,7 +1098,7 @@ window.packages =
         "name": "noahzgordon/elm-jsonapi",
         "summary": "Decoders and helper functions for working with JSONAPI payloads",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "3.0.1"
     },
@@ -1160,7 +1161,7 @@ window.packages =
         "name": "1602/json-schema",
         "summary": "JSON Schema for elm",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "4.1.1"
     },
@@ -1169,7 +1170,7 @@ window.packages =
         "name": "1602/json-value",
         "summary": "Reading and manipulation with json values",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "3.0.1"
     },
@@ -1707,7 +1708,7 @@ window.packages =
         "name": "FabienHenon/jsonapi",
         "summary": "JsonAPI decoder and encoder functions",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "2.3.1"
     },
@@ -2144,7 +2145,7 @@ window.packages =
         "name": "MackeyRMS/json-decode-attempt",
         "summary": "Decode JSON in a way that can both fallback and report errors",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -2344,7 +2345,7 @@ window.packages =
         "name": "NoRedInk/elm-json-decode-pipeline",
         "summary": "Use pipelines to build JSON Decoders.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -2545,7 +2546,7 @@ window.packages =
         "name": "Orasund/elm-jsonstore",
         "summary": "DEPRECATED: Use IzumiSy/elm-firestore instead",
         "tags": [
-            "networking/integrations"
+            "uncat/excluded"
         ],
         "version": "2.0.1"
     },
@@ -2626,7 +2627,7 @@ window.packages =
         "name": "PaackEng/elm-ui-dialog",
         "summary": "Encode and decode JSON values",
         "tags": [
-            "ui/patterns"
+            "ui/patterns", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -2926,7 +2927,7 @@ window.packages =
         "name": "ThinkAlexandria/elm-pretty-print-json",
         "summary": "Pretty print JSON with nesting indents into a String",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.1"
     },
@@ -3370,7 +3371,7 @@ window.packages =
         "name": "allenap/elm-json-decode-broken",
         "summary": "Decode broken JSON",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "3.0.2"
     },
@@ -4407,7 +4408,7 @@ window.packages =
         "name": "calions-app/jsonapi-http",
         "summary": "Make HTTP requests with jsonapi decoding/encoding in Elm",
         "tags": [
-            "networking/http"
+            "networking/http", "data/formats:json"
         ],
         "version": "1.4.1"
     },
@@ -4416,7 +4417,7 @@ window.packages =
         "name": "calions-app/jsonapi-http-retry",
         "summary": "Retry failed jsonapi requests with policies",
         "tags": [
-            "networking/integrations"
+            "networking/integrations", "data/formats:json"
         ],
         "version": "2.0.0"
     },
@@ -4815,7 +4816,7 @@ window.packages =
         "name": "commonmind/elm-csv-encode",
         "summary": "Encode CSV files",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "1.0.1"
     },
@@ -4824,7 +4825,7 @@ window.packages =
         "name": "correl/elm-paginated",
         "summary": "A library for fetching data from paginated JSON REST APIs.",
         "tags": [
-            "networking/integrations"
+            "networking/integrations", "data/formats:json"
         ],
         "version": "4.0.0"
     },
@@ -5109,7 +5110,7 @@ window.packages =
         "name": "dillonkearns/elm-ts-json",
         "summary": "JSON Encoders and Decoders with TypeScript type information.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.1.0"
     },
@@ -5370,7 +5371,7 @@ window.packages =
         "name": "eike/json-decode-complete",
         "summary": "Decode JSON objects making sure that all fields are handled by your Elm code.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.1"
     },
@@ -5442,7 +5443,7 @@ window.packages =
         "name": "elm-community/intdict",
         "summary": "Optimized dictionary specialization for Integers. Mirrors the dictionary API.",
         "tags": [
-            "dev/algorithms"
+            "dev/algorithms", "dev/performance"
         ],
         "version": "3.0.0"
     },
@@ -5452,7 +5453,8 @@ window.packages =
         "summary": "Convenience functions for working with JSON",
         "tags": [
             "dev/algorithms",
-            "data/formats"
+            "data/formats", 
+            "data/formats:json"
         ],
         "version": "4.3.0"
     },
@@ -5642,7 +5644,7 @@ window.packages =
         "name": "ericgj/elm-csv-decode",
         "summary": "Decode CSV records to types",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "2.0.1"
     },
@@ -5743,7 +5745,7 @@ window.packages =
         "name": "f0i/debug-to-json",
         "summary": "Pretty printer and to JSON converter for Debug.toString output",
         "tags": [
-            "dev/debugging"
+            "dev/debugging", "data/formats:json"
         ],
         "version": "1.0.6"
     },
@@ -5833,7 +5835,7 @@ window.packages =
         "name": "fifth-postulate/elm-csv-decode",
         "summary": "Decode CSV just like you decode JSON.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "1.0.0"
     },
@@ -5914,7 +5916,7 @@ window.packages =
         "name": "folkertdev/elm-int64",
         "summary": "Efficient 64-bit (unsigned) integer",
         "tags": [
-            "dev/algorithms"
+            "dev/algorithms", "dev/performance"
         ],
         "version": "1.0.0"
     },
@@ -6080,7 +6082,7 @@ window.packages =
         "name": "fujiy/elm-json-convert",
         "summary": "Writing JSON encoder and decoder at once",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -7477,7 +7479,7 @@ window.packages =
         "name": "jonoabroad/commatosed",
         "summary": "A CSV parser based on RFC-4180",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "1.0.0"
     },
@@ -7549,7 +7551,7 @@ window.packages =
         "name": "json-tools/json-schema",
         "summary": "JSON Schema for elm",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.2"
     },
@@ -7799,7 +7801,7 @@ window.packages =
         "name": "klazuka/elm-json-tree-view",
         "summary": "Shows JSON data as an expandable HTML tree",
         "tags": [
-            "ui/patterns"
+            "ui/patterns", "data/formats:json"
         ],
         "version": "2.1.0"
     },
@@ -7880,7 +7882,7 @@ window.packages =
         "name": "ktonon/elm-jsonwebtoken",
         "summary": "JSON Web Token encoder and decoder (JWT)",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.4"
     },
@@ -8035,7 +8037,7 @@ window.packages =
         "name": "lattyware/elm-json-diff",
         "summary": "Compute JSON patches by comparing two JSON values.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -8044,7 +8046,7 @@ window.packages =
         "name": "lauber00/elm-int64",
         "summary": "Efficient 64-bit (unsigned) integer",
         "tags": [
-            "dev/algorithms"
+            "dev/algorithms", "dev/performance"
         ],
         "version": "1.2.4"
     },
@@ -8135,7 +8137,7 @@ window.packages =
         "name": "leojpod/elm-jwt",
         "summary": "Decode, encode, verify JSON web tokens",
         "tags": [
-            "security/auth"
+            "security/auth", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -8234,7 +8236,7 @@ window.packages =
         "name": "lovasoa/elm-csv",
         "summary": "A CSV parser.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "1.1.7"
     },
@@ -8353,7 +8355,7 @@ window.packages =
         "name": "malinoff/elm-jwt",
         "summary": "Decode, encode, verify JSON web tokens",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -8526,7 +8528,8 @@ window.packages =
         "tags": [
             "data/formats",
             "sciences/geodesy",
-            "ui/maps"
+            "ui/maps", 
+            "data/formats:json"
         ],
         "version": "2.0.1"
     },
@@ -8617,7 +8620,8 @@ window.packages =
         "summary": "Build JSON encoders and decoders with minimal boilerplate",
         "tags": [
             "data/formats",
-            "dev/code-organisation"
+            "dev/code-organisation",
+            "data/formats:json"
         ],
         "version": "2.0.0"
     },
@@ -8880,7 +8884,8 @@ window.packages =
         "summary": "Generate validating forms from JSON schemas.",
         "tags": [
             "ui/patterns",
-            "data/formats"
+            "data/formats",
+            "data/formats:json"
         ],
         "version": "3.0.0"
     },
@@ -8953,7 +8958,7 @@ window.packages =
         "name": "norpan/elm-json-patch",
         "summary": "JSON Patch implementation",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.1"
     },
@@ -9243,7 +9248,7 @@ window.packages =
         "name": "periodic/elm-csv",
         "summary": "Parse CSV strings",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "2.0.1"
     },
@@ -9270,7 +9275,7 @@ window.packages =
         "name": "peterszerzo/elm-json-tree-view",
         "summary": "Shows JSON data as an expandable HTML tree",
         "tags": [
-            "ui/patterns"
+            "ui/patterns", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -9461,7 +9466,7 @@ window.packages =
         "name": "prozacchiwawa/elm-json-codec",
         "summary": "A library for composing json encoders and decoders simultaneously in elm",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "3.3.1"
     },
@@ -10026,7 +10031,7 @@ window.packages =
         "name": "samuelstevens/elm-csv",
         "summary": "Parse CSV files according to RFC 4180",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:csv"
         ],
         "version": "1.0.1"
     },
@@ -10538,7 +10543,7 @@ window.packages =
         "name": "the-sett/decode-generic",
         "summary": "Generic JSON decoder.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -10701,7 +10706,7 @@ window.packages =
         "name": "the-sett/json-optional",
         "summary": "Helpers for working with optional fields in JSON.",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -11334,7 +11339,7 @@ window.packages =
         "name": "vjrasane/elm-dynamic-json",
         "summary": "Dynamic JSON decoding",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -11425,7 +11430,7 @@ window.packages =
         "name": "webbhuset/elm-json-decode",
         "summary": "Decode JSON objects using chained functions (continuation style).",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "1.1.0"
     },
@@ -11817,7 +11822,7 @@ window.packages =
         "name": "zwilias/json-decode-exploration",
         "summary": "JSON decoding with warnings and usage tracking",
         "tags": [
-            "data/formats"
+            "data/formats", "data/formats:json"
         ],
         "version": "6.0.0"
     }

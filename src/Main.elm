@@ -359,6 +359,12 @@ humanisePkgSubcat subcat =
         "data/formats" ->
             "Formats"
 
+        "data/formats:csv" ->
+            "CSV"
+
+        "data/formats:json" ->
+            "JSON"
+
         "data/random" ->
             "Randomness"
 
