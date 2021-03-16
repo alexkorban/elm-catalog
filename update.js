@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 const Fs = require("fs-extra")
+const { Octokit } = require("@octokit/core")
+const Promise = require("bluebird")
 const R = require("ramda")
 const { spawn } = require("cross-spawn")
 const stringify = require("json-stable-stringify")
@@ -36,7 +38,39 @@ const merge = (package) => {
         return R.mergeRight({tags: ["uncat/new"]}, package)
 }
 
-// Overwrites the existing file!
-Fs.writeFileSync("public/tagged-packages.js", "window.packages = \n" + stringify(R.map(merge, newPackages), {space: 4}))
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN,
+})
 
-console.log("Done!")
+const pkgParentPromise = (pkg) => {
+    if (!R.isNil(process.env.GITHUB_TOKEN) && !R.includes("uncat/deleted", pkg.tags)) {
+        console.log("Getting repo info for " + pkg.name)
+        return octokit.request("GET /repos/" + pkg.name).then((res) => {
+            return R.mergeLeft(pkg, {forkOf: R.defaultTo(null, R.path(["data", "parent", "full_name"], res))})
+        }).catch((error) => {
+            console.error(`Error while getting repo info for ${pkg.name}: `, error.message)
+            if (error.message == "Not Found")
+                return R.evolve({tags: R.append("uncat/deleted")}, pkg)
+            else 
+                return pkg  // the package object shouldn't have a forkOf property 
+                            // if we failed to retrieve repo info
+        }) 
+    }
+    else 
+        return Promise.resolve(pkg)
+}
+
+
+Promise.map(R.map(merge, newPackages), (pkg) => {
+    return R.has("forkOf", pkg) ? Promise.resolve(pkg) : pkgParentPromise(pkg)
+}, {concurrency: 3})
+.then((updatedPackages) => {
+    // Overwrites the existing file!
+    Fs.writeFileSync("public/tagged-packages.js", "window.packages = \n" + stringify(updatedPackages, {space: 4}))
+
+    console.log("Done!")
+})
+.catch((error) => {
+    console.error("Error while getting repos: ", error.message)
+    console.log(error.stack)
+})

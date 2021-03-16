@@ -7,6 +7,8 @@
   "author": "Alex Korban (https://korban.net/elm)",
   "license": "All rights reserved",
   "dependencies": {
+    "@octokit/core": "^3.3.1",
+    "bluebird": "^3.7.2",
     "cross-spawn": "^6.0.5",
     "fs-extra": "^7.0.0",
     "json-stable-stringify": "^1.0.1",
@@ -14,9 +16,10 @@
   },
   "scripts": {
     "compile": "elm make src/Main.elm --optimize --output elm-max.js",
+    "dev": "elm-live src/Main.elm -u --dir ./public -- --debug --output public/elm.js",
     "minify": "terser elm-max.js --compress 'pure_funcs=\"F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9\",pure_getters,keep_fargs=false,unsafe_comps,unsafe' | terser --mangle --output=public/elm.js",
-    "update": "node update.js && terser --compress --output public/tagged-packages.js public/tagged-packages.js",
-    "netlify-build": "npm i elm@latest-0.19.1 && npm i terser && npm run compile && npm run minify && npm run update && rm public/index.html",
-    "dev": "elm-live src/Main.elm -u --dir ./public -- --debug --output public/elm.js"
+    "netlify-update": "node update.js && terser --compress --output public/tagged-packages.js public/tagged-packages.js",
+    "netlify-build": "npm i elm@latest-0.19.1 && npm i terser && npm run compile && npm run minify && npm run netlify-update && rm public/index.html",
+    "update": "export GITHUB_TOKEN=`security find-generic-password -a ${USER} -s \"GitHub PAK - Elm Catalog\" -w`; node update.js"
   }
 }

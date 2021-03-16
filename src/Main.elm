@@ -88,7 +88,8 @@ type alias Model =
 
 
 type alias Package =
-    { name : PackageName
+    { forkOf : Maybe PackageName
+    , name : PackageName
     , summary : String
     , license : String
     , version : String
@@ -557,6 +558,9 @@ humanisePkgSubcat subcat =
         "ui/webvr" ->
             "WebVR"
 
+        "uncat/deleted" ->
+            "Deleted from GitHub"
+
         "uncat/excluded" ->
             "Excluded"
 
@@ -718,6 +722,9 @@ init flags url navKey =
                 |> List.map
                     (\pkg ->
                         case List.head pkg.tags of
+                            Just "uncat/deleted" ->
+                                0
+
                             Just "uncat/excluded" ->
                                 0
 
@@ -927,6 +934,18 @@ navigationMenuPanel model =
 packageCard : Model -> Package -> Element Msg
 packageCard model package =
     let
+        forkEls =
+            case package.forkOf of
+                Nothing ->
+                    [ none ]
+
+                Just forkName ->
+                    [ text "•"
+                    , text "Fork of"
+                    , link [ padding 3, Border.rounded 3, Background.color burntOrange, Font.color white ]
+                        { url = "https://package.elm-lang.org/packages/" ++ forkName ++ "/latest/", label = paragraph [] [ text forkName ] }
+                    ]
+
         readme =
             Maybe.withDefault { isOpen = False, text = "" } <| Dict.get package.name model.readmes
     in
@@ -967,7 +986,7 @@ packageCard model package =
             , width fill
             ]
             none
-        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ]
+        , wrappedRow [ width fill, spacingXY 5 10, Font.size 14, Font.color lightCharcoal ] <|
             [ text <| "v" ++ package.version
             , text "•"
             , link [ Font.color lightBlue ] { url = "https://github.com/" ++ package.name, label = text "Source" }
@@ -975,18 +994,20 @@ packageCard model package =
             , link [ Font.color lightBlue ] { url = "https://elm-greenwood.com/?" ++ String.replace "/" "=" package.name, label = text "Releases" }
             , text "•"
             , link [ Font.color lightBlue ] { url = "https://opensource.org/licenses/" ++ package.license, label = text package.license }
-            , text "•"
-            , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton package.name, pointer ] <|
-                text
-                    ("README "
-                        ++ (if readme.isOpen then
-                                "▲"
-
-                            else
-                                "▽"
-                           )
-                    )
             ]
+                ++ forkEls
+                ++ [ text "•"
+                   , el [ Font.color lightBlue, onClick <| UserClickedReadmeButton package.name, pointer ] <|
+                        text
+                            ("README "
+                                ++ (if readme.isOpen then
+                                        "▲"
+
+                                    else
+                                        "▽"
+                                   )
+                            )
+                   ]
         , if readme.isOpen then
             markdown readme.text
 

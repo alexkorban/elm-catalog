@@ -24,7 +24,7 @@
             Elm.Cards.init() 
             : 
             Elm.Main.init({flags: 
-                { packages: window.packages, 
+                { packages: window.packages.map((pkg) => pkg.hasOwnProperty("forkOf") ? pkg : Object.assign(pkg, {forkOf: null})), 
                   tools: window.tools, 
                   urlPrefix: "",
                   windowHeight: window.innerHeight, 
