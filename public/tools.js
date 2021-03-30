@@ -201,6 +201,16 @@ window.tools =
     ]
 },
 {
+    "name": "jaredramirez/elm-constants",
+    "githubName": "jaredramirez/elm-constants",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-constants",
+    "summary": "Generate an Elm file of environment variables based on a config file",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
     "name": "Haskell elm-bridge",
     "githubName": "agrafix/elm-bridge",
     "url": null,
@@ -281,11 +291,11 @@ window.tools =
     ]
 },
 {
-    "name": "elm-typescript-interop",
-    "githubName": "dillonkearns/elm-typescript-interop",
+    "name": "elm-ts-interop",
+    "githubName": "dillonkearns/elm-ts-json",
     "url": null,
-    "packageUrl": "https://www.npmjs.com/package/elm-typescript-interop",
-    "summary": "Generate TypeScript type declaration files for Elm ports",
+    "packageUrl": "https://www.npmjs.com/package/elm-ts-interop",
+    "summary": "Build up Encoders/Decoders with well-defined TypeScript types",
     "tags": [
         "code-generation", "typescript"
     ]
@@ -824,6 +834,16 @@ window.tools =
     "name": "elm-test-rs",
     "githubName": "mpizenberg/elm-test-rs",
     "url": null,
+    "packageUrl": null,
+    "summary": "Reduce crashing programs to produce as SSCCE",
+    "tags": [
+        "testing"
+    ]
+},
+{
+    "name": "elm-reduce",
+    "githubName": "matheus23",
+    "url": "https://gitlab.com/matheus23/elm-reduce",
     "packageUrl": null,
     "summary": "An alternative test runner to elm-test that can capture Debug.log calls and lets you filter tests",
     "tags": [
