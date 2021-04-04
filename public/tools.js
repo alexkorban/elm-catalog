@@ -77,7 +77,17 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/node-elm-compiler",
     "summary": "Wraps the Elm compiler and exposes a Node API to compile Elm 0.19 sources",
     "tags": [
-        "build"
+        "build", "node"
+    ]
+},
+{
+    "name": "elm-node",
+    "githubName": "joakin/elm-node",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-node",
+    "summary": "A Node.js CLI tool for easily running your Elm code",
+    "tags": [
+        "node"
     ]
 },
 {

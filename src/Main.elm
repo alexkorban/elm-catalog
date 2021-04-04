@@ -616,6 +616,9 @@ humaniseToolCat cat =
         "information" ->
             "Information"
 
+        "node" ->
+            "Node"
+
         "optimisation" ->
             "Optimisation"
 
