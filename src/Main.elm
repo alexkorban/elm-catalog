@@ -608,7 +608,7 @@ humaniseToolCat cat =
             "Electron"
 
         "haskell" ->
-            "Haskell packages"
+            "Haskell"
 
         "i18n" ->
             "Internationalisation"
@@ -630,6 +630,9 @@ humaniseToolCat cat =
 
         "react" ->
             "React"
+
+        "rescript" ->
+            "ReScript"
 
         "testing" ->
             "Testing"

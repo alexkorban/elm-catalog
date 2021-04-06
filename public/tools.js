@@ -91,6 +91,16 @@ window.tools =
     ]
 },
 {
+    "name": "res-elm",
+    "githubName": "",
+    "url": "https://gitlab.com/eleanorofs/res-elm/",
+    "packageUrl": "https://www.npmjs.com/package/res-elm",
+    "summary": "Interoperation between Elm and ReScript via ports",
+    "tags": [
+        "rescript"
+    ]
+},
+{
     "name": "snowpack-plugin-elm",
     "githubName": "marc136/snowpack-plugin-elm",
     "url": null,
@@ -726,6 +736,16 @@ window.tools =
     "url": null,
     "packageUrl": "http://hackage.haskell.org/package/elm-export",
     "summary": "Generate Elm source code automatically from Haskell types",
+    "tags": [
+        "code-generation", "haskell"
+    ]
+},
+{
+    "name": "IHP",
+    "githubName": "digitallyinduced/ihp",
+    "url": "https://ihp.digitallyinduced.com/Guide/elm.html",
+    "packageUrl": null,
+    "summary": "Haskell web framework with live reload and support for Elm",
     "tags": [
         "code-generation", "haskell"
     ]
