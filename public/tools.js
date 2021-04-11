@@ -191,11 +191,11 @@ window.tools =
     ]
 },
 {
-    "name": "JSON2Elm",
-    "githubName": "eeue56/json-to-elm",
-    "url": "http://json2elm.com",
-    "packageUrl": null,
-    "summary": "Create Elm type aliases and decoders based on JSON input",
+    "name": "elm-auto-encoder-decoder",
+    "githubName": "choonkeat/elm-auto-encoder-decoder",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-auto-encoder-decoder",
+    "summary": "Generate JSON encoders and decoders from Elm types",
     "tags": [
         "code-generation"
     ]
