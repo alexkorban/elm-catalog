@@ -61,16 +61,6 @@ window.tools =
     ]
 },
 {
-    "name": "elm-fullstack",
-    "githubName": "choonkeat/elm-fullstack",
-    "url": null,
-    "packageUrl": "https://www.npmjs.com/package/elm-fullstack",
-    "summary": "A setup for writing HTTP-based, client-server apps in Elm, inspired by Lamdera",
-    "tags": [
-        "build"
-    ]
-},
-{
     "name": "node-elm-compiler",
     "githubName": "rtfeldman/node-elm-compiler",
     "url": null,
@@ -197,7 +187,27 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/elm-auto-encoder-decoder",
     "summary": "Generate JSON encoders and decoders from Elm types",
     "tags": [
+        "code-generation", "json"
+    ]
+},
+{
+    "name": "elm-webapp",
+    "githubName": "choonkeat/elm-webapp",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-webapp",
+    "summary": "A setup for writing HTTP-based, client-server apps in Elm, inspired by Lamdera",
+    "tags": [
         "code-generation"
+    ]
+},
+{
+    "name": "json-schema-to-elm",
+    "githubName": "dragonwasrobot/json-schema-to-elm",
+    "url": null,
+    "packageUrl": null,
+    "summary": "Generates Elm types, JSON decoders, JSON encoders, and Fuzz tests from JSON schema specifications",
+    "tags": [
+        "code-generation", "json"
     ]
 },
 {
@@ -247,7 +257,7 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/elm-enums",
     "summary": "Command line tool to auto-generate custom types for Elm with accompanying JSON encoders/decoders from a file of enum definitions",
     "tags": [
-        "code-generation"
+        "code-generation", "json"
     ]
 },
 {
@@ -446,6 +456,26 @@ window.tools =
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/elm-tailwind-modules",
     "summary": "Generate Elm code for Tailwind Utilities and Components, with unused code removed by Elm's --optimize",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "elm-new",
+    "githubName": "simonewebdesign/elm-new",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-new",
+    "summary": "Generate several types of project scaffolds from the command line",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "setem",
+    "githubName": "ymtszw/setem",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/setem",
+    "summary": "Generate all possible record setters from your Elm source files into a single module",
     "tags": [
         "code-generation"
     ]
@@ -697,7 +727,7 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/decgen",
     "summary": "Builds JSON decoders and encoders for your Elm types",
     "tags": [
-        "code-generation"
+        "code-generation", "json"
     ]
 },
 {
@@ -717,7 +747,7 @@ window.tools =
     "packageUrl": "http://hackage.haskell.org/package/haskell-to-elm",
     "summary": "Generate Elm types and JSON encoders and decoders from Haskell types",
     "tags": [
-        "code-generation", "haskell"
+        "code-generation", "haskell", "json"
     ]
 },
 {
@@ -766,6 +796,16 @@ window.tools =
     "url": "https://pd-andy.github.io/elm-record-helpers/",
     "packageUrl": null,
     "summary": "Automatically generate helper functions for working with records",
+    "tags": [
+        "code-generation"
+    ]
+},
+{
+    "name": "svg2elm",
+    "githubName": "pinata-llc/svg2elm",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/svg2elm",
+    "summary": "Generate Elm modules out of SVG files",
     "tags": [
         "code-generation"
     ]
@@ -881,6 +921,26 @@ window.tools =
     ]
 },
 {
+    "name": "elm-spec-runner",
+    "githubName": "brian-watkins/elm-spec",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-spec-runner",
+    "summary": "Run elm-spec suites from the command line",
+    "tags": [
+        "testing"
+    ]
+},
+{
+    "name": "karma-elm-spec-framework",
+    "githubName": "brian-watkins/elm-spec",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/karma-elm-spec-framework",
+    "summary": "A plugin for Karma that allows you to run specs created with elm-spec",
+    "tags": [
+        "testing"
+    ]
+},
+{
     "name": "elm-doc-preview",
     "githubName": "dmy/elm-doc-preview",
     "url": "https://elm-doc-preview.netlify.com/",
@@ -959,6 +1019,15 @@ window.tools =
     "tags": [
         "react"
     ]
+},
+{
+    "name": "laravel-elm",
+    "githubName": "tighten/laravel-elm",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/laravel-elm",
+    "summary": "Render multiple elm programs inside a Laravel application",
+    "tags": [
+        "laravel"
+    ]
 }
-
 ]

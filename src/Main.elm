@@ -616,6 +616,12 @@ humaniseToolCat cat =
         "information" ->
             "Information"
 
+        "json" ->
+            "JSON decoding/encoding"
+
+        "laravel" ->
+            "Laravel"
+
         "node" ->
             "Node"
 
@@ -880,9 +886,9 @@ navBar : Model -> Element Msg
 navBar model =
     row
         [ width fill
-        , height <| px 70
-        , padding 10
+        , height <| px 60
         , spacing 10
+        , paddingEach { left = 10, right = 10, top = 5, bottom = 5 }
         , Background.color panelBgColor
         , Border.widthEach { bottom = 1, top = 0, left = 0, right = 0 }
         , Border.color burntOrange
@@ -894,7 +900,7 @@ navBar model =
                     { url = "https://korban.net/elm/catalog"
                     , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
                     }
-              , el [ padding 10, centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
+              , el [ centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
               ]
             , if isNarrow model.windowSize then
                 [ menuIcon [ onClick UserClickedMenuIcon ] ]
