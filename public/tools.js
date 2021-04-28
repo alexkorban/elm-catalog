@@ -221,6 +221,16 @@ window.tools =
     ]
 },
 {
+    "name": "json2elm",
+    "githubName": "alexkorban",
+    "url": "https://korban.net/elm/json2elm",
+    "packageUrl": null,
+    "summary": "Generate JSON encoders and decoders from a JSON sample",
+    "tags": [
+        "code-generation", "json"
+    ]
+},
+{
     "name": "HTML to Elm",
     "githubName": "mbylstra/html-to-elm",
     "url": "http://mbylstra.github.io/html-to-elm/",
