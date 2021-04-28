@@ -11,6 +11,16 @@ window.tools =
     ]
 },
 {
+    "name": "vite-plugin-elm",
+    "githubName": "hmsk/vite-plugin-elm",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/vite-plugin-elm",
+    "summary": "This plugin enables you to compile an Elm application/document/element on your vite project",
+    "tags": [
+        "build"
+    ]
+},
+{
     "name": "elm-webpack-loader",
     "githubName": "elm-community/elm-webpack-loader",
     "url": null,

@@ -883,7 +883,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.1.2"
+        "version": "2.2.0"
     },
     {
         "forkOf": null,
@@ -997,7 +997,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "8.0.0"
+        "version": "8.0.1"
     },
     {
         "forkOf": null,
@@ -1027,7 +1027,7 @@ window.packages =
         "tags": [
             "sciences/physics"
         ],
-        "version": "2.8.0"
+        "version": "2.9.0"
     },
     {
         "forkOf": null,
@@ -1037,7 +1037,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "3.0.0"
+        "version": "3.2.0"
     },
     {
         "forkOf": null,
@@ -1077,7 +1077,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "3.0.0"
+        "version": "3.1.0"
     },
     {
         "forkOf": null,
@@ -1566,7 +1566,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.1.4"
+        "version": "2.1.5"
     },
     {
         "forkOf": null,
@@ -1626,7 +1626,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "2.0.3"
+        "version": "2.1.3"
     },
     {
         "forkOf": null,
@@ -1797,7 +1797,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.2"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -1849,7 +1849,7 @@ window.packages =
         "tags": [
             "sciences/statistics"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -1859,7 +1859,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "5.0.0"
+        "version": "5.0.1"
     },
     {
         "forkOf": null,
@@ -1963,6 +1963,16 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "7.1.0"
+    },
+    {
+        "forkOf": "mdgriffith/elm-ui",
+        "license": "BSD-3-Clause",
+        "name": "FuJa0815/elm-ui",
+        "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": "rnons/elm-svg-parser",
@@ -2203,7 +2213,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "9.0.0"
+        "version": "10.0.1"
     },
     {
         "forkOf": null,
@@ -2283,7 +2293,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -2477,7 +2487,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.2.4"
+        "version": "1.2.5"
     },
     {
         "forkOf": null,
@@ -2487,7 +2497,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.0.1"
+        "version": "3.0.2"
     },
     {
         "forkOf": null,
@@ -2651,7 +2661,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "9.0.0"
+        "version": "9.0.1"
     },
     {
         "forkOf": "Zinggi/elm-random-general",
@@ -2781,7 +2791,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "12.18.0"
+        "version": "12.18.1"
     },
     {
         "forkOf": "mdgriffith/style-elements",
@@ -2943,7 +2953,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "2.0.0"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -2963,7 +2973,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "3.1.1"
+        "version": "3.2.0"
     },
     {
         "forkOf": null,
@@ -3034,7 +3044,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "28.2.1"
+        "version": "29.0.0"
     },
     {
         "forkOf": null,
@@ -3074,7 +3084,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.3.0"
+        "version": "1.4.0"
     },
     {
         "forkOf": null,
@@ -3132,7 +3142,8 @@ window.packages =
         "name": "StoatPower/elm-wkt",
         "summary": "WKT <-> GeoJSON parser/unparser",
         "tags": [
-            "data/formats", "sciences/geodesy"
+            "data/formats",
+            "sciences/geodesy"
         ],
         "version": "1.0.5"
     },
@@ -3336,6 +3347,16 @@ window.packages =
         "summary": "Blurhash decoder and encoder (https://github.com/woltapp/blurhash).",
         "tags": [
             "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "WhileTruu/elm-one-to-one",
+        "summary": "A data structure for one-to-one mapping between values.",
+        "tags": [
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -3929,7 +3950,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "forkOf": null,
@@ -4055,6 +4076,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "arowM/elm-init-builder",
+        "summary": " ",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.1.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "arowM/elm-mixin",
         "summary": "A brief library for Mixins.",
         "tags": [
@@ -4091,6 +4122,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "1.0.7"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "arowM/elm-update-builder",
+        "summary": " ",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.1.1"
     },
     {
         "forkOf": null,
@@ -5444,7 +5485,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "1.0.1"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -5855,6 +5896,16 @@ window.packages =
             "data/formats"
         ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "dkodaj/rte",
+        "summary": "Rich text editor for relatively short texts",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.1.8"
     },
     {
         "forkOf": null,
@@ -6371,7 +6422,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "2.0.2"
+        "version": "2.0.3"
     },
     {
         "forkOf": null,
@@ -6935,6 +6986,26 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "forkOf": null,
+        "license": "GPL-3.0",
+        "name": "garados007/component",
+        "summary": "A library with helper functions to create components",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "GPL-3.0",
+        "name": "garados007/triple",
+        "summary": "A small library for special triple support",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "forkOf": "pukkamustard/elm-identicon",
         "license": "MIT",
         "name": "gdamjan/elm-identicon",
@@ -7102,7 +7173,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "version": "1.0.3"
+        "version": "1.0.4"
     },
     {
         "forkOf": null,
@@ -7112,7 +7183,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "1.4.3"
+        "version": "1.5.0"
     },
     {
         "forkOf": null,
@@ -7143,7 +7214,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "5.7.0"
+        "version": "5.7.1"
     },
     {
         "forkOf": null,
@@ -7163,7 +7234,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.5.0"
+        "version": "1.6.0"
     },
     {
         "forkOf": null,
@@ -7415,7 +7486,7 @@ window.packages =
         "tags": [
             "data/text"
         ],
-        "version": "4.0.0"
+        "version": "5.1.1"
     },
     {
         "forkOf": null,
@@ -7625,7 +7696,7 @@ window.packages =
         "tags": [
             "ui/icons"
         ],
-        "version": "7.0.0"
+        "version": "8.0.0"
     },
     {
         "forkOf": null,
@@ -8030,7 +8101,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.4.0"
+        "version": "2.4.2"
     },
     {
         "forkOf": null,
@@ -8085,6 +8156,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-simplify",
+        "summary": "Provides elm-review rules to simplify Elm code",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.2"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "jfmengels/elm-review-test-values",
         "summary": "Provides elm-review rules to find misuses of test-only values",
         "tags": [
@@ -8110,7 +8191,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.1.8"
+        "version": "1.1.9"
     },
     {
         "forkOf": null,
@@ -8791,7 +8872,7 @@ window.packages =
         "tags": [
             "dev/prototyping"
         ],
-        "version": "8.1.0"
+        "version": "9.0.0"
     },
     {
         "forkOf": null,
@@ -9074,7 +9155,8 @@ window.packages =
         "name": "langyu-app/elm-ancillary-json",
         "summary": "Convenience functions not included in elm-community/json-extra",
         "tags": [
-            "data/formats:json", "data/formats"
+            "data/formats:json",
+            "data/formats"
         ],
         "version": "1.0.0"
     },
@@ -9433,7 +9515,7 @@ window.packages =
         "tags": [
             "dev/type-level"
         ],
-        "version": "5.0.3"
+        "version": "7.0.0"
     },
     {
         "forkOf": null,
@@ -9443,7 +9525,17 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-typed-value",
+        "summary": "better 1-constructor types",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "5.0.0"
     },
     {
         "forkOf": null,
@@ -9603,7 +9695,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "1.0.0"
+        "version": "2.0.1"
     },
     {
         "forkOf": "passiomatic/elm-figma-api",
@@ -9623,7 +9715,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "3.0.2"
+        "version": "3.0.3"
     },
     {
         "forkOf": null,
@@ -9693,7 +9785,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "4.0.1"
+        "version": "5.0.0"
     },
     {
         "forkOf": null,
@@ -10274,6 +10366,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "MIT",
+        "name": "ntreu14/elm-stack",
+        "summary": "A simple implementation of a stack data structure in Elm",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "oaalto/time-values",
         "summary": "Functions from/to time values to their sencond/minute/hour... parts.",
@@ -10311,6 +10413,16 @@ window.packages =
             "ui/validation"
         ],
         "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "Apache-2.0",
+        "name": "odf/elm-mesh",
+        "summary": "Indexed mesh data structure with arbitrary face sizes",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.2.2"
     },
     {
         "forkOf": null,
@@ -10658,6 +10770,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "phollyer/elm-cursor",
+        "summary": "A package to simplify selecting the cursor being used in your UI",
+        "tags": [
+            "ui/css", "ui/elm-ui"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "phollyer/elm-phoenix-websocket",
         "summary": "A websocket client for use with the Elixir Phoenix framework.",
         "tags": [
@@ -10673,7 +10795,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "3.0.0"
+        "version": "3.0.1"
     },
     {
         "forkOf": "romstad/elm-chess",
@@ -10844,7 +10966,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.3"
+        "version": "1.0.5"
     },
     {
         "forkOf": null,
@@ -10875,7 +10997,7 @@ window.packages =
             "dev/algorithms",
             "sciences/maths"
         ],
-        "version": "2.1.1"
+        "version": "2.1.2"
     },
     {
         "forkOf": null,
@@ -11007,6 +11129,16 @@ window.packages =
             "data/time"
         ],
         "version": "1.0.2"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "riskbook/number-to-words",
+        "summary": "Package contains some util methods for converting numbers into words.",
+        "tags": [
+            "data/text"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": "NoRedInk/elm-sortable-table",
@@ -11398,11 +11530,11 @@ window.packages =
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "ryannhg/elm-spa",
-        "summary": "Single page apps made easy.",
+        "summary": "single page apps made easy.",
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "5.3.0"
+        "version": "6.0.0"
     },
     {
         "forkOf": null,
@@ -11524,7 +11656,7 @@ window.packages =
             "ui/frameworks",
             "ui/patterns"
         ],
-        "version": "4.0.0"
+        "version": "7.0.0"
     },
     {
         "forkOf": null,
@@ -11994,6 +12126,25 @@ window.packages =
         "version": "1.1.0"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "terry-bit-io/elm-paginate",
+        "summary": "Simple and robust pagination in elm",
+        "tags": [
+            "uncat/deleted"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "terry-bit-io/elm-physics",
+        "summary": "3D physics engine",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "thaterikperson/elm-strftime",
@@ -12193,7 +12344,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "5.2.0"
+        "version": "5.2.1"
     },
     {
         "forkOf": null,
@@ -12334,7 +12485,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "2.0.3"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -12868,6 +13019,16 @@ window.packages =
             "data/visualisation"
         ],
         "version": "3.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "vicramgon/logicus",
+        "summary": "Elm packages for working with Propositional and First Order Logic algorithms.",
+        "tags": [
+            "sciences/maths"
+        ],
+        "version": "2.0.1"
     },
     {
         "forkOf": null,
