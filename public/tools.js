@@ -541,6 +541,26 @@ window.tools =
     ]
 },
 {
+    "name": "elm-go",
+    "githubName": "lucamug/elm-go",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-go",
+    "summary": "A fork of elm-live with some bug fixes and additional features",
+    "tags": [
+        "dev-servers"
+    ]
+},
+{
+    "name": "elm-serve",
+    "githubName": "pravdomil/Elm-Serve",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/elm-serve",
+    "summary": "An alternative to elm-live",
+    "tags": [
+        "dev-servers"
+    ]
+},
+{
     "name": "elm-json",
     "githubName": "zwilias/elm-json",
     "url": null,
