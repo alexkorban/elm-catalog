@@ -790,17 +790,16 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         RuntimeChangedUrl url ->
-            if String.endsWith "/book" <| Url.toString url then
-                ( model, Nav.load <| Url.toString url )
-
-            else
-                ( { model
-                    | route =
-                        Maybe.withDefault (PackageRoute "dev/testing") <|
-                            UrlParser.parse (routeParser model.urlPrefix) url
-                  }
-                , Cmd.none
-                )
+            -- if String.endsWith "/book" <| Url.toString url then
+            --     ( model, Nav.load <| Url.toString url )
+            -- else
+            ( { model
+                | route =
+                    Maybe.withDefault (PackageRoute "dev/testing") <|
+                        UrlParser.parse (routeParser model.urlPrefix) url
+              }
+            , Cmd.none
+            )
 
         RuntimeDidSomethingIrrelevant ->
             ( model, Cmd.none )
@@ -814,7 +813,11 @@ update msg model =
         UserClickedLink urlRequest ->
             case urlRequest of
                 Internal url ->
-                    ( resetStateOnPageChange url model, Cmd.batch [ resetViewport, resetEntryListViewPort, Nav.pushUrl model.navKey <| Url.toString url ] )
+                    if not <| String.startsWith ("/" ++ model.urlPrefix) url.path then
+                        ( model, Nav.load <| Url.toString url )
+
+                    else
+                        ( resetStateOnPageChange url model, Cmd.batch [ resetViewport, resetEntryListViewPort, Nav.pushUrl model.navKey <| Url.toString url ] )
 
                 External url ->
                     ( model, Nav.load url )
@@ -897,7 +900,7 @@ navBar model =
     <|
         List.concat
             [ [ link [ centerY, height <| px 50 ]
-                    { url = "https://korban.net/elm/catalog"
+                    { url = "/elm/catalog"
                     , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
                     }
               , el [ centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
@@ -918,9 +921,9 @@ navBar model =
                             ++ " Elm 0.19 packages, "
                             ++ String.fromInt model.toolCount
                             ++ " Elm tools"
-                , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/book", label = text "Practical Elm book" }
+                , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "/elm/book", label = text "Practical Elm book" }
                 , if model.windowSize.width > 920 then
-                    link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "https://korban.net/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
+                    link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
 
                   else
                     none
@@ -1425,7 +1428,7 @@ content model =
                    , paragraph [ Font.size 16 ]
                         [ text "Found a mistake or a missing entry?"
                         , text " Drop me a line "
-                        , link [ Font.color blue ] { url = "https://korban.net/elm/contact", label = text "by email" }
+                        , link [ Font.color blue ] { url = "/elm/contact", label = text "by email" }
                         , text " or tweet "
                         , link [ Font.color blue ] { url = "https://twitter.com/alexkorban", label = text "@alexkorban" }
                         , text "."
@@ -1504,19 +1507,19 @@ productFooter model =
                     [ paragraph [ spacing 12 ]
                         [ text "📢  My book "
                         , link [ Font.bold, Font.underline, Font.color blue ]
-                            { url = "https://korban.net/elm/book", label = text "Practical Elm" }
+                            { url = "/elm/book", label = text "Practical Elm" }
                         , text " skips the basics and gets straight into the nuts-and-bolts of building non-trivial apps."
                         ]
                     , paragraph [ spacing 12 ]
                         [ text "🛠  Things like building out the UI, communicating with servers, parsing JSON, structuring the application as it grows, testing, and so on." ]
                     , paragraph [ spacing 12, Font.bold ]
                         [ link []
-                            { url = "https://korban.net/elm/book"
+                            { url = "/elm/book"
                             , label = text "🎁 Gain the confidence to use Elm for all your projects! 👇"
                             }
                         ]
                     , link [ padding 50 ]
-                        { url = "https://korban.net/elm/book"
+                        { url = "/elm/book"
                         , label =
                             image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
                                 { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Practical Elm" }
@@ -1527,7 +1530,7 @@ productFooter model =
                     [ paragraph [ spacing 12 ]
                         [ text "📢 My in-depth guide "
                         , link [ Font.bold, Font.underline, Font.color blue ]
-                            { url = "https://korban.net/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
+                            { url = "/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
                         , text " is now available in early access."
                         ]
                     , paragraph [ spacing 12 ]
@@ -1535,7 +1538,7 @@ productFooter model =
                     , paragraph [ spacing 12 ]
                         [ text "🛠 I'm still adding content but you can start learning right now 👇" ]
                     , link [ padding 50 ]
-                        { url = "https://korban.net/elm/elm-ui-guide"
+                        { url = "/elm/elm-ui-guide"
                         , label =
                             image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
                                 { src = "https://korban.net/img/elm-ui-cover.jpg", description = "elm-ui: The CSS Escape Plan" }
