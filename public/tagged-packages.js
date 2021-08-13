@@ -228,6 +228,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "rtfeldman/console-print",
+        "summary": "Print formatted text to the console using ANSI escape sequences.",
+        "tags": [
+            "data/text", "platforms/desktop"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "rtfeldman/count",
         "summary": "Call record constructors with increasing integers. Useful for managing z-index.",
         "tags": [
@@ -265,7 +275,7 @@ window.packages =
             "data/time",
             "data/formats"
         ],
-        "version": "1.1.3"
+        "version": "1.1.4"
     },
     {
         "forkOf": null,
@@ -402,12 +412,12 @@ window.packages =
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "w0rm/elm-obj-file",
-        "summary": "Decode 3D models from the OBJ file format",
+        "summary": "Encode and decode 3D models in the OBJ file format",
         "tags": [
             "data/formats",
             "ui/webgl"
         ],
-        "version": "1.0.1"
+        "version": "1.2.1"
     },
     {
         "forkOf": null,
@@ -459,7 +469,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "1.3.1"
+        "version": "1.5.0"
     },
     {
         "forkOf": null,
@@ -519,7 +529,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.0.1"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -590,7 +600,7 @@ window.packages =
             "art/interactive-fiction",
             "game-dev/utils"
         ],
-        "version": "6.0.1"
+        "version": "6.0.3"
     },
     {
         "forkOf": null,
@@ -601,6 +611,16 @@ window.packages =
             "ui/patterns"
         ],
         "version": "3.1.2"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "myrho/elm-hovercard",
+        "summary": "Render a hovercard beneath a DOM element",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -621,27 +641,27 @@ window.packages =
             "ui/patterns",
             "data/datasets"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "terezka/charts",
-        "summary": "SVG charts components in Elm.",
+        "summary": "Nighly version of terezka/elm-charts with newest features.",
         "tags": [
             "data/visualisation"
         ],
-        "version": "11.0.1"
+        "version": "18.0.5"
     },
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "terezka/elm-charts",
-        "summary": "DEPRECATED. Create SVG charts.",
+        "summary": "SVG charts components in Elm.",
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -702,7 +722,7 @@ window.packages =
         "tags": [
             "ui/accessibility"
         ],
-        "version": "4.0.0"
+        "version": "4.1.0"
     },
     {
         "forkOf": null,
@@ -712,7 +732,7 @@ window.packages =
         "tags": [
             "ui/accessibility"
         ],
-        "version": "2.1.1"
+        "version": "2.2.0"
     },
     {
         "forkOf": null,
@@ -883,7 +903,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "2.2.0"
+        "version": "2.3.0"
     },
     {
         "forkOf": null,
@@ -936,7 +956,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "3.9.0"
+        "version": "3.9.1"
     },
     {
         "forkOf": null,
@@ -1099,6 +1119,26 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "1.0.3"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "jxxcarlson/elm-search",
+        "summary": "Search and sort a list of data using a DSL for conjunction and negation",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "jxxcarlson/elm-spreadsheet",
+        "summary": "Representation of and computation spreadsheets in Elm.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "3.1.0"
     },
     {
         "forkOf": null,
@@ -1485,7 +1525,7 @@ window.packages =
             "dev/code-organisation",
             "ui/patterns"
         ],
-        "version": "5.0.0"
+        "version": "6.0.0"
     },
     {
         "forkOf": null,
@@ -1626,7 +1666,17 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "2.1.3"
+        "version": "2.1.5"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "Confidenceman02/elm-select",
+        "summary": "A Handsome configurable select inspired by Culture Amp's Kaizen select.",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.3"
     },
     {
         "forkOf": null,
@@ -1636,7 +1686,7 @@ window.packages =
         "tags": [
             "ui/integrations"
         ],
-        "version": "1.0.1"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -1696,7 +1746,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.0.3"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -1864,6 +1914,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "FabienHenon/app-object",
+        "summary": "Add model and cmd scoped to your entire application",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "FabienHenon/elm-ckeditor5",
         "summary": "ckeditor 5 for elm",
         "tags": [
@@ -1904,6 +1964,26 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "MIT",
+        "name": "FabienHenon/elm-placeholder-loading",
+        "summary": "Easily create placeholder loadings like Facebook's cards loading",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "FabienHenon/env",
+        "summary": "Parse envs",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "FabienHenon/jsonapi",
         "summary": "JsonAPI decoder and encoder functions",
@@ -1916,11 +1996,41 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "FabienHenon/jsonapi-http",
+        "summary": "Make HTTP requests with jsonapi decoding/encoding in Elm",
+        "tags": [
+            "networking/http"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "FabienHenon/jsonapi-http-retry",
+        "summary": "Retry failed jsonapi requests with policies",
+        "tags": [
+            "networking/http"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "FabienHenon/remote-resource",
         "summary": "Handle foreground and background resources",
         "tags": [
             "dev/code-organisation",
             "networking/http"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "FabienHenon/test-attribute",
+        "summary": "Add test attributes to your elements for end-to-end tests",
+        "tags": [
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -2213,7 +2323,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "10.0.1"
+        "version": "11.0.1"
     },
     {
         "forkOf": null,
@@ -2394,7 +2504,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "7.1.0"
+        "version": "7.2.0"
     },
     {
         "forkOf": null,
@@ -2497,7 +2607,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.0.2"
+        "version": "4.1.0"
     },
     {
         "forkOf": null,
@@ -2527,7 +2637,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.0"
+        "version": "2.1.0"
     },
     {
         "forkOf": null,
@@ -2537,7 +2647,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.1"
+        "version": "1.0.3"
     },
     {
         "forkOf": null,
@@ -2569,6 +2679,16 @@ window.packages =
             "dev/parsing"
         ],
         "version": "3.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "NeoVier/elm-review-no-function-outside-of-modules",
+        "summary": "Provides elm-review rules to forbid using functions outside of certain modules",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -2791,7 +2911,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "12.18.1"
+        "version": "13.1.0"
     },
     {
         "forkOf": "mdgriffith/style-elements",
@@ -2882,7 +3002,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "3.0.2"
+        "version": "3.1.0"
     },
     {
         "forkOf": null,
@@ -2922,7 +3042,7 @@ window.packages =
         "tags": [
             "ui/maps"
         ],
-        "version": "2.1.0"
+        "version": "2.2.0"
     },
     {
         "forkOf": null,
@@ -2943,7 +3063,7 @@ window.packages =
             "ui/patterns",
             "data/formats:json"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -2953,7 +3073,7 @@ window.packages =
         "tags": [
             "ui/elm-ui"
         ],
-        "version": "3.0.0"
+        "version": "3.1.1"
     },
     {
         "forkOf": null,
@@ -2973,7 +3093,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "3.2.0"
+        "version": "6.5.0"
     },
     {
         "forkOf": null,
@@ -2983,7 +3103,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.2.2"
+        "version": "4.0.0"
     },
     {
         "forkOf": null,
@@ -2995,6 +3115,16 @@ window.packages =
             "data/time"
         ],
         "version": "1.3.0"
+    },
+    {
+        "forkOf": null,
+        "license": "GPL-3.0",
+        "name": "PerformanceIMMO/elm-utils",
+        "summary": "All common types and functions used by perfimmo dev",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -3054,7 +3184,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "forkOf": null,
@@ -3099,6 +3229,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "GPL-3.0",
+        "name": "SiriusStarr/elm-review-no-single-pattern-case",
+        "summary": "Provides elm-review rules to disallow single-pattern case expressions.",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "GPL-3.0",
         "name": "SiriusStarr/elm-spaced-repetition",
         "summary": "Create spaced repetition software using several different popular algorithms.",
         "tags": [
@@ -3134,7 +3274,7 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "3.0.1"
+        "version": "3.0.2"
     },
     {
         "forkOf": null,
@@ -3146,6 +3286,16 @@ window.packages =
             "sciences/geodesy"
         ],
         "version": "1.0.5"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "SupercedeTech/number-to-words",
+        "summary": "Package contains some util methods for converting numbers into words.",
+        "tags": [
+            "data/text"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -3267,7 +3417,7 @@ window.packages =
             "ui/patterns",
             "ui/dragdrop"
         ],
-        "version": "3.0.2"
+        "version": "3.1.0"
     },
     {
         "forkOf": "eeue56/elm-html-in-elm",
@@ -3465,11 +3615,11 @@ window.packages =
         "forkOf": null,
         "license": "MIT",
         "name": "abradley2/elm-calendar",
-        "summary": "An Elm version of the unix 'cal' command. Outputs a grid representing a month",
+        "summary": "Elm version of the unix 'cal' command. Creates a 2d list representing a month",
         "tags": [
             "data/time"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -3658,6 +3808,16 @@ window.packages =
         "summary": "SVG Elm Logo",
         "tags": [
             "ui/icons"
+        ],
+        "version": "1.0.2"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "albertdahlin/elm-posix",
+        "summary": "Write posix programs using IO monad",
+        "tags": [
+            "platforms/desktop"
         ],
         "version": "1.0.2"
     },
@@ -3893,6 +4053,16 @@ window.packages =
         "version": "1.0.0"
     },
     {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "andre-dietrich/elm-generic",
+        "summary": "Simplify the decoding and encoding of json, xml, yaml by one simple generic API",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "2.0.0"
+    },
+    {
         "forkOf": "gampleman/elm-mapbox",
         "license": "MIT",
         "name": "andre-dietrich/elm-mapbox",
@@ -3920,7 +4090,17 @@ window.packages =
         "tags": [
             "ui/svg"
         ],
-        "version": "4.0.4"
+        "version": "4.0.7"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "andre-dietrich/elm-url-extension",
+        "summary": "A wrapper for elm/url that allows to use other protocols than http and https.",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": "elm-community/parser-combinators",
@@ -3930,7 +4110,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "4.0.0"
+        "version": "4.1.0"
     },
     {
         "forkOf": null,
@@ -3950,7 +4130,7 @@ window.packages =
         "tags": [
             "ui/animation"
         ],
-        "version": "2.0.2"
+        "version": "2.1.0"
     },
     {
         "forkOf": null,
@@ -4131,7 +4311,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.1.1"
+        "version": "1.3.0"
     },
     {
         "forkOf": null,
@@ -4315,7 +4495,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "version": "3.4.0"
+        "version": "3.5.0"
     },
     {
         "forkOf": null,
@@ -4605,7 +4785,7 @@ window.packages =
         "name": "bgrosse-midokura/composable-form",
         "summary": "Build type-safe composable forms in Elm",
         "tags": [
-            "ui/patterns"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -5015,6 +5195,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "brilliantorg/backpacker-below",
+        "summary": "Unstable alpha version of a parser for the Camperdown markup language.",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "1.1.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "bundsol/boxed",
         "summary": "An Elm library to encapsulate any primitive in a single type",
         "tags": [
@@ -5071,7 +5261,7 @@ window.packages =
             "networking/http",
             "data/formats:json"
         ],
-        "version": "1.4.1"
+        "version": "1.4.2"
     },
     {
         "forkOf": null,
@@ -5314,7 +5504,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "3.1.0"
+        "version": "3.2.0"
     },
     {
         "forkOf": null,
@@ -5415,7 +5605,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "3.0.0"
+        "version": "6.1.0"
     },
     {
         "forkOf": null,
@@ -5451,11 +5641,21 @@ window.packages =
         "forkOf": null,
         "license": "MIT",
         "name": "choonkeat/elm-webapp",
-        "summary": "Extensions for developing a fullstack webapp in Elm",
+        "summary": "Small framework for writing fullstack HTTP webapp in Elm. Try `npx elm-webapp`",
         "tags": [
             "platforms/server"
         ],
-        "version": "1.0.1"
+        "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "choonkeat/formdata",
+        "summary": "Parse, don't validate form data",
+        "tags": [
+            "dev/code-organisation"
+        ],
+        "version": "2.0.1"
     },
     {
         "forkOf": null,
@@ -5718,7 +5918,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "4.2.1"
+        "version": "5.1.0"
     },
     {
         "forkOf": null,
@@ -5833,7 +6033,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "version": "7.0.0"
+        "version": "8.0.2"
     },
     {
         "forkOf": null,
@@ -5854,7 +6054,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "2.0.0"
+        "version": "2.0.2"
     },
     {
         "forkOf": null,
@@ -5864,7 +6064,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "forkOf": null,
@@ -5901,11 +6101,11 @@ window.packages =
         "forkOf": null,
         "license": "MIT",
         "name": "dkodaj/rte",
-        "summary": "Rich text editor for relatively short texts",
+        "summary": "Rich text editor for blogpost-sized texts",
         "tags": [
             "ui/patterns"
         ],
-        "version": "1.1.8"
+        "version": "3.0.16"
     },
     {
         "forkOf": null,
@@ -6020,13 +6220,42 @@ window.packages =
     {
         "forkOf": null,
         "license": "MPL-2.0",
-        "name": "dtwrks/elm-ui-book",
-        "summary": "UI documentation tool for Elm applications",
+        "name": "dtwrks/elm-book",
+        "summary": "Rich documentation builder inspired by Storybook and HexDocs.",
         "tags": [
-            "dev/docs",
-            "dev/prototyping"
+            "dev/docs"
         ],
-        "version": "2.1.0"
+        "version": "1.2.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MPL-2.0",
+        "name": "dtwrks/elm-book-interop-elm-css",
+        "summary": "Use elm-book and elm-css together",
+        "tags": [
+            "dev/docs"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MPL-2.0",
+        "name": "dtwrks/elm-book-interop-elm-ui",
+        "summary": "Use elm-book and elm-ui together",
+        "tags": [
+            "dev/docs"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MPL-2.0",
+        "name": "dtwrks/elm-ui-book",
+        "summary": "Deprecated! Please use dtwrks/elm-book instead.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "2.2.1"
     },
     {
         "forkOf": null,
@@ -6281,7 +6510,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "8.3.0"
+        "version": "8.4.0"
     },
     {
         "forkOf": null,
@@ -6382,7 +6611,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.0"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -6426,6 +6655,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "MIT",
+        "name": "emilgoldsmith/elm-speedcubing",
+        "summary": "Models and html displays for speedcubing puzzles and algorithm sets",
+        "tags": [
+            "uncat/misc"
+        ],
+        "version": "6.0.0"
+    },
+    {
+        "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "emilianobovetti/edit-distance",
         "summary": "Algorithms for edit distance calculation",
@@ -6443,6 +6682,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "emilianobovetti/list-assoc",
+        "summary": "Common operations on association lists",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": "elm-community/typed-svg",
@@ -6606,7 +6855,7 @@ window.packages =
         "tags": [
             "data/time"
         ],
-        "version": "1.1.1"
+        "version": "1.1.2"
     },
     {
         "forkOf": null,
@@ -6711,6 +6960,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "MIT",
+        "name": "figbus/elm-urbit-api",
+        "summary": "Communicate with Urbit from Elm.",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "2.0.1"
+    },
+    {
+        "forkOf": null,
         "license": "Apache-2.0",
         "name": "finos/morphir-elm",
         "summary": "Morphir Elm bindings",
@@ -6722,12 +6981,22 @@ window.packages =
     {
         "forkOf": null,
         "license": "Apache-2.0",
+        "name": "fission-suite/kit",
+        "summary": "Fission UI Kit",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "2.0.2"
+    },
+    {
+        "forkOf": null,
+        "license": "Apache-2.0",
         "name": "fission-suite/webnative-elm",
         "summary": "Thin wrapper around webnative for Elm",
         "tags": [
             "networking/integrations"
         ],
-        "version": "5.0.0"
+        "version": "6.0.0"
     },
     {
         "forkOf": null,
@@ -6889,7 +7158,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.4"
+        "version": "1.0.5"
     },
     {
         "forkOf": null,
@@ -6987,6 +7256,26 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "fysiweb/elm-review-no-import-as",
+        "summary": "Provides elm-review rules to forbid the use of import aliases",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "fysiweb/elm-review-sorted",
+        "summary": "Provides elm-review rules to keep record fields and constructors sorted",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.3"
+    },
+    {
+        "forkOf": null,
         "license": "GPL-3.0",
         "name": "garados007/component",
         "summary": "A library with helper functions to create components",
@@ -7023,7 +7312,7 @@ window.packages =
         "tags": [
             "ui/validation"
         ],
-        "version": "2.0.0"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -7224,7 +7513,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "3.1.1"
+        "version": "4.0.0"
     },
     {
         "forkOf": null,
@@ -7396,7 +7685,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.0.0"
+        "version": "4.0.0"
     },
     {
         "forkOf": null,
@@ -7646,7 +7935,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "1.0.2"
+        "version": "1.0.3"
     },
     {
         "forkOf": null,
@@ -7726,7 +8015,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": "abadi199/elm-input-extra",
@@ -7756,7 +8045,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.0.1"
+        "version": "2.0.3"
     },
     {
         "forkOf": null,
@@ -7816,7 +8105,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "6.0.2"
+        "version": "6.0.3"
     },
     {
         "forkOf": null,
@@ -7857,7 +8146,7 @@ window.packages =
             "data/formats",
             "ui/validation"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -7868,7 +8157,7 @@ window.packages =
             "dev/prototyping",
             "ui/elm-ui"
         ],
-        "version": "1.1.1"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -8076,6 +8365,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "jcberentsen/elm-wiring-diagrams",
+        "summary": "A package for SVG wiring-diagrams",
+        "tags": [
+            "ui/svg"
+        ],
+        "version": "3.1.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "jfmengels/elm-lint",
         "summary": "An Elm source code linter, to add additional guarantees to your project.",
         "tags": [
@@ -8101,7 +8400,27 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.4.2"
+        "version": "2.5.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-code-style",
+        "summary": "Provide elm-review rules to follow some of my personal code style preferences",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-cognitive-complexity",
+        "summary": "Provide an elm-review rule to measure the cognitive complexity of a function.",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -8111,7 +8430,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.3"
+        "version": "1.1.2"
     },
     {
         "forkOf": null,
@@ -8121,7 +8440,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.5"
+        "version": "1.0.6"
     },
     {
         "forkOf": null,
@@ -8131,13 +8450,23 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.1"
+        "version": "1.0.3"
     },
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "jfmengels/elm-review-license",
         "summary": "Provides an elm-review rule to prevent using packages with unapproved licenses",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "jfmengels/elm-review-performance",
+        "summary": "Provides elm-review rules to report performance problems in your Elm project",
         "tags": [
             "dev/static-analysis"
         ],
@@ -8161,7 +8490,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.0.2"
+        "version": "2.0.4"
     },
     {
         "forkOf": null,
@@ -8191,7 +8520,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.1.9"
+        "version": "1.1.15"
     },
     {
         "forkOf": null,
@@ -8404,6 +8733,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "jjant/elm-fps",
+        "summary": "Fast and easy fps counter",
+        "tags": [
+            "ui/patterns", "game-dev/rendering"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -8749,7 +9088,7 @@ window.packages =
             "game-dev/utils",
             "ui/webgl"
         ],
-        "version": "4.1.3"
+        "version": "5.0.0"
     },
     {
         "forkOf": null,
@@ -8761,7 +9100,7 @@ window.packages =
             "game-dev/rendering",
             "ui/webgl"
         ],
-        "version": "2.0.2"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -8873,6 +9212,16 @@ window.packages =
             "dev/prototyping"
         ],
         "version": "9.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "kingwither/elmeither",
+        "summary": "Haskell's 'Either' type",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -9229,7 +9578,7 @@ window.packages =
             "data/formats",
             "data/formats:json"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -9331,7 +9680,7 @@ window.packages =
         "tags": [
             "data/visualisation"
         ],
-        "version": "1.0.1"
+        "version": "2.1.0"
     },
     {
         "forkOf": "malinoff/elm-jwt",
@@ -9499,6 +9848,26 @@ window.packages =
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
+        "name": "lucamug/elm-exercises",
+        "summary": "A library to create Elm exercises in Ellie",
+        "tags": [
+            "uncat/misc"
+        ],
+        "version": "2.0.0"
+    },
+    {
+        "forkOf": "miniBill/elm-ui-with-context",
+        "license": "BSD-3-Clause",
+        "name": "lucamug/elm-ui-with-context",
+        "summary": "A clone of miniBill/elm-ui-with-context with small fixes",
+        "tags": [
+            "ui/elm-ui"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
         "name": "lucamug/style-framework",
         "summary": "A style framework built on top of elm-ui.",
         "tags": [
@@ -9510,12 +9879,32 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "lue-bird/elm-bits",
+        "summary": "operate in your custom bit format",
+        "tags": [
+            "dev/type-level"
+        ],
+        "version": "3.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "lue-bird/elm-bounded-nat",
         "summary": "natural number in a range at compile-time",
         "tags": [
             "dev/type-level"
         ],
-        "version": "7.0.0"
+        "version": "19.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-keysset",
+        "summary": "lookup elements by their unique aspects",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -9525,7 +9914,27 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
+        "version": "2.2.1"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-review-single-use-type-vars-end-with-underscore",
+        "summary": "make sure type variables only used once end with _",
+        "tags": [
+            "dev/static-analysis"
+        ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-rosetree-path",
+        "summary": "path: location in a rosetree",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -9535,7 +9944,27 @@ window.packages =
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "5.0.0"
+        "version": "5.0.3"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-typesafe-array",
+        "summary": "typed array that you can access safely",
+        "tags": [
+            "dev/type-level"
+        ],
+        "version": "17.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "lue-bird/elm-xy",
+        "summary": "( x, y ): create, transform, read",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -9665,7 +10094,7 @@ window.packages =
         "tags": [
             "ui/html"
         ],
-        "version": "1.0.3"
+        "version": "1.0.4"
     },
     {
         "forkOf": null,
@@ -9795,7 +10224,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.0.0"
+        "version": "3.0.0"
     },
     {
         "forkOf": null,
@@ -9838,7 +10267,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "4.1.0"
+        "version": "4.2.0"
     },
     {
         "forkOf": null,
@@ -9918,7 +10347,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.1"
+        "version": "1.1.0"
     },
     {
         "forkOf": null,
@@ -10091,7 +10520,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "4.0.4"
+        "version": "4.0.5"
     },
     {
         "forkOf": null,
@@ -10122,6 +10551,16 @@ window.packages =
             "ui/patterns"
         ],
         "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "mthadley/elm-review-unit",
+        "summary": "elm-review rules for working with the Unit type",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "2.0.1"
     },
     {
         "forkOf": null,
@@ -10181,7 +10620,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "forkOf": null,
@@ -10254,6 +10693,26 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "GPL-3.0",
+        "name": "niho/elm-crdt",
+        "summary": "Implementations of some common CRDTs in Elm.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "niho/elm-stomp",
+        "summary": "An Elm client for the STOMP protocol (version 1.2).",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
         "license": "MIT",
         "name": "niho/json-schema-form",
         "summary": "Generate validating forms from JSON schemas.",
@@ -10312,6 +10771,16 @@ window.packages =
             "ui/patterns"
         ],
         "version": "1.0.3"
+    },
+    {
+        "forkOf": "rundis/elm-bootstrap",
+        "license": "BSD-3-Clause",
+        "name": "nixCodeX/elm-bootstrap",
+        "summary": "This is a fork that adds nested accordions, use the original if possible.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "3.1.1"
     },
     {
         "forkOf": null,
@@ -10422,7 +10891,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "1.2.2"
+        "version": "1.4.0"
     },
     {
         "forkOf": null,
@@ -10442,7 +10911,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -10573,7 +11042,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.4.0"
+        "version": "3.4.1"
     },
     {
         "forkOf": null,
@@ -10698,6 +11167,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "Apache-2.0",
+        "name": "perty/matrix",
+        "summary": "Two-dimensional matrix with indexMap, backed by fast Array from the Elm core.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
         "license": "MIT",
         "name": "perzanko/elm-loading",
         "summary": "Simple loading spinners animated in CSS for your elm application.",
@@ -10773,7 +11252,8 @@ window.packages =
         "name": "phollyer/elm-cursor",
         "summary": "A package to simplify selecting the cursor being used in your UI",
         "tags": [
-            "ui/css", "ui/elm-ui"
+            "ui/css",
+            "ui/elm-ui"
         ],
         "version": "1.0.1"
     },
@@ -10796,6 +11276,16 @@ window.packages =
             "ui/elm-ui"
         ],
         "version": "3.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "phollyer/elm-ui-dropdown",
+        "summary": "A simple dropdown component for elm-ui",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "2.2.1"
     },
     {
         "forkOf": "romstad/elm-chess",
@@ -10860,6 +11350,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "MIT",
+        "name": "primait/elm-graphql-client",
+        "summary": "graphql client with automatic retry",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.1.0"
+    },
+    {
+        "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "primait/forms",
         "summary": "Form library in Elm",
@@ -10876,7 +11376,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "version": "7.2.0"
+        "version": "7.3.0"
     },
     {
         "forkOf": "rtfeldman/elm-css",
@@ -10936,6 +11436,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "prozacchiwawa/elm-codepage-437",
+        "summary": "a string containing the 256 unicode codepoints of codepage 437",
+        "tags": [
+            "data/text"
+        ],
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -11048,17 +11558,17 @@ window.packages =
             "data/datasets",
             "ui/colors"
         ],
-        "version": "1.1.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "rakutentech/r10",
-        "summary": "Bootstrapper and UI Componets we use at Rakuten",
+        "summary": "Bootstrapper and UI Components we use at Rakuten",
         "tags": [
             "uncat/excluded"
         ],
-        "version": "3.0.0"
+        "version": "4.1.1"
     },
     {
         "forkOf": "mercurymedia/elm-datetime-picker",
@@ -11069,6 +11579,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "ren-lang/compiler",
+        "summary": "The compiler for Ren: a dynamically typed, functional scripting language.",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "8.0.0"
     },
     {
         "forkOf": null,
@@ -11354,6 +11874,16 @@ window.packages =
     },
     {
         "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "robvandenbogaard/elm-terminusdb",
+        "summary": "Client library for using TerminusDB as a data triple store backend in Elm apps.",
+        "tags": [
+            "networking/integrations"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
         "license": "MIT",
         "name": "rogeriochaves/elm-test-bdd-style",
         "summary": "BDD-style matchers for elm-test",
@@ -11444,6 +11974,16 @@ window.packages =
             "ui/css"
         ],
         "version": "5.2.0"
+    },
+    {
+        "forkOf": null,
+        "license": "BSD-3-Clause",
+        "name": "rupertlssmith/rte-toolkit-patch",
+        "summary": "Build rich text editors in Elm",
+        "tags": [
+            "ui/patterns"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -11618,6 +12158,16 @@ window.packages =
         "version": "2.0.0"
     },
     {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "sdeframond/elm-store",
+        "summary": "An experimental indexed store un pure Elm.",
+        "tags": [
+            "dev/algorithms"
+        ],
+        "version": "1.0.0"
+    },
+    {
         "forkOf": "cript0nauta/elm-piano",
         "license": "GPL-3.0",
         "name": "sh4r3m4n/elm-piano",
@@ -11656,7 +12206,7 @@ window.packages =
             "ui/frameworks",
             "ui/patterns"
         ],
-        "version": "7.0.0"
+        "version": "12.1.0"
     },
     {
         "forkOf": null,
@@ -11722,12 +12272,22 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "simonh1000/elm-base45",
+        "summary": "Decoding and Encoding of Base45 (QR code) data",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "simonh1000/elm-colorpicker",
         "summary": "A simple color-picker widget, using svg",
         "tags": [
             "ui/patterns"
         ],
-        "version": "2.0.2"
+        "version": "2.0.3"
     },
     {
         "forkOf": null,
@@ -11737,7 +12297,7 @@ window.packages =
         "tags": [
             "networking/http"
         ],
-        "version": "7.1.0"
+        "version": "7.1.1"
     },
     {
         "forkOf": null,
@@ -11768,6 +12328,16 @@ window.packages =
             "dev/code-organisation"
         ],
         "version": "2.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "0BSD",
+        "name": "skovsboll/elm-crontab",
+        "summary": "A crontab parser and humanizer in Elm - for the basic UNIX syntax",
+        "tags": [
+            "data/formats"
+        ],
+        "version": "1.0.3"
     },
     {
         "forkOf": "elm-community/dict-extra",
@@ -11950,7 +12520,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.2.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -12001,7 +12571,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "7.2.3"
+        "version": "7.2.6"
     },
     {
         "forkOf": null,
@@ -12093,6 +12663,16 @@ window.packages =
             "uncat/excluded"
         ],
         "version": "6.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
+        "name": "sxh/ui-base",
+        "summary": "Common code used across my applications",
+        "tags": [
+            "uncat/excluded"
+        ],
+        "version": "8.2.1"
     },
     {
         "forkOf": null,
@@ -12214,7 +12794,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "4.0.0"
+        "version": "5.0.0"
     },
     {
         "forkOf": "rupertlssmith/elm-aws-core",
@@ -12224,7 +12804,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "8.1.0"
+        "version": "9.0.0"
     },
     {
         "forkOf": null,
@@ -12234,7 +12814,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "forkOf": null,
@@ -12344,7 +12924,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "5.2.1"
+        "version": "5.2.2"
     },
     {
         "forkOf": null,
@@ -12354,7 +12934,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.4.1"
+        "version": "2.1.0"
     },
     {
         "forkOf": null,
@@ -12395,7 +12975,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "4.0.0"
+        "version": "4.0.2"
     },
     {
         "forkOf": null,
@@ -12405,7 +12985,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "1.0.1"
+        "version": "1.0.2"
     },
     {
         "forkOf": null,
@@ -12445,7 +13025,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "version": "3.1.0"
+        "version": "4.1.0"
     },
     {
         "forkOf": null,
@@ -12519,44 +13099,44 @@ window.packages =
     },
     {
         "forkOf": null,
-        "license": "BSD-3-Clause",
+        "license": "Apache-2.0",
         "name": "toastal/either",
         "summary": "Either for representing a structure with two types",
         "tags": [
             "dev/algorithms"
         ],
-        "version": "3.5.2"
+        "version": "3.6.3"
     },
     {
         "forkOf": null,
-        "license": "MIT",
+        "license": "Apache-2.0",
         "name": "toastal/endo",
         "summary": "Endo for Elm: a simple endomorphism to simplify code",
         "tags": [
             "uncat/excluded"
         ],
-        "version": "1.1.0"
+        "version": "1.1.3"
     },
     {
         "forkOf": null,
-        "license": "MIT",
+        "license": "Apache-2.0",
         "name": "toastal/mailto",
         "summary": "mailto DSL to make mailto links easy",
         "tags": [
             "ui/html",
             "data/formats"
         ],
-        "version": "5.0.0"
+        "version": "5.1.1"
     },
     {
         "forkOf": null,
-        "license": "MIT",
+        "license": "Apache-2.0",
         "name": "toastal/select-prism",
         "summary": "Use a Monocle Prism to handle <select> conflict between ADTs and Strings",
         "tags": [
             "dev/code-organisation"
         ],
-        "version": "1.0.2"
+        "version": "1.0.4"
     },
     {
         "forkOf": null,
@@ -12816,7 +13396,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "7.0.1"
+        "version": "8.0.1"
     },
     {
         "forkOf": null,
@@ -12983,6 +13563,16 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "uzimaru0000/ulmus",
+        "summary": "Ulmus is a Lisp implementation made with Elm",
+        "tags": [
+            "dev/parsing"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "vViktorPL/elm-incremental-list",
         "summary": "Generate list range based on increment and decrease functions",
         "tags": [
@@ -13028,7 +13618,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "2.0.1"
+        "version": "9.0.0"
     },
     {
         "forkOf": null,
@@ -13090,6 +13680,16 @@ window.packages =
             "data/formats"
         ],
         "version": "3.0.1"
+    },
+    {
+        "forkOf": "rtfeldman/elm-iso8601-date-strings",
+        "license": "BSD-3-Clause",
+        "name": "waratuman/elm-iso8601-date-strings",
+        "summary": "Convert ISO8601 date strings to and from Posix times",
+        "tags": [
+            "data/time"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -13373,7 +13973,7 @@ window.packages =
         "tags": [
             "ui/css"
         ],
-        "version": "2.0.1"
+        "version": "2.1.0"
     },
     {
         "forkOf": null,
@@ -13383,7 +13983,7 @@ window.packages =
         "tags": [
             "dev/algorithms"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "forkOf": null,
