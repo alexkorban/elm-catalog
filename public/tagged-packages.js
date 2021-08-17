@@ -231,7 +231,8 @@ window.packages =
         "name": "rtfeldman/console-print",
         "summary": "Print formatted text to the console using ANSI escape sequences.",
         "tags": [
-            "data/text", "platforms/desktop"
+            "data/text",
+            "platforms/desktop"
         ],
         "version": "1.0.1"
     },
@@ -2982,7 +2983,7 @@ window.packages =
         "tags": [
             "dev/type-level"
         ],
-        "version": "2.0.1"
+        "version": "2.0.2"
     },
     {
         "forkOf": null,
@@ -3093,7 +3094,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "6.5.0"
+        "version": "6.6.0"
     },
     {
         "forkOf": null,
@@ -8111,11 +8112,11 @@ window.packages =
         "forkOf": null,
         "license": "MIT",
         "name": "indique/n",
-        "summary": "supplies elm-bounded-nat with shortened names",
+        "summary": "supplies bounded-nat with shortened names",
         "tags": [
             "dev/type-level"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "forkOf": null,
@@ -8366,11 +8367,11 @@ window.packages =
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "jcberentsen/elm-wiring-diagrams",
-        "summary": "A package for SVG wiring-diagrams",
+        "summary": "A package for rendering wiring-diagrams to SVG",
         "tags": [
             "ui/svg"
         ],
-        "version": "3.1.1"
+        "version": "5.0.0"
     },
     {
         "forkOf": null,
@@ -8490,7 +8491,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.0.4"
+        "version": "2.0.6"
     },
     {
         "forkOf": null,
@@ -8520,7 +8521,7 @@ window.packages =
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "1.1.15"
+        "version": "1.1.16"
     },
     {
         "forkOf": null,
@@ -8740,7 +8741,8 @@ window.packages =
         "name": "jjant/elm-fps",
         "summary": "Fast and easy fps counter",
         "tags": [
-            "ui/patterns", "game-dev/rendering"
+            "ui/patterns",
+            "game-dev/rendering"
         ],
         "version": "1.0.0"
     },
@@ -9853,7 +9855,7 @@ window.packages =
         "tags": [
             "uncat/misc"
         ],
-        "version": "2.0.0"
+        "version": "2.0.6"
     },
     {
         "forkOf": "miniBill/elm-ui-with-context",
@@ -9894,7 +9896,7 @@ window.packages =
         "tags": [
             "dev/type-level"
         ],
-        "version": "19.0.0"
+        "version": "19.0.1"
     },
     {
         "forkOf": null,
@@ -9919,12 +9921,22 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
+        "name": "lue-bird/elm-review-links-point-to-existing-package-members",
+        "summary": "elm-review rule to check that links point to existing package members",
+        "tags": [
+            "dev/static-analysis"
+        ],
+        "version": "1.0.1"
+    },
+    {
+        "forkOf": null,
+        "license": "MIT",
         "name": "lue-bird/elm-review-single-use-type-vars-end-with-underscore",
         "summary": "make sure type variables only used once end with _",
         "tags": [
             "dev/static-analysis"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "forkOf": null,
@@ -11588,7 +11600,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "8.0.0"
+        "version": "8.1.0"
     },
     {
         "forkOf": null,
@@ -12277,7 +12289,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "forkOf": null,
@@ -12571,7 +12583,7 @@ window.packages =
         "tags": [
             "dev/parsing"
         ],
-        "version": "7.2.6"
+        "version": "7.2.7"
     },
     {
         "forkOf": null,
