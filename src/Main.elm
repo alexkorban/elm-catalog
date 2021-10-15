@@ -308,8 +308,14 @@ humanisePkgCat cat =
         "networking" ->
             "Networking"
 
+        "pl" ->
+            "Programming languages"
+
         "platforms" ->
             "Platforms"
+
+        "printing" ->
+            "Printing"
 
         "sciences" ->
             "Sciences"
@@ -381,6 +387,9 @@ humanisePkgSubcat subcat =
         "dev/algorithms" ->
             "Algorithms & data structures"
 
+        "dev/code-gen" ->
+            "Code generation & formatting"
+
         "dev/code-organisation" ->
             "Code organisation"
 
@@ -438,6 +447,15 @@ humanisePkgSubcat subcat =
         "networking/websockets" ->
             "WebSockets"
 
+        "pl/compilers" ->
+            "Compilers"
+
+        "pl/elm" ->
+            "Elm"
+
+        "pl/embeddable" ->
+            "Embeddable"
+
         "platforms/desktop" ->
             "Desktop"
 
@@ -449,6 +467,9 @@ humanisePkgSubcat subcat =
 
         "platforms/static-sites" ->
             "Static sites"
+
+        "printing/formats" ->
+            "Formats"
 
         "sciences/bioscience" ->
             "Bioscience"
@@ -918,7 +939,7 @@ navBar model =
                   <|
                     text <|
                         String.fromInt model.packageCount
-                            ++ " Elm 0.19 packages, "
+                            ++ " Elm 0.19.x packages, "
                             ++ String.fromInt model.toolCount
                             ++ " Elm tools"
                 , link [ centerY, alignRight, Font.color blue, Font.underline ] { url = "/elm/book", label = text "Practical Elm book" }
@@ -1137,10 +1158,10 @@ pkgCategoryList : String -> Model -> Element Msg
 pkgCategoryList subcat model =
     let
         catEls ( cat, subcats ) =
-            column [ width fill, spacingXY 0 10, Font.size 18 ]
+            column [ width fill, spacingXY 0 10, Font.size (if_ (isNarrow model.windowSize) 14 18) ]
                 ((el
                     [ paddingEach { sides | top = 20 }
-                    , Font.size 26
+                    , Font.size (if_ (isNarrow model.windowSize) 22 26)
                     , Font.color white
                     , headingTypeface
                     ]
