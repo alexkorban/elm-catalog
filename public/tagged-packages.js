@@ -518,7 +518,7 @@ window.packages =
         "name": "Janiczek/cmd-extra",
         "summary": "Pipeline-friendly helpers for working with Cmds",
         "tags": [
-            "dev/code-organisation"
+            "dev/utils"
         ],
         "version": "1.1.0"
     },
@@ -1520,7 +1520,7 @@ window.packages =
         "name": "Chadtech/elm-bool-extra",
         "summary": "Convenience functions for working with Bools",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "2.4.2"
     },
@@ -2229,7 +2229,7 @@ window.packages =
         "name": "GlobalWebIndex/cmd-extra",
         "summary": "Extra functions for working with Cmds",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "1.4.0"
     },
@@ -3387,7 +3387,7 @@ window.packages =
         "name": "TSFoster/elm-bytes-extra",
         "summary": "Helpers for working with elm/bytes",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "1.3.0"
     },
@@ -3448,7 +3448,7 @@ window.packages =
         "name": "TSFoster/elm-tuple-extra",
         "summary": "Convenience functions for working with tuples",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "2.0.0"
     },
@@ -3969,7 +3969,7 @@ window.packages =
         "name": "alex-tan/task-extra",
         "summary": "Expand usages of Task",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "1.1.0"
     },
@@ -5361,7 +5361,7 @@ window.packages =
         "name": "brianvanburken/elm-list-date",
         "summary": "Helpers for working with List's of Int's representing a date",
         "tags": [
-            "dev/algorithms"
+            "data/time"
         ],
         "version": "3.0.1"
     },
@@ -6679,7 +6679,7 @@ window.packages =
         "name": "elm-community/array-extra",
         "summary": "Convenience functions for working with Array",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "2.4.0"
     },
@@ -6689,7 +6689,7 @@ window.packages =
         "name": "elm-community/basics-extra",
         "summary": "Additional basic functions",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "4.1.0"
     },
@@ -6699,7 +6699,7 @@ window.packages =
         "name": "elm-community/dict-extra",
         "summary": "Convenience functions for working with Dict",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "2.4.0"
     },
@@ -6750,7 +6750,6 @@ window.packages =
         "name": "elm-community/json-extra",
         "summary": "Convenience functions for working with JSON",
         "tags": [
-            "dev/algorithms",
             "data/formats",
             "data/formats:json"
         ],
@@ -6762,7 +6761,7 @@ window.packages =
         "name": "elm-community/list-extra",
         "summary": "Convenience functions for working with List",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "8.5.1"
     },
@@ -6782,7 +6781,7 @@ window.packages =
         "name": "elm-community/maybe-extra",
         "summary": "Convenience functions for working with Maybe",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "5.2.1"
     },
@@ -6792,7 +6791,7 @@ window.packages =
         "name": "elm-community/random-extra",
         "summary": "Extra functions for the core Random library",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "3.2.0"
     },
@@ -6802,7 +6801,7 @@ window.packages =
         "name": "elm-community/result-extra",
         "summary": "Convenience functions for working with Result",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "2.4.0"
     },
@@ -6812,7 +6811,7 @@ window.packages =
         "name": "elm-community/string-extra",
         "summary": "String helper functions for Elm",
         "tags": [
-            "data/text"
+            "data/text", "dev/utils"
         ],
         "version": "4.0.1"
     },
@@ -9418,7 +9417,7 @@ window.packages =
         "name": "justinmimbs/time-extra",
         "summary": "Extra functions for working with Posix times from elm/time",
         "tags": [
-            "data/time"
+            "data/time", "dev/utils"
         ],
         "version": "1.1.0"
     },
@@ -10998,7 +10997,7 @@ window.packages =
         "name": "munksgaard/char-extra",
         "summary": "Additional functions for working with Chars",
         "tags": [
-            "data/text"
+            "data/text", "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -11586,7 +11585,7 @@ window.packages =
         "name": "pd-andy/tuple-extra",
         "summary": "A collection of helpers for the Tuple type.",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "1.0.1"
     },
@@ -13111,7 +13110,7 @@ window.packages =
         "name": "stoeffel/set-extra",
         "summary": "Convenience functions for working with Set.",
         "tags": [
-            "dev/algorithms"
+            "dev/utils"
         ],
         "version": "1.2.3"
     },
@@ -14218,7 +14217,7 @@ window.packages =
         "name": "waratuman/json-extra",
         "summary": "Extra JSON Encode / Decode functionality",
         "tags": [
-            "data/formats"
+            "data/formats:json"
         ],
         "version": "1.0.2"
     },
@@ -14228,7 +14227,7 @@ window.packages =
         "name": "waratuman/time-extra",
         "summary": "A set of helpers for working with elm/time",
         "tags": [
-            "data/time"
+            "data/time", "dev/utils"
         ],
         "version": "1.1.0"
     },

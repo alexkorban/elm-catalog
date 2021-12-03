@@ -418,7 +418,7 @@ humanisePkgSubcat subcat =
             "Type-level metaprogramming"
 
         "dev/utils" ->
-            "Utils"
+            "Helpers, extras, utils"
 
         "game-dev/code-organisation" ->
             "Code organisation"
@@ -436,7 +436,7 @@ humanisePkgSubcat subcat =
             "Rendering"
 
         "game-dev/utils" ->
-            "Utils"
+            "Helpers, extras, utils"
 
         "networking/http" ->
             "HTTP"
