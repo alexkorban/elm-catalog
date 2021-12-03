@@ -9665,7 +9665,7 @@ window.packages =
     {
         "forkOf": null,
         "license": "MIT",
-        "name": "krisajenkins/elm-exts",
+        "name": "stoatpower/elm-exts",
         "summary": "A collection of functions missing from the core.",
         "tags": [
             "uncat/excluded"
