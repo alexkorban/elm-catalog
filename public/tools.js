@@ -207,7 +207,17 @@ window.tools =
     "packageUrl": "https://www.npmjs.com/package/elm-webapp",
     "summary": "A setup for writing HTTP-based, client-server apps in Elm, inspired by Lamdera",
     "tags": [
-        "code-generation"
+        "node", "backend"
+    ]
+},
+{
+    "name": "Lamdera",
+    "githubName": "choonkeat/elm-webapp",
+    "url": "https://lamdera.com",
+    "packageUrl": null,
+    "summary": "A platform for server side Elm applications",
+    "tags": [
+        "backend"
     ]
 },
 {
@@ -386,6 +396,16 @@ window.tools =
     "url": null,
     "packageUrl": "https://www.npmjs.com/package/elm-translations",
     "summary": "Generate type safe translations for your Elm app",
+    "tags": [
+        "code-generation", "i18n"
+    ]
+},
+{
+    "name": "travelm-agency",
+    "githubName": "andreasewering/travelm-agency",
+    "url": null,
+    "packageUrl": "https://www.npmjs.com/package/travelm-agency",
+    "summary": "Generate Elm modules from different common I18n formats",
     "tags": [
         "code-generation", "i18n"
     ]
@@ -726,6 +746,16 @@ window.tools =
     "url": null,
     "packageUrl": "https://marketplace.visualstudio.com/items?itemName=Elmtooling.elm-ls-vscode",
     "summary": "Elm support for VS Code",
+    "tags": [
+        "editor"
+    ]
+},
+{
+    "name": "Elm Editor",
+    "githubName": "elm-fullstack/elm-fullstack",
+    "url": "https://elm-editor.com",
+    "packageUrl": null,
+    "summary": "A web IDE for developing Elm programs",
     "tags": [
         "editor"
     ]

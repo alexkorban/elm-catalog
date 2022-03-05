@@ -598,6 +598,9 @@ humanisePkgSubcat subcat =
 humaniseToolCat : String -> String
 humaniseToolCat cat =
     case cat of
+        "backend" -> 
+            "Backend"
+            
         "build" ->
             "Build tools"
 
