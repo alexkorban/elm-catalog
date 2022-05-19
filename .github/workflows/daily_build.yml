@@ -1,0 +1,14 @@
+name: daily-netlify-build
+
+on:
+  schedule:
+    - cron: "1 18 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Netlify build daily
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/627737741bdbbd770c82a69d
