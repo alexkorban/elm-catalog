@@ -305,6 +305,9 @@ humanisePkgCat cat =
         "game-dev" ->
             "Game development"
 
+        "interop" ->
+            "Interop"
+
         "networking" ->
             "Networking"
 
@@ -438,6 +441,9 @@ humanisePkgSubcat subcat =
         "game-dev/utils" ->
             "Helpers, extras, utils"
 
+        "interop/js" ->
+            "JavaScript"
+
         "networking/http" ->
             "HTTP"
 
@@ -456,8 +462,14 @@ humanisePkgSubcat subcat =
         "pl/embeddable" ->
             "Embeddable"
 
+        "platforms/browser" ->
+            "Browser"
+
         "platforms/desktop" ->
             "Desktop"
+
+        "platforms/mobile" ->
+            "Mobile"
 
         "platforms/server" ->
             "Server"
@@ -598,9 +610,9 @@ humanisePkgSubcat subcat =
 humaniseToolCat : String -> String
 humaniseToolCat cat =
     case cat of
-        "backend" -> 
+        "backend" ->
             "Backend"
-            
+
         "build" ->
             "Build tools"
 
