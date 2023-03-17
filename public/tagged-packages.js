@@ -359,11 +359,13 @@ window.packages =
             "version": "1.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "mdgriffith/elm-codegen",
             "summary": "A code generation library for Elm",
             "tags": [
-                "dev/code-gen", "pl/elm"
+                "dev/code-gen",
+                "pl/elm"
             ],
             "version": "3.0.0"
         },
@@ -542,6 +544,7 @@ window.packages =
             "version": "3.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Janiczek/elm-common-tests",
             "summary": "Test helpers for common data structures",
@@ -601,6 +604,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "Janiczek/elm-secret-sharing",
             "summary": "Shamir's Secret Sharing algorithm over GF(256)",
@@ -610,6 +614,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "Janiczek/elm-sourcemap",
             "summary": "A builder for Source Maps (revision 3)",
@@ -619,6 +624,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Janiczek/elm-url-codec",
             "summary": "Define both URL parser and builder at once",
@@ -699,6 +705,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": "Punie/elm-parser-extras",
             "license": "BSD-3-Clause",
             "name": "myrho/elm-parser-extras",
             "summary": "Extra functions for building parsers. Fork of Punie/elm-parser-extras.",
@@ -718,6 +725,7 @@ window.packages =
             "version": "1.0.5"
         },
         {
+            "forkOf": "MaybeJustJames/yaml",
             "license": "BSD-3-Clause",
             "name": "myrho/yaml",
             "summary": "Work with YAML in Elm. Fork of MaybeJustJames/yaml.",
@@ -959,6 +967,7 @@ window.packages =
             "version": "2.0.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "decioferreira/elm-review-zen-css",
             "summary": "Provides elm-review rules to support the use of elm-zen-css.",
@@ -968,6 +977,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "decioferreira/elm-zen-css",
             "summary": "Elm Zen CSS",
@@ -977,6 +987,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "decioferreira/elm-zen-css-bootstrap",
             "summary": "Elm Zen CSS Bootstrap",
@@ -1312,6 +1323,7 @@ window.packages =
             "version": "7.0.8"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "jxxcarlson/elm-text-search",
             "summary": "Search and sort a list of data using a DSL for conjunction and negation",
@@ -1392,6 +1404,7 @@ window.packages =
             "version": "14.1.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "jxxcarlson/scripta-compiler",
             "summary": "A compiler that transforms markup source text to HTML",
@@ -1566,6 +1579,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": "kuon/elm-string-normalize",
             "license": "BSD-3-Clause",
             "name": "8n8/elm-string-normalize",
             "summary": "Remove diacritics from a string",
@@ -1585,6 +1599,7 @@ window.packages =
             "version": "1.2.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "ArthurTeisseire/joinable-dict",
             "summary": "A composable way of joining dictionaries",
@@ -1816,6 +1831,7 @@ window.packages =
             "version": "2.0.4"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Cindiary/elm-not-empty",
             "summary": "Variations of standard collections that always have at least 1 item",
@@ -2291,6 +2307,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "GPL-3.0",
             "name": "Garados007/elm-repono-storage",
             "summary": "A library that enables access to a ReponoStorage server.",
@@ -2307,9 +2324,10 @@ window.packages =
             "tags": [
                 "ui/svg"
             ],
-            "version": "1.0.0"
+            "version": "1.1.0"
         },
         {
+            "forkOf": "mdgriffith/elm-ui",
             "license": "BSD-3-Clause",
             "name": "Gipphe/elm-ui",
             "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
@@ -2390,6 +2408,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Gizra/elm-radix-tree",
             "summary": "Add elements to a Radix tree.",
@@ -2589,11 +2608,13 @@ window.packages =
             "version": "9.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "JohanWinther/elm-pan-and-zoom",
             "summary": "Make an element pannable and zoomable by dragging and scrolling.",
             "tags": [
-                "ui/dragdrop", "ui/patterns"
+                "ui/dragdrop",
+                "ui/patterns"
             ],
             "version": "3.0.0"
         },
@@ -2608,6 +2629,7 @@ window.packages =
             "version": "3.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "JohnBugner/elm-keyboard",
             "summary": "Get which key was pressed, independent of keyboard layout.",
@@ -2758,6 +2780,7 @@ window.packages =
             "version": "7.2.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MackeyRMS/elm-ui-table",
             "summary": "Data grid built with elm-ui",
@@ -2778,6 +2801,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MackeyRMS/string-util",
             "summary": "String utils",
@@ -2787,6 +2811,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MackeyRMS/time-util",
             "summary": "Utilities we use to format times / dates wraps Time.Extra and other funzies.",
@@ -2868,6 +2893,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MartinSStewart/elm-safe-int",
             "summary": "A safe 54-bit signed integer",
@@ -2887,6 +2913,7 @@ window.packages =
             "version": "1.3.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MartinSStewart/elm-uint64",
             "summary": "64-bit unsigned integer with division",
@@ -2920,11 +2947,13 @@ window.packages =
             "name": "Massolari/time-distance",
             "summary": "Get approximate relative time in words",
             "tags": [
-                "data/time"
+                "data/time",
+                "uncat/deleted"
             ],
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "MattCheely/boon",
             "summary": "Parse and evaluate boolean expressions from strings like 'one AND two OR three'",
@@ -2974,11 +3003,13 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "MichaelCombs28/elm-nanoid",
             "summary": "Create nanoids in Elm",
             "tags": [
-                "data/formats", "dev/algorithms"
+                "data/formats",
+                "dev/algorithms"
             ],
             "version": "1.0.0"
         },
@@ -3004,6 +3035,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "NeoVier/elm-eos",
             "summary": "Type-safe interaction with the EOSIO blockchain in Elm.",
@@ -3286,6 +3318,7 @@ window.packages =
             "version": "2.1.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-bag",
             "summary": "Two implementations of a bag using a dict and an association list",
@@ -3295,6 +3328,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-card-game",
             "summary": "A package for displaying card games.",
@@ -3325,6 +3359,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-handlebars",
             "summary": "Compile Handlebars Templates in Elm",
@@ -3334,6 +3369,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-hyperbolic",
             "summary": "Geometry in the 2D hyperbolic plane",
@@ -3353,6 +3389,7 @@ window.packages =
             "version": "2.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-layout",
             "summary": "Layout HTML using flexbox",
@@ -3372,11 +3409,13 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Orasund/elm-tracery",
             "summary": "Implementation of tracery in Elm. see tracery.io",
             "tags": [
-                "data/text", "data/formats"
+                "data/text",
+                "data/formats"
             ],
             "version": "5.0.0"
         },
@@ -3523,6 +3562,7 @@ window.packages =
             "version": "1.3.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "PedroHLC/elm-uuid-dict",
             "summary": " Dict and Set for TSFoster/elm-uuid.",
@@ -3592,6 +3632,7 @@ window.packages =
             "version": "29.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "RGBboy/websocket-server",
             "summary": "Web Socket Server in Elm and Node.js",
@@ -3733,6 +3774,7 @@ window.packages =
             "version": "1.0.5"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "SupercedeTech/elm-validation",
             "summary": "Package for data validation.",
@@ -3843,6 +3885,7 @@ window.packages =
             "version": "4.2.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "TayKangSheng/forem-api",
             "summary": "A set of abstractions to call Forem API",
@@ -3924,6 +3967,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "UbiqueLambda/elm-with-ui",
             "summary": "Cross-platform with-pattern UI toolkit for Elm",
@@ -3933,6 +3977,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "UbiqueLambda/elm-with-ui-backend",
             "summary": "Backend for UbiqueLambda/elm-with-ui",
@@ -3942,6 +3987,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "UbiqueLambda/elm-with-ui-html",
             "summary": "Elm's HTML renderer for UbiqueLambda/elm-with-ui",
@@ -3981,6 +4027,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "Warry/elm-ffi",
             "summary": "Create and call asynchronous javascript functions from Elm",
@@ -4131,6 +4178,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "abradley2/edn-decoder",
             "summary": "Decode edn into elm values",
@@ -4140,6 +4188,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "abradley2/edn-parser",
             "summary": "Parser for Extensible Data Notation in Elm",
@@ -4169,6 +4218,7 @@ window.packages =
             "version": "4.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "abradley2/elm-i18next-gen",
             "summary": "Generate type-safe translations for ChristophP/elm-i18next with elm-codegen",
@@ -4178,6 +4228,7 @@ window.packages =
             "version": "2.0.4"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "abradley2/elm-verify-form",
             "summary": "Type aliases and helpers for handling forms with stoeffel/elm-verify",
@@ -4235,6 +4286,7 @@ window.packages =
             "version": "1.2.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "adamstuller/elm-spa-composition",
             "summary": "School project for master's thesis enabling page composition in Elm SPAs.",
@@ -4527,6 +4579,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "algodynamics-iiith/core",
             "summary": "Core library for algodynamics virtual interactive labs",
@@ -4536,6 +4589,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "algodynamics-iiith/elm-dsview",
             "summary": "Visualization of array in Elm",
@@ -4646,6 +4700,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": "elm-community/elm-datepicker",
             "license": "BSD-3-Clause",
             "name": "anderssorby/elm-datepicker",
             "summary": "A reusable date picker component",
@@ -4655,6 +4710,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "anderssorby/elm-mastodon",
             "summary": "Elm client for the Mastodon social network.",
@@ -4664,6 +4720,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": "mdgriffith/elm-ui",
             "license": "BSD-3-Clause",
             "name": "andimclean/elm-ui",
             "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
@@ -4743,6 +4800,7 @@ window.packages =
             "version": "4.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "andreasewering/elm-grpc",
             "summary": "Send GRPC-Web requests with Elm.",
@@ -4792,6 +4850,7 @@ window.packages =
             "version": "2.3.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "andrewMacmurray/elm-url-query-pipeline",
             "summary": "Parse url queries pipeline style",
@@ -4932,6 +4991,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "arowM/elm-markdown-builder",
             "summary": "Generate valid markdown document programmatically",
@@ -5215,6 +5275,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "axelerator/wave-function-collapse-2d",
             "summary": "Random maps from custom tiles using the wave function collapse algorithm",
@@ -5527,13 +5588,14 @@ window.packages =
             "version": "1.0.3"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "betagouv/elm-dsfr",
             "summary": "French Government Design System.",
             "tags": [
                 "uncat/misc"
             ],
-            "version": "3.0.0"
+            "version": "4.0.0"
         },
         {
             "forkOf": "hecrj/composable-form",
@@ -5577,6 +5639,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "billstclair/elm-cards-view",
             "summary": "View playing cards as SVG.",
@@ -5646,6 +5709,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "billstclair/elm-dynamodb",
             "summary": "elm-dynamodb is a pure Elm client module for Amazon's DynamoDB service.",
@@ -5776,6 +5840,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "billstclair/elm-versioned-json",
             "summary": "Help with versioned JSON representations.",
@@ -5935,6 +6000,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "brainrape/elm-ganja",
             "summary": "Geometric Algebra and Clifford Algebra generated by ganja.js",
@@ -6138,6 +6204,7 @@ window.packages =
             "version": "2.0.3"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "canceraiddev/elm-aws-amplify",
             "summary": "Elm client for the AWS Amplify services.",
@@ -6147,6 +6214,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": "the-sett/elm-aws-cognito",
             "license": "BSD-3-Clause",
             "name": "canceraiddev/elm-aws-cognito",
             "summary": "Fork of the-sett/elm-aws-cognito",
@@ -6156,6 +6224,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": "the-sett/elm-aws-core",
             "license": "Apache-2.0",
             "name": "canceraiddev/elm-aws-core",
             "summary": "Fork of the-sett/elm-aws-core",
@@ -6165,6 +6234,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "canceraiddev/elm-aws-pinpoint",
             "summary": "Elm client for the AWS Pinpoint services.",
@@ -6174,6 +6244,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "canceraiddev/elm-dialog",
             "summary": "Modal dialog with Bulma styling",
@@ -6183,6 +6254,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "canceraiddev/elm-form-builder",
             "summary": "Form widgets and validation used for internal projects.",
@@ -6202,6 +6274,7 @@ window.packages =
             "version": "1.1.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "canceraiddev/elm-sortable-table",
             "summary": "Sortable (and paginated) tables for data of any shape.",
@@ -6241,6 +6314,7 @@ window.packages =
             "version": "1.0.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "carboncloud/ui-library",
             "summary": "UI library we use at CarbonCloud.",
@@ -6250,6 +6324,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "caribou-oss/elm-popper",
             "summary": "Tooltips in Elm via bindings to @popperjs/core",
@@ -6400,6 +6475,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "ccomb/cycle-detect",
             "summary": "Floyd Cycle detection Algorithm",
@@ -6480,6 +6556,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "chandru89new/elm-simple-cli-options-parser",
             "summary": "Simple parsing library for extracting CLI options and flags.",
@@ -6559,6 +6636,7 @@ window.packages =
             "version": "9.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "choonkeat/elm-ext-http",
             "summary": "Extensions for elm/http",
@@ -6588,6 +6666,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "choonkeat/elm-openai",
             "summary": "OpenAI API for Elm",
@@ -6607,6 +6686,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "choonkeat/elm-totp",
             "summary": "Library for Elm to generate TOTP url keys and code",
@@ -6636,6 +6716,7 @@ window.packages =
             "version": "2.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "choonkeat/html-data",
             "summary": "Html data structures compatible with elm/html et al",
@@ -6645,6 +6726,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "choonkeat/html-data-extra",
             "summary": "Helper functions for choonkeat/html-data",
@@ -6654,6 +6736,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "choonkeat/nativeform",
             "summary": "Elm library to use form state from the platform",
@@ -6774,6 +6857,7 @@ window.packages =
             "version": "1.2.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "coreygirard/elm-nonempty-list",
             "summary": "A non-empty list type",
@@ -6783,6 +6867,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "coreygirard/elm-nonemptylist",
             "summary": "A non-empty list type",
@@ -6803,11 +6888,13 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "croq-app/elm-climb",
             "summary": "Parse and manipulate Climbing grades in Elm.",
             "tags": [
-                "dev/parsing", "data/formats"
+                "dev/parsing",
+                "data/formats"
             ],
             "version": "3.0.0"
         },
@@ -6852,6 +6939,7 @@ window.packages =
             "version": "3.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "damjack/elm-newrelic-nreum",
             "summary": "Opinionated library to use NewRelic NREUM with ELM",
@@ -6921,6 +7009,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "danneu/html-parser",
             "summary": "A lenient html5 parser",
@@ -7064,6 +7153,7 @@ window.packages =
             "version": "3.2.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "dillonkearns/elm-date-or-date-time",
             "summary": "A simple type for either a Time.Posix or a Date.Date.",
@@ -7126,6 +7216,7 @@ window.packages =
             "version": "9.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "dillonkearns/elm-pages-v3-beta",
             "summary": "A statically typed site generator.",
@@ -7327,6 +7418,7 @@ window.packages =
             "version": "5.0.0"
         },
         {
+            "forkOf": "zwilias/elm-touch-events",
             "license": "BSD-3-Clause",
             "name": "driebit/elm-swipe-events",
             "summary": "Swipe events, in Elm",
@@ -7406,6 +7498,7 @@ window.packages =
             "version": "1.2.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "dwayne/elm-json-rpc",
             "summary": "Make JSON-RPC 2.0 requests over HTTP",
@@ -7415,6 +7508,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "dwayne/elm-natural",
             "summary": "The natural numbers, ℕ = { 0, 1, 2, ... }",
@@ -7586,6 +7680,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "elektrica/elm-hct",
             "summary": "A color system built using CAM16 hue and chroma, and L* from L*a*b*.",
@@ -7769,11 +7864,13 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "elm-i18n/translatable-html",
             "summary": "A version of elm/html geared towards translation.",
             "tags": [
-                "ui/html", "ui/i18n"
+                "ui/html",
+                "ui/i18n"
             ],
             "version": "1.0.0"
         },
@@ -7908,6 +8005,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "enbala/elm-form",
             "summary": "Live validation of form inputs in Elm",
@@ -7998,6 +8096,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": "bChiquet/elm-accessors",
             "license": "MIT",
             "name": "erlandsona/elm-accessors",
             "summary": "Accessors, a library implementing lenses for Elm.",
@@ -8017,6 +8116,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "escherlies/elm-color",
             "summary": "A color library for elm",
@@ -8026,6 +8126,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "escherlies/elm-ix-dict",
             "summary": "A special Dict data structure that derives keys from values.",
@@ -8035,6 +8136,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "escherlies/elm-vectors",
             "summary": "A vector library for elm",
@@ -8137,6 +8239,7 @@ window.packages =
             "version": "5.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "fabiommendes/elm-climbing-grades",
             "summary": "Climbing grades parsing and manipulation in Elm",
@@ -8146,6 +8249,7 @@ window.packages =
             "version": "2.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "fabiommendes/elm-daisy-ui",
             "summary": "Daisy UI elements (https://daisyui.com/)",
@@ -8165,6 +8269,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "fabiommendes/elm-latlng",
             "summary": "Parse and render Roman numerals",
@@ -8174,6 +8279,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "fabiommendes/elm-roman",
             "summary": "Parse and render Roman numerals",
@@ -8183,6 +8289,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "fabiommendes/elm-svg-editor",
             "summary": "Simple SVG editor designed for drawing climbing topos",
@@ -8232,6 +8339,7 @@ window.packages =
             "version": "2.0.2"
         },
         {
+            "forkOf": null,
             "license": "LGPL-3.0",
             "name": "feral-dot-io/protoc-gen-elmer",
             "summary": "Support library for Protobuf to Elm codegen. Builds on elm-protocol-buffers",
@@ -8292,6 +8400,7 @@ window.packages =
             "version": "18.1.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "fission-codes/kit",
             "summary": "Fission UI Kit",
@@ -8301,6 +8410,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "fission-codes/webnative-elm",
             "summary": "Thin wrapper around webnative for Elm",
@@ -8330,6 +8440,7 @@ window.packages =
             "version": "7.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "fivetentech/elm-bounded-list",
             "summary": "A list with a maximum capacity",
@@ -8339,6 +8450,7 @@ window.packages =
             "version": "1.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "flarebyte/bubblegum-entity",
             "summary": "Access to settings and states for widgets of the Bubblegum UI toolkit.",
@@ -8348,6 +8460,7 @@ window.packages =
             "version": "1.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "flarebyte/bubblegum-ui-textarea",
             "summary": "TextArea widget for the Bubblegum UI toolkit.",
@@ -8367,6 +8480,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": "mdgriffith/elm-ui",
             "license": "BSD-3-Clause",
             "name": "flytreeleft/elm-ui",
             "summary": "Layout and style that's easy to refactor, all without thinking about CSS.",
@@ -8622,6 +8736,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "futureworkz/elm-autocomplete",
             "summary": "Elm Autocomplete with debouncing and async fetching of data.",
@@ -8631,6 +8746,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": "rl-king/elm-gallery",
             "license": "BSD-3-Clause",
             "name": "fysiweb/elm-gallery",
             "summary": "Image and general purpose content gallery/slider (fork of rl-king/elm-gallery).",
@@ -8993,6 +9109,7 @@ window.packages =
             "version": "6.0.0"
         },
         {
+            "forkOf": "mikaxyz/elm-cropper",
             "license": "BSD-3-Clause",
             "name": "goolord/elm-cropper",
             "summary": "Fluid width/responsive image cropper UI",
@@ -9012,6 +9129,7 @@ window.packages =
             "version": "3.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "goyalarchit/graph-extra",
             "summary": "Convenience functions/Random generators for working with elm-community/graph.",
@@ -9025,11 +9143,13 @@ window.packages =
             "name": "greg-enbala/elm-form",
             "summary": "Live validation of form inputs in Elm",
             "tags": [
-                "ui/validation"
+                "ui/validation",
+                "uncat/deleted"
             ],
             "version": "1.0.0"
         },
         {
+            "forkOf": "frandibar/elm-font-awesome-5",
             "license": "BSD-3-Clause",
             "name": "gregziegan/elm-font-awesome-5",
             "summary": "A strongly typed Elm package for working with Font Awesome 5",
@@ -9109,6 +9229,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "gribouille/elm-select-tailwind",
             "summary": "ELM select component with autocompletion & tailwind",
@@ -9138,6 +9259,7 @@ window.packages =
             "version": "5.2.1"
         },
         {
+            "forkOf": null,
             "license": "MPL-2.0",
             "name": "gribouille/elm-table-tailwind",
             "summary": "Full features ELM table component for Tailwind",
@@ -9227,6 +9349,7 @@ window.packages =
             "version": "1.0.3"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "hanifhefaz/elm-word-search",
             "summary": "Finds the most relevant document to your word",
@@ -9256,6 +9379,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": "chain-partners/elm-bignum",
             "license": "MIT",
             "name": "harfangk/elm-bignum",
             "summary": "Elm library for arbitrary precision arithmetic",
@@ -9265,6 +9389,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "AGPL-3.0",
             "name": "hariroshan/elm-native",
             "summary": "Nativescript bindings to build mobile apps using elm",
@@ -9344,6 +9469,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "hayleigh-dot-dev/elm-corefn",
             "summary": " ",
@@ -9363,6 +9489,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "hayleigh-dot-dev/elm-web-audio",
             "summary": "An elm/html-like library for the Web Audio API.",
@@ -9432,6 +9559,7 @@ window.packages =
             "version": "7.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "henriquecbuss/elm-eos",
             "summary": "Type-safe interaction with the EOSIO blockchain in Elm.",
@@ -9441,6 +9569,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "henriquecbuss/elm-mask",
             "summary": "Mask `String`s to be used in input fields",
@@ -9450,6 +9579,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "henriquecbuss/elm-review-no-function-outside-of-modules",
             "summary": "Provides elm-review rules to forbid using functions outside of certain modules",
@@ -9499,6 +9629,7 @@ window.packages =
             "version": "1.0.4"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "hmsk/elm-vite-plugin-helper",
             "summary": "Helpers to use vite-plugin-elm",
@@ -9791,6 +9922,7 @@ window.packages =
             "version": "1.6.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "itamargiv/permutations",
             "summary": "An Elm package for data structure permutations",
@@ -9902,6 +10034,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "jamesrweb/elm-aviary",
             "summary": "An elm implementation of the birds from combinatory logic.",
@@ -9911,6 +10044,7 @@ window.packages =
             "version": "1.0.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "jamesrweb/elm-combinators",
             "summary": "A combinatory logic library for ELM.",
@@ -10443,6 +10577,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "jmpavlick/elm-css-with-context",
             "summary": "A port of arowM/elm-html-with-context, for rtfeldman/elm-css",
@@ -10452,6 +10587,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "jmpavlick/elm-ui-markdown",
             "summary": "Markdown renderer that outputs elm-ui Elements for dillonkearns/elm-markdown",
@@ -10482,6 +10618,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "joeybright/json-decode-map-gen",
             "summary": "Generate custom Json.Decode.map functions with elm-codegen",
@@ -10491,6 +10628,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "joeybright/json-to-elm",
             "summary": "Decode JSON into Elm values. Provides utilities for elm-codegen.",
@@ -10500,6 +10638,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "joeybright/key-value-store-gen",
             "summary": "Generate a key-value store from JSON",
@@ -10751,6 +10890,7 @@ window.packages =
             "version": "2.0.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "juliusl/elm-ui-hexcolor",
             "summary": "Adds a String -> Element.Color function for rgb and rgba.",
@@ -10937,11 +11077,13 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": "cedric-h/elm-google-sign-in",
             "license": "MIT",
             "name": "jxlxx/elm-google-sign-in",
             "summary": "Elm bindings to the \"Sign in With Google\" widget",
             "tags": [
-                "ui/patterns", "security/auth"
+                "ui/patterns",
+                "security/auth"
             ],
             "version": "1.0.0"
         },
@@ -11577,6 +11719,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "linsyking/elm-canvas",
             "summary": "2D drawing API based on DOM Canvas, but nicer",
@@ -11616,6 +11759,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "liwenjun/elm-ui-colors",
             "summary": "应用于 elm-ui 的颜色 Colors for elm-ui",
@@ -11665,6 +11809,7 @@ window.packages =
             "version": "2.0.1"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "lobanov/elm-localstorage",
             "summary": "Interact with window.localStorage and window.sessionStorage using Task API",
@@ -11674,6 +11819,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "Apache-2.0",
             "name": "lobanov/elm-taskport",
             "summary": "Easily call JavaScript APIs from Elm using the Task abstraction",
@@ -11907,6 +12053,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "lue-bird/elm-scroll",
             "summary": "items rolled up on both sides of a focus",
@@ -11956,6 +12103,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "lydell/elm-app-url",
             "summary": "URLs for applications",
@@ -12024,6 +12172,7 @@ window.packages =
             "version": "5.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "maca/elm-inflect",
             "summary": "Strings pluralization and singularization",
@@ -12033,6 +12182,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "maca/postgrest-admin-preview",
             "summary": "Backoffice interface for PostgREST",
@@ -12047,7 +12197,7 @@ window.packages =
             "name": "malaire/elm-safe-int",
             "summary": "A safe 54-bit signed integer",
             "tags": [
-                "dev/algorithms"
+                "uncat/deleted"
             ],
             "version": "1.0.0"
         },
@@ -12057,7 +12207,7 @@ window.packages =
             "name": "malaire/elm-uint64",
             "summary": "64-bit unsigned integer with division",
             "tags": [
-                "dev/algorithms"
+                "uncat/deleted"
             ],
             "version": "2.0.0"
         },
@@ -12093,6 +12243,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "marcodaniels/elm-robots-humans",
             "summary": "Generate robots.txt and humans.txt in elm.",
@@ -12132,6 +12283,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "martouta/elm-emojis-converter",
             "summary": "Elm package for converting text to HTML with emojis as Unicode or images.",
@@ -12181,6 +12333,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "matheus23/elm-tailwind-modules-base",
             "summary": "Base code that elm-tailwind-modules-generated code depends on.",
@@ -12194,7 +12347,8 @@ window.packages =
             "name": "mathiajusth/intl-phone-input",
             "summary": "International phone number form input.",
             "tags": [
-                "ui/patterns"
+                "ui/patterns",
+                "uncat/deleted"
             ],
             "version": "1.0.2"
         },
@@ -12219,6 +12373,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "matsubara0507/octicons-elm",
             "summary": "GitHub's Octicons for Elm",
@@ -12238,6 +12393,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "matzko/elm-opaque-dict",
             "summary": "Dictionary supporting opaque Elm types as keys.",
@@ -12247,6 +12403,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "mauroc8/elm-html-pipeline",
             "summary": "Build HTML nodes using the pipeline operator",
@@ -12409,6 +12566,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "micahhahn/elm-safe-recursion",
             "summary": "Elegant recursion in Elm without blowing the stack",
@@ -12428,6 +12586,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "0BSD",
             "name": "microelm/elm-peg",
             "summary": "Parsing expression grammar (PEG) in elm",
@@ -12489,6 +12648,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-fast-dict",
             "summary": "Drop-in, faster, replacement for Dict from elm/core",
@@ -12498,6 +12658,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-faster-benchmark",
             "summary": "Library for faster benchmarks by using Web Workers",
@@ -12507,6 +12668,7 @@ window.packages =
             "version": "2.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-generic-dict",
             "summary": "Codegen dictionaries with arbitrary key types.",
@@ -12516,6 +12678,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-html-with-context",
             "summary": "An augmentation of elm/html with a global context.",
@@ -12525,6 +12688,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-oklch",
             "summary": "Conversion functions from and to Oklab and Oklch",
@@ -12554,6 +12718,7 @@ window.packages =
             "version": "1.0.3"
         },
         {
+            "forkOf": "jinjor/elm-xml-parser",
             "license": "BSD-3-Clause",
             "name": "miniBill/elm-xml-parser",
             "summary": "XML Parser for Elm - fork of jinjor/elm-xml-parser",
@@ -12816,6 +12981,7 @@ window.packages =
             "version": "1.0.4"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "n1k0/elm-daterange-picker",
             "summary": "A date range picker.",
@@ -12845,6 +13011,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": "inkuzmin/elm-multiselect",
             "license": "BSD-3-Clause",
             "name": "nathanbraun/elm-multiselect",
             "summary": "multiselect control",
@@ -13025,6 +13192,7 @@ window.packages =
             "version": "3.0.1"
         },
         {
+            "forkOf": null,
             "license": "EUPL-1.1",
             "name": "noordstar/elm-matrix-webhooks",
             "summary": "Wrapper for the nim65s Matrix-Webhook API",
@@ -13034,6 +13202,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "noredink/elm-review-html-lazy",
             "summary": "Provides elm-review rules to detect incorrect usage of lazy",
@@ -13084,6 +13253,7 @@ window.packages =
             "version": "2.1.2"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "nsbno/spor-design-tokens-elm",
             "summary": "Design tokens for vy elm applications",
@@ -13093,6 +13263,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "nsbno/spor-elm",
             "summary": "UI components used in Elm applications at Vy",
@@ -13102,6 +13273,7 @@ window.packages =
             "version": "4.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "nsbno/spor-icon-elm",
             "summary": "Icons used for Elm applications hosted on vy.no",
@@ -13131,6 +13303,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "nunntom/elm-ui-select",
             "summary": "A select widget for elm-ui with keyboard input, filter, scrolling and requests!",
@@ -13204,7 +13377,8 @@ window.packages =
             "name": "opvasger/comparable",
             "summary": "Core functions with explicit comparison in Elm!",
             "tags": [
-                "dev/utils"
+                "dev/utils",
+                "uncat/deleted"
             ],
             "version": "2.0.0"
         },
@@ -13223,7 +13397,8 @@ window.packages =
             "name": "opvasger/enumerable",
             "summary": "Enumerate custom-types in Elm!",
             "tags": [
-                "dev/utils"
+                "dev/utils",
+                "uncat/deleted"
             ],
             "version": "1.0.0"
         },
@@ -13248,6 +13423,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "orus-io/elm-simple-text-index",
             "summary": "A simple yet fast text index",
@@ -13478,6 +13654,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "pd9333/elm-time2",
             "summary": "Yet another package to work with time that observes daylight saving time",
@@ -13487,6 +13664,7 @@ window.packages =
             "version": "2.1.0"
         },
         {
+            "forkOf": "justinmimbs/timezone-data",
             "license": "BSD-3-Clause",
             "name": "pd9333/elm-time2-zone",
             "summary": "Time zone data from the IANA Time Zone Database for using with pd9333/elm-time2",
@@ -13689,6 +13867,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "pithub/elm-parser-bug-workaround",
             "summary": "Workarounds for a bug in elm/parser",
@@ -13698,6 +13877,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "pithub/elm-parser-extra",
             "summary": "Convenience functions for working with parsers",
@@ -13788,6 +13968,7 @@ window.packages =
             "version": "9.0.3"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "proberge-dev/browser-keyboard",
             "summary": "Managing global inputs with subscriptions",
@@ -13797,6 +13978,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "proberge-dev/elm-grid",
             "summary": "Easier creation of css-grid containers",
@@ -14180,6 +14362,7 @@ window.packages =
             "version": "1.1.1"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "rlopzc/elm-hmac-sha1",
             "summary": "Compute HMAC with SHA-1 hash function",
@@ -14189,6 +14372,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "rlopzc/elm-sentry",
             "summary": "Send reports to Sentry",
@@ -14398,6 +14582,7 @@ window.packages =
             "version": "5.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "rosenbergm/elm-grpc",
             "summary": "Make gRPC-web requests directly from Elm!",
@@ -14541,6 +14726,7 @@ window.packages =
             "version": "6.0.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "ryannhg/graphql",
             "summary": "An elm/json inspired package for working with GraphQL",
@@ -14671,6 +14857,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": "joakin/elm-canvas",
             "license": "BSD-3-Clause",
             "name": "shamansir/elm-canvas",
             "summary": "2D drawing API based on DOM Canvas, but nicer",
@@ -14680,6 +14867,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "shamansir/elm-graph-render",
             "summary": "Render Graphs in SVG",
@@ -14689,6 +14877,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "shamansir/genui",
             "summary": "The language for definining simple interfaces",
@@ -15033,6 +15222,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "staeter/ziplist",
             "summary": "List with a selected element that makes impossible state impossible.",
@@ -15205,6 +15395,7 @@ window.packages =
             "version": "1.0.5"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "tam-carre/and-collect",
             "summary": "No do-notation needed! andCollect combinators for interdependent computations",
@@ -15234,6 +15425,7 @@ window.packages =
             "version": "1.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "temochka/enclojure",
             "summary": "A Clojure-like scripting language for Elm apps.",
@@ -15303,6 +15495,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "the-sett/elm-2d-camera",
             "summary": "A camera for zoomable 2d drawings.",
@@ -15312,6 +15505,7 @@ window.packages =
             "version": "2.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "the-sett/elm-animate",
             "summary": "A simple animation package for Elm.",
@@ -15372,6 +15566,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "the-sett/elm-browser-info",
             "summary": "Gather information on which browser the code is running under.",
@@ -15431,6 +15626,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "the-sett/elm-pointer",
             "summary": "An HTML pointer API for simplifying working with mouse and touch together.",
@@ -15601,6 +15797,7 @@ window.packages =
             "version": "4.1.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "thomasin/elm-frontmatter",
             "summary": "decode markdown files",
@@ -15610,6 +15807,7 @@ window.packages =
             "version": "2.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "thomasin/elm-path",
             "summary": "handle file paths",
@@ -16140,6 +16338,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "MPL-2.0",
             "name": "uncover-co/elm-theme",
             "summary": "An opinionated, constraint-based, theme library for Elm Applications.",
@@ -16149,6 +16348,7 @@ window.packages =
             "version": "2.0.0"
         },
         {
+            "forkOf": null,
             "license": "MPL-2.0",
             "name": "uncover-co/elm-theme-provider",
             "summary": "Work with scoped themes based on CSS variables with light and dark modes.",
@@ -16168,6 +16368,7 @@ window.packages =
             "version": "8.0.1"
         },
         {
+            "forkOf": null,
             "license": "MPL-2.0",
             "name": "uncover-co/elm-theme-studio",
             "summary": "A companion application to help you define and test your elm-theme themes",
@@ -16177,6 +16378,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MPL-2.0",
             "name": "uncover-co/elm-widgets",
             "summary": "A collection of stateless, themable widgets for Elm applications.",
@@ -16328,6 +16530,7 @@ window.packages =
             "version": "1.0.2"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "vistuleB/elm-plot",
             "summary": "Update of terezka/elm-plot to 0.19.1.",
@@ -16491,6 +16694,7 @@ window.packages =
             "version": "1.0.0"
         },
         {
+            "forkOf": null,
             "license": "MIT",
             "name": "webbhuset/elm-review-no-unqualified-functions",
             "summary": "Provides an elm-review rule to forbid unqualified functions.",
@@ -16570,6 +16774,7 @@ window.packages =
             "version": "1.0.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "wolfadex/elm-ansi",
             "summary": "Functions and types to make it easy to work with ANSI codes and the terminal",
@@ -16579,6 +16784,7 @@ window.packages =
             "version": "1.1.0"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "wolfadex/elm-open-api",
             "summary": "Elm support for OpenAPI",
@@ -16760,6 +16966,7 @@ window.packages =
             "version": "3.2.1"
         },
         {
+            "forkOf": null,
             "license": "BSD-3-Clause",
             "name": "yoghurt-x86/easy-forms",
             "summary": "Simple and fast way to build forms",

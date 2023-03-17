@@ -29,48 +29,47 @@ const merge = (package) => {
         if (taggedPkg.tags[0] == "exclude" && package.version != taggedPkg.version) {
             console.log("Re-evaluate: " + newPkg.name)
             // Updated excluded packages should come up as new – for re-evaluation
-            return R.mergeLeft({tags: ["uncat/new"]}, newPkg) 
+            return R.mergeLeft({ tags: ["uncat/new"] }, newPkg)
         }
-        else 
+        else
             return newPkg
     }
-    else 
-        return R.mergeRight({tags: ["uncat/new"]}, package)
+    else
+        return R.mergeRight({ tags: ["uncat/new"] }, package)
 }
 
 const octokit = new Octokit({
-  auth: process.env.GITHUB_TOKEN,
+    auth: process.env.GITHUB_TOKEN,
 })
 
 const pkgParentPromise = (pkg) => {
     if (!R.isNil(process.env.GITHUB_TOKEN) && !R.includes("uncat/deleted", pkg.tags)) {
         console.log("Getting repo info for " + pkg.name)
         return octokit.request("GET /repos/" + pkg.name).then((res) => {
-            return R.mergeLeft(pkg, {forkOf: R.defaultTo(null, R.path(["data", "parent", "full_name"], res))})
+            return R.mergeLeft(pkg, { forkOf: R.defaultTo(null, R.path(["data", "parent", "full_name"], res)) })
         }).catch((error) => {
             console.error(`Error while getting repo info for ${pkg.name}: `, error.message)
             if (error.message == "Not Found")
-                return R.evolve({tags: R.append("uncat/deleted")}, pkg)
-            else 
+                return R.evolve({ tags: R.append("uncat/deleted") }, pkg)
+            else
                 return pkg  // the package object shouldn't have a forkOf property 
-                            // if we failed to retrieve repo info
-        }) 
+            // if we failed to retrieve repo info
+        })
     }
-    else 
+    else
         return Promise.resolve(pkg)
 }
 
-
 Promise.map(R.map(merge, newPackages), (pkg) => {
     return R.has("forkOf", pkg) ? Promise.resolve(pkg) : pkgParentPromise(pkg)
-}, {concurrency: 3})
-.then((updatedPackages) => {
-    // Overwrites the existing file!
-    Fs.writeFileSync("public/tagged-packages.js", "window.packages = \n" + stringify(updatedPackages, {space: 4}))
+}, { concurrency: 3 })
+    .then((updatedPackages) => {
+        // Overwrites the existing file!
+        Fs.writeFileSync("public/tagged-packages.js", "window.packages = \n" + stringify(updatedPackages, { space: 4 }))
 
-    console.log("Done!")
-})
-.catch((error) => {
-    console.error("Error while getting repos: ", error.message)
-    console.log(error.stack)
-})
+        console.log("Done!")
+    })
+    .catch((error) => {
+        console.error("Error while getting repos: ", error.message)
+        console.log(error.stack)
+    })

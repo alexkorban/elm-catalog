@@ -181,6 +181,16 @@ window.tools =
             ]
         },
         {
+            "name": "elm-watch",
+            "githubName": "lydell/elm-watch",
+            "url": "https://lydell.github.io/elm-watch/",
+            "packageUrl": null,
+            "summary": "elm-watch recompiles whenever your Elm files change and reloads the compiled JS in the browser",
+            "tags": [
+                "build"
+            ]
+        },
+        {
             "name": "elm-boil",
             "githubName": "GioPat/elm-boil",
             "url": null,
@@ -633,8 +643,8 @@ window.tools =
         },
         {
             "name": "elm-dependencies-analyzer",
-            "githubName": "malaire/elm-dependencies-analyzer",
-            "url": "https://www.markuslaire.com/github/elm-dependencies-analyzer/",
+            "githubName": "synalysis/elm-dependencies-analyzer",
+            "url": "https://www.elm-dependencies-analyzer.net",
             "packageUrl": null,
             "summary": "Analyses elm.json dependencies and suggests possible upgrades",
             "tags": [
