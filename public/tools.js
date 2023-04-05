@@ -773,7 +773,7 @@ window.tools =
         },
         {
             "name": "Elm Editor",
-            "githubName": "elm-fullstack/elm-fullstack",
+            "githubName": "elm-time/elm-time",
             "url": "https://elm-editor.com",
             "packageUrl": null,
             "summary": "A web IDE for developing Elm programs",
