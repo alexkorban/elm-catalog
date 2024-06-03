@@ -364,7 +364,7 @@ window.packages =
         "name": "mdgriffith/elm-bezier",
         "summary": "Utilities for working with Bezier curves",
         "tags": [
-            "uncat/new"
+            "sciences/maths", "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -740,7 +740,7 @@ window.packages =
         "name": "myrho/numeral-elm",
         "summary": "Elm module for (advanced) number formatting. Forked from ggb/numeral-elm",
         "tags": [
-            "uncat/new"
+            "data/text"
         ],
         "version": "1.0.1"
     },
@@ -1053,7 +1053,7 @@ window.packages =
         "name": "gampleman/elm-rosetree",
         "summary": "Strict multiway trees aka rosetrees and a Zipper to go with them",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.1.0"
     },
@@ -1126,7 +1126,7 @@ window.packages =
         "name": "ianmackenzie/elm-geometry-extra",
         "summary": "Extra community-contributed functionality for elm-geometry",
         "tags": [
-            "uncat/new"
+            "sciences/maths"
         ],
         "version": "1.0.0"
     },
@@ -1197,7 +1197,7 @@ window.packages =
         "name": "ianmackenzie/elm-random-test",
         "summary": "Small helpers for using elm-test with Generators instead of Fuzzers",
         "tags": [
-            "uncat/new"
+            "dev/testing"
         ],
         "version": "1.0.0"
     },
@@ -1328,7 +1328,7 @@ window.packages =
         "name": "jxxcarlson/elm-review-codeinstaller",
         "summary": "A set of rules for installing code in an existing Elm project.",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.1.5"
     },
@@ -2535,7 +2535,7 @@ window.packages =
         "name": "GoldentTuft/elm-infinite-scroll",
         "summary": "Infinite scroll library",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.0"
     },
@@ -2845,7 +2845,7 @@ window.packages =
         "name": "Luftzig/elm-signal-processing",
         "summary": "functions for signal processing, such as FFT and convolution.",
         "tags": [
-            "uncat/new"
+            "sciences/maths"
         ],
         "version": "1.1.0"
     },
@@ -2865,7 +2865,7 @@ window.packages =
         "name": "MackeyRMS/elm-accessors",
         "summary": "Accessors, a library implementing lenses for Elm.",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "3.0.3"
     },
@@ -2875,7 +2875,7 @@ window.packages =
         "name": "MackeyRMS/elm-rosetree-path",
         "summary": "navigate rosetrees and forests",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -2885,7 +2885,7 @@ window.packages =
         "name": "MackeyRMS/elm-ui",
         "summary": "fork of elm-ui",
         "tags": [
-            "uncat/new"
+            "ui/elm-ui"
         ],
         "version": "2.0.1"
     },
@@ -2905,7 +2905,7 @@ window.packages =
         "name": "MackeyRMS/elm-ui-with-context",
         "summary": "fork of elm-ui-with-context",
         "tags": [
-            "uncat/new"
+            "ui/elm-ui"
         ],
         "version": "2.0.1"
     },
@@ -3303,7 +3303,7 @@ window.packages =
         "name": "NoRedInk/elm-review-extract-api",
         "summary": "elm-review rule to extract ports and flags used in an application",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "2.0.1"
     },
@@ -3484,7 +3484,7 @@ window.packages =
         "name": "Orasund/elm-game-ai-minimax",
         "summary": "AI algorithm for turn based two player games with perfect information.",
         "tags": [
-            "uncat/new"
+            "game-dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -3514,7 +3514,7 @@ window.packages =
         "name": "Orasund/elm-html-style",
         "summary": "helpful functions for writing CSS",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "1.6.0"
     },
@@ -3564,7 +3564,7 @@ window.packages =
         "name": "Orasund/elm-svg-writer",
         "summary": "Write svg and download it as a file",
         "tags": [
-            "uncat/new"
+            "ui/svg"
         ],
         "version": "1.2.0"
     },
@@ -4232,7 +4232,7 @@ window.packages =
         "name": "YUcxovo/elm-canvas",
         "summary": "2D drawing API based on DOM Canvas, supports js functions with return value",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.0"
     },
@@ -4533,7 +4533,7 @@ window.packages =
         "name": "agj/elm-knobs",
         "summary": "A simple control panel to tweak values interactively.",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.2.0"
     },
@@ -5005,7 +5005,7 @@ window.packages =
         "name": "andreasewering/elm-protoc-types",
         "summary": "Protobuf well-known types as a package. Generated by protoc-gen-elm.",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.2.1"
     },
@@ -5015,7 +5015,7 @@ window.packages =
         "name": "andreasewering/elm-protoc-utils",
         "summary": "Utility functions for usage with protoc-gen-elm and elm-protoc-types",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.1.1"
     },
@@ -5035,7 +5035,7 @@ window.packages =
         "name": "andreasewering/protobuf-web-tokens",
         "summary": "Decode protobuf web tokens",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.0.2"
     },
@@ -5045,7 +5045,7 @@ window.packages =
         "name": "andrewMacmurray/elm-concurrent-task",
         "summary": "Run a tree of Tasks concurrently, call JS functions as Tasks (Task Ports)",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "1.1.1"
     },
@@ -5105,7 +5105,7 @@ window.packages =
         "name": "anmolitor/elm-grpc",
         "summary": "Send GRPC-Web requests with Elm.",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.0.0"
     },
@@ -5115,7 +5115,7 @@ window.packages =
         "name": "anmolitor/elm-protoc-types",
         "summary": "Protobuf well-known types as a package. Generated by protoc-gen-elm.",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "2.0.0"
     },
@@ -5125,7 +5125,7 @@ window.packages =
         "name": "anmolitor/elm-protoc-utils",
         "summary": "Utility functions for usage with protoc-gen-elm and elm-protoc-types",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "2.3.0"
     },
@@ -5135,7 +5135,7 @@ window.packages =
         "name": "anmolitor/elm-review-tailwindcss",
         "summary": "Elm-Review rules for projects using TailwindCSS",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -5145,7 +5145,7 @@ window.packages =
         "name": "anmolitor/intl-proxy",
         "summary": "Provides access to the Browsers Intl Api via a JS Proxy Object",
         "tags": [
-            "uncat/new"
+            "interop/js"
         ],
         "version": "1.0.0"
     },
@@ -5155,7 +5155,7 @@ window.packages =
         "name": "anmolitor/protobuf-web-tokens",
         "summary": "Decode protobuf web tokens",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.0.0"
     },
@@ -5216,7 +5216,7 @@ window.packages =
         "name": "arowM/elm-decimal-char",
         "summary": "Handle Unicode decimal characters",
         "tags": [
-            "uncat/new"
+            "data/text"
         ],
         "version": "2.0.0"
     },
@@ -5286,7 +5286,7 @@ window.packages =
         "name": "arowM/elm-markdown-ast",
         "summary": "Elm representation of markdown AST",
         "tags": [
-            "uncat/new"
+            "dev/parsing"
         ],
         "version": "1.0.6"
     },
@@ -5316,7 +5316,7 @@ window.packages =
         "name": "arowM/elm-multiline-string",
         "summary": "Tiny library to solve multiline string indentation problems.",
         "tags": [
-            "uncat/new"
+            "data/text"
         ],
         "version": "1.0.0"
     },
@@ -5356,7 +5356,7 @@ window.packages =
         "name": "arowM/elm-sequence-id",
         "summary": "Pure, conflict-free, JSON-friendly, arbitrary size, sequential ID string.",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.2"
     },
@@ -5376,7 +5376,7 @@ window.packages =
         "name": "arowM/elm-test-html-event-extra",
         "summary": "Additional functions for simulating Html events",
         "tags": [
-            "uncat/new"
+            "dev/testing"
         ],
         "version": "1.0.0"
     },
@@ -5436,7 +5436,7 @@ window.packages =
         "name": "arowM/tepa",
         "summary": "Framework for building robust, user-centric Web apps",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "6.0.0"
     },
@@ -5446,7 +5446,7 @@ window.packages =
         "name": "arowM/tepa-zoned-time",
         "summary": "TEPA library for zoned time.",
         "tags": [
-            "uncat/new"
+            "data/time"
         ],
         "version": "1.0.1"
     },
@@ -5630,7 +5630,7 @@ window.packages =
         "name": "axelerator/elm-jscontact",
         "summary": "A type and conversion utils for JSContact cards (RFC 9553)",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "2.0.0"
     },
@@ -5640,7 +5640,7 @@ window.packages =
         "name": "axelerator/fancy-forms",
         "summary": "A modular form library with support for custom input widgets",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "6.0.0"
     },
@@ -5650,7 +5650,7 @@ window.packages =
         "name": "axelerator/picomponents",
         "summary": "A UI component library using the pico CSS framework",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "1.1.2"
     },
@@ -5710,7 +5710,7 @@ window.packages =
         "name": "banky/elm-style-animation",
         "summary": "Style Animations in Elm",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "1.1.0"
     },
@@ -5761,7 +5761,7 @@ window.packages =
         "name": "bburdette/httpjsontask",
         "summary": "the missing http task for json",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -6395,7 +6395,7 @@ window.packages =
         "name": "brainrake/elm-arc-diagram",
         "summary": "An arc diagram for visualizing acyclic digraphs",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -6405,7 +6405,7 @@ window.packages =
         "name": "brainrake/elm-ganja",
         "summary": "Geometric Algebra and Clifford Algebra generated by ganja.js",
         "tags": [
-            "uncat/new"
+            "sciences/maths"
         ],
         "version": "1.0.0"
     },
@@ -6415,7 +6415,8 @@ window.packages =
         "name": "brainrake/elm-mathml",
         "summary": "MathML for Elm",
         "tags": [
-            "uncat/new"
+            "ui/html",
+            "sciences/maths"
         ],
         "version": "1.0.0"
     },
@@ -6425,7 +6426,7 @@ window.packages =
         "name": "brainrape/elm-arc-diagram",
         "summary": "MOVED",
         "tags": [
-            "data/visualisation"
+            "uncat/excluded"
         ],
         "version": "2.0.0"
     },
@@ -6435,7 +6436,7 @@ window.packages =
         "name": "brainrape/elm-ganja",
         "summary": "MOVED",
         "tags": [
-            "sciences/maths"
+            "uncat/excluded"
         ],
         "version": "2.0.2"
     },
@@ -6445,8 +6446,7 @@ window.packages =
         "name": "brainrape/elm-mathml",
         "summary": "MOVED",
         "tags": [
-            "ui/html",
-            "sciences/maths"
+            "uncat/excluded"
         ],
         "version": "2.0.2"
     },
@@ -6536,7 +6536,7 @@ window.packages =
         "name": "buildrtech/elm-animator-with-elm-css",
         "summary": "An elm-animator fork that supports elm-css",
         "tags": [
-            "uncat/new"
+            "ui/css", "ui/animation"
         ],
         "version": "4.0.0"
     },
@@ -6566,7 +6566,7 @@ window.packages =
         "name": "cachix/elm-hashcash",
         "summary": "Implements HashCash to prevent spammers abusing a resource.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -6950,7 +6950,7 @@ window.packages =
         "name": "ceddlyburge/johnson-trotter",
         "summary": "Implementation of the Johnson Trotter permutation algorithm",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -7506,7 +7506,7 @@ window.packages =
         "name": "daodm/streamcardano",
         "summary": "Decoders and a few other helpers for using StreamCardano APIs",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.0.0"
     },
@@ -7608,7 +7608,7 @@ window.packages =
         "name": "digital-society-coop/elm-tree-layout",
         "summary": "Implements Buchheim, Junger and Leipert's tree layout algorithm",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -7648,7 +7648,7 @@ window.packages =
         "name": "dillonkearns/elm-form",
         "summary": "Standalone version of the elm-pages Form API.",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "3.0.0"
     },
@@ -7893,7 +7893,7 @@ window.packages =
         "name": "drewkit/elm-anniversary",
         "summary": "Anniversary calculations with Time.Posix",
         "tags": [
-            "uncat/new"
+            "data/time"
         ],
         "version": "1.1.0"
     },
@@ -7903,7 +7903,7 @@ window.packages =
         "name": "drewkit/elm-bit-flags",
         "summary": "Define flag names for a bit space and operate on registers.",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "2.0.0"
     },
@@ -8013,7 +8013,7 @@ window.packages =
         "name": "dwayne/elm-debouncer",
         "summary": "Debounce or throttle your actions",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -8023,7 +8023,7 @@ window.packages =
         "name": "dwayne/elm-integer",
         "summary": "The integers, ℤ = { ..., -2, -1, 0, 1, 2, ... }",
         "tags": [
-            "uncat/new"
+            "dev/algorithms", "sciences/maths"
         ],
         "version": "1.0.0"
     },
@@ -8073,7 +8073,7 @@ window.packages =
         "name": "dzuk-mutant/elm-css",
         "summary": "Typed CSS in Elm (with lots of new properties and an improved codebase!).",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "3.0.1"
     },
@@ -8144,7 +8144,7 @@ window.packages =
         "name": "eberfreitas/elm-express",
         "summary": "Library that provides server-side support for Elm applications using Express.",
         "tags": [
-            "uncat/new"
+            "platforms/server"
         ],
         "version": "3.0.0"
     },
@@ -8204,7 +8204,7 @@ window.packages =
         "name": "edkelly303/elm-any-type-forms",
         "summary": "Quickly build forms to create or update any Elm type",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "7.0.2"
     },
@@ -8214,7 +8214,7 @@ window.packages =
         "name": "edkelly303/elm-multitool",
         "summary": "Compose elm-codec-like tools to give your types superpowers",
         "tags": [
-            "uncat/new"
+            "dev/type-level"
         ],
         "version": "3.0.0"
     },
@@ -8244,7 +8244,7 @@ window.packages =
         "name": "eigenwijskids/elm-playground-eigenwijs",
         "summary": "A fun way to create pictures, animations, and games.",
         "tags": [
-            "uncat/new"
+            "uncat/misc"
         ],
         "version": "8.0.0"
     },
@@ -8275,7 +8275,7 @@ window.packages =
         "name": "elhanan7/elm-visualization",
         "summary": "A data visualization package for Elm",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -8510,7 +8510,7 @@ window.packages =
         "name": "elmcraft/core-extra",
         "summary": "Utility functions for an improved experience with elm/core",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "2.0.0"
     },
@@ -8650,7 +8650,7 @@ window.packages =
         "name": "ericgj/elm-bem",
         "summary": "BEM methodology helpers",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "1.1.0"
     },
@@ -8671,7 +8671,7 @@ window.packages =
         "name": "ericgj/elm-sparklines",
         "summary": "Simple sparklines charts with optional brushing",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.1"
     },
@@ -8854,7 +8854,7 @@ window.packages =
         "name": "f3zhead/jsonpseudolist",
         "summary": "JSON decoder for pseudo-array objects",
         "tags": [
-            "uncat/new"
+            "data/formats:json"
         ],
         "version": "1.0.0"
     },
@@ -8914,7 +8914,7 @@ window.packages =
         "name": "fabiommendes/elm-non-empty-list",
         "summary": "Non-empty lists for Elm.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.1"
     },
@@ -8934,7 +8934,7 @@ window.packages =
         "name": "fabiommendes/elm-sized-list",
         "summary": "A list that caches its size.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -9481,7 +9481,7 @@ window.packages =
         "name": "georgesboris/elm-attributes",
         "summary": "Easily implement and use attribute based APIs using the Elm language",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "1.0.0"
     },
@@ -9491,7 +9491,7 @@ window.packages =
         "name": "georgesboris/elm-jwt",
         "summary": "Fork of ktonon/elm-jsonwebtoken with custom header encoder.",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.0.0"
     },
@@ -9501,7 +9501,7 @@ window.packages =
         "name": "georgesboris/elm-widgets-charts-alpha",
         "summary": "Development package for elm-widgets-charts. Constant breaking changes.",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "4.0.5"
     },
@@ -10034,7 +10034,7 @@ window.packages =
         "name": "hanifhefaz/elm-activity-logs",
         "summary": "A package for managing activity logs in Elm.",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -10064,7 +10064,7 @@ window.packages =
         "name": "hansallis/elm-jwt",
         "summary": "Decode, encode, verify JSON web tokens",
         "tags": [
-            "uncat/new"
+            "security/auth"
         ],
         "version": "1.0.0"
     },
@@ -10404,7 +10404,7 @@ window.packages =
         "name": "ilyakooo0/airlock",
         "summary": "Urbit airlock",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "1.1.1"
     },
@@ -10857,7 +10857,6 @@ window.packages =
         "name": "jesterxl/elm-aws-cognito",
         "summary": "Elm client for the AWS Cognito services for managing user identities.",
         "tags": [
-            "uncat/new",
             "uncat/deleted"
         ],
         "version": "1.0.0"
@@ -10868,7 +10867,7 @@ window.packages =
         "name": "jesterxl/elm-aws-cognito-jxl",
         "summary": "Temporary fork of the-sett/elm-aws-cognito to fix a bug.",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "1.0.0"
     },
@@ -11312,7 +11311,7 @@ window.packages =
         "name": "jmpavlick/bimap",
         "summary": "Bidirectional mapping/comparison/JSON (en,de)coding between Strings and types",
         "tags": [
-            "uncat/new"
+            "data/formats:json"
         ],
         "version": "1.2.0"
     },
@@ -11332,7 +11331,7 @@ window.packages =
         "name": "jmpavlick/elm-html-form",
         "summary": "A flexible and extensible form package in Elm that uses the platform.",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "2.0.2"
     },
@@ -11342,7 +11341,7 @@ window.packages =
         "name": "jmpavlick/elm-ui-hsl",
         "summary": "HSL colors for elm-ui",
         "tags": [
-            "uncat/new"
+            "ui/elm-ui"
         ],
         "version": "1.0.2"
     },
@@ -11383,7 +11382,7 @@ window.packages =
         "name": "joeybright/hybrid-logical-clock",
         "summary": "A hybrid logical clock implementation in Elm.",
         "tags": [
-            "uncat/new"
+            "uncat/misc"
         ],
         "version": "1.0.1"
     },
@@ -11594,7 +11593,7 @@ window.packages =
         "name": "joshuanianji/github-language-colors",
         "summary": "A collection of all of Github's language colours in Elm.",
         "tags": [
-            "uncat/new"
+            "data/datasets"
         ],
         "version": "2.2.0"
     },
@@ -11883,7 +11882,7 @@ window.packages =
         "name": "k-bx/timezone-data",
         "summary": "Time zone data from the IANA Time Zone Database for using with elm/time",
         "tags": [
-            "uncat/new"
+            "data/time", "data/datasets"
         ],
         "version": "1.1.0"
     },
@@ -11893,7 +11892,7 @@ window.packages =
         "name": "kageurufu/elm-websockets",
         "summary": "Websockets made kinda easy",
         "tags": [
-            "uncat/new"
+            "networking/websockets"
         ],
         "version": "1.0.1"
     },
@@ -12025,7 +12024,7 @@ window.packages =
         "name": "kokizzu/elm-date-format",
         "summary": "Copy of ryannhg/date-format 2.3.0.",
         "tags": [
-            "uncat/new"
+            "data/time"
         ],
         "version": "1.0.0"
     },
@@ -12035,7 +12034,7 @@ window.packages =
         "name": "kokizzu/elm-visualization",
         "summary": "Clone of kokizzu/elm-visualization 2.1.2 with proper dependency",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -12065,7 +12064,7 @@ window.packages =
         "name": "kraklin/elm-debug-parser",
         "summary": "Elm parser for parsing Debug.log messages into reasonable tree to work with",
         "tags": [
-            "uncat/new"
+            "dev/debugging"
         ],
         "version": "2.0.0"
     },
@@ -12075,7 +12074,7 @@ window.packages =
         "name": "kress95/elm-html-convert",
         "summary": "Convert HTML to JSON value and string",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.0.2"
     },
@@ -12166,7 +12165,7 @@ window.packages =
         "name": "kudzu-forest/elm-atoms",
         "summary": "types for handling periodic tables.",
         "tags": [
-            "uncat/new"
+            "dev/type-level"
         ],
         "version": "1.0.1"
     },
@@ -12176,7 +12175,7 @@ window.packages =
         "name": "kudzu-forest/elm-constant-time-queue",
         "summary": "Queue with O(1) enqueueing and dequeueing even in the worst case.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.4.0"
     },
@@ -12186,7 +12185,7 @@ window.packages =
         "name": "kudzu-forest/elm-random-pool",
         "summary": "enables fast and precisely controled random picking up from collection of data.",
         "tags": [
-            "uncat/new"
+            "data/random"
         ],
         "version": "1.0.0"
     },
@@ -12196,7 +12195,7 @@ window.packages =
         "name": "kudzu-forest/elm-random-tree",
         "summary": "tree structure that allows fast random picking up",
         "tags": [
-            "uncat/new"
+            "data/random"
         ],
         "version": "2.0.1"
     },
@@ -12206,7 +12205,7 @@ window.packages =
         "name": "kudzu-forest/elm-recent-event-counter",
         "summary": "A suspendable stopwatch counting events that took place in latest xxx seconds.",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.1"
     },
@@ -12216,7 +12215,7 @@ window.packages =
         "name": "kudzu-forest/elm-wide-float",
         "summary": "Enables floating point arithmetics with 32 exponent bits.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "2.0.2"
     },
@@ -12246,7 +12245,7 @@ window.packages =
         "name": "kutyel/elm-form",
         "summary": "Live validation of form inputs in Elm",
         "tags": [
-            "uncat/new"
+            "ui/validation"
         ],
         "version": "1.0.0"
     },
@@ -12634,7 +12633,7 @@ window.packages =
         "name": "linsyking/elm-anytype",
         "summary": "Anytype hole in Elm.",
         "tags": [
-            "uncat/new"
+            "dev/type-level"
         ],
         "version": "1.0.1"
     },
@@ -12654,7 +12653,7 @@ window.packages =
         "name": "linsyking/elm-monad",
         "summary": "Monads for Elm",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "1.0.1"
     },
@@ -12664,7 +12663,7 @@ window.packages =
         "name": "linsyking/messenger-core",
         "summary": "Core library for Messenger.",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "12.0.2"
     },
@@ -12674,7 +12673,7 @@ window.packages =
         "name": "linsyking/messenger-extra",
         "summary": "Extra library for Messenger.",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "2.0.1"
     },
@@ -12897,7 +12896,7 @@ window.packages =
         "name": "lue-bird/elm-and-or",
         "summary": "both or only one of them",
         "tags": [
-            "uncat/new"
+            "dev/type-level"
         ],
         "version": "1.0.0"
     },
@@ -12927,7 +12926,7 @@ window.packages =
         "name": "lue-bird/elm-docs-diff",
         "summary": " compare versions of an elm API",
         "tags": [
-            "uncat/new"
+            "uncat/misc"
         ],
         "version": "1.0.2"
     },
@@ -12967,7 +12966,7 @@ window.packages =
         "name": "lue-bird/elm-morph",
         "summary": "a parser-printer: dev-friendly, general-purpose, great errors",
         "tags": [
-            "uncat/new"
+            "dev/parsing"
         ],
         "version": "3.0.1"
     },
@@ -12987,7 +12986,7 @@ window.packages =
         "name": "lue-bird/elm-partial-or-complete",
         "summary": "keep going with a partial value or stop with the result",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.2"
     },
@@ -12997,7 +12996,7 @@ window.packages =
         "name": "lue-bird/elm-review-documentation-code-snippet",
         "summary": "verify code examples by generating tests",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.1.0"
     },
@@ -13007,7 +13006,7 @@ window.packages =
         "name": "lue-bird/elm-review-equals-caseable",
         "summary": "elm-review: report `==` when equivalent `case of` exists",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.0"
     },
@@ -13017,7 +13016,7 @@ window.packages =
         "name": "lue-bird/elm-review-import-simple",
         "summary": "enforce `import Module [exposing (Module)]`",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.2"
     },
@@ -13037,7 +13036,7 @@ window.packages =
         "name": "lue-bird/elm-review-mini",
         "summary": "scan your project to enforce conventions",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -13047,7 +13046,7 @@ window.packages =
         "name": "lue-bird/elm-review-mini-common",
         "summary": "generally useful reviews for elm-review-mini",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.0"
     },
@@ -13068,7 +13067,7 @@ window.packages =
         "name": "lue-bird/elm-review-multiple-append-to-concat",
         "summary": "elm-review: replace multiple `++` in sequence with concat",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.2"
     },
@@ -13078,7 +13077,7 @@ window.packages =
         "name": "lue-bird/elm-review-opaque-type",
         "summary": "forbid `type`s that are exposed without variants",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -13088,7 +13087,7 @@ window.packages =
         "name": "lue-bird/elm-review-pattern",
         "summary": "elm-review: Forbid as and record patterns",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.2"
     },
@@ -13098,7 +13097,7 @@ window.packages =
         "name": "lue-bird/elm-review-phantom-type",
         "summary": "forbid `type` parameters not used in the definition",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.2"
     },
@@ -13128,7 +13127,7 @@ window.packages =
         "name": "lue-bird/elm-review-upgrade",
         "summary": "tell me how to get rid of outdated stuff",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -13138,7 +13137,7 @@ window.packages =
         "name": "lue-bird/elm-review-variables-between-case-of-access-in-cases",
         "summary": "reports when a variable between `case .. of` is used in any of the cases",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.1"
     },
@@ -13148,7 +13147,7 @@ window.packages =
         "name": "lue-bird/elm-review-variant-value-count",
         "summary": "enforce that variants have at most one value",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.2"
     },
@@ -13178,7 +13177,7 @@ window.packages =
         "name": "lue-bird/elm-state-interface",
         "summary": "define an app in a simple, safe and declarative way",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "2.0.1"
     },
@@ -13307,7 +13306,7 @@ window.packages =
         "name": "maca/elm-rose-tree",
         "summary": "Simple tree with path access, and updates and fold an map functions",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.2.0"
     },
@@ -13378,7 +13377,7 @@ window.packages =
         "name": "marcodaniels/elm-aws-cloudfront",
         "summary": "AWS CloudFront lambdas with Elm",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.0.0"
     },
@@ -13548,7 +13547,7 @@ window.packages =
         "name": "matzko/elm-review-limit-aliased-record-size",
         "summary": "An elm-review rule to make sure aliased records don't get too large.",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.3"
     },
@@ -13578,7 +13577,7 @@ window.packages =
         "name": "mc706/prefab-ui",
         "summary": "Prefab UI is a collection of ElmUI components inspired by clarity.design.",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "5.1.0"
     },
@@ -13771,7 +13770,7 @@ window.packages =
         "name": "mind-gym/elements",
         "summary": "A collection of Elm UI elements",
         "tags": [
-            "uncat/new"
+            "ui/elm-ui"
         ],
         "version": "4.3.0"
     },
@@ -13863,7 +13862,7 @@ window.packages =
         "name": "miniBill/elm-iso8859",
         "summary": "Encode and decode strings with ISO/IEC 8859 or Windows-1252.",
         "tags": [
-            "uncat/new"
+            "data/text"
         ],
         "version": "1.0.0"
     },
@@ -13883,7 +13882,7 @@ window.packages =
         "name": "miniBill/elm-result-extra",
         "summary": "Convenience functions for working with Result",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -13893,7 +13892,7 @@ window.packages =
         "name": "miniBill/elm-review-call-graph",
         "summary": "Extract the call graph from an application",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.3"
     },
@@ -13903,7 +13902,7 @@ window.packages =
         "name": "miniBill/elm-review-no-broken-elm-parser-functions",
         "summary": " Provides elm-review rules to check for usage of broken elm/parser functions.",
         "tags": [
-            "uncat/new"
+            "dev/static-analysis"
         ],
         "version": "1.0.0"
     },
@@ -13913,7 +13912,7 @@ window.packages =
         "name": "miniBill/elm-rope",
         "summary": "A data structure that supports efficient concatenation.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -13923,7 +13922,7 @@ window.packages =
         "name": "miniBill/elm-salsa20",
         "summary": "Implementation of the Salsa20 encryption and random number generation for Elm",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -14064,7 +14063,7 @@ window.packages =
         "name": "mpizenberg/elm-bytes-decoder",
         "summary": "Enable branching (oneOf) for elm/bytes decoders.",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -14135,7 +14134,7 @@ window.packages =
         "name": "mtamc/and-collect",
         "summary": "No do-notation needed! andCollect combinators for interdependent computations",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "1.0.0"
     },
@@ -14174,7 +14173,6 @@ window.packages =
         "name": "mthiems/elm-charts",
         "summary": "Fork of terezka/elm-charts@3.0.0 to fix dependencies.",
         "tags": [
-            "uncat/new",
             "uncat/deleted"
         ],
         "version": "1.0.0"
@@ -14185,7 +14183,7 @@ window.packages =
         "name": "mthiems/elm-charts-3",
         "summary": "Fork of terezka/elm-charts@3.0.0 to fix dependencies.",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -14195,7 +14193,7 @@ window.packages =
         "name": "mthiems/intervals",
         "summary": "Fork of terezka/intervals@2.0.1 to fix dependencies.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -14325,7 +14323,7 @@ window.packages =
         "name": "nats-rpc/elm-nrpc",
         "summary": "Elm lib for Nrpc",
         "tags": [
-            "uncat/new"
+            "uncat/misc"
         ],
         "version": "1.0.0"
     },
@@ -14487,7 +14485,7 @@ window.packages =
         "name": "noordstar/elm-gamepad",
         "summary": "Elm library for adding game controller support",
         "tags": [
-            "uncat/new"
+            "game-dev/input"
         ],
         "version": "1.0.2"
     },
@@ -14497,7 +14495,7 @@ window.packages =
         "name": "noordstar/elm-matrix-sdk-beta",
         "summary": "Matrix SDK for instant communication. Unstable beta version for testing only.",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "3.2.0"
     },
@@ -14678,7 +14676,7 @@ window.packages =
         "name": "ohri-anurag/easy-charts",
         "summary": "A library for creating SVG based charts easily.",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "2.1.0"
     },
@@ -14748,7 +14746,7 @@ window.packages =
         "name": "orus-io/elm-nats",
         "summary": "Pure Elm state manager for NATS protocol",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.0.0"
     },
@@ -15222,7 +15220,7 @@ window.packages =
         "name": "pmiddend/elm-number-spinner",
         "summary": "Component that allows the user to manipulate single digits in decimal numbers",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.0"
     },
@@ -15392,7 +15390,7 @@ window.packages =
         "name": "professortX/date-format",
         "summary": "A reliable way to format dates and times with Elm.",
         "tags": [
-            "uncat/new"
+            "data/time"
         ],
         "version": "1.0.0"
     },
@@ -15402,7 +15400,7 @@ window.packages =
         "name": "professortX/elm-visualization",
         "summary": "A data visualization package for Elm",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.1"
     },
@@ -15555,7 +15553,7 @@ window.packages =
         "name": "red-g/accumulate",
         "summary": "Functions for manipulating filters",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.2.0"
     },
@@ -15565,7 +15563,7 @@ window.packages =
         "name": "red-g/directory",
         "summary": "A package for navigating directories",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.0"
     },
@@ -15575,7 +15573,7 @@ window.packages =
         "name": "red-g/filter",
         "summary": "Functions for manipulating filters",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "2.0.3"
     },
@@ -15585,7 +15583,7 @@ window.packages =
         "name": "red-g/service-collections",
         "summary": "Collections for implementing custom types",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "3.0.1"
     },
@@ -15595,7 +15593,7 @@ window.packages =
         "name": "red-g/sort",
         "summary": "Functions for manipulating sorters",
         "tags": [
-            "uncat/new"
+            "dev/utils"
         ],
         "version": "1.0.1"
     },
@@ -15605,7 +15603,7 @@ window.packages =
         "name": "relvox/iridescence-elm",
         "summary": "Utils and helpers",
         "tags": [
-            "uncat/new"
+            "uncat/excluded"
         ],
         "version": "1.0.1"
     },
@@ -15937,7 +15935,7 @@ window.packages =
         "name": "robvandenbogaard/elm-knowledge-graph",
         "summary": "An easy entry point for starting to use knowledge graphs.",
         "tags": [
-            "uncat/new"
+            "data/formats"
         ],
         "version": "1.0.0"
     },
@@ -16091,7 +16089,7 @@ window.packages =
         "name": "ryan-haskell/date-format",
         "summary": "A reliable way to format dates and times with Elm.",
         "tags": [
-            "uncat/new"
+            "data/time"
         ],
         "version": "1.0.0"
     },
@@ -16101,7 +16099,7 @@ window.packages =
         "name": "ryan-haskell/elm-3d",
         "summary": "EXPERIMENTAL: Create 3D stuff with Elm",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.0"
     },
@@ -16111,7 +16109,7 @@ window.packages =
         "name": "ryan-haskell/elm-spa",
         "summary": "single page apps made easy.",
         "tags": [
-            "uncat/new"
+            "dev/code-gen"
         ],
         "version": "1.0.0"
     },
@@ -16121,7 +16119,7 @@ window.packages =
         "name": "ryan-haskell/graphql",
         "summary": "An elm/json inspired package for working with GraphQL",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.0.0"
     },
@@ -16292,7 +16290,7 @@ window.packages =
         "name": "scrive/elm-form",
         "summary": "Live validation of form inputs in Elm",
         "tags": [
-            "uncat/new"
+            "ui/validation"
         ],
         "version": "1.0.0"
     },
@@ -16302,7 +16300,7 @@ window.packages =
         "name": "scrive/json-schema-form",
         "summary": "Generate validating forms from JSON schemas.",
         "tags": [
-            "uncat/new"
+            "ui/validation"
         ],
         "version": "2.0.0"
     },
@@ -16808,7 +16806,7 @@ window.packages =
         "name": "stoeffel/list-focus",
         "summary": "A list with a focus",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.1"
     },
@@ -16889,7 +16887,7 @@ window.packages =
         "name": "szubtsovskiy/elm-visualization",
         "summary": "A data visualization package for Elm (dependency fix)",
         "tags": [
-            "uncat/new"
+            "data/visualisation"
         ],
         "version": "1.0.1"
     },
@@ -16969,7 +16967,7 @@ window.packages =
         "name": "tfausak/jawa",
         "summary": "Type definitions for JWP events.",
         "tags": [
-            "uncat/new"
+            "uncat/misc"
         ],
         "version": "8.1.0"
     },
@@ -16979,7 +16977,7 @@ window.packages =
         "name": "tfausak/quartz",
         "summary": "Lenses and optics for Elm.",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "3.0.0"
     },
@@ -17141,7 +17139,7 @@ window.packages =
         "name": "the-sett/elm-gap-buffer",
         "summary": "An efficient gap buffer implementation for Elm base around slicing Array.",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.1.0"
     },
@@ -17352,7 +17350,7 @@ window.packages =
         "name": "thomasin/elm-menus",
         "summary": "WCAG menus",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.1.1"
     },
@@ -17953,7 +17951,7 @@ window.packages =
         "name": "upsiflu/less-ui",
         "summary": "Less pushing around `views` across the DOM. Less Ui state in your model.",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "2.0.0"
     },
@@ -18005,7 +18003,7 @@ window.packages =
         "name": "uweg/elm-io-spa",
         "summary": "Elm SPA based on elm-io without code generation.",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "2.0.0"
     },
@@ -18025,7 +18023,7 @@ window.packages =
         "name": "v-nys/elm-nonempty-list",
         "summary": "Fork of coreygirard/..., without hard dependency on test",
         "tags": [
-            "uncat/new"
+            "dev/algorithms"
         ],
         "version": "1.0.0"
     },
@@ -18135,7 +18133,7 @@ window.packages =
         "name": "vjousse/elm-emoji",
         "summary": "A tabbed general-purpose emoji picker",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.0"
     },
@@ -18145,7 +18143,7 @@ window.packages =
         "name": "vjousse/elm-mastodon-tooty",
         "summary": "Elm client for Mastodon extracted from tooty.",
         "tags": [
-            "uncat/new"
+            "networking/integrations"
         ],
         "version": "1.1.2"
     },
@@ -18176,7 +18174,7 @@ window.packages =
         "name": "vladimirlogachev/elm-modular-grid",
         "summary": "Responsive modular grid layouts for Elm",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "2.1.0"
     },
@@ -18186,7 +18184,7 @@ window.packages =
         "name": "vladimirlogachev/elm-ui-toolkit",
         "summary": "Wide-gamut colors (OKLCH, DCI-P3, Rec. 2020), typography, inline styles.",
         "tags": [
-            "uncat/new"
+            "ui/css"
         ],
         "version": "2.0.0"
     },
@@ -18399,7 +18397,7 @@ window.packages =
         "name": "wolfadex/earl-grey",
         "summary": "An experimental Elm package to make building apps easier",
         "tags": [
-            "uncat/new"
+            "dev/code-organisation"
         ],
         "version": "2.1.0"
     },
@@ -18419,7 +18417,7 @@ window.packages =
         "name": "wolfadex/elm-calendar",
         "summary": "A package for viewing a calendar of events",
         "tags": [
-            "uncat/new"
+            "ui/patterns"
         ],
         "version": "1.0.1"
     },
@@ -18429,7 +18427,7 @@ window.packages =
         "name": "wolfadex/elm-ecs",
         "summary": "An ECS library for Elm. Provides an easy way to build a full game",
         "tags": [
-            "uncat/new"
+            "game-dev/code-organisation"
         ],
         "version": "2.0.0"
     },
@@ -18561,7 +18559,7 @@ window.packages =
         "name": "y047aka/elm-css-palette",
         "summary": "A palette of colors for elm-css",
         "tags": [
-            "uncat/new"
+            "data/datasets", "ui/css"
         ],
         "version": "3.0.0"
     },
