@@ -211,6 +211,16 @@ window.tools =
             ]
         },
         {
+            "name": "elm-duet",
+            "githubName": "BrianHicks/elm-duet",
+            "url": null,
+            "packageUrl": null,
+            "summary": "Provides interop types between Elm and TypeScript by creating a single source of truth using JSON Type Definitions",
+            "tags": [
+                "code-generation"
+            ]
+        },
+        {
             "name": "elm-webapp",
             "githubName": "choonkeat/elm-webapp",
             "url": null,
