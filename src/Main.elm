@@ -936,10 +936,10 @@ navBar model =
     <|
         List.concat
             [ [ link [ centerY, height <| px 50 ]
-                    { url = "/elm/catalog"
+                    { url = "/elm"
                     , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/assets/img/logo.png", description = "Korban.net" }
                     }
-              , el [ centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
+              , link [ centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] { url = "/elm/catalog", label = text "Elm Catalog" }
               ]
             , if isNarrow model.windowSize then
                 [ menuIcon [ onClick UserClickedMenuIcon ] ]
