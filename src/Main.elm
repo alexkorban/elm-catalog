@@ -937,7 +937,7 @@ navBar model =
         List.concat
             [ [ link [ centerY, height <| px 50 ]
                     { url = "/elm/catalog"
-                    , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/img/logo.png", description = "Korban.net" }
+                    , label = image [ width (px 46), height (px 50) ] { src = "https://korban.net/assets/img/logo.png", description = "Korban.net" }
                     }
               , el [ centerY, Font.color <| rgb255 0x22 0x55 0x71, Font.size 26 ] <| text "Elm Catalog"
               ]
@@ -1014,7 +1014,7 @@ packageCard model package =
         [ row [ width fill ]
             [ el [ width fill, Font.size 20, Font.color blue, headingTypeface ] <|
                 link [] { url = "https://package.elm-lang.org/packages/" ++ package.name ++ "/latest/", label = paragraph [] [ text package.name ] }
-            , image [ alignRight, width <| px 30, alpha 0.1 ] { src = "https://korban.net/img/package.svg", description = "Package" }
+            , image [ alignRight, width <| px 30, alpha 0.1 ] { src = packageSvg, description = "Package" }
             ]
         , el
             [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
@@ -1065,6 +1065,27 @@ packageCard model package =
           else
             none
         ]
+
+
+packageSvg : String
+packageSvg =
+    """
+    data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="box-open" class="svg-inline--fa fa-box-open fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M425.7 256c-16.9 0-32.8-9-41.4-23.4L320 126l-64.2 106.6c-8.7 14.5-24.6 23.5-41.5 23.5-4.5 0-9-.6-13.3-1.9L64 215v178c0 14.7 10 27.5 24.2 31l216.2 54.1c10.2 2.5 20.9 2.5 31 0L551.8 424c14.2-3.6 24.2-16.4 24.2-31V215l-137 39.1c-4.3 1.3-8.8 1.9-13.3 1.9zm212.6-112.2L586.8 41c-3.1-6.2-9.8-9.8-16.7-8.9L320 64l91.7 152.1c3.8 6.3 11.4 9.3 18.5 7.3l197.9-56.5c9.9-2.9 14.7-13.9 10.2-23.1zM53.2 41L1.7 143.8c-4.6 9.2.3 20.2 10.1 23l197.9 56.5c7.1 2 14.7-1 18.5-7.3L320 64 69.8 32.1c-6.9-.8-13.5 2.7-16.6 8.9z"></path></svg>
+    """
+
+
+searchSvg : String
+searchSvg =
+    """
+    data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+    """
+
+
+toolSvg : String
+toolSvg =
+    """
+    data:image/svg+xml;utf8,<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" class="svg-inline--fa fa-tools fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z"></path></svg>
+    """
 
 
 toolCard : Model -> Tool -> Element Msg
@@ -1122,7 +1143,7 @@ toolCard model tool =
         [ row [ width fill ]
             [ el [ Font.size 20, Font.color blue, headingTypeface ] <|
                 link [] { url = mainUrl, label = text tool.name }
-            , image [ alignRight, width <| px 25, alpha 0.1 ] { src = "https://korban.net/img/tool.svg", description = "Tool" }
+            , image [ alignRight, width <| px 25, alpha 0.1 ] { src = toolSvg, description = "Tool" }
             ]
         , el
             [ Border.widthEach { top = 1, left = 0, right = 0, bottom = 0 }
@@ -1290,7 +1311,7 @@ categoryList model =
         tabElsWith b1 b2 b3 =
             [ tabEl b1 3 "/packages" <| text "Packages"
             , tabEl b2 3 "/tools" <| text "Tools"
-            , tabEl b3 1 "/search" <| image [ width <| px 20, htmlAttribute <| Attr.class "search-image" ] { src = "https://korban.net/img/search.svg", description = "🔍" }
+            , tabEl b3 1 "/search" <| image [ width <| px 20, htmlAttribute <| Attr.class "search-image" ] { src = searchSvg, description = "🔍" }
             ]
 
         tabEls =
@@ -1557,27 +1578,27 @@ productFooter model =
                     , link [ padding 50 ]
                         { url = "/elm/book"
                         , label =
-                            image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
-                                { src = "https://korban.net/img/practical-elm-cover.jpg", description = "Practical Elm" }
+                            image [ width <| maximum 300 fill ]
+                                { src = "https://korban.net/assets/img/practical-elm/practical-elm-cover-3d.jpg", description = "Practical Elm" }
                         }
                     ]
 
                 else
                     [ paragraph [ spacing 12 ]
-                        [ text "📢 My in-depth guide "
+                        [ text "📢 I have created an in-depth guide "
                         , link [ Font.bold, Font.underline, Font.color blue ]
                             { url = "/elm/elm-ui-guide", label = text "elm-ui: The CSS Escape Plan" }
-                        , text " is now available in early access."
+                        , text " to help you master elm-ui."
                         ]
                     , paragraph [ spacing 12 ]
                         [ text "🎁 Get a walkthrough of all elm-ui features and a showcase of elm-ui examples." ]
                     , paragraph [ spacing 12 ]
-                        [ text "🛠 I'm still adding content but you can start learning right now 👇" ]
+                        [ text "🛠 Start learning right now 👇" ]
                     , link [ padding 50 ]
                         { url = "/elm/elm-ui-guide"
                         , label =
-                            image [ width <| maximum 300 fill, Border.glow grey 5, rotate 0.03 ]
-                                { src = "https://korban.net/img/elm-ui-cover.jpg", description = "elm-ui: The CSS Escape Plan" }
+                            image [ width <| maximum 300 fill ]
+                                { src = "https://korban.net/assets/img/elm-ui-guide/elm-ui-cover-3d.jpg", description = "elm-ui: The CSS Escape Plan" }
                         }
                     ]
                )
