@@ -1686,6 +1686,15 @@ window.packages =
         "version": "2.1.0"
     },
     {
+        "license": "BSD-3-Clause",
+        "name": "421anon/elm-flow",
+        "summary": "A monadic interface for The Elm Architecture with async channels",
+        "tags": [
+            "uncat/new"
+        ],
+        "version": "2.1.0"
+    },
+    {
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "7hoenix/elm-chess",
@@ -1732,7 +1741,7 @@ window.packages =
             "dev/parsing",
             "data/formats"
         ],
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -2324,7 +2333,7 @@ window.packages =
         "tags": [
             "ui/patterns"
         ],
-        "version": "3.3.0"
+        "version": "3.3.1"
     },
     {
         "forkOf": null,
@@ -5793,7 +5802,7 @@ window.packages =
         "tags": [
             "ui/frameworks"
         ],
-        "version": "4.0.1"
+        "version": "5.0.0"
     },
     {
         "forkOf": null,
@@ -7012,7 +7021,7 @@ window.packages =
         "tags": [
             "uncat/excluded"
         ],
-        "version": "25.0.1"
+        "version": "26.0.0"
     },
     {
         "forkOf": "dillonkearns/elm-pages",
@@ -7309,8 +7318,7 @@ window.packages =
         "name": "cedricss/elm-form-machine",
         "summary": "A state machine to handle forms in elm.",
         "tags": [
-            "dev/code-organisation",
-            "ui/patterns"
+            "dev/code-organisation"
         ],
         "version": "1.0.1"
     },
@@ -8037,11 +8045,11 @@ window.packages =
         "forkOf": null,
         "license": "BSD-3-Clause",
         "name": "dillonkearns/elm-cli-options-parser",
-        "summary": "Type-safe command line options parsing.",
+        "summary": "Type-safe command line options parsing with JSON schema generation.",
         "tags": [
             "dev/parsing"
         ],
-        "version": "4.0.0"
+        "version": "5.0.1"
     },
     {
         "forkOf": null,
@@ -8073,6 +8081,15 @@ window.packages =
             "storage/databases"
         ],
         "version": "5.0.12"
+    },
+    {
+        "license": "BSD-3-Clause",
+        "name": "dillonkearns/elm-ical",
+        "summary": "Generate and parse iCal (RFC 5545) calendar feeds.",
+        "tags": [
+            "uncat/new"
+        ],
+        "version": "1.0.0"
     },
     {
         "forkOf": null,
@@ -8114,7 +8131,7 @@ window.packages =
         "tags": [
             "platforms/static-sites"
         ],
-        "version": "12.0.2"
+        "version": "12.1.0"
     },
     {
         "forkOf": null,
@@ -8174,7 +8191,7 @@ window.packages =
         "tags": [
             "dev/testing"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "forkOf": null,
@@ -11041,7 +11058,7 @@ window.packages =
         "tags": [
             "data/formats"
         ],
-        "version": "1.1.0"
+        "version": "1.1.2"
     },
     {
         "forkOf": null,
@@ -11495,7 +11512,7 @@ window.packages =
         "tags": [
             "uncat/misc"
         ],
-        "version": "1.0.3"
+        "version": "1.0.4"
     },
     {
         "forkOf": null,
@@ -11505,7 +11522,7 @@ window.packages =
         "tags": [
             "sciences/maths"
         ],
-        "version": "1.1.0"
+        "version": "1.1.1"
     },
     {
         "license": "BSD-3-Clause",
@@ -11515,7 +11532,7 @@ window.packages =
             "dev/code-organisation",
             "dev/type-level"
         ],
-        "version": "5.0.0"
+        "version": "5.0.1"
     },
     {
         "forkOf": "ersocon/creditcard-validation",
@@ -15138,7 +15155,7 @@ window.packages =
         "name": "mpizenberg/elm-url-navigation-port",
         "summary": "Port-based SPA navigation for Browser.element",
         "tags": [
-            "dev/code-organisation",
+            "dev/code-organisation"
         ],
         "version": "1.1.0"
     },
@@ -16906,6 +16923,15 @@ window.packages =
         "summary": "Package contains some util methods for converting numbers into words.",
         "tags": [
             "data/text"
+        ],
+        "version": "1.0.0"
+    },
+    {
+        "license": "MIT",
+        "name": "rism-digital/elm-edtf",
+        "summary": "Extended Date Time Format (EDTF) parser and formatter",
+        "tags": [
+            "uncat/new"
         ],
         "version": "1.0.0"
     },
@@ -19600,7 +19626,7 @@ window.packages =
         "tags": [
             "networking/integrations"
         ],
-        "version": "7.1.0"
+        "version": "8.0.0"
     },
     {
         "forkOf": null,
