@@ -1042,6 +1042,16 @@ window.tools =
             ]
         },
         {
+            "name": "elm-snapshot",
+            "githubName": "dillonkearns/elm-snapshot",
+            "url": null,
+            "packageUrl": "https://www.npmjs.com/package/karma-elm-spec-framework",
+            "summary": "An elm-pages based tool to generate and verify snapshots for your tests",
+            "tags": [
+                "testing"
+            ]
+        },
+        {
             "name": "elm-doc-preview",
             "githubName": "dmy/elm-doc-preview",
             "url": "https://elm-doc-preview.netlify.com/",
