@@ -9,7 +9,7 @@
   "dependencies": {
     "@octokit/core": "^4.2.0",
     "bluebird": "^3.7.2",
-    "cross-spawn": "^6.0.5",
+    "cross-spawn": "^7.0.3",
     "fs-extra": "^7.0.0",
     "json-stable-stringify": "^1.0.1",
     "ramda": "^0.26.1"
